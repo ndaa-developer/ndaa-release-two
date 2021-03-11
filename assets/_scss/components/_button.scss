@@ -1,0 +1,135 @@
+button,
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  // margin: 0 auto;
+  overflow: visible;
+  padding: .5em 1.1em;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  appearance: none;
+  background-color: $btn-bg-colour;
+  border-radius: 0.25em;
+  border: 1px solid $btn-border-colour;
+  color: $btn-txt-colour;
+  text-decoration: none;
+  text-transform: none;
+
+  &--info {
+    background-color: $btn-info-bg-colour;
+    border: 1px solid $btn-info-border-colour;
+    color: $btn-info-txt-colour;
+  }
+
+  &--warning {
+    background-color: $btn-wrng-bg-colour;
+    border: 1px solid $btn-wrng-border-colour;
+    color: $btn-info-txt-colour;
+  }
+  &--sm {
+    padding: .3em 0.75em; //5px 10px;
+    font-size: .75rem;
+    line-height: 1.5;
+    border-radius: .2em; //3px;
+  }
+  &--lg {
+    padding: .75rem 1.5rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+  }
+
+  // & > i {
+  //   margin-right: .3rem;
+  //   color: inherit;
+  // }
+  
+}
+
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* stylelint-enable */
+
+button:focus,
+button:hover,
+.btn:focus,
+.btn:hover {
+  outline: none;
+  background-color: $btn-bg-clr-foho;
+  border-color: $btn-border-clr-foho;
+  color: $btn-txt-clr-foho;
+  text-decoration: none;
+}
+
+.btn--info:focus,
+.btn--info:hover {
+  background-color: darken($btn-info-bg-colour, 5%);
+  border-color: darken($btn-info-border-colour, 5%);
+}
+
+.btn--warning:focus,
+.btn--warning:hover {
+  background-color: darken($btn-wrng-bg-colour, 5%);
+  border-color: darken($btn-wrng-border-colour, 5%);
+}
+
+
+button[disabled] {
+  cursor: default;
+}
+
+.btn-light, .btn--light {
+  background-color: #e2e2e2;
+  border-color: #e2e2e2;
+  color: #000;
+}
+
+.btn-light:focus,
+.btn-light:hover,
+.btn--light:focus,
+.btn--light:hover {
+  background-color: #666;
+  border-color: #666;
+  color: #fff;
+}
+
+.btn-ghost,
+.btn--ghost {
+  background-color: transparent;
+  border-color: #333;
+  color: #000;
+}
+
+.btn-ghost:focus,
+.btn-ghost:hover,
+.btn--ghost:focus,
+.btn--ghost:hover {
+  background-color: #e2e2e2;
+  border-color: #000;
+  color: #000;
+}
+
+.btn-link {
+  display: inline;
+  padding: 0;
+  background-color: transparent;
+  border-radius: 0;
+  border: 0;
+  color: inherit;
+}
+
+.btn-link:focus,
+.btn-link:hover {
+  background-color: transparent;
+  color: inherit;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}

@@ -1,0 +1,43 @@
+/* NUAC Labels */
+$label-grp-bkgrnd: none; //$brand-primary-transparent; 
+$label-warning-bkgrnd: $colour-warning;
+$label-info-bkgrnd: $colour-info;
+$label-danger-bkgrnd: $colour-danger;
+
+.label {
+  display: inline-block;
+  text-shadow: none;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: top;
+  padding: 0.25em 0.6em;
+  line-height: 1;
+  border-radius: 0.75em;
+
+  &__group {
+    // padding: 0.25em 0.6em;
+    background-color: $label-grp-bkgrnd;
+    margin: 0 auto;
+
+    & > .label {
+      margin-bottom: 0.03em;
+    }
+  }
+
+  &--warning {
+    background-color: $label-warning-bkgrnd;
+    color:  black;
+  }
+  
+  &--info {
+    background-color: $label-info-bkgrnd;
+    color:  white;
+  }
+  
+  &--danger {
+    background-color: $label-danger-bkgrnd;
+    color:  white;
+  }
+}

@@ -1,0 +1,114 @@
+
+/* NUAC Variables. Copyright 2020 */
+$white:    #fff;
+$black:   #000;
+$gray-100: #f8f9fa;
+// // $gray-200: #e9ecef !default;
+// // $gray-300: #dee2e6 !default;
+// // $gray-400: #ced4da !default;
+// // $gray-500: #adb5bd !default;
+// // $gray-600: #6c757d !default;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+$blue:    #007bff;
+// $indigo:  #6610f2 !default;
+// $purple:  #6f42c1 !default;
+// $pink:    #e83e8c !default;
+$red:     #dc3545;
+// $orange:  #fd7e14 !default;
+// $yellow:  #ffc107 !default;
+// $green:   #28a745 !default;
+// $teal:    #20c997 !default;
+// $cyan:    #17a2b8 !default;
+
+// // $brand-primary:         darken(#428bca, 6.5%) !default; // #337ab7
+// // $brand-success:         #5cb85c !default;
+// // $brand-info:            #5bc0de !default;
+// // $brand-warning:         #f0ad4e !default;
+// // $brand-danger:          #d9534f !default;
+
+
+// $primary:       $blue !default;
+// $secondary:     $gray-600 !default;
+// $success:       $green !default;
+// $info:          #5bc0de; //$cyan !default;
+// $warning:       $yellow !default;
+$danger:        $red;
+// // $light:         $gray-100 !default;
+// // $dark:          $gray-800 !default;
+$facebook-blue: #4267b2;
+$facebook-hover:#365899;
+
+$colour-info: #3364a3;//#337ab7; //#17a2b8;
+$colour-warning: #ffc107;
+$colour-danger: #dc3545;
+$colour-success: #28a745;
+
+$brand-primary:    #e4fcea; // #003cff;
+$brand-secondary:  #111111; //  #ffc300;
+$brand-secondaryD1: lighten($brand-secondary, 5%);
+$brand-secondaryU1: darken($brand-secondary, 5%);
+
+$brand-primary-transparent: rgba(0, 60, 255, 0.89);
+$brand-primary-l-g-start: rgba(0, 60, 255, 0.8);
+$brand-primary-l-g-end: rgba(0, 60, 255, 0.4);
+$brand-primary-linear-gradient: linear-gradient(to bottom, rgba(0, 60, 255, 0.8), rgba(0, 60, 255, 0.4));
+
+$tt-bg-colour:    #000;     // darken($body-bg-colour,70%);
+$tt-txt-colour:  #fff;
+
+$btn-bg-colour: $gray-800;
+$btn-txt-colour: $white;
+$btn-border-colour: $btn-bg-colour;
+
+$btn-wrng-bg-colour: $colour-warning;
+$btn-wrng-txt-colour: $white;
+$btn-wrng-border-colour: $btn-wrng-bg-colour;
+
+$btn-info-bg-colour: $colour-info;
+$btn-info-txt-colour: $white;
+$btn-info-border-colour: $btn-info-bg-colour;
+
+$btn-bg-clr-foho: $black; //darken($btn-bg-colour, 15%);
+$btn-txt-clr-foho: $btn-txt-colour;
+$btn-border-clr-foho: $btn-bg-colour;
+
+$body-bg-colour:  #eeeeee;
+$body-txt-colour: #212529;
+$main-bg-colour: #ffffed;//darken($body-bg-colour, 2%); //#fff;
+$index-bg-colour: rgb(3, 3, 3);
+
+$link-txt-colour: #5227e7;//#265A87;
+
+$thnail-bg-colour: darken($index-bg-colour, 1%); //lighten($colour-success,50%); //lighten(#b4dfb4, 9.5%); //lighten($green,28.5%);
+$thnail-txt-colour: #000; //$brand-primary;
+
+$navLogoHeight: 40px;
+
+$pageMinHeight: 100vh;
+
+
+$water-LR-padding: 1em;
+$water-LR-padding-px: 16px;
+
+$panel-width: 370px;
+$news-panel-width: 750px;
+$sidebar-width: 350px;
+$news-gap-v: 2em;
+$news-gap-h: 2em;
+
+$panel-breakpoint: (((2 * $panel-width) + (3.5 * $water-LR-padding-px)) * 10) / 9;
+
+$container-width-sm: 540px;
+$container-width-md: 720px;
+$container-width-lg: 960px;
+$container-width-xl: 1140px;
+
+$breakpoint-xs: 390px;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;

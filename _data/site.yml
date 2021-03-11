@@ -1,0 +1,122 @@
+stylesheet: /assets/css/styles.min.css
+jsfile: /assets/js/main.min.js
+stockists:
+- name: PW Angling
+  addr-1: 57 Long John Hill
+  addr-2: Norwich
+  addr-3: null
+  addr-4: null
+  postcode: NR1 2JJ
+  logo: pwa-logo.png
+  url-type: web
+  url: http://www.pwangling.co.uk/
+
+- name: Tim's Tackle
+  addr-1: 71 Borrowdale Drive
+  addr-2: Norwich
+  addr-3: null
+  addr-4: null
+  postcode: NR1 4NS
+  logo: null
+  url-type: web
+  url: http://www.timtackle.co.uk/
+
+- name: Angling Direct Norwich
+  addr-1: 279 Aylsham Road
+  addr-2: Norwich
+  addr-3: null
+  addr-4: null
+  postcode: NR3 2RE
+  logo: ad-logo.png
+  url-type: fb
+  url: https://en-gb.facebook.com/anglingdirectnorwich/
+
+- name: AC Browne & Son
+  addr-1: 195 Norwich Road
+  addr-2: Norwich
+  addr-3: null
+  addr-4: null
+  postcode: NR5 0EX
+  logo: null
+  url-type: fb
+  url: https://www.facebook.com/acbrowneandson/
+
+- name: Cordy's Tackle Den
+  addr-1: 116 Earlham Green Lane
+  addr-2: Norwich
+  addr-3: null
+  addr-4: null
+  postcode: NR5 0PL
+  logo: null
+  url-type: fb
+  url: https://en-gb.facebook.com/cordystackledennorwich/
+
+- name: Wensum Valley Angling
+  addr-1: Unit 3
+  addr-2: Taverham Craft Centre
+  addr-3: Fir Covert Road
+  addr-4: Norwich
+  postcode: NR8 6HT
+  logo: null
+  url-type: fb
+  url: https://www.facebook.com/wensumvalleyangling/
+
+- name: Budgies Angling
+  addr-1: School Road
+  addr-2: Horning
+  addr-3: Norwich
+  addr-4: null
+  postcode: NR12 8PX
+  logo: null
+  url-type: web
+  url: https://bass-online.co.uk/
+
+- name: Angling Direct Wroxham
+  addr-1: Pettit House
+  addr-2: Church Rd
+  addr-3: Wroxham
+  addr-4: Norwich
+  postcode: NR12 8UG
+  logo: ad-logo.png
+  url-type: fb
+  url: https://en-gb.facebook.com/anglingdirectwroxham/
+
+- name: Harris Sportsmail
+  addr-1: Unit 3 Commercial Row
+  addr-2: Folgate Road
+  addr-3: North Walsham
+  addr-4: null
+  postcode: NR28 0FB
+  logo: null
+  url-type: web
+  url: https://www.harrissportsmail.com
+
+- name: AJB Angling
+  addr-1: Units 1-4 Ludham Bridge
+  addr-2: Ludham
+  addr-3: Great Yarmouth
+  addr-4: null
+  postcode: NR29 5NX
+  logo: null
+  url-type: fb
+  url: https://www.facebook.com/pages/category/Sports---Recreation/AJB-Angling-314550775391900/
+
+- name: Branford Angling
+  addr-1: Branford Road
+  addr-2: Caister-On-Sea
+  addr-3: Great Yarmouth
+  addr-4: null
+  postcode: NR30 5NE
+  logo: null
+  url-type: web
+  url: https://www.branfordangling.com/
+
+- name: Angling Direct Beccles
+  addr-1: Unit 4c Taylor Square
+  addr-2: Newgate
+  addr-3: Beccles
+  addr-4: Suffolk
+  postcode: NR34 9QB
+  logo: ad-logo.png
+  url-type: fb
+  url: https://www.facebook.com/Angling-Direct-Beccles-773861542741813/

@@ -1,0 +1,70 @@
+---
+layout: default
+title: Norwich and District Angler's Association | Norwich, Norfolk, UK
+keywords: norwich, norfolk, fishing club, angling club, coarse fishing, river fishing, match fishing, NDAA, norwich & district anglers, norwich and district angling, norwich & district, norfolk broads, norfolk broads fishing, broads fishing
+---
+<article>
+    <div class="google-map">
+        <iframe src="https://www.google.com/maps/d/embed?mid=1N04pqmdipNHhXajfvfAdy_cm8CpH14ZE"></iframe>
+    </div>
+</article>
+    
+
+<article id="Membership">
+    <section>
+        <h1>Membership</h1>
+        <p>Norwich and District Angler's Association is open to all anglers.  Membership entitles the holder to fish all NDAA waters and participate in all NDAA organised matches.  If the card holder is 18 years or above they may also take a junior (16 years or under at time of fishing) to fish on NDAA waters at no extra charge.  Junior anglers must be accompanied by an adult at all times.</p>
+    </section>
+    <section>
+        <h2>Fee</h2>
+        <div class="alert alert--danger">
+            <i class="indicator fas fa-exclamation-circle"></i>Only Season Membership Cards will be available for 2020-21. 
+            <br><i class="indicator fas fa-info-circle"></i>19/09/2020: Season Membership Cards have been reduced to <strong>just £20</strong>.
+        </div>       
+        <p>Season Membership, 16th June to 14th March, <s><strong>£30</strong></s> <strong>£20</strong>
+        <s><br>5 Day Membership, Mon-Fri, <strong>£15</strong></s>
+        <s><br>Day Membership, <strong>£5</strong></p></s>
+        <p>Membership Cards are available from the stockists listed below.</p>    
+
+    </section>
+    <section>
+        <h2>Stockists</h2>
+        <div class="col-layout">
+            {% for stockist in site.data.site.stockists %}
+            <div class="stockist">
+                <div class="stockist__name">
+                    <p><span>{{ stockist.name }}</span></p>
+                </div>
+                <div class="stockist__address">
+                    <p><span>{{ stockist.addr-1 }}</span>
+                        <br><span>{{ stockist.addr-2 }}</span>
+                        {% if stockist.addr-3 != null %}
+                        <br><span>{{ stockist.addr-3 }}</span>
+                        {% endif %}
+                        {% if stockist.addr-4 != null %}
+                        <br><span>{{ stockist.addr-4 }}</span>
+                        {% endif %}
+                        <br><span>{{ stockist.postcode }}</span>
+                        {% if stockist.addr-3 == null %}
+                        <br><span>&nbsp;</span>
+                        {% endif %}
+                        {% if stockist.addr-4 == null %}
+                        <br><span>&nbsp</span>
+                        {% endif %}</p>
+                </div>
+                <div class="stockist__url">
+                    {% case stockist.url-type %}
+                    {% when "web" %}
+                    <a class="btn btn--sm btn--info" href="{{ stockist.url }}" role="button"
+                        alt="{{ stockist.name}} website"><i class="fas fa-arrow-circle-right"></i> Website</a>
+                    {% when "fb" %}
+                    <a class="btn btn--sm btn--info" href="{{ stockist.url }}" role="button"
+                        alt="{{ stockist.name}} facebook"><i class="fas fa-arrow-circle-right"></i> Facebook</a>
+                    {% endcase %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+
+</article>

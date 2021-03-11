@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include base.html %}
+  {% include analytics.html %}
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <meta name="Keywords" content="{{ page.keywords }}">
+    <meta name="Description" content="Norwich and District Angler's Association provides great fishing on the Norfolk Broads for all Anglers." />
+    
+    {% include favicon.html %}
+   
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="{{ base }}{{ site.data.site.stylesheet }}">
+    
+    <base target="_top">
+    
+    <title>{{ page.title }}</title>
+   
+</head>
+
+<body>
+
+  {% if page.name contains 'index' %}
+    {% include header.html %}
+  {% endif %}
+  
+  <main class="page-width">
+
+    {{ content }}
+                          
+  </main>
+
+  {% include back-to-top.html %}
+  <!-- Bootstrap JS requires Jquery & Popper.js -->
+  <script src="{{ base }}{{ site.data.site.jsfile }}"></script>
+
+</body>
+
+</html>

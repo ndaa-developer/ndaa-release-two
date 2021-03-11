@@ -1,0 +1,21 @@
+.alert {
+  padding: 1em;
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: .2em;
+
+  &--danger {
+      color: #a94442;
+      background-color: #f2dede;
+      border-color: #ebccd1;
+
+      & .indicator {
+        margin-right: .5em;
+        font-size: 1.2rem;
+        // padding: .2em;
+        // color: #000;
+        // background-color: #ff0;
+    }
+  }
+}

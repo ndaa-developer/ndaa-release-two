@@ -1,0 +1,81 @@
+
+.page-width {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.fb-container {
+  background: transparent;
+  border-radius: 0;
+  min-height: 320px;
+  // max-height: 500px;
+  margin: 0 0.6em;
+}
+
+
+.col-layout {
+  // column-count: 1;
+  // column-gap: 0.6em;
+  // overflow: hidden;
+  display: flex; /* 1 */
+  flex-wrap: wrap; /* 2 */
+  margin: -0.5em; /* 5 (edit me!) */
+}
+
+.col-layout > div {
+  flex: 1 1 14em;   /* 3 (edit me!) */
+  margin: 0.5em;    /* 4 (edit me!) */
+  padding: 1em;
+}
+
+// .col-layout > div:first-child {
+//   flex: 1 1 10em; /* 3 (edit me!) */
+//   margin: 0.5em; /* 4 (edit me!) */
+// }
+
+@media (min-width: $breakpoint-sm) {
+  
+  .page-width {
+    max-width: $container-width-sm;
+  }
+}
+
+@media (min-width: $breakpoint-md) {
+  .hdr {
+    & > h1 {
+      font-size: 3em;
+    }
+
+    & > h2 {
+      font-size: 2.5em;
+    } 
+  }
+  
+  .page-width {
+      max-width: $container-width-md;
+  }
+}
+
+@media (min-width: $breakpoint-lg) {
+  .hdr {
+    & > h1 {
+      font-size: 3.4em;
+    }
+
+    & > h2 {
+      font-size: 2.9em;
+    } 
+  }
+
+  .page-width {
+    max-width: $container-width-lg;
+  }
+}
+
+@media (min-width: $breakpoint-xl) {
+  
+  .page-width {
+    max-width: $container-width-xl;
+  }
+}

@@ -1,0 +1,133 @@
+
+.news-article {
+  background-color: #77c4d3;
+  color: $white;
+  padding: 1em;
+  overflow: hidden;
+}
+.news-row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+
+  &--col-gap {
+    // @include parent-col-gap;
+    @include parent-col-gap ($news-gap-v, $news-gap-h); 
+  }
+}
+
+.news-main {
+  flex: 2 1 $news-panel-width;
+  background-color: #fff;
+  color: $black;
+  padding: 1em;
+
+  &--col-gap {
+    // @include child-col-gap;
+    @include child-col-gap ($news-gap-v, $news-gap-h);
+  }
+
+}
+
+.news-sidebar {
+  flex: 1 1 $sidebar-width;
+  background-color: #fff; //#f6f792;
+  color: $black;
+  padding: 1em;
+
+  &--col-gap {
+    // @include child-col-gap;
+    @include child-col-gap ($news-gap-v, $news-gap-h);
+  }
+
+}
+
+.news-item {
+  // color: $navbar-light-color;
+  background-color: $white;
+
+  // & > h2 > small {
+  //   float: right!important;
+  //   vertical-align: bottom;
+
+  //   &::before {
+  //     content: ",";
+  //   }
+    // padding-bottom: 0;
+    // border: none;
+  // }
+}
+.news-item-card {
+  padding: 1em;
+  // color: $dark; //$navbar-light-color;
+  background-color: $white;
+
+  &:nth-child(2n) {
+    // color: $navbar-light-color;
+    background-color: $gray-100;
+  }
+  
+}
+
+.news-item-panel {
+  flex: 1 1 $panel-width;
+  margin: 0 1em;
+  padding: 0;
+}
+
+.newsarchiveyear {
+  & > .btn {
+    color: $navbar-light-color;//rgba(0, 0, 0, 0.5);
+    border-radius: 0;
+
+    // &.active {
+    //   color: rgba(0, 0, 0, 0.7); 
+    // }
+  }
+  
+  & > .btn:active {
+    color: $navbar-light-active-color;//rgba(0, 0, 0, 0.7);
+    box-shadow: none;
+    // background-color: $gray-100;
+  }
+
+  & > .btn:hover, .btn:focus {
+    color: $navbar-light-hover-color;//rgba(0, 0, 0, 0.7);
+    box-shadow: none;
+    // background-color: $gray-100;
+  }
+}
+
+.newsmenu {
+  display: flex;
+  flex-direction: column;
+  padding-inline-start: 1em;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.5);
+  background-color: $white;
+  width: 100%;
+
+  & > a {
+    color: inherit;
+  }
+
+  &-item {
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+
+    &:focus {
+      border-color: $gray-200;
+    }
+
+    &.active {
+      color: rgba(0, 0, 0, 0.7);
+    }
+  }
+
+}
+
+[aria-expanded="true"] .fa-caret-down, 
+[aria-expanded="false"] .fa-caret-up {
+    display:none;
+}
