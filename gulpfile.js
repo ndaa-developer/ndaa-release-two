@@ -108,3 +108,11 @@ gulp.task('compress-images', function() {
     )
     .pipe(gulp.dest("assets/images"));
 });
+/**
+ * task to run when building on Netlify (runs all tasks
+ * appart from browser-sync)
+ */
+ gulp.task('netlify-deploy', gulp.series('sass', 'bundle-js'), function(done){
+  return cp.spawn('bundle' , ['exec', 'jekyll', 'build'], {stdio: 'inherit'})
+      .on('close', done);
+});
