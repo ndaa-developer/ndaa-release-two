@@ -17,7 +17,7 @@ collections:
           - {label: "Address Line 2", name: "addr-2", widget: "string", hint: "Norwich"}
           - {label: "Address Line 3", name: "addr-3", widget: "string", hint: "If empty put null"}
           - {label: "Address Line 4", name: "addr-4", widget: "string", hint: "If empty put null"}
-          - {label: "Post Code", name: "postcode", widget: "string", pattern: ["\b(GIR ?0AA|SAN ?TA1|(?:[A-PR-UWYZ](?:\d{0,2}|[A-HK-Y]\d|[A-HK-Y]\d\d|\d[A-HJKSTUW]|[A-HK-Y]\d[ABEHMNPRV-Y])) ?\d[ABD-HJLNP-UW-Z]{2})\b", "Must be a valid UK Postcode"], hint: "NRnn nAX"}
+          - {label: "Post Code", name: "postcode", widget: "string", pattern: ["^([g][i][r][0][a][a])$|^((([a-pr-uwyz]{1}([0]|[1-9]\d?))|([a-pr-uwyz]{1}[a-hk-y]{1}([0]|[1-9]\d?))|([a-pr-uwyz]{1}[1-9][a-hjkps-uw]{1})|([a-pr-uwyz]{1}[a-hk-y]{1}[1-9][a-z]{1}))(\d[abd-hjlnp-uw-z]{2})?)$", "Must be a valid UK Postcode"], hint: "NRnn nAX"}
           - {label: "Logo", name: "logo", widget: "hidden", default: "null"}
           - {label: "URL Type", name: "url-type", widget: "select", options: ["web", "fb"], hint: "select website or facebook"}
           - {label: "URL Reference", name: "url", widget: "string", hint: "Enter website or facebook https:// address"}
