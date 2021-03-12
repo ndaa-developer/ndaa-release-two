@@ -9,7 +9,7 @@ collections:
     files:
       - label: "Stockists"
         name: "stockists"
-        files: "_data/stockists.yml"
+        file: "_data/stockists.yml"
         fields:
           - label: "Stockists"
             name: "stockists"
