@@ -8,8 +8,6 @@ alert-messages:
     alert-msg: Only Season Membership Cards will be available for 2020-21.
   - alert-type: info
     alert-msg: 19/09/2020 - Season Membership Cards have been reduced to just **£20**.
-  - alert-type: warning
-    alert-msg: 12/03/2021 - Venues CLOSE from midnight **Sunday 14th March**
 options:
   - option-desc: Season Membership, 16th June to 14th March, ~~£30~~ **£20**
   - option-desc: ~~5 Day Membership, Mon-Fri, £15~~
