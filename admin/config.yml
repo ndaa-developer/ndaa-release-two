@@ -18,8 +18,8 @@ collections:
               - {label: "Name", name: "name", widget: "string", hint: "PW Angling"}
               - {label: "Address Line 1", name: "addr-1", widget: "string", hint: "57 Long John Hill"}
               - {label: "Address Line 2", name: "addr-2", widget: "string", default: "null", hint: "Norwich"}
-              - {label: "Address Line 3", name: "addr-3", widget: "string", default: "null"}
-              - {label: "Address Line 4", name: "addr-4", widget: "string", default: "null"}
+              - {label: "Address Line 3", name: "addr-3", widget: "string", default: "null", required: "false"}
+              - {label: "Address Line 4", name: "addr-4", widget: "string", default: "null", required: "false"}
               - {label: "Post Code", name: "postcode", widget: "string", pattern: ["[A-IK-PR-UWYZ]?[A-H,K-Y][0-9]?[0-9A-HJKMNP-Y][ ][0-9][ABD-HJLNP-UW-Z][ABD-HJLNP-UW-Z]", "Must be a valid UK Postcode"], hint: "NRnn nAX"}
               - {label: "Logo", name: "logo", widget: "hidden", default: "null"}
               - {label: "URL Type", name: "url-type", widget: "select", options: ["web", "fb"], hint: "select website or facebook"}
