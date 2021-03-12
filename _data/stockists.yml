@@ -5,45 +5,45 @@ stockists:
     url: http://www.pwangling.co.uk/
     addr-1: 57 Long John Hill
     addr-2: Norwich
-    addr-3: "null"
+    addr-3: null
     url-type: web
-    addr-4: "null"
+    addr-4: null
   - logo: null
     name: Tim's Tackle
     postcode: NR1 4NS
     url: http://www.timtackle.co.uk/
     addr-1: 71 Borrowdale Drive
     addr-2: Norwich
-    addr-3: "null"
+    addr-3: null
     url-type: web
-    addr-4: "null"
+    addr-4: null
   - logo: ad-logo.png
     name: Angling Direct Norwich
     postcode: NR3 2RE
     url: https://en-gb.facebook.com/anglingdirectnorwich/
     addr-1: 279 Aylsham Road
     addr-2: Norwich
-    addr-3: "null"
+    addr-3: null
     url-type: fb
-    addr-4: "null"
+    addr-4: null
   - logo: null
     name: AC Browne & Son
     postcode: NR5 0EX
     url: https://www.facebook.com/acbrowneandson/
     addr-1: 195 Norwich Road
     addr-2: Norwich
-    addr-3: "null"
+    addr-3: null
     url-type: fb
-    addr-4: "null"
+    addr-4: null
   - logo: null
     name: Cordy's Tackle Den
     postcode: NR5 0PL
     url: https://en-gb.facebook.com/cordystackledennorwich/
     addr-1: 116 Earlham Green Lane
     addr-2: Norwich
-    addr-3: "null"
+    addr-3: null
     url-type: fb
-    addr-4: "null"
+    addr-4: null
   - logo: null
     name: Wensum Valley Angling
     postcode: NR8 6HT
@@ -61,7 +61,7 @@ stockists:
     addr-2: Horning
     addr-3: Norwich
     url-type: web
-    addr-4: "null"
+    addr-4: null
   - logo: ad-logo.png
     name: Angling Direct Wroxham
     postcode: NR12 8UG
@@ -79,7 +79,7 @@ stockists:
     addr-2: Folgate Road
     addr-3: North Walsham
     url-type: web
-    addr-4: "null"
+    addr-4: null
   - logo: null
     name: AJB Angling
     postcode: NR29 5NX
@@ -88,7 +88,7 @@ stockists:
     addr-2: Ludham
     addr-3: Great Yarmouth
     url-type: fb
-    addr-4: "null"
+    addr-4: null
   - logo: null
     name: Branford Angling
     postcode: NR30 5NE
@@ -97,7 +97,7 @@ stockists:
     addr-2: Caister-On-Sea
     addr-3: Great Yarmouth
     url-type: web
-    addr-4: "null"
+    addr-4: null
   - logo: ad-logo.png
     name: Angling Direct Beccles
     postcode: NR34 9QB
@@ -107,12 +107,3 @@ stockists:
     addr-3: Beccles
     url-type: fb
     addr-4: Suffolk
-  - logo: "null"
-    name: Jason D Brewster
-    postcode: NR1 3RT
-    url: https://nuac.org.uk
-    addr-1: 24 Jubilee Terrace
-    addr-2: Norfolk
-    addr-3: "null"
-    url-type: web
-    addr-4: "null"

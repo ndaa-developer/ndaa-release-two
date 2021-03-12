@@ -13,24 +13,41 @@ keywords: norwich, norfolk, fishing club, angling club, coarse fishing, river fi
 <article id="Membership">
     <section>
         <h1>Membership</h1>
-        <p>Norwich and District Angler's Association is open to all anglers.  Membership entitles the holder to fish all NDAA waters and participate in all NDAA organised matches.  If the card holder is 18 years or above they may also take a junior (16 years or under at time of fishing) to fish on NDAA waters at no extra charge.  Junior anglers must be accompanied by an adult at all times.</p>
+        {{ site.data.membership.intro-desc | markdownify }}
     </section>
     <section>
         <h2>Fee</h2>
         <div class="alert alert--danger">
-            <i class="indicator fas fa-exclamation-circle"></i>Only Season Membership Cards will be available for 2020-21. 
-            <br><i class="indicator fas fa-info-circle"></i>19/09/2020: Season Membership Cards have been reduced to <strong>just £20</strong>.
-        </div>       
-        <p>Season Membership, 16th June to 14th March, <s><strong>£30</strong></s> <strong>£20</strong>
+            <div class="mdi-alert md-insert">
+                {% for msg in site.data.membership.alert-messages %}
+                    {% case msg.alert-type %}
+                    {% when "warning" %}
+                    <div><span><i class="indicator fas fa-exclamation-circle"></i>{{ msg.alert-msg | markdownify }}</span></div>
+                    {% when "info" %}
+                    <div><span><i class="indicator fas fa-info-circle"></i>{{ msg.alert-msg | markdownify }}</span></div>
+                    {% endcase %}
+                {% endfor %}
+            </div>
+
+            <!-- <i class="indicator fas fa-exclamation-circle"></i>Only Season Membership Cards will be available for 2020-21. 
+            <br><i class="indicator fas fa-info-circle"></i>19/09/2020: Season Membership Cards have been reduced to <strong>just £20</strong>. -->
+        </div>
+        <div class="md-insert">
+            {% for opt in site.data.membership.options %}
+            {{ opt.option-desc | markdownify }}
+            {% endfor %}
+        </div>
+
+        <!-- <p>Season Membership, 16th June to 14th March, <s><strong>£30</strong></s> <strong>£20</strong>
         <s><br>5 Day Membership, Mon-Fri, <strong>£15</strong></s>
         <s><br>Day Membership, <strong>£5</strong></p></s>
-        <p>Membership Cards are available from the stockists listed below.</p>    
+        <p>Membership Cards are available from the stockists listed below.</p>     -->
 
     </section>
     <section>
         <h2>Stockists</h2>
         <div class="col-layout">
-            {% for stockist in site.data.site.stockists %}
+            {% for stockist in site.data.stockists.stockists %}
             <div class="stockist">
                 <div class="stockist__name">
                     <p><span>{{ stockist.name }}</span></p>

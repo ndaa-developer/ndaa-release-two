@@ -1,25 +1,6 @@
 * {
   box-sizing: border-box;
 }
-ol {
-  list-style-type: none;
-  counter-reset: item;
-  margin: 0;
-  padding: 0;
-}
-ol {
-  list-style-type: decimal;
-}
-ol>li {
-  display: table;
-  counter-increment: item;
-  margin-bottom: .4em;
-}
-ol>li:before {
-  content: counters(item, ".") ". ";
-  display: table-cell;
-  padding-right: .6em;
-}
 body {
   margin: 0;
   position: relative;
@@ -93,3 +74,22 @@ p {
   margin: 0 0 .75rem;
 }
 
+.mdi-alert{
+  display: flex;
+  flex-wrap: wrap; /* 2 */
+
+  & div {
+    flex: 1 1 auto;
+
+    & span{
+      display: flex;
+    }
+  }
+}
+
+.md-insert {
+
+  & p {
+    margin: 0;
+  }
+}
