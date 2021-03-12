@@ -7,6 +7,33 @@ collections:
   - label: "Pages"
     name: "pages"
     files:
+      - label: "Cover Page"
+        name: "cover"
+        file: "_data/cover.yml"
+        fields:
+          - { label: "Cover Message Indicator", name: "cover-msg-ind", widget: "boolean" }
+          - label: "Cover Messages"
+            name: "cover-messages"
+            widget: "list"
+            fields:
+              - {label: "Cover Message Type", name: "msg-type", widget: "select", options: ["warning", "info"]}
+              - {label: "Cover Message Description", name: "cvr-msg", widget: "markdown", hint: "Add message detail"}
+      - label: "Membership Info"
+        name: "membership"
+        file: "_data/membership.yml"
+        fields:
+          - { label: "Introduction", name: "intro-desc", widget: "markdown" }
+          - label: "Fee Message"
+            name: "alert-messages"
+            widget: "list"
+            fields:
+              - {label: "Fee Message Type", name: "alert-type", widget: "select", options: ["warning", "info"]}
+              - {label: "Fee Message Description", name: "alert-msg", widget: "markdown", hint: "Indicate latest Fee changes"}
+          - label: "Fee Options"
+            name: "options"
+            widget: "list"
+            fields:
+              - {label: "Fee Option Description", name: "option-desc", widget: "markdown", hint: "Blank row = <p>&nbsp</p>"}              
       - label: "Stockists"
         name: "stockists"
         file: "_data/stockists.yml"
@@ -24,30 +51,3 @@ collections:
               - {label: "Logo", name: "logo", widget: "hidden", default: "null"}
               - {label: "URL Type", name: "url-type", widget: "select", options: ["web", "fb"], hint: "select website or facebook"}
               - {label: "URL Reference", name: "url", widget: "string", hint: "Enter website or facebook https:// address"}
-      - label: "Membership Info"
-        name: "membership"
-        file: "_data/membership.yml"
-        fields:
-          - { label: "Introduction", name: "intro-desc", widget: "markdown" }
-          - label: "Fee Message"
-            name: "alert-messages"
-            widget: "list"
-            fields:
-              - {label: "Fee Message Type", name: "alert-type", widget: "select", options: ["warning", "info"]}
-              - {label: "Fee Message Description", name: "alert-msg", widget: "markdown", hint: "Indicate latest Fee changes"}
-          - label: "Fee Options"
-            name: "options"
-            widget: "list"
-            fields:
-              - {label: "Fee Option Description", name: "option-desc", widget: "markdown", hint: "Blank row = <p>&nbsp</p>"}
-      - label: "Cover Page"
-        name: "cover"
-        file: "_data/cover.yml"
-        fields:
-          - { label: "Cover Message Indicator", name: "cover-msg-ind", widget: "boolean" }
-          - label: "Cover Messages"
-            name: "cover-messages"
-            widget: "list"
-            fields:
-              - {label: "Cover Message Type", name: "msg-type", widget: "select", options: ["warning", "info"]}
-              - {label: "Cover Message Description", name: "cvr-msg", widget: "markdown", hint: "Add message detail"}
