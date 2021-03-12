@@ -636,6 +636,17 @@ p {
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex; }
+    .mdi-alert div .span-center {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+
+.fa-exclamation-circle {
+  line-height: inherit; }
+
+.fa-info-circle {
+  line-height: inherit; }
 
 .md-insert p {
   margin: 0; }
@@ -697,7 +708,7 @@ header > h1 {
       margin-left: 0.25em;
       bottom: 0.35em; }
     .hdr--home > a {
-      margin: 5em auto -3em; }
+      margin: 1em auto -3em; }
 
 .hdr-img {
   margin-top: 20px;

@@ -1,0 +1,23 @@
+  <header class="page-width hdr hdr--home">
+    <h1>Norwich and District</h1>
+    <h2>Angler's Association</h2>
+    <!-- <img class="hdr-img" src="{{base}}/images/under-construction.jpg" alt="website under construction"> -->
+    <p>Keep up to date with NDAA via <a href="https://www.facebook.com/ndaanorwich/" alt="NDAA Facebook"><i class="fab fa-facebook fa-2x"></i></a></p>
+
+    {% if site.data.cover.cover-msg-ind == true %}
+      <div class="alert alert--danger">
+        <div class="mdi-alert md-insert">
+            {% for msg in site.data.cover.cover-messages %}
+                {% case msg.msg-type %}
+                {% when "warning" %}
+                <div><span class="span-center"><i class="indicator fas fa-exclamation-circle"></i>{{ msg.cvr-msg | markdownify }}</span></div>
+                {% when "info" %}
+                <div><span class="span-center"><i class="indicator fas fa-info-circle"></i>{{ msg.cvr-msg | markdownify }}</span></div>
+                {% endcase %}
+            {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+
+    <a class="btn" href="#Membership" role="button">Membership</a>
+  </header>

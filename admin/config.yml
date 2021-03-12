@@ -40,3 +40,14 @@ collections:
             widget: "list"
             fields:
               - {label: "Fee Option Description", name: "option-desc", widget: "markdown", hint: "Blank row = <p>&nbsp</p>"}
+      - label: "Cover Page"
+        name: "cover"
+        file: "_data/cover.yml"
+        fields:
+          - { label: "Cover Message Indicator", name: "cover-msg-ind", widget: "boolean" }
+          - label: "Cover Messages"
+            name: "cover-messages"
+            widget: "list"
+            fields:
+              - {label: "Cover Message Type", name: "msg-type", widget: "select", options: ["warning", "info"]}
+              - {label: "Cover Message Description", name: "cvr-msg", widget: "markdown", hint: "Add message detail"}
