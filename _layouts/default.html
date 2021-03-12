@@ -18,6 +18,10 @@
     
     <base target="_top">
     
+    {% if page.name contains 'index' %}
+      {% include netlify-identity-widget.html %}
+    {% endif %}
+
     <title>{{ page.title }}</title>
    
 </head>
@@ -37,6 +41,10 @@
   {% include back-to-top.html %}
   <!-- Bootstrap JS requires Jquery & Popper.js -->
   <script src="{{ base }}{{ site.data.site.jsfile }}"></script>
+  
+  {% if page.name contains 'index' %}
+    {% include netlify-identity-script.html %}
+  {% endif %}
 
 </body>
 

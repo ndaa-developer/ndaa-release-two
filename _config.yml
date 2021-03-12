@@ -51,6 +51,7 @@ exclude:
   - package-lock.json
   - assets/js/components
   - gulpfile.js
+  - netlify.toml
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - vendor/bundle/
