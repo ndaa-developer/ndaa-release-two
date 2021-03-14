@@ -435,11 +435,6 @@ button[disabled] {
         .alert--flex div span > .fas {
           margin-right: .5em;
           font-size: 1.15em; }
-        .alert--flex div span .span-center {
-          -webkit-box-pack: center;
-          -webkit-justify-content: center;
-              -ms-flex-pack: center;
-                  justify-content: center; }
 
 .col-layout {
   overflow: hidden;
@@ -510,6 +505,11 @@ body {
       padding-top: 1em; }
   body :focus {
     outline: 2px dotted; }
+  body .span-center {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   body .v-middle {
     vertical-align: middle; }
   body .fa-facebook {

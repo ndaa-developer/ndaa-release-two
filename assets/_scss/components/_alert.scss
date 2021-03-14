@@ -41,14 +41,12 @@ $alert-success-brdr-color: #badbcc !default;
   
       & span {
         display: flex;
+        
         & > .fas {
           margin-right: .5em;
           font-size: 1.15em;
         }
       
-        & .span-center {
-          justify-content: center;
-        }
       }
 
     }
