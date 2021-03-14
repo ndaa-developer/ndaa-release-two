@@ -1,23 +1,30 @@
+$stockist-pad-t: 1em !default;
+$stockist-pad-r: 1em !default;
+$stockist-pad-b: 1em !default;
+$stockist-pad-l: 1em !default;
+
 .stockist {
+  padding-top: $stockist-pad-r;
+  padding-right: $stockist-pad-r;
+  padding-bottom: $stockist-pad-b;
+  padding-left: $stockist-pad-l;
+
   max-width: 206px;
-  margin: .2rem;
+  // margin: .2rem;
   border: 1px solid;
-  padding: 1em;
   background-color: $white;
-  font-size: .9rem;
+  font-size: .9em;
 
   &__name {
     font-weight: 700;
   }
 
-  // &:nth-child(1n) {
-  //   // color: $navbar-light-color;
-  //   background-color: $white;
+  // &--col-gap {
+  //   @include child-col-gap(0, $v-size-300);
   // }
 
-  // &:nth-child(2n) {
-  //   // color: $navbar-light-color;
-  //   background-color: darken($white, 3%);
-  // }
-  
+  & > * + * {
+    margin-top: .3em;
+  }
+ 
 }

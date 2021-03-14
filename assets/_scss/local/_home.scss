@@ -1,0 +1,57 @@
+
+@media (min-width: $breakpoint-xs) {
+  body {
+    font-size: $size-350;
+
+    h1 {
+      font-size: $size-750;
+    }
+  
+    h2,
+    h3 {
+      font-size: $size-550;
+    }
+  
+  }
+}
+
+@media (min-width: $breakpoint-sm) {
+  body {
+    font-size: $size-400;
+
+    h1 {
+      font-size: $size-800;
+    }
+  
+    h2,
+    h3 {
+      font-size: $size-600;
+    }
+  
+  }
+
+  .wrapper {
+    max-width: $container-width-sm;
+  }
+}
+
+@media (min-width: $breakpoint-md) {
+
+  .wrapper {
+      max-width: $container-width-md;
+  }
+}
+
+@media (min-width: $breakpoint-lg) {
+
+  .wrapper {
+    max-width: $container-width-lg;
+  }
+}
+
+@media (min-width: $breakpoint-xl) {
+  
+  .wrapper {
+    max-width: $container-width-xl;
+  }
+}

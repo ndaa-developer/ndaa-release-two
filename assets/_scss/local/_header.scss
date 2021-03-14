@@ -55,15 +55,15 @@ header {
         color:    $brand-secondary;
         background-image: linear-gradient(to bottom, rgba(200, 200, 200, 0.7), rgba(200, 200, 200, 0.3)), url(../images/home-bg.jpg);
 
-        & > p {
-            position: relative;
-        }
+        // & > p {
+        //     position: relative;
+        // }
 
-        & > p i {
-            position: absolute;
-            margin-left: 0.25em;
-            bottom: 0.35em;
-        }
+        // & > p i {
+        //     position: absolute;
+        //     margin-left: 0.25em;
+        //     bottom: 0.35em;
+        // }
 
         & > a {
             margin: 1em auto -3em;

@@ -3,6 +3,7 @@ intro-desc: Norwich and District Angler's Association is open to all anglers.
   NDAA organised matches. If the card holder is 18 years or above they may also
   take a junior (16 years or under at time of fishing) to fish on NDAA waters at
   no extra charge. Junior anglers must be accompanied by an adult at all times.
+alert-msg-ind: true
 alert-messages:
   - alert-type: warning
     alert-msg: Only Season Membership Cards will be available for 2020-21.

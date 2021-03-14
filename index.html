@@ -4,31 +4,34 @@ title: Norwich and District Angler's Association | Norwich, Norfolk, UK
 keywords: norwich, norfolk, fishing club, angling club, coarse fishing, river fishing, match fishing, NDAA, norwich & district anglers, norwich and district angling, norwich & district, norfolk broads, norfolk broads fishing, broads fishing
 ---
 <article>
-    <div class="google-map">
-        <iframe src="https://www.google.com/maps/d/embed?mid=1N04pqmdipNHhXajfvfAdy_cm8CpH14ZE"></iframe>
-    </div>
+    <section>
+        <h2>Map of Waters</h2>
+        <div class="google-map">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1N04pqmdipNHhXajfvfAdy_cm8CpH14ZE"></iframe>
+        </div>
+    </section>
+
 </article>
     
-
 <article id="Membership">
     <section>
-        <h1>Membership</h1>
+        <h2>Membership</h2>
         {{ site.data.membership.intro-desc | markdownify }}
     </section>
     <section>
         <h2>Fee</h2>
-        <div class="alert alert--danger">
-            <div class="mdi-alert md-insert">
-                {% for msg in site.data.membership.alert-messages %}
-                    {% case msg.alert-type %}
-                    {% when "warning" %}
-                    <div><span><i class="indicator fas fa-exclamation-circle"></i>{{ msg.alert-msg | markdownify }}</span></div>
-                    {% when "info" %}
-                    <div><span><i class="indicator fas fa-info-circle"></i>{{ msg.alert-msg | markdownify }}</span></div>
-                    {% endcase %}
-                {% endfor %}
-            </div>
+        {% if site.data.membership.alert-msg-ind == true %}
+        <div class="alert alert--flex alert--danger">
+            {% for msg in site.data.membership.alert-messages %}
+            {% case msg.alert-type %}
+            {% when "warning" %}
+            <div><span><i class="indicator fas fa-exclamation-circle"></i>{{ msg.alert-msg | markdownify }}</span></div>
+            {% when "info" %}
+            <div><span><i class="indicator fas fa-info-circle"></i>{{ msg.alert-msg | markdownify }}</span></div>
+            {% endcase %}
+            {% endfor %}
         </div>
+        {% endif %}
 
         <div class="md-insert">
             {% for opt in site.data.membership.options %}
@@ -39,9 +42,9 @@ keywords: norwich, norfolk, fishing club, angling club, coarse fishing, river fi
     </section>
     <section>
         <h2>Stockists</h2>
-        <div class="col-layout">
+        <div class="col-layout col-layout--col-gap">
             {% for stockist in site.data.stockists.stockists %}
-            <div class="stockist">
+            <div class="stockist stockist--col-gap">
                 <div class="stockist__name">
                     <p><span>{{ stockist.name }}</span></p>
                 </div>

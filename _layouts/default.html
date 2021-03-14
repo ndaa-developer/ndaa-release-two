@@ -32,14 +32,14 @@
     {% include cover.html %}
   {% endif %}
   
-  <main class="page-width">
+  <main class="wrapper">
 
     {{ content }}
                           
   </main>
 
   {% include back-to-top.html %}
-  <!-- Bootstrap JS requires Jquery & Popper.js -->
+
   <script src="{{ base }}{{ site.data.site.jsfile }}"></script>
   
   {% if page.name contains 'index' %}

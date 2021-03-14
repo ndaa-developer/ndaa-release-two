@@ -1,23 +1,41 @@
-  <header class="page-width hdr hdr--home">
-    <h1>Norwich and District</h1>
-    <h2>Angler's Association</h2>
-    <!-- <img class="hdr-img" src="{{base}}/images/under-construction.jpg" alt="website under construction"> -->
-    <p>Keep up to date with NDAA via <a href="https://www.facebook.com/ndaanorwich/" alt="NDAA Facebook"><i class="fab fa-facebook fa-2x"></i></a></p>
+  <div class="wrapper cover cover--home">
 
-    {% if site.data.cover.cover-msg-ind == true %}
-      <div class="alert alert--danger">
-        <div class="mdi-alert md-insert">
-            {% for msg in site.data.cover.cover-messages %}
-                {% case msg.msg-type %}
-                {% when "warning" %}
-                <div><span class="span-center"><i class="indicator fas fa-exclamation-circle"></i>{{ msg.cvr-msg | markdownify }}</span></div>
-                {% when "info" %}
-                <div><span class="span-center"><i class="indicator fas fa-info-circle"></i>{{ msg.cvr-msg | markdownify }}</span></div>
-                {% endcase %}
-            {% endfor %}
-        </div>
+    <div>
+      <h1>Norwich and District Angler's Association</h1>
+    </div>
+
+    <div class="group">
+      <div class="alert alert--success">
+        <p>Keep up to date with NDAA via <a href="https://www.facebook.com/ndaanorwich/" alt="NDAA Facebook">
+            <span class="v-middle"><i class="fab fa-facebook fa-2x"></i></span></a></p>
       </div>
-    {% endif %}
 
-    <a class="btn" href="#Membership" role="button">Membership</a>
-  </header>
+      {% if site.data.cover.cover-msg-ind == true %}
+      <div class="alert alert--flex alert--danger">
+        {% for msg in site.data.cover.cover-messages %}
+        {% case msg.msg-type %}
+        {% when "warning" %}
+        <div>
+          <span>
+            <i class="fas fa-exclamation-circle"></i>{{ msg.cvr-msg | markdownify }}
+          </span>
+        </div>
+        {% when "info" %}
+        <div>
+          <span>
+            <i class="fas fa-info-circle"></i>{{ msg.cvr-msg | markdownify }}
+          </span>
+        </div>
+        {% endcase %}
+        {% endfor %}
+      </div>
+      {% endif %}
+
+    </div>
+
+
+    <div>
+      <a class="btn" href="#Membership" role="button">Membership</a>
+    </div>
+
+  </div>

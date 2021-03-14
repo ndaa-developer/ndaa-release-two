@@ -3,7 +3,6 @@ backend:
   branch: master # Branch to update (optional; defaults to master)
 # These lines should *not* be indented
 site_url: https://ndaa.org.uk
-logo_url: https://ndaa.org.uk/safari-pinned-tab.svg
 publish_mode: editorial_workflow
 media_folder: "images/uploads" # Media files will be stored in the repo under images/uploads
 collections:
@@ -26,6 +25,7 @@ collections:
         file: "_data/membership.yml"
         fields:
           - { label: "Introduction", name: "intro-desc", widget: "markdown" }
+          - { label: "Fee Message Indicator", name: "alert-msg-ind", widget: "boolean" }
           - label: "Fee Message"
             name: "alert-messages"
             widget: "list"

@@ -8,8 +8,8 @@ button,
   text-align: center;
   vertical-align: middle;
   font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.5;
+  font-size: 1em;
+  line-height: 1.5em;
   appearance: none;
   background-color: $btn-bg-colour;
   border-radius: 0.25em;
@@ -32,13 +32,11 @@ button,
   &--sm {
     padding: .3em 0.75em; //5px 10px;
     font-size: .75rem;
-    line-height: 1.5;
     border-radius: .2em; //3px;
   }
   &--lg {
     padding: .75rem 1.5rem;
     font-size: 1.25rem;
-    line-height: 1.5;
     border-radius: .3rem;
   }
 
@@ -54,7 +52,14 @@ button::-moz-focus-inner {
   padding: 0;
 }
 
-/* stylelint-enable */
+/* https://piccalil.li/quick-tip/squishy-button */
+// .button:focus {
+//   outline-offset: -0.4rem;
+//   outline: 1px solid;
+// }
+// &:active {
+//   transform: scale(0.95);
+// }
 
 button:focus,
 button:hover,
