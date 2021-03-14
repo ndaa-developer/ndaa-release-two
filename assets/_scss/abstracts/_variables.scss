@@ -1,5 +1,10 @@
 /* NDAA Variables. Copyright 2020-21 */
 $NDAA-green: #e4fcea;
+$NDAA-black: #111;
+$alert-success-color: darken($NDAA-green, 75%);
+$alert-success-bg-color: $NDAA-green;
+$alert-success-brdr-color: $NDAA-green;
+
 $white:    #fff;
 $black:   #000;
 $gray-100: #f8f9fa;

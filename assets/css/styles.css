@@ -406,9 +406,9 @@ button[disabled] {
   border: 1px solid transparent;
   border-radius: .2em; }
   .alert--success {
-    color: #0f5132;
-    background-color: #d1e7dd;
-    border-color: #badbcc; }
+    color: #0a581d;
+    background-color: #e4fcea;
+    border-color: #e4fcea; }
   .alert--danger {
     color: #a94442;
     background-color: #f2dede;
@@ -541,12 +541,12 @@ body {
           flex-wrap: wrap;
   min-height: 100vh;
   padding: 1em;
-  text-align: center; }
+  text-align: center;
+  color: #111; }
   .cover > div {
     margin-top: auto;
     margin-bottom: auto; }
   .cover--home {
-    color: #111111;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(200, 200, 200, 0.7)), to(rgba(200, 200, 200, 0.3))), url(../images/home-bg.jpg);
     background-image: -o-linear-gradient(top, rgba(200, 200, 200, 0.7), rgba(200, 200, 200, 0.3)), url(../images/home-bg.jpg);
     background-image: linear-gradient(to bottom, rgba(200, 200, 200, 0.7), rgba(200, 200, 200, 0.3)), url(../images/home-bg.jpg); }
