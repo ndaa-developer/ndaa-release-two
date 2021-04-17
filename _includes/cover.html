@@ -18,13 +18,17 @@
         {% when "warning" %}
         <div>
           <span class="span-center">
-            <i class="fas fa-exclamation-circle"></i>{{ msg.cvr-msg | markdownify }}
+            <span class="pull-left">
+              <i class="fas fa-exclamation-circle"></i>{{ msg.cvr-msg | markdownify }}
+            </span>
           </span>
         </div>
         {% when "info" %}
         <div>
           <span class="span-center">
-            <i class="fas fa-info-circle"></i>{{ msg.cvr-msg | markdownify }}
+            <span class="pull-left">
+              <i class="fas fa-info-circle"></i>{{ msg.cvr-msg | markdownify }}
+            </span>
           </span>
         </div>
         {% endcase %}
