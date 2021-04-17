@@ -538,6 +538,8 @@ button[disabled] {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
     /* 2 */ }
+    .alert--flex > * {
+      margin: 0 .5em; }
     .alert--flex div {
       -webkit-box-flex: 1;
       -webkit-flex: 1 1 auto;
@@ -549,7 +551,7 @@ button[disabled] {
         display: -ms-flexbox;
         display: flex; }
         .alert--flex div span > .fas {
-          margin-right: .5em;
+          margin-right: .3em;
           font-size: 1.15em; }
 
 .col-layout {
@@ -628,16 +630,14 @@ body {
             justify-content: center; }
   body .v-middle {
     vertical-align: middle; }
-  body .fa-facebook {
-    color: #4267b2;
+  body .fas {
     line-height: inherit; }
+  body .fa-facebook {
+    color: #4267b2; }
     body .fa-facebook:hover {
       color: #365899; }
   body .fa-info-circle {
-    color: #3364a3;
-    line-height: inherit; }
-  body .fa-exclamation-circle {
-    line-height: inherit; }
+    color: #3364a3; }
 
 .cover {
   background-position: top;

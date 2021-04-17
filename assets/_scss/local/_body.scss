@@ -64,9 +64,11 @@ body {
   .v-middle {
     vertical-align: middle;
   }
+  .fas {
+    line-height: inherit;
+  }
   .fa-facebook {
     color: $facebook-blue;
-    line-height: inherit;
   
       &:hover {
             color: $facebook-hover;
@@ -74,10 +76,6 @@ body {
   }
   .fa-info-circle {
     color: $colour-info;
-    line-height: inherit;
-  }
-  .fa-exclamation-circle { 
-    line-height: inherit;
   }
   
 }

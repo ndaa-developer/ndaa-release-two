@@ -12,7 +12,7 @@
       </div>
 
       {% if site.data.cover.cover-msg-ind == true %}
-      <div class="alert alert--flex alert--danger">
+      <div class="alert alert--danger alert--flex">
         {% for msg in site.data.cover.cover-messages %}
         {% case msg.msg-type %}
         {% when "warning" %}
