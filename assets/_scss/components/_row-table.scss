@@ -1,0 +1,40 @@
+.Rtable-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: $white;
+
+    &:first-child {
+        background-color: $gray-400;
+        font-weight: 900;
+    }
+
+    &:nth-child(2n)  {
+        border-top: .05em solid $gray-600;
+        border-bottom: .05em solid $gray-600;
+        background-color: $gray-200;
+    }
+    // & > .Rtable-cell:not(:nth-child(6n+4)):not(:nth-child(6n+5)):not(:nth-child(6n+6))  {
+    //     background-color: $gray-200;
+    // }
+  }
+  .Rtable-cell {
+    flex: 1;
+    padding: 0.3em 0.7em;
+    overflow: hidden; // Or flex might break
+    // border: solid 0.01em black;
+
+    &:first-child {
+        flex: 1;
+    }
+
+
+  }
+  
+  /* Table column sizing
+  ================================== */
+  .Rtable--2cols > .Rtable-cell  { width: 50%; }
+  .Rtable--3cols > .Rtable-cell  { width: 33.33%; }
+  .Rtable--4cols > .Rtable-cell  { width: 25%; }
+  .Rtable--5cols > .Rtable-cell  { width: 20%; }
+  .Rtable--6cols > .Rtable-cell  { width: 16.6%; }

@@ -33,6 +33,20 @@
   .wrapper {
     max-width: $container-width-sm;
   }
+  .Rtable-row {
+    flex-direction: row;
+  }
+
+  .Rtable-cell {
+    flex: 1 10.5em;
+
+    &:first-child {
+      flex: 1 6.64em;
+    }
+  
+  }
+
+
 }
 
 @media (min-width: $breakpoint-md) {
@@ -40,6 +54,16 @@
   .wrapper {
       max-width: $container-width-md;
   }
+
+  .Rtable-cell {
+    flex: 1 14em;
+
+    &:first-child {
+      flex: 1 5em;
+    }
+  
+  }
+
 }
 
 @media (min-width: $breakpoint-lg) {

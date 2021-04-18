@@ -44,8 +44,13 @@ body {
   /* Natural flow and rhythm in articles by default */
   article > * + * {
     margin-top: 1em;
+   
   }
 
+  article:last-child {
+    padding-bottom: 1em;
+  }
+  
   main {
     background-color: $main-bg-colour; //#333745;
     /* Natural flow and rhythm in articles by default */
@@ -54,6 +59,7 @@ body {
     }
 
   }
+
   :focus {
     outline: 2px dotted;
     // outline-offset: 0.25rem;
@@ -79,3 +85,4 @@ body {
   }
   
 }
+  
