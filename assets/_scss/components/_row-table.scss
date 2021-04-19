@@ -50,16 +50,12 @@ $row-BgColor6: black !default;
         color: $row-BgColor1;
     }
     
-    &--Ic2, &--Ic6, &--Ic8 {
+    &--Ic2, &--Ic4, &--Ic6, &--Ic8 {
         color: $row-BgColor2;
     }
     
     &--Ic3 {
         color: $row-BgColor3;
-    }
-
-    &--Ic4 {
-        color: $row-BgColor4;
     }
 
     &--Ic5, &--Ic7 {
