@@ -1,3 +1,9 @@
+$row-BgColor1: lightblue !default;
+$row-BgColor2: white !default;
+$row-BgColor3: palegoldenrod !default;
+$row-BgColor4: lightgray !default;
+$row-BgColor5: lightyellow !default;
+$row-BgColor6: black !default;
 .Rtable-row {
     display: flex;
     flex-wrap: wrap;
@@ -14,6 +20,22 @@
         border-bottom: .05em solid $gray-600;
         background-color: $gray-200;
     }
+
+    &--MG1 {
+        background-color: $row-BgColor1 !important;
+    }
+
+    &--MG2, &--MG6 {
+        background-color: $row-BgColor2 !important;
+    }
+
+    &--MG3 {
+        background-color: $row-BgColor3 !important;
+    }
+
+    &--MG5, &--MG7 {
+        background-color: $row-BgColor5 !important;
+    }
     // & > .Rtable-cell:not(:nth-child(6n+4)):not(:nth-child(6n+5)):not(:nth-child(6n+6))  {
     //     background-color: $gray-200;
     // }
@@ -24,7 +46,14 @@
     overflow: hidden; // Or flex might break
     // border: solid 0.01em black;
 
-    &:first-child {
+    &--Ic1 {
+        color: $row-BgColor1;
+    }
+    
+    &--Ic2 {
+        color: $row-BgColor2;
+    }
+&:first-child {
         flex: 1;
     }
 

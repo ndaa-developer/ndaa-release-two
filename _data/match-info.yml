@@ -8,8 +8,13 @@ alert-messages:
     alert-msg: Only Season Membership Cards will be available for 2021-22.
   - alert-type: info
     alert-msg: Season Membership Cards will be in shops mid-May.
-options-ind: false
+options-ind: true
 options:
-  - option-desc: Season Membership, 16th June to 14th March, £30
-  - option-desc: ~~5 Day Membership, Mon-Fri, £15~~
-  - option-desc: ~~Day Membership, £5~~
+  - option-grp: 1
+    option-grp-icon: fa-square
+    option-name: Pairs Series
+    option-desc: <strong>Pairs Series</strong> - Result on total weight (drop your lowest weight).
+  - option-grp: 2
+    option-grp-icon: fa-square
+    option-name: Pairs Festival
+    option-desc: <strong>Pairs Festival</strong> - Result on section points.

@@ -16,12 +16,19 @@
             {% endfor %}
         </div>
         {% endif %}
+    </section>
+    <section class="table-key">
+        <h5>Table Notes</h5>
 
         <div class="md-insert">
             {% if site.data.match-info.options-ind == true %}
+            <div class="alert--flex">
                 {% for opt in site.data.match-info.options %}
-                {{ opt.option-desc | markdownify }}
+                <div>
+                    <span><i class="indicator fas {{ opt.option-grp-icon }} Rtable-cell--Ic{{ opt.option-grp }}"></i>{{ opt.option-desc | markdownify }}</span>
+                </div>
                 {% endfor %}
+            </div>
             {% endif %}
         </div>
 
@@ -40,7 +47,7 @@
                 </div>
             </div>
             {% for row in site.data.matches %}
-            <div class="Rtable-row">
+            <div class="Rtable-row Rtable-row--MG{{ row.Match-Grp }}">
                 <div class="Rtable-cell">
                     {{ row.Date }}
                 </div>

@@ -14,6 +14,7 @@ h1,
 h2,
 h3,
 h4,
+h5,
 p,
 figure,
 blockquote,
@@ -299,6 +300,9 @@ select {
 
 .fa-phone-alt:before {
   content: "\f879"; }
+
+.fa-square:before {
+  content: "\f0c8"; }
 
 .fa-youtube-square:before {
   content: "\f431"; }
@@ -615,6 +619,14 @@ button[disabled] {
     border-top: 0.05em solid #6c757d;
     border-bottom: 0.05em solid #6c757d;
     background-color: #e9ecef; }
+  .Rtable-row--MG1 {
+    background-color: lightblue !important; }
+  .Rtable-row--MG2, .Rtable-row--MG6 {
+    background-color: white !important; }
+  .Rtable-row--MG3 {
+    background-color: palegoldenrod !important; }
+  .Rtable-row--MG5, .Rtable-row--MG7 {
+    background-color: lightyellow !important; }
 
 .Rtable-cell {
   -webkit-box-flex: 1;
@@ -623,6 +635,10 @@ button[disabled] {
           flex: 1;
   padding: 0.3em 0.7em;
   overflow: hidden; }
+  .Rtable-cell--Ic1 {
+    color: lightblue; }
+  .Rtable-cell--Ic2 {
+    color: white; }
   .Rtable-cell:first-child {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
@@ -681,6 +697,11 @@ body {
     /* Natural flow and rhythm in articles by default */ }
     body main > * {
       padding-top: 1em; }
+  body .table-key {
+    background-color: #e9ecef; }
+    body .table-key h5 {
+      font-weight: 400;
+      text-decoration: underline; }
   body :focus {
     outline: 2px dotted; }
   body .span-center {

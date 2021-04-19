@@ -1,21 +1,21 @@
-Date,Match,Venue
-Thu 24th Jun,Pairs Round 1,T.B.A
-Tue 29th Jun,Pairs Festival Day 1,Rivers Bure & Thurne
-Wed 30th Jun,Pairs Festival Day 2,Rivers Bure & Thurne
-Thu 8th Jul,Pairs Round 2,T.B.A
-Sun 11th Jul,Teams of Four Round 1,T.B.A
-Sun 18th Jul,Pete Swan Memorial,River Thurne
-Tue 20th Jul,Three Rivers Festival Day 1,Rivers Bure & Thurne
-Wed 21st Jul,Three Rivers Festival Day 2,Rivers Bure & Thurne
-Thu 22nd Jul,Three Rivers Festival Day 3,River Yare
-Sun 25th Jul,Teams of Four Round 2,T.B.A
-Thu 29th Jul,Pairs Round 3,T.B.A
-Thu 12th Aug,Pairs Round 4,T.B.A
-Sun 22nd Aug,Teams of Four Round 3,T.B.A
-Sun 29th Aug,Teams of Four Round 4,T.B.A
-Thu 2nd Sep,Pairs Round 5,T.B.A
-Sat 11th Sep,King of the Broads Day 1,River Thurne
-Sun 12th Sep,King of the Broads Day 2,River Yare
-Tue 28th Sep,Broads Festival Day 1,Rivers Bure & Thurne
-Wed 29th Sep,Broads Festival Day 2,Rivers Bure & Thurne
-Sat 2nd Oct,Cyril Wigg Memorial Broads Open,Rivers Bure & Thurne
+Date,Match,Match-Grp,Venue
+Thu 24th Jun,Pairs Round 1,1,T.B.A
+Tue 29th Jun,Pairs Festival Day 1,2,Rivers Bure & Thurne
+Wed 30th Jun,Pairs Festival Day 2,2,Rivers Bure & Thurne
+Thu 8th Jul,Pairs Round 2,1,T.B.A
+Sun 11th Jul,Teams of Four Round 1,3,T.B.A
+Sun 18th Jul,Pete Swan Memorial,4,River Thurne
+Tue 20th Jul,Three Rivers Festival Day 1,5,Rivers Bure & Thurne
+Wed 21st Jul,Three Rivers Festival Day 2,5,Rivers Bure & Thurne
+Thu 22nd Jul,Three Rivers Festival Day 3,5,River Yare
+Sun 25th Jul,Teams of Four Round 2,3,T.B.A
+Thu 29th Jul,Pairs Round 3,1,T.B.A
+Thu 12th Aug,Pairs Round 4,1,T.B.A
+Sun 22nd Aug,Teams of Four Round 3,3,T.B.A
+Sun 29th Aug,Teams of Four Round 4,3,T.B.A
+Thu 2nd Sep,Pairs Round 5,1,T.B.A
+Sat 11th Sep,King of the Broads Day 1,6,River Thurne
+Sun 12th Sep,King of the Broads Day 2,6,River Yare
+Tue 28th Sep,Broads Festival Day 1,7,Rivers Bure & Thurne
+Wed 29th Sep,Broads Festival Day 2,7,Rivers Bure & Thurne
+Sat 2nd Oct,Cyril Wigg Memorial Broads Open,8,Rivers Bure & Thurne

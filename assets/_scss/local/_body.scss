@@ -59,7 +59,14 @@ body {
     }
 
   }
+  .table-key{
+    background-color: $gray-200;
 
+    & h5 {
+      font-weight: $weight-regular;
+      text-decoration: underline;
+    }
+  }
   :focus {
     outline: 2px dotted;
     // outline-offset: 0.25rem;
