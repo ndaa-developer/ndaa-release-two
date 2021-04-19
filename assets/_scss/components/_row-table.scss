@@ -50,10 +50,23 @@ $row-BgColor6: black !default;
         color: $row-BgColor1;
     }
     
-    &--Ic2 {
+    &--Ic2, &--Ic6, &--Ic8 {
         color: $row-BgColor2;
     }
-&:first-child {
+    
+    &--Ic3 {
+        color: $row-BgColor3;
+    }
+
+    &--Ic4 {
+        color: $row-BgColor4;
+    }
+
+    &--Ic5, &--Ic7 {
+        color: $row-BgColor5;
+    }
+    
+    &:first-child {
         flex: 1;
     }
 

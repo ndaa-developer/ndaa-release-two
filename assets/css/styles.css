@@ -637,8 +637,14 @@ button[disabled] {
   overflow: hidden; }
   .Rtable-cell--Ic1 {
     color: lightblue; }
-  .Rtable-cell--Ic2 {
+  .Rtable-cell--Ic2, .Rtable-cell--Ic6, .Rtable-cell--Ic8 {
     color: white; }
+  .Rtable-cell--Ic3 {
+    color: palegoldenrod; }
+  .Rtable-cell--Ic4 {
+    color: lightgray; }
+  .Rtable-cell--Ic5, .Rtable-cell--Ic7 {
+    color: lightyellow; }
   .Rtable-cell:first-child {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
