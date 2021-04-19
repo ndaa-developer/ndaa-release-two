@@ -1,22 +1,27 @@
 venues:
   - title: River Thurne
     sub-title: Cold Harbour
-    gmap-id: 1N04pqmdipNHhXajfvfAdy_cm8CpH14ZE
-    desc: Three sections with 7, 8 & 12 pegs respectively.
+    img: ch-1.jpg
+    gmap-id: 1GgV06peITJuEaUZtTxMEgQBJziWFjPPr
+    desc: Two sections on hard bank with 7 & 8 pegs respectively. Another 12 pegs available in the ronds, boots & platform required.
   - title: River Bure
     sub-title: St. Benets
-    gmap-id: 1N04pqmdipNHhXajfvfAdy_cm8CpH14ZE
-    desc: Three sections, each offering 12 pegs, on this prolific tidal river.
+    img: sb-3.jpg
+    gmap-id: 1yAFRP862UbEjyeu58j2USIJXqzbIJ8_Q
+    desc: Two sections, each offering 12 pegs, from Abbey downstream. Boat moorings above the Abbey available from 1st Oct.
   - title: River Bure
     sub-title: Woodbastwick Staithe
-    gmap-id: 1N04pqmdipNHhXajfvfAdy_cm8CpH14ZE
+    img: bw-2.jpg
+    gmap-id: 14cJGBDUOolpdc2K1_VQcE2Yendh2QUIo
     desc: Fishing available from moorings opposite Horning Ferry and downstream on dedicated fishing platforms.
   - title: River Bure
-    sub-title: Decoy Broad
-    gmap-id: 1N04pqmdipNHhXajfvfAdy_cm8CpH14ZE
-    desc: 10 pegs available.
+    sub-title: Decoy Reach
+    img: bd-1.jpg
+    gmap-id: 1umOfrptZkiFG1p7Mbw0zynUREA9UoUvP
+    desc: Pegs downstream of slipway on river bank to west of Decoy Broad.
   - title: Decoy Broad
     sub-title: Woodbastwick
-    gmap-id: 1N04pqmdipNHhXajfvfAdy_cm8CpH14ZE
+    img: db-1.jpg
+    gmap-id: 1umOfrptZkiFG1p7Mbw0zynUREA9UoUvP
     desc: <strong>Boat fishing ONLY</strong> - Boats must be booked beforehand from stockists listed below (£6 per day).
 

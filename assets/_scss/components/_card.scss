@@ -1,7 +1,7 @@
 .card {
-  // background-size: cover !important;
-  background-position: center;
-  background-color: $white;
+  // background: no-repeat center center;
+  background-size: cover;
+  background-position: top;
   padding: 1em;
   border: 1px solid $gray-700;
   display: flex;
@@ -18,9 +18,12 @@
     margin-top: .5em;
   }
 
-  & section {
+  &__desc {
     width: 100%;
-    padding-top: .5em;
+    padding: .5em;
+    margin-top: .5em;
+    background-color: $gray-100;
+    opacity: .75;
   }
 
 }

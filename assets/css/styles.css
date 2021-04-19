@@ -387,8 +387,8 @@ select {
   float: right !important; }
 
 .card {
-  background-position: center;
-  background-color: #fff;
+  background-size: cover;
+  background-position: top;
   padding: 1em;
   border: 1px solid #495057;
   display: -webkit-box;
@@ -405,9 +405,12 @@ select {
     text-align: right;
     line-height: inherit;
     margin-top: .5em; }
-  .card section {
+  .card__desc {
     width: 100%;
-    padding-top: .5em; }
+    padding: .5em;
+    margin-top: .5em;
+    background-color: #f8f9fa;
+    opacity: .75; }
 
 .card-user {
   position: absolute;

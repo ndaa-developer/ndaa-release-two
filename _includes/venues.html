@@ -5,7 +5,7 @@
         <div class="col-layout">
             {% for venue in site.data.venues.venues %}
 
-            <div class="card">
+            <div class="card" style="background-image: linear-gradient(to right, rgb(200, 200, 200, .8), 55%, rgb(200, 200, 200, .2)), url('assets/images/{{ venue.img }}')">
                 <div class="card__title">
                     <h2>{{ venue.title }}</h2>
                     <h3>{{ venue.sub-title }}</h3>  
@@ -13,9 +13,9 @@
                 <div class="card__map">
                     <a class="btn btn--info" href="{{ site.data.site.gmap-url }}{{ venue.gmap-id }}" role="button">Map</a>
                 </div>
-                <section>
+                <div class="card__desc">
                     {{ venue.desc | markdownify }}
-                </section>
+                </div>
             </div>
             {% endfor %}
         </div>
