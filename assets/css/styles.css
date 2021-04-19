@@ -706,6 +706,7 @@ body {
   body .table-key {
     background-color: #e9ecef; }
     body .table-key h5 {
+      margin: 0 .5em;
       font-weight: 400;
       text-decoration: underline; }
   body :focus {

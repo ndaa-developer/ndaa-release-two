@@ -63,6 +63,7 @@ body {
     background-color: $gray-200;
 
     & h5 {
+      margin: 0 .5em;
       font-weight: $weight-regular;
       text-decoration: underline;
     }
