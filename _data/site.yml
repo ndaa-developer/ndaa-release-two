@@ -1,3 +1,4 @@
 analytics-id: UA-167857042-1
 stylesheet: /assets/css/styles.min.css
 jsfile: /assets/js/main.min.js
+gmap-url: https://www.google.com/maps/d/viewer?mid=

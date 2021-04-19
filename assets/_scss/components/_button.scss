@@ -74,8 +74,8 @@ button:hover,
 
 .btn--info:focus,
 .btn--info:hover {
-  background-color: darken($btn-info-bg-colour, 5%);
-  border-color: darken($btn-info-border-colour, 5%);
+  background-color: darken($btn-info-bg-colour, 12%);
+  border-color: darken($btn-info-border-colour, 12%);
 }
 
 .btn--warning:focus,

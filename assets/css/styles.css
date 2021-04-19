@@ -386,6 +386,69 @@ select {
 .pull-right {
   float: right !important; }
 
+.card {
+  background-position: center;
+  background-color: #fff;
+  padding: 1em;
+  border: 1px solid #495057;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+  .card__title {
+    width: 70%; }
+  .card__map {
+    width: 30%;
+    text-align: right;
+    line-height: inherit;
+    margin-top: .5em; }
+  .card section {
+    width: 100%;
+    padding-top: .5em; }
+
+.card-user {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 40px;
+  border-radius: 50%; }
+
+.card-category {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 15px;
+  text-transform: uppercase; }
+
+.card-description {
+  position: absolute;
+  bottom: 10px;
+  left: 10px; }
+
+.card-description h2 {
+  font-size: 24px; }
+
+.card-description p {
+  font-size: 14px;
+  opacity: 0.7;
+  font-weight: lighter; }
+
+.card-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2;
+  background: black;
+  opacity: 0; }
+
+.card-link:hover {
+  opacity: 0.1; }
+
 button,
 .btn {
   cursor: pointer;
@@ -444,8 +507,8 @@ button:hover,
 
 .btn--info:focus,
 .btn--info:hover {
-  background-color: #2d5890;
-  border-color: #2d5890; }
+  background-color: #244774;
+  border-color: #244774; }
 
 .btn--warning:focus,
 .btn--warning:hover {
@@ -564,15 +627,24 @@ button[disabled] {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  /* 2 */
-  padding-bottom: 1em;
-  /* 5 (edit me!) */ }
+  /* 2 */ }
 
 .col-layout > div {
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 14em;
       -ms-flex: 1 1 14em;
           flex: 1 1 14em;
+  /* 3 (edit me!) */
+  margin-right: 1em;
+  /* 5 (edit me!) */
+  margin-bottom: 1em;
+  /* 5 (edit me!) */ }
+
+.col-layout > .card {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 20em;
+      -ms-flex: 1 1 20em;
+          flex: 1 1 20em;
   /* 3 (edit me!) */
   margin-right: 1em;
   /* 5 (edit me!) */
@@ -601,9 +673,10 @@ body {
   /* Natural flow and rhythm in articles by default */ }
   body h1 {
     font-size: 2rem; }
-  body h2,
-  body h3 {
+  body h2 {
     font-size: 1.25rem; }
+  body h3 {
+    font-size: 1rem; }
   body .google-map {
     position: relative;
     padding-bottom: 75%;
@@ -672,18 +745,20 @@ body {
     font-size: 0.9rem; }
     body h1 {
       font-size: 2.2rem; }
-    body h2,
+    body h2 {
+      font-size: 1.4rem; }
     body h3 {
-      font-size: 1.4rem; } }
+      font-size: 1.15rem; } }
 
 @media (min-width: 576px) {
   body {
     font-size: 1rem; }
     body h1 {
       font-size: 2.5rem; }
-    body h2,
-    body h3 {
+    body h2 {
       font-size: 1.6rem; }
+    body h3 {
+      font-size: 1.25rem; }
   .wrapper {
     max-width: 540px; } }
 
