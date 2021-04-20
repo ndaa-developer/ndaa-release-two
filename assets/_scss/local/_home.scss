@@ -1,5 +1,18 @@
+@media (max-width: $breakpoint-sm) and (max-height: $breakpoint-xs) {
+
+  .cover {
+    font-size: $size-300;
+
+    h1 {
+      font-size: $size-550;
+
+    }
+  }
+  
+}
 
 @media (min-width: $breakpoint-xs) {
+
   body {
     font-size: $size-350;
 
@@ -16,6 +29,7 @@
 }
 
 @media (min-width: $breakpoint-sm) {
+
   body {
     font-size: $size-400;
 

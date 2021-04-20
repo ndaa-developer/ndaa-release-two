@@ -1,5 +1,5 @@
 .cover {
-  background-position: top;
+  background-position: center;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -10,25 +10,28 @@
   text-align: center;
   color: $NDAA-black;
 
-  // & > * {
-  //   margin-top: 1em;
-  //   margin-bottom: 1em;
-  // }
+  & > * {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
   // & > div:first-child {
   //   margin-top: 0;
   // }
-  // & > div:last-child {
-  //   margin-bottom: 0;
-  // }
 
-  & > div {
+  & > div:last-child {
     margin-top: auto;
-    margin-bottom: auto;
-  }
+    margin-bottom: 1em;
+}
+
+  // & > div {
+  //   margin-top: auto;
+  //   margin-bottom: auto;
+  // }
 
   &--home {
     // color:    $brand-secondary;
-    background-image: linear-gradient(to bottom, rgba(200, 200, 200, 0.7), rgba(200, 200, 200, 0.3)), url(../images/home-bg.jpg);
+    background-image: linear-gradient(to top, rgba(200, 200, 200, 0.4), 85%, transparent), url(../images/cover-1.jpg);
 
   }
 
