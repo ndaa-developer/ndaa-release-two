@@ -8,7 +8,7 @@ $row-BgColor6: black !default;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    background-color: $white;
+    background-color: $black;
 
     &:first-child {
         background-color: $gray-400;
@@ -18,23 +18,22 @@ $row-BgColor6: black !default;
     &:nth-child(2n)  {
         border-top: .05em solid $gray-600;
         border-bottom: .05em solid $gray-600;
-        background-color: $gray-200;
     }
 
     &--MG1 {
-        background-color: $row-BgColor1 !important;
+        background-color: $row-BgColor1;
     }
 
-    &--MG2, &--MG6 {
-        background-color: $row-BgColor2 !important;
+    &--MG2, &--MG4, &--MG6, &--MG8 {
+        background-color: $row-BgColor2;
     }
 
     &--MG3 {
-        background-color: $row-BgColor3 !important;
+        background-color: $row-BgColor3;
     }
 
     &--MG5, &--MG7 {
-        background-color: $row-BgColor5 !important;
+        background-color: $row-BgColor5;
     }
     // & > .Rtable-cell:not(:nth-child(6n+4)):not(:nth-child(6n+5)):not(:nth-child(6n+6))  {
     //     background-color: $gray-200;
