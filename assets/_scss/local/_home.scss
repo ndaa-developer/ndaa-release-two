@@ -39,6 +39,11 @@
   .wrapper {
     max-width: $container-width-sm;
   }
+
+  .card__desc {
+    margin-top: 7em;
+  }
+
 }
 
 @media (min-width: $breakpoint-md) {

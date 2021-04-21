@@ -630,29 +630,27 @@ button[disabled] {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  /* 2 */ }
-
-.col-layout > div {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 14em;
-      -ms-flex: 1 1 14em;
-          flex: 1 1 14em;
-  /* 3 (edit me!) */
-  margin-right: 1em;
-  /* 5 (edit me!) */
-  margin-bottom: 1em;
+  /* 2 */
+  margin: -0.5em;
   /* 5 (edit me!) */ }
+
+.col-layout > .stockist {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 14em;
+      -ms-flex: 1 0 14em;
+          flex: 1 0 14em;
+  /* 3 (edit me!) */
+  margin: 0.5em;
+  /* 4 (edit me!) */ }
 
 .col-layout > .card {
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1 20em;
-      -ms-flex: 1 1 20em;
-          flex: 1 1 20em;
+  -webkit-flex: 1 0 20em;
+      -ms-flex: 1 0 20em;
+          flex: 1 0 20em;
   /* 3 (edit me!) */
-  margin-right: 1em;
-  /* 5 (edit me!) */
-  margin-bottom: 1em;
-  /* 5 (edit me!) */ }
+  margin: 0.5em;
+  /* 4 (edit me!) */ }
 
 .wrapper {
   width: 100%;
@@ -763,7 +761,9 @@ body {
     body h3 {
       font-size: 1.25rem; }
   .wrapper {
-    max-width: 540px; } }
+    max-width: 540px; }
+  .card__desc {
+    margin-top: 7em; } }
 
 @media (min-width: 768px) {
   .wrapper {
