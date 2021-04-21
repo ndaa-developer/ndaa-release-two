@@ -1,0 +1,64 @@
+<article id="Matches">
+    <section>
+        <h2>Match Calendar</h2>
+        {% if site.data.match-info.intro-desc-ind == true %}
+            {{ site.data.match-info.intro-desc | markdownify }}
+        {% endif %}
+        {% if site.data.match-info.alert-msg-ind == true %}
+        <div class="alert alert--flex alert--{{ site.data.match-info.alert-msg-type }}">
+            {% for msg in site.data.match-info.alert-messages %}
+            {% case msg.alert-type %}
+            {% when "warning" %}
+            <div><span><i class="indicator fas fa-exclamation-circle"></i>{{ msg.alert-msg | markdownify }}</span></div>
+            {% when "info" %}
+            <div><span><i class="indicator fas fa-info-circle"></i>{{ msg.alert-msg | markdownify }}</span></div>
+            {% endcase %}
+            {% endfor %}
+        </div>
+        {% endif %}
+    </section>
+    <section class="table-key">
+        <h5>Calendar Notes</h5>
+
+        <div class="md-insert">
+            {% if site.data.match-info.options-ind == true %}
+            <div class="alert--flex">
+                {% for opt in site.data.match-info.options %}
+                <div>
+                    <span><i class="indicator fas {{ opt.option-grp-icon }} Rtable-cell--Ic{{ opt.option-grp }}"></i>{{ opt.option-desc | markdownify }}</span>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+
+    </section>
+    <section>
+        <div class="Rtable">
+            <div class="Rtable-row">
+                <div class="Rtable-cell">
+                    Date
+                </div>
+                <div class="Rtable-cell">
+                    Match
+                </div>
+                <div class="Rtable-cell">
+                    Venue
+                </div>
+            </div>
+            {% for row in site.data.matches %}
+            <div class="Rtable-row Rtable-row--MG{{ row.Match-Grp }}">
+                <div class="Rtable-cell">
+                    {{ row.Date }}
+                </div>
+                <div class="Rtable-cell">
+                    {{ row.Match }}
+                </div>
+                <div class="Rtable-cell">
+                    {{ row.Venue }}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+</article>

@@ -47,8 +47,13 @@ body {
   /* Natural flow and rhythm in articles by default */
   article > * + * {
     margin-top: 1em;
+   
   }
 
+  article:last-child {
+    padding-bottom: 1em;
+  }
+  
   main {
     background-color: $main-bg-colour; //#333745;
     /* Natural flow and rhythm in articles by default */
@@ -56,6 +61,15 @@ body {
       padding-top: 1em;
     }
 
+  }
+  .table-key{
+    background-color: $gray-200;
+
+    & h5 {
+      margin: 0 .5em;
+      font-weight: $weight-regular;
+      text-decoration: underline;
+    }
   }
   :focus {
     outline: 2px dotted;
@@ -82,3 +96,4 @@ body {
   }
   
 }
+  

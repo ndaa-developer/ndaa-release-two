@@ -5,10 +5,10 @@ keywords: norwich, norfolk, fishing club, angling club, coarse fishing, river fi
 ---
 
 {% include venues.html %}
-
-<article id="Membership">
+   
+<article>
     <section>
-        <h2>Membership</h2>
+        <h2 id="Membership">Membership</h2>
         {{ site.data.membership.intro-desc | markdownify }}
     </section>
     <section>
@@ -74,3 +74,5 @@ keywords: norwich, norfolk, fishing club, angling club, coarse fishing, river fi
     </section>
 
 </article>
+
+{% include match-list.html %}

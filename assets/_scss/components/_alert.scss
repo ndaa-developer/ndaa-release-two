@@ -8,6 +8,13 @@ $alert-danger-brdr-color: #ebccd1 !default;
 $alert-success-color: #0f5132 !default;
 $alert-success-bg-color: #d1e7dd !default;
 $alert-success-brdr-color: #badbcc !default;
+$alert-warning-color: #686211 !default;
+$alert-warning-bg-color: #f7e288 !default;
+$alert-warning-brdr-color: #f5c670 !default;
+$alert-info-color: #31708f !default;
+$alert-info-bg-color: #d9edf7 !default;
+$alert-info-brdr-color: #bce8f1 !default;
+
 
 .alert {
   padding-top: $alert-pad-r;
@@ -31,6 +38,17 @@ $alert-success-brdr-color: #badbcc !default;
       border-color: $alert-danger-brdr-color;
   }
 
+  &--warning {
+    color: $alert-warning-color;
+    background-color: $alert-warning-bg-color;
+    border-color: $alert-warning-brdr-color;
+}
+
+&--info {
+  color: $alert-info-color;
+  background-color: $alert-info-bg-color;
+  border-color: $alert-info-brdr-color;
+}
 
   &--flex{
     display: flex;
