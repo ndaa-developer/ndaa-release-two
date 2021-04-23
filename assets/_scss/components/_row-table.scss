@@ -4,20 +4,24 @@ $row-BgColor3: palegoldenrod !default;
 $row-BgColor4: lightgray !default;
 $row-BgColor5: lightyellow !default;
 $row-BgColor6: black !default;
+$row-BgColor1: #add8ff;
+$row-BgColor3: #ffefaa;
+$row-BgColor5: #e4fcee;
 .Rtable-row {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    background-color: $black;
+    background-color: $white;
 
-    &:first-child {
-        background-color: $gray-400;
-        font-weight: 900;
+    &--continue {
+        border-top: .05em solid $gray-600;
     }
 
-    &:nth-child(2n)  {
-        border-top: .05em solid $gray-600;
-        border-bottom: .05em solid $gray-600;
+    &--month {
+        margin-top: 1em;
+        background-color: $gray-400;
+        font-weight: 900;
+        border-bottom: .1em solid $gray-600;
     }
 
     &--MG1 {
@@ -38,7 +42,7 @@ $row-BgColor6: black !default;
     // & > .Rtable-cell:not(:nth-child(6n+4)):not(:nth-child(6n+5)):not(:nth-child(6n+6))  {
     //     background-color: $gray-200;
     // }
-  }
+}
   .Rtable-cell {
     flex: 1;
     padding: 0.3em 0.7em;
@@ -66,12 +70,4 @@ $row-BgColor6: black !default;
     }
 
 
-  }
-  
-  /* Table column sizing
-  ================================== */
-  .Rtable--2cols > .Rtable-cell  { width: 50%; }
-  .Rtable--3cols > .Rtable-cell  { width: 33.33%; }
-  .Rtable--4cols > .Rtable-cell  { width: 25%; }
-  .Rtable--5cols > .Rtable-cell  { width: 20%; }
-  .Rtable--6cols > .Rtable-cell  { width: 16.6%; }
+}
