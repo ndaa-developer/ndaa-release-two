@@ -18,10 +18,11 @@ $row-BgColor5: #e4fcee;
     }
 
     &--month {
-        margin-top: 1em;
         background-color: $gray-400;
+        margin-top: 1em;
+        border-bottom: .1em solid $black;
         font-weight: 900;
-        border-bottom: .1em solid $gray-600;
+        font-size: 1.2rem;
     }
 
     &--MG1 {

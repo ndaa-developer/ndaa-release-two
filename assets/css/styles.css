@@ -689,10 +689,11 @@ button[disabled] {
   .Rtable-row--continue {
     border-top: 0.05em solid #6c757d; }
   .Rtable-row--month {
-    margin-top: 1em;
     background-color: #ced4da;
+    margin-top: 1em;
+    border-bottom: 0.1em solid #000;
     font-weight: 900;
-    border-bottom: 0.1em solid #6c757d; }
+    font-size: 1.2rem; }
   .Rtable-row--MG1 {
     background-color: #add8ff; }
   .Rtable-row--MG2, .Rtable-row--MG4, .Rtable-row--MG6, .Rtable-row--MG8 {
@@ -871,12 +872,20 @@ body {
       -webkit-box-flex: 1;
       -webkit-flex: 1 3em;
           -ms-flex: 1 3em;
-              flex: 1 3em; } }
+              flex: 1 3em; }
+  .card {
+    max-width: 332px; } }
 
 @media (min-width: 992px) {
   .wrapper {
-    max-width: 960px; } }
+    max-width: 960px; }
+  .card {
+    max-width: 452px; } }
 
 @media (min-width: 1200px) {
   .wrapper {
-    max-width: 1140px; } }
+    max-width: 1140px; }
+  .card {
+    max-width: 356px; }
+  .stockist {
+    max-width: 208.8px; } }

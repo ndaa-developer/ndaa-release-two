@@ -88,6 +88,10 @@
     }
   
   }
+  
+  .card {
+    max-width: 332px;
+  }
 
 }
 
@@ -96,11 +100,21 @@
   .wrapper {
     max-width: $container-width-lg;
   }
+  .card {
+    max-width: 452px;
+  }
+
 }
 
 @media (min-width: $breakpoint-xl) {
-  
+
   .wrapper {
     max-width: $container-width-xl;
+  }
+  .card {
+    max-width: 356px;
+  }
+  .stockist {
+    max-width: 208.8px;
   }
 }
