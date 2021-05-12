@@ -68,7 +68,15 @@
     &:first-child {
       flex: 1 4em;
     }
-  
+    
+    &--DayNum {
+      display: block;
+    }
+
+    &--Date {
+      display: none;
+    }
+
   }
 
 
@@ -85,6 +93,14 @@
 
     &:first-child {
       flex: 1 3em;
+    }
+    
+    &--DayNum {
+      display: none;
+    }
+
+    &--Date {
+      display: block;
     }
   
   }

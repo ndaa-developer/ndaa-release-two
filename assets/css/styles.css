@@ -723,6 +723,8 @@ button[disabled] {
     -webkit-flex: 1;
         -ms-flex: 1;
             flex: 1; }
+  .Rtable-cell--DayNum {
+    display: none; }
 
 body {
   background-color: #eeeeee;
@@ -858,7 +860,11 @@ body {
       -webkit-box-flex: 1;
       -webkit-flex: 1 4em;
           -ms-flex: 1 4em;
-              flex: 1 4em; } }
+              flex: 1 4em; }
+    .Rtable-cell--DayNum {
+      display: block; }
+    .Rtable-cell--Date {
+      display: none; } }
 
 @media (min-width: 768px) {
   .wrapper {
@@ -873,6 +879,10 @@ body {
       -webkit-flex: 1 3em;
           -ms-flex: 1 3em;
               flex: 1 3em; }
+    .Rtable-cell--DayNum {
+      display: none; }
+    .Rtable-cell--Date {
+      display: block; }
   .card {
     max-width: 332px; } }
 

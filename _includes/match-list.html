@@ -48,8 +48,11 @@
                 {% else %}
                 <div class="Rtable-row Rtable-row--MG{{ row.Match-Grp }}  Rtable-row--continue">
                     {% endif %}
-                    <div class="Rtable-cell">
+                    <div class="Rtable-cell Rtable-cell--DayNum">
                         {{ row.DayNum }}
+                    </div>
+                    <div class="Rtable-cell Rtable-cell--Date">
+                        {{ row.Date }}
                     </div>
                     <div class="Rtable-cell">
                         {{ row.Match }}
