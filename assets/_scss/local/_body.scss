@@ -9,7 +9,7 @@ body {
   // font-family: Roboto, Helvetica, Arial, sans-serif;
   // font-family: -apple-system, BlinkMacSystemFont, “Segoe UI”, Roboto, Helvetica, Arial, sans-serif;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-  font-size: $size-300;
+  font-size: $size-350;
   font-weight: $weight-regular;
   line-height:$lh-size-400;
   color: #212529;
@@ -62,10 +62,10 @@ body {
     }
 
   }
-  .table-key{
+  .table-key {
     background-color: $gray-200;
 
-    & h5 {
+    & h4 {
       margin: 0 .5em;
       font-weight: $weight-regular;
       text-decoration: underline;

@@ -2,8 +2,12 @@ $stockist-pad-t: 1em !default;
 $stockist-pad-r: 1em !default;
 $stockist-pad-b: 1em !default;
 $stockist-pad-l: 1em !default;
+$stockist-pad-l: 1em !default;
+$stockist-fnt-sz: 1em !default;
+$stockist-name-fnt-sz: 1.2em !default;
 
 .stockist {
+  max-width: 18em;
   padding-top: $stockist-pad-r;
   padding-right: $stockist-pad-r;
   padding-bottom: $stockist-pad-b;
@@ -11,9 +15,10 @@ $stockist-pad-l: 1em !default;
 
   border: 1px solid;
   background-color: $white;
-  font-size: .9em;
+  // font-size: $stockist-fnt-sz;
 
   &__name {
+    font-size: $stockist-name-fnt-sz;
     font-weight: 700;
   }
 

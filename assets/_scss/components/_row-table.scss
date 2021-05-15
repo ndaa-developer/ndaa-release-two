@@ -10,7 +10,6 @@ $row-BgColor5: #e4fcee;
 .Rtable-row {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
     background-color: $white;
 
     &--continue {
@@ -43,9 +42,12 @@ $row-BgColor5: #e4fcee;
     // & > .Rtable-cell:not(:nth-child(6n+4)):not(:nth-child(6n+5)):not(:nth-child(6n+6))  {
     //     background-color: $gray-200;
     // }
+
 }
-  .Rtable-cell {
-    flex: 1;
+
+.Rtable-cell {
+    flex: 0 1 100%;
+    // min-width: 17em;
     padding: 0.3em 0.7em;
     overflow: hidden; // Or flex might break
     // border: solid 0.01em black;
@@ -66,12 +68,25 @@ $row-BgColor5: #e4fcee;
         color: $row-BgColor5;
     }
     
-    &:first-child {
-        flex: 1;
-    }
+    // &:first-child {
+    //     flex: 1;
+    // }
 
     &--DayNum {
         display: none;
+    }
+
+    &--Date {
+        flex: 0 1 100%;
+   
+    }
+
+    &--Match {
+        flex: 0 1 100%; 
+    }
+
+    &--Venue {
+        flex: 0 1 100%;   
     }
 
 }
