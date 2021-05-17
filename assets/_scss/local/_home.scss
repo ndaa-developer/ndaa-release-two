@@ -1,54 +1,34 @@
-@media (max-width: $breakpoint-sm) and (max-height: $breakpoint-xs) {
+// @media (max-width: $breakpoint-sm) and (max-height: $breakpoint-xs) {
 
-  .cover {
-    font-size: $size-300;
-
-    h1 {
-      font-size: $size-550;
-
-    }
-  }
-  
-}
-
-// @media (min-width: $breakpoint-xs) {
-
-//   body {
-//     font-size: $size-350;
+//   .cover {
+//     font-size: $size-300;
 
 //     h1 {
-//       font-size: $size-750;
-//     }
-  
-//     h2 {
 //       font-size: $size-550;
-//     }
 
-//     h3 {
-//       font-size: $size-450;
 //     }
-  
 //   }
+  
 // }
 
 @media (min-width: $breakpoint-sm) {
 
-  body {
-    font-size: $size-400;
+  // body {
+  //   font-size: $size-400;
 
-    h1 {
-      font-size: $size-800;
-    }
+  //   h1 {
+  //     font-size: $size-800;
+  //   }
   
-    h2 {
-      font-size: $size-600;
-    }
+  //   h2 {
+  //     font-size: $size-600;
+  //   }
 
-    h3 {
-      font-size: $size-500;
-    }
+  //   h3 {
+  //     font-size: $size-500;
+  //   }
   
-  }
+  // }
 
   .wrapper {
     max-width: $container-width-sm;
@@ -61,21 +41,21 @@
 
   .Rtable-cell--DayNum {
     display: flex;
-    flex: 0 1 19%; 
+    flex: 0 1 22%; 
 
   }
 
   .Rtable-cell--Match {
-    flex: 0 1 44%; 
+    flex: 0 1 45%; 
   }
 
   .Rtable-cell--Venue {
-    flex: 0 1 37%;   
+    flex: 0 1 33%;   
   }
 
-  .stockist {
-    max-width: 251px;
-  }
+  // .stockist {
+  //   max-width: 251px;
+  // }
 
 }
 
@@ -85,11 +65,11 @@
     max-width: $container-width-md;
   }
   .card {
-    max-width: 332px;
+    max-width: 330px;
   }
-  .stockist {
-    max-width: 215px;
-  }
+  // .stockist {
+  //   max-width: 215px;
+  // }
 
   .Rtable-cell--DayNum {
     display: none;
@@ -98,7 +78,7 @@
 
   .Rtable-cell--Date {
     display: flex;
-    flex: 0 1 19%; 
+    flex: 0 1 22%; 
 
   }
 
@@ -110,7 +90,7 @@
     max-width: $container-width-lg;
   }
   .card {
-    max-width: 452px;
+    max-width: 449.7px;
   }
 
 }
@@ -121,6 +101,6 @@
       max-width: $container-width-xl;
     }
     .card {
-      max-width: 338px;
+      max-width: 353px;
     }
 }
