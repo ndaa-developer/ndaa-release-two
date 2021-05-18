@@ -7,12 +7,12 @@ keywords: norwich, norfolk, fishing club, angling club, coarse fishing, river fi
 {% include venues.html %}
    
 <article>
-    <section>
-        <h2 id="Membership">Membership</h2>
-        {{ site.data.membership.intro-desc | markdownify }}
-    </section>
-    <section>
-        <h2>Fee</h2>
+    <section id="Membership">
+        <h2>Membership</h2>
+        <div class="md-insert">
+            {{ site.data.membership.intro-desc | markdownify }}
+        </div>
+
         {% if site.data.membership.alert-msg-ind == true %}
         <div class="alert alert--flex alert--danger">
             {% for msg in site.data.membership.alert-messages %}

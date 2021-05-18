@@ -800,6 +800,9 @@ body {
     /* Natural flow and rhythm in articles by default */ }
     body main > * {
       padding-top: 1em; }
+  body #Membership > .alert {
+    margin-top: .5em;
+    margin-bottom: .5em; }
   body .table-key {
     background-color: #e9ecef; }
     body .table-key h4 {
