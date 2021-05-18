@@ -2,13 +2,12 @@ $stockist-pad-t: 1em !default;
 $stockist-pad-r: 1em !default;
 $stockist-pad-b: 1em !default;
 $stockist-pad-l: 1em !default;
-$stockist-pad-l: 1em !default;
 $stockist-fnt-sz: 1em !default;
 $stockist-name-fnt-sz: 1em !default;
 
 .stockist {
   max-width: 18em;
-  padding-top: $stockist-pad-r;
+  padding-top: $stockist-pad-t;
   padding-right: $stockist-pad-r;
   padding-bottom: $stockist-pad-b;
   padding-left: $stockist-pad-l;
