@@ -571,7 +571,6 @@ button[disabled] {
           transform: scale(0.95); }
 
 .stockist {
-  max-width: 18em;
   padding-top: 1em;
   padding-right: 1em;
   padding-bottom: 1em;
@@ -644,7 +643,7 @@ button[disabled] {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   /* 2 */
-  margin: -0.5em;
+  margin: calc(-1 * 0.5em);
   /* 5 (edit me!) */ }
 
 .col-layout > .stockist {
@@ -799,7 +798,11 @@ body {
     background-color: #ffffed;
     /* Natural flow and rhythm in articles by default */ }
     body main > * {
-      padding-top: 1em; }
+      padding-top: 1.5em; }
+  body .section-hdr {
+    margin-bottom: 1rem; }
+    body .section-hdr--col-gap-fix {
+      margin-bottom: calc(1rem + 0.5em); }
   body #Membership > .alert {
     margin-top: .5em;
     margin-bottom: .5em; }

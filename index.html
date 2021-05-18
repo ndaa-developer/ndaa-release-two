@@ -8,7 +8,9 @@ keywords: norwich, norfolk, fishing club, angling club, coarse fishing, river fi
    
 <article>
     <section id="Membership">
-        <h2>Membership</h2>
+        <div class="section-hdr">
+            <h2>Membership</h2>
+        </div>
         <div class="md-insert">
             {{ site.data.membership.intro-desc | markdownify }}
         </div>
@@ -34,7 +36,9 @@ keywords: norwich, norfolk, fishing club, angling club, coarse fishing, river fi
 
     </section>
     <section>
-        <h2>Stockists</h2>
+        <div class="section-hdr section-hdr--col-gap-fix">
+            <h2>Stockists</h2>
+        </div>
         <div class="col-layout">
             {% for stockist in site.data.stockists.stockists %}
             <div class="stockist">

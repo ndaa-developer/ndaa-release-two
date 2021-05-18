@@ -1,20 +1,23 @@
+$col-layout-gap-c: .5em !default;
+$col-layout-gap-p: calc(-1 * #{$col-layout-gap-c}) !default;
+
 .col-layout {
   overflow: hidden;
   display: flex; /* 1 */
   flex-wrap: wrap; /* 2 */
-  margin: -0.5em; /* 5 (edit me!) */
+  margin: $col-layout-gap-p; /* 5 (edit me!) */
 
 }
 
 .col-layout > .stockist {
   flex: 1 0 14em;   /* 3 (edit me!) */
-  margin: 0.5em; /* 4 (edit me!) */
+  margin: $col-layout-gap-c; /* 4 (edit me!) */
 
 }
 
 
 .col-layout > .card {
   flex: 1 0 20em;   /* 3 (edit me!) */
-  margin: 0.5em; /* 4 (edit me!) */
+  margin: $col-layout-gap-c; /* 4 (edit me!) */
 
 }

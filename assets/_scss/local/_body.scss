@@ -63,11 +63,17 @@ body {
     background-color: $main-bg-colour; //#333745;
     /* Natural flow and rhythm in articles by default */
     & > * {
-      padding-top: 1em;
+      padding-top: 1.5em;
     }
 
   }
+  .section-hdr {
+    margin-bottom: $size-400;
 
+    &--col-gap-fix {
+      margin-bottom: calc(#{$size-400} + #{$col-layout-gap-c});
+    }
+  }
   #Membership > .alert {
     margin-top: .5em;
     margin-bottom: .5em;
