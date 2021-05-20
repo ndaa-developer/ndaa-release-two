@@ -797,15 +797,15 @@ body {
   body main {
     background-color: #ffffed;
     /* Natural flow and rhythm in articles by default */ }
-    body main > * {
+    body main > * + * {
       padding-top: 3em; }
   body .section-hdr {
     margin-bottom: 1em; }
     body .section-hdr--col-gap-fix {
       margin-bottom: calc(1em + 0.5em); }
   body #Membership > .alert {
-    margin-top: .5em;
-    margin-bottom: .5em; }
+    margin-top: 1em;
+    margin-bottom: 1em; }
   body .table-key {
     background-color: #e9ecef; }
     body .table-key h4 {
