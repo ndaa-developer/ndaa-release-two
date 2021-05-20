@@ -24,7 +24,7 @@ body {
 
   h1 {  
     font-size: $mod_1*$mod_1*$mod_1*$mod_1 *1rem; 
-    @include fluid-type($min_width, $max_width, $mod_1*$mod_1*$mod_1 *$min_font, $mod_2*$mod_2*$mod_2 *$min_font);
+    @include fluid-type($min_width, $max_width, $mod_1*$mod_1*$mod_1*$mod_1 *$min_font, $mod_2*$mod_2*$mod_2*$mod_2 *$min_font);
   }
   h2 {  
     font-size: $mod_1*$mod_1*$mod_1 *1rem; 
@@ -51,7 +51,7 @@ body {
   
   /* Natural flow and rhythm in articles by default */
   article > * + * {
-    margin-top: 1em;
+    margin-top: 2em;
    
   }
 
@@ -63,15 +63,15 @@ body {
     background-color: $main-bg-colour; //#333745;
     /* Natural flow and rhythm in articles by default */
     & > * {
-      padding-top: 1.5em;
+      padding-top: 3em;
     }
 
   }
   .section-hdr {
-    margin-bottom: $size-400;
+    margin-bottom: $v-size-400;
 
     &--col-gap-fix {
-      margin-bottom: calc(#{$size-400} + #{$col-layout-gap-c});
+      margin-bottom: calc(#{$v-size-400} + #{$col-layout-gap-c});
     }
   }
   #Membership > .alert {

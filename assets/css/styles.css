@@ -753,13 +753,13 @@ body {
   body h1 {
     font-size: 2.0736rem; }
     body h1 {
-      font-size: 24.192px; }
+      font-size: 29.0304px; }
       @media screen and (min-width: 320px) {
         body h1 {
-          font-size: calc(24.192px + 6.566 * ((100vw - 320px) / 1480)); } }
+          font-size: calc(29.0304px + 10.955 * ((100vw - 320px) / 1480)); } }
       @media screen and (min-width: 1800px) {
         body h1 {
-          font-size: 30.758px; } }
+          font-size: 39.9854px; } }
   body h2 {
     font-size: 1.728rem; }
     body h2 {
@@ -791,18 +791,18 @@ body {
       width: 100%;
       height: 100%; }
   body article > * + * {
-    margin-top: 1em; }
+    margin-top: 2em; }
   body article:last-child {
     padding-bottom: 1em; }
   body main {
     background-color: #ffffed;
     /* Natural flow and rhythm in articles by default */ }
     body main > * {
-      padding-top: 1.5em; }
+      padding-top: 3em; }
   body .section-hdr {
-    margin-bottom: 1rem; }
+    margin-bottom: 1em; }
     body .section-hdr--col-gap-fix {
-      margin-bottom: calc(1rem + 0.5em); }
+      margin-bottom: calc(1em + 0.5em); }
   body #Membership > .alert {
     margin-top: .5em;
     margin-bottom: .5em; }
