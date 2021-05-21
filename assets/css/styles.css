@@ -874,6 +874,8 @@ body {
   .wrapper {
     max-width: 540px; }
   .btn--bak2top {
+    font-size: 1.1rem;
+    border-radius: .25rem;
     background-color: #fff;
     border: 1px solid #000;
     color: #000; }
