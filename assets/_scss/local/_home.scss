@@ -13,25 +13,21 @@
 
 @media (min-width: $breakpoint-sm) {
 
-  // body {
-  //   font-size: $size-400;
-
-  //   h1 {
-  //     font-size: $size-800;
-  //   }
-  
-  //   h2 {
-  //     font-size: $size-600;
-  //   }
-
-  //   h3 {
-  //     font-size: $size-500;
-  //   }
-  
-  // }
-
   .wrapper {
     max-width: $container-width-sm;
+  }
+
+  .btn--bak2top {
+    background-color: $white;
+    border: 1px solid $black;
+    color: $black;
+  }
+  
+  .btn--bak2top:focus,
+  .btn--bak2top:hover {
+    background-color: darken($white, 5%);
+    border: 1px solid $black;
+    color: $black;
   }
 
   .Rtable-cell--Date {
@@ -53,10 +49,6 @@
     flex: 0 1 33%;   
   }
 
-  // .stockist {
-  //   max-width: 251px;
-  // }
-
 }
 
 @media (min-width: $breakpoint-md) {
@@ -64,12 +56,10 @@
   .wrapper {
     max-width: $container-width-md;
   }
+
   .card {
     max-width: 330px;
   }
-  // .stockist {
-  //   max-width: 215px;
-  // }
 
   .Rtable-cell--DayNum {
     display: none;

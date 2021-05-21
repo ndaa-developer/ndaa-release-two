@@ -486,6 +486,11 @@ button,
     background-color: #ffc107;
     border: 1px solid #ffc107;
     color: #fff; }
+  button--bak2top,
+  .btn--bak2top {
+    background-color: #000;
+    border: 1px solid #000;
+    color: #fff; }
   button--sm,
   .btn--sm {
     padding: .3em 0.75em;
@@ -521,6 +526,11 @@ button:hover,
 .btn--warning:hover {
   background-color: #edb100;
   border-color: #edb100; }
+
+.btn--bak2top:focus,
+.btn--bak2top:hover {
+  background-color: black;
+  border-color: black; }
 
 button[disabled] {
   cursor: default; }
@@ -756,10 +766,10 @@ body {
       font-size: 29.0304px; }
       @media screen and (min-width: 320px) {
         body h1 {
-          font-size: calc(29.0304px + 10.955 * ((100vw - 320px) / 1480)); } }
+          font-size: calc(29.0304px + 24.752 * ((100vw - 320px) / 1480)); } }
       @media screen and (min-width: 1800px) {
         body h1 {
-          font-size: 39.9854px; } }
+          font-size: 53.7824px; } }
   body h2 {
     font-size: 1.728rem; }
     body h2 {
@@ -863,6 +873,15 @@ body {
 @media (min-width: 576px) {
   .wrapper {
     max-width: 540px; }
+  .btn--bak2top {
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #000; }
+  .btn--bak2top:focus,
+  .btn--bak2top:hover {
+    background-color: #f2f2f2;
+    border: 1px solid #000;
+    color: #000; }
   .Rtable-cell--Date {
     display: none; }
   .Rtable-cell--DayNum {
