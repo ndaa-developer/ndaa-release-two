@@ -1,0 +1,108 @@
+---
+layout: default
+title: Bookings | NDAA
+keywords: NDAA, norwich & district anglers, norwich and district angling, norwich & district, bookings, bank bookings, water bookings, river bookings
+---
+
+<article>
+    <section id="Bookings">
+        <div class="section-hdr">
+            <h2>Bookings Calendar</h2>
+        </div>
+        {% if site.data.bookings-info.intro-desc-ind == true %}
+        {{ site.data.bookings-info.intro-desc | markdownify }}
+        {% endif %}
+        {% if site.data.bookings-info.alert-msg-ind == true %}
+        <div class="alert alert--flex alert--{{ site.data.bookings-info.alert-msg-type }}">
+            {% for msg in site.data.bookings-info.alert-messages %}
+            {% case msg.alert-type %}
+            {% when "warning" %}
+            <div><span><i class="indicator fas fa-exclamation-circle"></i>{{ msg.alert-msg | markdownify }}</span></div>
+            {% when "info" %}
+            <div><span><i class="indicator fas fa-info-circle"></i>{{ msg.alert-msg | markdownify }}</span></div>
+            {% endcase %}
+            {% endfor %}
+        </div>
+        {% endif %}
+
+    </section>
+    <section class="table-key">
+        <h4>Calendar Notes</h4>
+
+        <div class="md-insert">
+            {% if site.data.bookings-info.notes-ind == true %}
+            <div class="alert--flex">
+                {% for opt in site.data.bookings-info.notes %}
+                <div>
+                    <span><i class="indicator fas {{ opt.note-grp-icon }}"></i>{{ opt.note-desc | markdownify }}</span>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+
+    </section>
+    <section>
+        <div class="Rtable">
+            {% assign prev_month = "none" %}
+            {% assign prev_date = "none" %}
+            {% assign new_month = false %}
+            {% assign same-day = false %}
+            {% for row in site.data.bookings %}
+                {% if row.Month != prev_month %}
+                    {% assign prev_month = row.Month %}
+                    {% assign new_month = true %}
+                    <div class="Rtable-row Rtable-row--month">
+                        <div class="Rtable-cell Rtable-cell--month">
+                            {{ row.Month }}
+                        </div>
+                    </div>
+                {% else %}
+                    {% assign new_month = false %}
+                {% endif %}
+                {% if row.Date != prev_date %}
+                    {% assign prev_date = row.Date %}
+                    {% assign same-day = false %}
+                    {% if new_month == true %}
+                        <div class="Rtable-row Rtable-row--BkDate-continue">              
+                    {% else %}
+                        <div class="Rtable-row Rtable-row--BkDate">
+                    {% endif %}
+                {% else %}
+                    {% assign same-day = true %}
+                    <div class="Rtable-row Rtable-row--BkDate-continue">
+                {% endif %}
+                {% if same-day == true %}
+                    <div class="Rtable-cell Rtable-cell--BkDayNum Rtable-cell--BkDayNum-continue">
+                        {{ row.DayNum }}
+                    </div>
+                    <div class="Rtable-cell Rtable-cell--BkDate Rtable-cell--BkDate-continue">
+                        {{ row.Date }}
+                    </div>
+                {% else %}
+                    <div class="Rtable-cell Rtable-cell--BkDayNum">
+                        {{ row.DayNum }}
+                    </div>
+                    <div class="Rtable-cell Rtable-cell--BkDate">
+                        {{ row.Date }}
+                    </div>
+                {% endif %}
+                {% capture venue_desc %}
+                {{ row.Venue }} ({{ row.Description }})
+                {% endcapture %}
+                    <div class="Rtable-cell Rtable-cell--BkVenueDesc">
+                        {{ venue_desc }}
+                    </div>
+                    <div class="Rtable-cell Rtable-cell--BkVenue">
+                        {{ row.Venue }}
+                    </div>
+                    <div class="Rtable-cell Rtable-cell--BkDesc">
+                        {{ row.Description }}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+
+
+</article>

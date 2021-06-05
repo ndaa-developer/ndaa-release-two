@@ -12,7 +12,8 @@ $row-BgColor5: #e4fcee;
     flex-wrap: wrap;
     background-color: $white;
 
-    &--continue {
+    &--continue,
+    &--BkDate {
         border-top: .05em solid $gray-600;
     }
 
@@ -72,7 +73,12 @@ $row-BgColor5: #e4fcee;
     //     flex: 1;
     // }
 
-    &--DayNum {
+    &--DayNum,
+    &--BkVenue,
+    &--BkDesc,
+    &--BkDayNum,
+    &--BkDayNum-continue,
+    &--BkDate-continue {
         display: none;
     }
 

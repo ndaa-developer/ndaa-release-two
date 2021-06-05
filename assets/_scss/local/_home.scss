@@ -51,6 +51,29 @@
     flex: 0 1 33%;   
   }
 
+  .Rtable-cell--BkDate {
+    display: flex;
+    flex: 0 1 25%;
+
+    &-continue {
+      color: $white;
+    }
+  }
+
+  .Rtable-cell--BkVenueDesc {
+    display: none;
+  }
+
+  .Rtable-cell--BkVenue {
+    display: flex;
+    flex: 0 1 32%;
+  }
+
+  .Rtable-cell--BkDesc {
+    display: flex;
+    flex: 0 1 40%;
+  }
+
 }
 
 @media (min-width: $breakpoint-md) {
@@ -70,8 +93,18 @@
 
   .Rtable-cell--Date {
     display: flex;
-    flex: 0 1 22%; 
+    flex: 0 1 22%;
 
+  }
+
+  .Rtable-cell--BkVenue {
+    display: flex;
+    flex: 0 1 25%;
+  }
+
+  .Rtable-cell--BkDesc {
+    display: flex;
+    flex: 0 1 40%;
   }
 
 }
@@ -83,6 +116,11 @@
   }
   .card {
     max-width: 449.7px;
+  }
+
+  .Rtable-cell--BkDate {
+    display: flex;
+    flex: 0 1 16%;
   }
 
 }

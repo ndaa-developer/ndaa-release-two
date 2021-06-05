@@ -692,7 +692,7 @@ button[disabled] {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   background-color: #fff; }
-  .Rtable-row--continue {
+  .Rtable-row--continue, .Rtable-row--BkDate {
     border-top: 0.05em solid #6c757d; }
   .Rtable-row--month {
     background-color: #ced4da;
@@ -724,7 +724,7 @@ button[disabled] {
     color: #ffefaa; }
   .Rtable-cell--Ic5, .Rtable-cell--Ic7 {
     color: #e4fcee; }
-  .Rtable-cell--DayNum {
+  .Rtable-cell--DayNum, .Rtable-cell--BkVenue, .Rtable-cell--BkDesc, .Rtable-cell--BkDayNum, .Rtable-cell--BkDayNum-continue, .Rtable-cell--BkDate-continue {
     display: none; }
   .Rtable-cell--Date {
     -webkit-box-flex: 0;
@@ -904,7 +904,38 @@ body {
     -webkit-box-flex: 0;
     -webkit-flex: 0 1 33%;
         -ms-flex: 0 1 33%;
-            flex: 0 1 33%; } }
+            flex: 0 1 33%; }
+  .Rtable-cell--BkDate {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 25%;
+        -ms-flex: 0 1 25%;
+            flex: 0 1 25%; }
+    .Rtable-cell--BkDate-continue {
+      color: #fff; }
+  .Rtable-cell--BkVenueDesc {
+    display: none; }
+  .Rtable-cell--BkVenue {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 32%;
+        -ms-flex: 0 1 32%;
+            flex: 0 1 32%; }
+  .Rtable-cell--BkDesc {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 40%;
+        -ms-flex: 0 1 40%;
+            flex: 0 1 40%; } }
 
 @media (min-width: 768px) {
   .wrapper {
@@ -921,13 +952,40 @@ body {
     -webkit-box-flex: 0;
     -webkit-flex: 0 1 22%;
         -ms-flex: 0 1 22%;
-            flex: 0 1 22%; } }
+            flex: 0 1 22%; }
+  .Rtable-cell--BkVenue {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 25%;
+        -ms-flex: 0 1 25%;
+            flex: 0 1 25%; }
+  .Rtable-cell--BkDesc {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 40%;
+        -ms-flex: 0 1 40%;
+            flex: 0 1 40%; } }
 
 @media (min-width: 992px) {
   .wrapper {
     max-width: 960px; }
   .card {
-    max-width: 449.7px; } }
+    max-width: 449.7px; }
+  .Rtable-cell--BkDate {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 16%;
+        -ms-flex: 0 1 16%;
+            flex: 0 1 16%; } }
 
 @media (min-width: 1200px) {
   .wrapper {
