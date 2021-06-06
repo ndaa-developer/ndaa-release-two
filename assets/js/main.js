@@ -25,3 +25,11 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 };
+function classToggle() {
+    const navs = document.querySelectorAll('.Navbar__Items')
+    
+    navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+};
+  
+document.querySelector('.Navbar__Link-toggle')
+    .addEventListener('click', classToggle);

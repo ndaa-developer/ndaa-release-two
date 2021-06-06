@@ -27,9 +27,14 @@
 </head>
 
 <body>
+  {% include navbar.html %}
 
   {% if page.name contains 'index' %}
     {% include cover.html %}
+  {% endif %}
+
+  {% if page.name contains 'match' %}
+    {% include cover-match.html %}
   {% endif %}
   
   <main class="wrapper">

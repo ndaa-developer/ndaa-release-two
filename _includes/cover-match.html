@@ -1,0 +1,53 @@
+{% assign row_found = false %}
+{% assign today_date = 'now' | date: '%Y%m%d' %}
+{% for row in site.data.matches %}
+    {% if row_found == false %}
+        {% if today_date < row.DateNum %}
+            {% assign match_date = row.LongDate %}
+            {% assign match_name = row.Match %}
+            {% assign match_venue = row.Venue %}
+            {% assign match_image = row.Image %}
+            {% assign row_found = true %}
+        {% endif %}
+    {% endif %}
+{% endfor %}
+
+<div class="wrapper cover" style="background-image: linear-gradient(to bottom, rgb(200, 200, 200, .8), 55%, rgb(200, 200, 200, .2)), url('assets/images/{{ match_image }}')">
+
+    <div class="stack">
+        {% if row_found == true %}
+        <div>
+            <h1>Next Match</h1>
+        </div>
+        <div class="alert alert--success alert--flex">
+            <div>
+                <p>{{ match_date }}</p>
+            </div>
+            <div>
+                <p>{{ match_name }}</p>
+            </div>
+            <div>
+                <p>{{ match_venue }}</p>
+            </div>
+        </div>
+    
+        {% else %}
+    
+        <h1>Next Match</h1>
+        <div class="alert alert--success alert--flex">
+            <div>
+                <span class="span-center">
+                    <span class="pull-left">
+                        <i class="fas fa-info-circle"></i>
+                        <p>Current Match Calendar completed, see you next season.</p>
+                    </span>
+                </span>
+            </div>
+        </div>
+        
+    
+        {% endif %}
+    
+    </div>
+
+</div>

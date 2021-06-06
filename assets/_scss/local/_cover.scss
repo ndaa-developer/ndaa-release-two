@@ -5,7 +5,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   // justify-content: center;
-  min-height: 93vh;
+  min-height: 90vh;
   padding: 1em;
   text-align: center;
   color: $NDAA-black;
@@ -19,11 +19,6 @@
   //   margin-top: 0;
   // }
 
-  & > div:last-child {
-    margin-top: auto;
-    margin-bottom: 1em;
-}
-
   // & > div {
   //   margin-top: auto;
   //   margin-bottom: auto;
@@ -33,6 +28,11 @@
     // color:    $brand-secondary;
     background-image: linear-gradient(to top, rgba(200, 200, 200, 0.4), 85%, transparent), url(../images/cover-1.jpg);
 
+    & > div:last-child {
+      margin-top: auto;
+      margin-bottom: 1em;
+    }
+  
   }
 
 }

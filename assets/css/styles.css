@@ -274,6 +274,9 @@ select {
 .fa-at:before {
   content: "\f1fa"; }
 
+.fa-bars:before {
+  content: "\f0c9"; }
+
 .fa-chevron-up:before {
   content: "\f077"; }
 
@@ -373,6 +376,59 @@ select {
 .fas {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
+
+.Navbar {
+  background-color: #46ACC2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 16px;
+  font-family: sans-serif;
+  color: white; }
+
+.Navbar__Link {
+  padding-right: 8px; }
+  .Navbar__Link > a {
+    text-decoration: none; }
+
+.Navbar__Items {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.Navbar__Items--right {
+  margin-left: auto; }
+
+.Navbar__Link-toggle {
+  display: none;
+  padding-right: 0; }
+
+@media only screen and (max-width: 576px) {
+  .Navbar__Items,
+  .Navbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .Navbar__Items {
+    display: none; }
+  .Navbar__Items--right {
+    margin-left: 0; }
+  .Navbar__ToggleShow {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .Navbar__Link-toggle {
+    -webkit-align-self: flex-end;
+        -ms-flex-item-align: end;
+            align-self: flex-end;
+    display: initial;
+    position: absolute;
+    cursor: pointer; } }
 
 #back2TopBtn {
   position: fixed;
@@ -855,20 +911,20 @@ body {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  min-height: 93vh;
+  min-height: 90vh;
   padding: 1em;
   text-align: center;
   color: #111; }
   .cover > * {
     margin-top: 1em;
     margin-bottom: 1em; }
-  .cover > div:last-child {
-    margin-top: auto;
-    margin-bottom: 1em; }
   .cover--home {
     background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(200, 200, 200, 0.4)), color-stop(85%), to(transparent)), url(../images/cover-1.jpg);
     background-image: -o-linear-gradient(bottom, rgba(200, 200, 200, 0.4), 85%, transparent), url(../images/cover-1.jpg);
     background-image: linear-gradient(to top, rgba(200, 200, 200, 0.4), 85%, transparent), url(../images/cover-1.jpg); }
+    .cover--home > div:last-child {
+      margin-top: auto;
+      margin-bottom: 1em; }
 
 @media (min-width: 576px) {
   .wrapper {
@@ -935,7 +991,10 @@ body {
     -webkit-box-flex: 0;
     -webkit-flex: 0 1 40%;
         -ms-flex: 0 1 40%;
-            flex: 0 1 40%; } }
+            flex: 0 1 40%; }
+  .Navbar__Items--right > .Navbar__Link {
+    padding-right: 0;
+    padding-left: 8px; } }
 
 @media (min-width: 768px) {
   .wrapper {

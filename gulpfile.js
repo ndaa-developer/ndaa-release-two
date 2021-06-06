@@ -15,8 +15,8 @@ var messages = {
 };
 
 var jsFiles = [
-  'assets/js/components/back-to-top.js',
-  'assets/js/components/rotate-icon.js',
+  'assets/js/components/navbar.js',
+  'assets/js/components/back-to-top.js'
 ];
 // One-off task to copy font files from source
 gulp.task('copy-fa-fonts', function() {
@@ -61,11 +61,13 @@ gulp.task('copy-fa-fonts', function() {
 });
 /**
  * Bundle js files together and then created minified versions and publish them to the correct locations.
+    .src(jsFiles)
+    .src(["assets/js/components/back-to-top.js","assets/js/components/navbar.js"])
  */
  gulp.task("bundle-js", function() {
   return gulp
-    .src(["assets/js/components/back-to-top.js"])
-    .pipe(concat("main.js"))
+  .src(["assets/js/components/back-to-top.js","assets/js/components/navbar.js"])
+  .pipe(concat("main.js"))
     .pipe(gulp.dest("assets/js"))
     .pipe(uglify())
     .pipe(rename({ extname: ".min.js" }))
