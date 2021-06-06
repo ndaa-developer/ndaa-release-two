@@ -378,18 +378,19 @@ select {
   font-weight: 900; }
 
 .Navbar {
-  background-color: #46ACC2;
+  background-color: #3364a3;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 16px;
   font-family: sans-serif;
-  color: white; }
+  color: white;
+  line-height: 2em; }
 
 .Navbar__Link {
   padding-right: 8px; }
   .Navbar__Link > a {
+    color: white;
     text-decoration: none; }
 
 .Navbar__Items {
@@ -397,6 +398,11 @@ select {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
+  .Navbar__Items > .active > a,
+  .Navbar__Items > .active > a:focus,
+  .Navbar__Items > .active > a:hover {
+    color: #3364a3;
+    background-color: #fff; }
 
 .Navbar__Items--right {
   margin-left: auto; }
@@ -748,8 +754,10 @@ button[disabled] {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   background-color: #fff; }
-  .Rtable-row--continue, .Rtable-row--BkDate {
+  .Rtable-row--continue, .Rtable-row--BkDate, .Rtable-row--new-day {
     border-top: 0.05em solid #6c757d; }
+  .Rtable-row--same-day, .Rtable-row--new-day {
+    background-color: #e4fcea; }
   .Rtable-row--month {
     background-color: #ced4da;
     margin-top: 1em;
@@ -780,7 +788,7 @@ button[disabled] {
     color: #ffefaa; }
   .Rtable-cell--Ic5, .Rtable-cell--Ic7 {
     color: #e4fcee; }
-  .Rtable-cell--DayNum, .Rtable-cell--BkVenue, .Rtable-cell--BkDesc, .Rtable-cell--BkDayNum, .Rtable-cell--BkDayNum-continue, .Rtable-cell--BkDate-continue {
+  .Rtable-cell--DayNum, .Rtable-cell--BkVenue, .Rtable-cell--BkDesc, .Rtable-cell--BkDayNum, .Rtable-cell--BkDayNum-continue, .Rtable-cell--BkDate-continue, .Rtable-cell--BkDate-same-day {
     display: none; }
   .Rtable-cell--Date {
     -webkit-box-flex: 0;
@@ -972,6 +980,8 @@ body {
             flex: 0 1 25%; }
     .Rtable-cell--BkDate-continue {
       color: #fff; }
+    .Rtable-cell--BkDate-same-day {
+      color: #e4fcea; }
   .Rtable-cell--BkVenueDesc {
     display: none; }
   .Rtable-cell--BkVenue {

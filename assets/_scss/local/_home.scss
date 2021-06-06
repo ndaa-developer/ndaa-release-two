@@ -58,6 +58,10 @@
     &-continue {
       color: $white;
     }
+    &-same-day {
+      color: $alert-success-bg-color;
+    }
+
   }
 
   .Rtable-cell--BkVenueDesc {

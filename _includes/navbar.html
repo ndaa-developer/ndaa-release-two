@@ -1,26 +1,19 @@
-<!-- <nav class="navbar wrapper" role="navigation">
-    <ul id="menu" class="menu">
-        <li class="menu-item menu-logo"><a href="{{ base }}/index.html">Home</a></li>
-    </ul>
-    <ul id="menu" class="menu menu--right">
-        <li class="menu-item"><a href="{{ base }}/matches.html">Matches</a></li>
-        <li class="menu-item"><a href="{{ base }}/bookings.html">Bookings</a></li>
-    </ul>
-
-</nav> -->
 <div class="Navbar wrapper">
-    <div class="Navbar__Link Navbar__Link-brand">
-        <a href="{{ base }}/index.html">N.D.A.A.</a>
-     </div>
-     <div class="Navbar__Link Navbar__Link-toggle">
-       <i class="fas fa-bars"></i>
-     </div>
-   <nav class="Navbar__Items Navbar__Items--right">
-     <div class="Navbar__Link{% if page.name contains 'matches' %} active{% endif %}">
-        <a href="{{ base }}/matches.html">Matches</a>
-     </div>
-     <div class="Navbar__Link {% if page.name contains 'bookings' %} active{% endif %}">
-        <a href="{{ base }}/bookings.html">Bookings</a>
-     </div>
-   </nav>
- </div>
+  <div class="Navbar__Link Navbar__Link-brand">
+    <a href="{{ base }}/index.html">N.D.A.A.</a>
+  </div>
+  <div class="Navbar__Link Navbar__Link-toggle">
+    <i class="fas fa-bars"></i>
+  </div>
+  <nav class="Navbar__Items Navbar__Items--right">
+    <div class="Navbar__Link{% if page.name contains 'waters' %} active{% endif %}">
+      <a href="{{ base }}/waters.html">Waters</a>
+    </div>
+    <div class="Navbar__Link{% if page.name contains 'matches' %} active{% endif %}">
+      <a href="{{ base }}/matches.html">Matches</a>
+    </div>
+    <div class="Navbar__Link {% if page.name contains 'bookings' %} active{% endif %}">
+      <a href="{{ base }}/bookings.html">Bookings</a>
+    </div>
+  </nav>
+</div>

@@ -33,6 +33,10 @@
     {% include cover.html %}
   {% endif %}
 
+  {% if page.name contains 'booking' %}
+    {% include cover-bookings.html %}
+  {% endif %}
+
   {% if page.name contains 'match' %}
     {% include cover-match.html %}
   {% endif %}

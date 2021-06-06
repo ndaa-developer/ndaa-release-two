@@ -11,3 +11,6 @@
 
   # Default build command.
   command = "jekyll build"
+
+[build.environment]
+  TZ = "Europe/London"

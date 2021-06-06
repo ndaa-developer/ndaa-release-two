@@ -1,30 +1,35 @@
 .Navbar {
-  background-color: #46ACC2;
+  background-color: $btn-info-bg-colour;
   display: flex;
-  padding: 16px;
   font-family: sans-serif;
   color: white;
+  line-height: 2em;
 }
 
 .Navbar__Link {
   padding-right: 8px;
 
   & > a {
+    color: white;
     text-decoration: none;
   }
+
 }
 
 .Navbar__Items {
   display: flex;
+  & > .active > a,
+  & > .active > a:focus,
+  & > .active > a:hover {
+    // background-color: darken($btn-info-bg-colour, 12%);
+    color: $btn-info-bg-colour;
+    background-color: $white;
+  }
+
 }
 
 .Navbar__Items--right {
   margin-left:auto;
-
-  // & > .Navbar__Link {
-  //   padding-right: 0;
-  //   padding-left: 8px;
-  // }
 
 }
 

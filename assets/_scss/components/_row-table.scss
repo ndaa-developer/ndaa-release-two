@@ -13,8 +13,14 @@ $row-BgColor5: #e4fcee;
     background-color: $white;
 
     &--continue,
-    &--BkDate {
+    &--BkDate,
+    &--new-day {
         border-top: .05em solid $gray-600;
+    }
+
+    &--same-day,
+    &--new-day {
+        background-color: $alert-success-bg-color;
     }
 
     &--month {
@@ -78,7 +84,8 @@ $row-BgColor5: #e4fcee;
     &--BkDesc,
     &--BkDayNum,
     &--BkDayNum-continue,
-    &--BkDate-continue {
+    &--BkDate-continue,
+    &--BkDate-same-day {
         display: none;
     }
 

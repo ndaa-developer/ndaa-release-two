@@ -1,8 +1,16 @@
+{% assign test_ind = site.data.site.test-ind %}
+
+{% if test_ind == true %}
+    {% assign today_date = site.data.site.test-date %}
+{% else %}
+    {% assign today_date = 'now' | date: '%Y%m%d' %}
+{% endif %}
+
 {% assign row_found = false %}
-{% assign today_date = 'now' | date: '%Y%m%d' %}
+
 {% for row in site.data.matches %}
     {% if row_found == false %}
-        {% if today_date < row.DateNum %}
+        {% if today_date <= row.DateNum %}
             {% assign match_date = row.LongDate %}
             {% assign match_name = row.Match %}
             {% assign match_venue = row.Venue %}
