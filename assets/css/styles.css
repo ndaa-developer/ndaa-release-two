@@ -384,14 +384,15 @@ select {
   display: -ms-flexbox;
   display: flex;
   font-family: sans-serif;
-  color: white;
-  line-height: 2em; }
+  color: white; }
 
-.Navbar__Link {
-  padding-right: 8px; }
-  .Navbar__Link > a {
-    color: white;
-    text-decoration: none; }
+.Navbar__Link > a {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  color: white;
+  text-decoration: none;
+  padding: 0 1.25rem; }
 
 .Navbar__Items {
   display: -webkit-box;
@@ -407,7 +408,7 @@ select {
 .Navbar__Items--right {
   margin-left: auto; }
 
-.Navbar__Link-toggle {
+.Navbar__Link--toggle {
   display: none;
   padding-right: 0; }
 
@@ -428,7 +429,12 @@ select {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
-  .Navbar__Link-toggle {
+  .Navbar__Link--brand {
+    width: 100px; }
+  .Navbar__Link--toggle {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 1.25rem;
     -webkit-align-self: flex-end;
         -ms-flex-item-align: end;
             align-self: flex-end;
@@ -739,8 +745,9 @@ button[disabled] {
 .wrapper {
   width: 100%;
   margin-right: auto;
-  margin-left: auto;
-  padding: 0 1.25rem; }
+  margin-left: auto; }
+  .wrapper--padding {
+    padding: 0 1.25rem; }
 
 .stack > * + * {
   margin-top: 1rem; }
@@ -869,6 +876,7 @@ body {
   body article:last-child {
     padding-bottom: 1em; }
   body main {
+    z-index: 1;
     background-color: #ffffed;
     /* Natural flow and rhythm in articles by default */ }
     body main > * + * {
@@ -1001,10 +1009,7 @@ body {
     -webkit-box-flex: 0;
     -webkit-flex: 0 1 40%;
         -ms-flex: 0 1 40%;
-            flex: 0 1 40%; }
-  .Navbar__Items--right > .Navbar__Link {
-    padding-right: 0;
-    padding-left: 8px; } }
+            flex: 0 1 40%; } }
 
 @media (min-width: 768px) {
   .wrapper {

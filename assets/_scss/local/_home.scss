@@ -77,16 +77,7 @@
     display: flex;
     flex: 0 1 40%;
   }
-
-  .Navbar__Items--right {
-  
-    & > .Navbar__Link {
-      padding-right: 0;
-      padding-left: 8px;
-    }
-  
-  }
-  
+ 
 }
 
 @media (min-width: $breakpoint-md) {

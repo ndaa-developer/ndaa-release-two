@@ -3,15 +3,19 @@
   display: flex;
   font-family: sans-serif;
   color: white;
-  line-height: 2em;
 }
 
 .Navbar__Link {
-  padding-right: 8px;
+  // padding-right: 8px;
 
   & > a {
+    display: block;
+    height: $navHeight;
+    line-height: $navHeight;
     color: white;
     text-decoration: none;
+    padding: 0 $size-500;
+
   }
 
 }
@@ -33,7 +37,7 @@
 
 }
 
-.Navbar__Link-toggle {
+.Navbar__Link--toggle {
   display: none;
   padding-right: 0;
 
@@ -46,7 +50,7 @@
   }
     
   .Navbar__Items {
-      display:none;
+    display:none;
   }
       
   .Navbar__Items--right {
@@ -56,8 +60,15 @@
   .Navbar__ToggleShow {
       display: flex;
   }
-      
-  .Navbar__Link-toggle {
+  
+  .Navbar__Link--brand {
+    width: 100px;
+  }
+
+  .Navbar__Link--toggle {
+      height: $navHeight;
+      line-height: $navHeight;
+      padding: 0 $size-500;
       align-self: flex-end;
       display: initial;
       position: absolute;
