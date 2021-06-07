@@ -26,6 +26,9 @@
         {% if row_found == true %}
         <div>
             <h1>Next Match</h1>
+            {% if test_ind == true %}
+            <p>Test Date is {{ today_date }}</p>
+            {% endif %}
         </div>
         <div class="alert alert--success alert--flex">
             <div>

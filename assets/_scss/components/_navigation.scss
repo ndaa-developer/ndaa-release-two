@@ -1,9 +1,20 @@
 .Navbar {
   position: relative;
+  border-color: $btn-info-bg-colour;
+  border: 1px solid transparent;
   background-color: $btn-info-bg-colour;
   display: flex;
   font-family: sans-serif;
-  color: white;
+  color: $gray-400;
+}
+
+.Navbar--fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  border-width: 0 0 1px;
 }
 
 .Navbar__Link {
@@ -12,26 +23,39 @@
     display: block;
     height: $navHeight;
     line-height: $navHeight;
-    color: white;
+    color: inherit;
     text-decoration: none;
     padding: 0 $size-500;
+  }
 
+  & > a:focus,
+  & > a:hover {
+    background-color: darken($btn-info-bg-colour, 12%);
+    color: $white;
+  }
+
+  & .active > a:focus,
+  & .active > a:hover {
+  background-color: darken($btn-info-bg-colour, 12%);
   }
 
 }
 
 .Navbar__Items {
   display: flex;
-
-  & > .active > a,
-  & > .active > a:focus,
-  & > .active > a:hover {
-    // background-color: darken($btn-info-bg-colour, 12%);
-    color: $btn-info-bg-colour;
-    background-color: $white;
-  }
-
 }
+
+.active > a {
+  // background-color: darken($btn-info-bg-colour, 12%);
+  color: $btn-info-bg-colour;
+  background-color: $white;
+}
+
+.active > a:focus,
+.active > a:hover {
+  background-color: darken($btn-info-bg-colour, 12%);
+}
+
 
 .Navbar__Items--right {
   margin-left: auto;

@@ -8,8 +8,6 @@
 
 {% assign limit = site.data.bookings-info.cover-period %}
 
-<!-- {% assign end_date = today_date | plus: limit %} -->
-
 {% assign row_found = false %}
 
 {% for row in site.data.bookings %}
@@ -29,6 +27,10 @@
     <div class="stack">
         <div>
             <h1>Next Bookings</h1>
+            {% if test_ind == true %}
+            <p>Test Date is {{ today_date }}</p>
+            {% endif %}
+
         </div>
         {% if row_found == true %}
         <div class="alert alert--success alert--flx">
@@ -48,37 +50,37 @@
                     {% else %}
                         {% assign same-day = true %}
                     {% endif %}
-                {% endif %}
-                {% if same-day == true %}
-                    <div class="Rtable-row Rtable-row--same-day">
-                        <div class="Rtable-cell Rtable-cell--BkDate Rtable-cell--BkDate-same-day">
-
-                {% else %}
-                    {% if count == 1 %}
+                    {% if same-day == true %}
                         <div class="Rtable-row Rtable-row--same-day">
-                    {% else %}
-                        <div class="Rtable-row Rtable-row--new-day">
-                    {% endif %}                    
-                            <div class="Rtable-cell Rtable-cell--BkDate">
-                    <!-- <div class="Rtable-row Rtable-row--new-day">
-                        <div class="Rtable-cell Rtable-cell--BkDate"> -->
+                            <div class="Rtable-cell Rtable-cell--BkDate Rtable-cell--BkDate-same-day">
 
+                    {% else %}
+                        {% if count == 1 %}
+                            <div class="Rtable-row Rtable-row--same-day">
+                        {% else %}
+                            <div class="Rtable-row Rtable-row--new-day">
+                        {% endif %}                    
+                                <div class="Rtable-cell Rtable-cell--BkDate">
+                        <!-- <div class="Rtable-row Rtable-row--new-day">
+                            <div class="Rtable-cell Rtable-cell--BkDate"> -->
+
+                    {% endif %}
+                                {{ row.Date }}
+                            </div>
+                            {% capture venue_desc %}
+                            {{ row.Venue }} ({{ row.Description }})
+                            {% endcapture %}
+                            <div class="Rtable-cell Rtable-cell--BkVenueDesc">
+                                {{ venue_desc }}
+                            </div>
+                            <div class="Rtable-cell Rtable-cell--BkVenue">
+                                {{ row.Venue }}
+                            </div>
+                            <div class="Rtable-cell Rtable-cell--BkDesc">
+                                {{ row.Description }}
+                            </div>
+                        </div>
                 {% endif %}
-                            {{ row.Date }}
-                        </div>
-                        {% capture venue_desc %}
-                        {{ row.Venue }} ({{ row.Description }})
-                        {% endcapture %}
-                        <div class="Rtable-cell Rtable-cell--BkVenueDesc">
-                            {{ venue_desc }}
-                        </div>
-                        <div class="Rtable-cell Rtable-cell--BkVenue">
-                            {{ row.Venue }}
-                        </div>
-                        <div class="Rtable-cell Rtable-cell--BkDesc">
-                            {{ row.Description }}
-                        </div>
-                    </div>
 
             {% endfor %}
             </div>

@@ -1,3 +1,11 @@
+{% assign test_ind = site.data.site.test-ind %}
+
+{% if test_ind == true %}
+    {% assign today_date = site.data.site.test-date %}
+{% else %}
+    {% assign today_date = 'now' | date: '%Y%m%d' %}
+{% endif %}
+
 <article id="Matches">
     <section>
         <div class="section-hdr">
@@ -37,8 +45,9 @@
     </section>
     <section>
         <div class="Rtable">
-            {% assign prev_month = "none" %}
-            {% for row in site.data.matches %}
+        {% assign prev_month = "none" %}
+        {% for row in site.data.matches %}
+            {% if today_date <= row.DateNum %}
                 {% if row.Month != prev_month %}
                     {% assign prev_month = row.Month %}
                     <div class="Rtable-row Rtable-row--month">
@@ -63,7 +72,8 @@
                         {{ row.Venue }}
                     </div>
                 </div>
-            {% endfor %}
+            {% endif %}
+        {% endfor %}
         </div>
     </section>
 </article>

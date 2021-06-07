@@ -44,11 +44,21 @@ keywords: NDAA, norwich & district anglers, norwich and district angling, norwic
     </section>
     <section>
         <div class="Rtable">
-            {% assign prev_month = "none" %}
-            {% assign prev_date = "none" %}
-            {% assign new_month = false %}
-            {% assign same-day = false %}
-            {% for row in site.data.bookings %}
+        {% assign test_ind = site.data.site.test-ind %}
+
+        {% if test_ind == true %}
+            {% assign today_date = site.data.site.test-date %}
+        {% else %}
+            {% assign today_date = 'now' | date: '%Y%m%d' %}
+        {% endif %}
+
+        {% assign prev_month = "none" %}
+        {% assign prev_date = "none" %}
+        {% assign new_month = false %}
+        {% assign same-day = false %}
+        {% for row in site.data.bookings %}
+            {% if today_date <= row.NumDate %}
+
                 {% if row.Month != prev_month %}
                     {% assign prev_month = row.Month %}
                     {% assign new_month = true %}
@@ -64,9 +74,9 @@ keywords: NDAA, norwich & district anglers, norwich and district angling, norwic
                     {% assign prev_date = row.Date %}
                     {% assign same-day = false %}
                     {% if new_month == true %}
-                        <div class="Rtable-row Rtable-row--BkDate-continue">              
+                    <div class="Rtable-row Rtable-row--BkDate-continue">              
                     {% else %}
-                        <div class="Rtable-row Rtable-row--BkDate">
+                    <div class="Rtable-row Rtable-row--BkDate">
                     {% endif %}
                 {% else %}
                     {% assign same-day = true %}
@@ -100,7 +110,8 @@ keywords: NDAA, norwich & district anglers, norwich and district angling, norwic
                         {{ row.Description }}
                     </div>
                 </div>
-            {% endfor %}
+            {% endif %}
+        {% endfor %}
         </div>
     </section>
 
