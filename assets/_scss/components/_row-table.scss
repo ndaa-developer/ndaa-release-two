@@ -89,6 +89,11 @@ $row-BgColor5: #e4fcee;
         display: none;
     }
 
+    &--Date,
+    &--BkDate {
+        font-weight: $weight-bold;
+    }
+
     &--Date {
         flex: 0 1 100%;
    

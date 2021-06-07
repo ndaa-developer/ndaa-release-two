@@ -824,6 +824,8 @@ button[disabled] {
     color: #e4fcee; }
   .Rtable-cell--DayNum, .Rtable-cell--BkVenue, .Rtable-cell--BkDesc, .Rtable-cell--BkDayNum, .Rtable-cell--BkDayNum-continue, .Rtable-cell--BkDate-continue, .Rtable-cell--BkDate-same-day {
     display: none; }
+  .Rtable-cell--Date, .Rtable-cell--BkDate {
+    font-weight: 700; }
   .Rtable-cell--Date {
     -webkit-box-flex: 0;
     -webkit-flex: 0 1 100%;
@@ -1003,6 +1005,9 @@ body {
     -webkit-flex: 0 1 33%;
         -ms-flex: 0 1 33%;
             flex: 0 1 33%; }
+  .Rtable-cell--Date,
+  .Rtable-cell--BkDate {
+    font-weight: 400; }
   .Rtable-cell--BkDate {
     display: -webkit-box;
     display: -webkit-flex;

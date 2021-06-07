@@ -50,6 +50,12 @@
   .Rtable-cell--Venue {
     flex: 0 1 33%;   
   }
+  
+  .Rtable-cell--Date,
+  .Rtable-cell--BkDate {
+      font-weight: $weight-regular;
+  }
+
 
   .Rtable-cell--BkDate {
     display: flex;
