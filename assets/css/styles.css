@@ -378,6 +378,7 @@ select {
   font-weight: 900; }
 
 .Navbar {
+  position: relative;
   background-color: #3364a3;
   display: -webkit-box;
   display: -webkit-flex;
@@ -425,10 +426,14 @@ select {
   .Navbar__Items--right {
     margin-left: 0; }
   .Navbar__ToggleShow {
+    position: absolute;
+    top: 50px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    width: 100%;
+    background-color: #3364a3; }
   .Navbar__Link--brand {
     width: 100px; }
   .Navbar__Link--toggle {
@@ -876,7 +881,6 @@ body {
   body article:last-child {
     padding-bottom: 1em; }
   body main {
-    z-index: 1;
     background-color: #ffffed;
     /* Natural flow and rhythm in articles by default */ }
     body main > * + * {
@@ -913,6 +917,8 @@ body {
     color: #3364a3; }
 
 .cover {
+  position: relative;
+  z-index: -10;
   background-position: center;
   background-size: cover;
   display: -webkit-box;
