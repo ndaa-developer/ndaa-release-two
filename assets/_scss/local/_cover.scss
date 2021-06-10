@@ -5,7 +5,8 @@
   flex-direction: column;
   flex-wrap: wrap;
   // justify-content: center;
-  min-height: 90vh;
+  // min-height: 88vh;
+  height: calc(100vh - 90px);
   padding: 1em;
   text-align: center;
   color: $NDAA-black;
