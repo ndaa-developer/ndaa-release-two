@@ -7,8 +7,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+
+    {% assign date = 'now' | date: '%d-%m-%Y' %}
+    {% assign time = 'now' | date: '%H:%M:%S' %}
+    <meta name="Date" content="{{ date }}">
+    <meta name="Time" content="{{ time }}">
+
     <meta name="Keywords" content="{{ page.keywords }}">
+    
     <meta name="Description" content="Norwich and District Angler's Association provides great fishing on the Norfolk Broads for all Anglers." />
     
     {% include favicon.html %}
