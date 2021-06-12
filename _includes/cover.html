@@ -14,29 +14,21 @@
       {% if site.data.cover.cover-msg-ind == true %}
       <div class="alert alert--danger alert--flex">
         {% for msg in site.data.cover.cover-messages %}
-        {% case msg.msg-type %}
-        {% when "warning" %}
         <div>
-          <span class="span-center">
-            <span class="pull-left">
-              <i class="fas fa-exclamation-circle"></i>{{ msg.cvr-msg | markdownify }}
-            </span>
+          <span class="span-center pull-left vt-middle">
+              {% case msg.msg-type %}
+                {% when "warning" %}
+                <i class="fas fa-exclamation-circle"></i>
+                {% when "info" %}
+                <i class="fas fa-info-circle"></i>
+              {% endcase %}
+              {{ msg.cvr-msg | markdownify }}
           </span>
         </div>
-        {% when "info" %}
-        <div>
-          <span class="span-center">
-            <span class="pull-left">
-              <i class="fas fa-info-circle"></i>{{ msg.cvr-msg | markdownify }}
-            </span>
-          </span>
-        </div>
-        {% endcase %}
-        {% endfor %}
+        {% endfor %} 
       </div>
       {% endif %}
 
- 
     </div>
 
     <div>

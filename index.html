@@ -14,14 +14,19 @@ keywords: norwich, norfolk, fishing club, angling club, coarse fishing, river fi
         </div>
 
         {% if site.data.membership.alert-msg-ind == true %}
-        <div class="alert alert--flex alert--danger">
+        <div class="alert alert--danger alert--flex">
             {% for msg in site.data.membership.alert-messages %}
-            {% case msg.alert-type %}
-            {% when "warning" %}
-            <div><span><i class="indicator fas fa-exclamation-circle"></i>{{ msg.alert-msg | markdownify }}</span></div>
-            {% when "info" %}
-            <div><span><i class="indicator fas fa-info-circle"></i>{{ msg.alert-msg | markdownify }}</span></div>
-            {% endcase %}
+            <div>
+                <span class="vt-middle">
+                    {% case msg.alert-type %}
+                    {% when "warning" %}
+                        <i class="indicator fas fa-exclamation-circle"></i>
+                    {% when "info" %}
+                        <i class="indicator fas fa-info-circle"></i>
+                    {% endcase %}
+                    {{ msg.alert-msg | markdownify }}
+                </span>
+            </div>
             {% endfor %}
         </div>
         {% endif %}

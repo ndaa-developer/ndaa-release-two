@@ -931,6 +931,11 @@ body {
             justify-content: center; }
   body .v-middle {
     vertical-align: middle; }
+  body .vt-middle {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
   body .fas {
     line-height: inherit; }
   body .fa-facebook {
