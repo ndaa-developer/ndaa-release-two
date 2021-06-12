@@ -2,8 +2,10 @@
 
 {% if test_ind == true %}
     {% assign today_date = site.data.site.test-date %}
+    {% assign today_time = site.data.site.test-time %}
 {% else %}
     {% assign today_date = 'now' | date: '%Y%m%d' %}
+    {% assign today_time = 'now' | date: '%H%M' %}
 {% endif %}
 
 {% assign limit = site.data.bookings-info.cover-period %}
@@ -12,12 +14,20 @@
 
 {% for row in site.data.bookings %}
     {% if row_found == false %}
-        {% if today_date <= row.NumDate %}
+        {% if today_date == row.NumDate %}
+            {% if today_time < site.data.bookings-info.cut-off-time %}
+                {% assign row_found = true %}
+            {% endif %}
+        {% else %}
+            {% if today_date < row.NumDate %}
+                {% assign row_found = true %}
+            {% endif %}
+        {% endif %}
+        {% if row_found == true %}
             {% assign booking_date = row.Date %}
             {% assign booking_desc = row.Description %}
             {% assign booking_venue = row.Venue %}
             {% assign booking_image = row.Image %}
-            {% assign row_found = true %}
         {% endif %}
     {% endif %}
 {% endfor %}
@@ -28,10 +38,10 @@
         <div>
             <h1>Next Bookings</h1>
             {% if test_ind == true %}
-            <p>Test Date is {{ today_date }}</p>
+            <p>Test Date: {{ today_date }} Test Time: {{ today_time }}</p>
             {% endif %}
-
         </div>
+
         {% if row_found == true %}
         <div class="alert alert--success alert--flx">
             <div class="Rtable">
@@ -39,7 +49,17 @@
             {% assign same-day = false %}
             {% assign count = 0 %}
             {% for row in site.data.bookings %}
-                {% if today_date <= row.NumDate %}
+            {% if today_date <= row.NumDate %}
+                {% assign row_found = true %}
+
+                {% if today_date == row.NumDate %}
+                    {% if today_time >= site.data.bookings-info.cut-off-time %}
+                        {% assign row_found = false %}
+                    {% endif %}
+                {% endif %}
+                
+                {% if row_found == true %}
+    
                     {% if row.Date != prev_date %}
                         {% assign count = count | plus: 1 %}
                         {% if count > limit %}
@@ -81,7 +101,7 @@
                             </div>
                         </div>
                 {% endif %}
-
+            {% endif %}
             {% endfor %}
             </div>
         </div>

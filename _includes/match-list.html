@@ -2,8 +2,10 @@
 
 {% if test_ind == true %}
     {% assign today_date = site.data.site.test-date %}
+    {% assign today_time = site.data.site.test-time %}
 {% else %}
     {% assign today_date = 'now' | date: '%Y%m%d' %}
+    {% assign today_time = 'now' | date: '%H%M' %}
 {% endif %}
 
 <article id="Matches">
@@ -46,8 +48,18 @@
     <section>
         <div class="Rtable">
         {% assign prev_month = "none" %}
+
         {% for row in site.data.matches %}
-            {% if today_date <= row.DateNum %}
+        {% if today_date <= row.DateNum %}
+            {% assign row_found = true %}
+
+            {% if today_date == row.DateNum %}
+                {% if today_time >= site.data.match-info.cut-off-time %}
+                    {% assign row_found = false %}
+                {% endif %}
+            {% endif %}
+
+            {% if row_found == true %}
                 {% if row.Month != prev_month %}
                     {% assign prev_month = row.Month %}
                     <div class="Rtable-row Rtable-row--month">
@@ -55,24 +67,25 @@
                             {{ row.Month }}
                         </div>
                     </div>
-                <div class="Rtable-row Rtable-row--MG{{ row.Match-Grp }}">
+                    <div class="Rtable-row Rtable-row--MG{{ row.Match-Grp }}">
                 {% else %}
-                <div class="Rtable-row Rtable-row--MG{{ row.Match-Grp }}  Rtable-row--continue">
-                    {% endif %}
-                    <div class="Rtable-cell Rtable-cell--DayNum">
-                        {{ row.DayNum }}
+                    <div class="Rtable-row Rtable-row--MG{{ row.Match-Grp }}  Rtable-row--continue">
+                {% endif %}
+                        <div class="Rtable-cell Rtable-cell--DayNum">
+                            {{ row.DayNum }}
+                        </div>
+                        <div class="Rtable-cell Rtable-cell--Date">
+                            {{ row.Date }}
+                        </div>
+                        <div class="Rtable-cell Rtable-cell--Match">
+                            {{ row.Match }}
+                        </div>
+                        <div class="Rtable-cell Rtable-cell--Venue">
+                            {{ row.Venue }}
+                        </div>
                     </div>
-                    <div class="Rtable-cell Rtable-cell--Date">
-                        {{ row.Date }}
-                    </div>
-                    <div class="Rtable-cell Rtable-cell--Match">
-                        {{ row.Match }}
-                    </div>
-                    <div class="Rtable-cell Rtable-cell--Venue">
-                        {{ row.Venue }}
-                    </div>
-                </div>
             {% endif %}
+        {% endif %}
         {% endfor %}
         </div>
     </section>

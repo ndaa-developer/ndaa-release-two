@@ -2,20 +2,30 @@
 
 {% if test_ind == true %}
     {% assign today_date = site.data.site.test-date %}
+    {% assign today_time = site.data.site.test-time %}
 {% else %}
     {% assign today_date = 'now' | date: '%Y%m%d' %}
+    {% assign today_time = 'now' | date: '%H%M' %}
 {% endif %}
 
 {% assign row_found = false %}
 
 {% for row in site.data.matches %}
     {% if row_found == false %}
-        {% if today_date <= row.DateNum %}
+        {% if today_date == row.DateNum %}
+            {% if today_time < site.data.match-info.cut-off-time %}
+                {% assign row_found = true %}
+            {% endif %}
+        {% else %}
+            {% if today_date < row.DateNum %}
+                {% assign row_found = true %}
+            {% endif %}
+        {% endif %}
+        {% if row_found == true %}
             {% assign match_date = row.LongDate %}
             {% assign match_name = row.Match %}
             {% assign match_venue = row.Venue %}
             {% assign match_image = row.Image %}
-            {% assign row_found = true %}
         {% endif %}
     {% endif %}
 {% endfor %}
@@ -23,38 +33,38 @@
 <div class="wrapper cover" style="background-image: linear-gradient(to bottom, rgb(200, 200, 200, .8), 55%, rgb(200, 200, 200, .2)), url('assets/images/{{ match_image }}')">
 
     <div class="stack">
-        {% if row_found == true %}
         <div>
             <h1>Next Match</h1>
             {% if test_ind == true %}
-            <p>Test Date is {{ today_date }}</p>
+            <p>Test Date: {{ today_date }} Test Time: {{ today_time }}</p>
             {% endif %}
         </div>
-        <div class="alert alert--success alert--flex">
-            <div>
-                <p>{{ match_date }}</p>
+
+        {% if row_found == true %}
+            <div class="alert alert--success alert--flex">
+                <div>
+                    <p>{{ match_date }}</p>
+                </div>
+                <div>
+                    <p>{{ match_name }}</p>
+                </div>
+                <div>
+                    <p>{{ match_venue }}</p>
+                </div>
             </div>
-            <div>
-                <p>{{ match_name }}</p>
-            </div>
-            <div>
-                <p>{{ match_venue }}</p>
-            </div>
-        </div>
     
         {% else %}
     
-        <h1>Next Match</h1>
-        <div class="alert alert--success alert--flex">
-            <div>
-                <span class="span-center">
-                    <span class="pull-left">
-                        <i class="fas fa-info-circle"></i>
-                        <p>Current Match Calendar completed, see you next season.</p>
+            <div class="alert alert--success alert--flex">
+                <div>
+                    <span class="span-center">
+                        <span class="pull-left">
+                            <i class="fas fa-info-circle"></i>
+                            <p>Current Match Calendar completed, see you next season.</p>
+                        </span>
                     </span>
-                </span>
+                </div>
             </div>
-        </div>
         
     
         {% endif %}

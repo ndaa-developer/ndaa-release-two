@@ -48,8 +48,10 @@ keywords: NDAA, norwich & district anglers, norwich and district angling, norwic
 
         {% if test_ind == true %}
             {% assign today_date = site.data.site.test-date %}
+            {% assign today_time = site.data.site.test-time %}
         {% else %}
             {% assign today_date = 'now' | date: '%Y%m%d' %}
+            {% assign today_time = 'now' | date: '%H%M' %}
         {% endif %}
 
         {% assign prev_month = "none" %}
@@ -57,7 +59,16 @@ keywords: NDAA, norwich & district anglers, norwich and district angling, norwic
         {% assign new_month = false %}
         {% assign same-day = false %}
         {% for row in site.data.bookings %}
-            {% if today_date <= row.NumDate %}
+        {% if today_date <= row.NumDate %}
+            {% assign row_found = true %}
+
+            {% if today_date == row.NumDate %}
+                {% if today_time >= site.data.bookings-info.cut-off-time %}
+                    {% assign row_found = false %}
+                {% endif %}
+            {% endif %}
+            
+            {% if row_found == true %}
 
                 {% if row.Month != prev_month %}
                     {% assign prev_month = row.Month %}
@@ -111,6 +122,7 @@ keywords: NDAA, norwich & district anglers, norwich and district angling, norwic
                     </div>
                 </div>
             {% endif %}
+        {% endif %}
         {% endfor %}
         </div>
     </section>

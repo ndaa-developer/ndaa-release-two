@@ -2,6 +2,7 @@ intro-desc-ind: true
 intro-desc: If you want to book an NDAA venue for a match please contact **Tony Gibbons**
   phone **01603 400973**  email **tony.gibbons@ndaa.org.uk**.
 cover-period: 3
+cut-off-time: 1600
 alert-msg-ind: false
 alert-msg-type: warning
 alert-messages:

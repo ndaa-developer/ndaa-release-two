@@ -1,6 +1,7 @@
 intro-desc-ind: true
 intro-desc: If you want any information about the matches listed below please contact **Tony Gibbons**
   phone **01603 400973**  email **tony.gibbons@ndaa.org.uk**.
+cut-off-time: 1600
 alert-msg-ind: false
 alert-msg-type: warning
 alert-messages:
