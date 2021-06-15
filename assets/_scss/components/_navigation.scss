@@ -19,6 +19,12 @@
 
 .Navbar__Link {
 
+  &--brand > a {
+    font-size: 1.2rem;
+    font-weight: $weight-bold;
+
+  }
+
   & > a {
     display: block;
     height: $navHeight;
@@ -43,6 +49,7 @@
 
 .Navbar__Items {
   display: flex;
+  font-size: 1rem;
 }
 
 .active > a {
