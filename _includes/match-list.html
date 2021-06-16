@@ -8,6 +8,12 @@
     {% assign today_time = 'now' | date: '%H%M' %}
 {% endif %}
 
+{% assign today_date = today_date | plus: 0 %}
+{% assign today_time = today_time | plus: 0 %}
+
+{% assign cut_off_time = site.data.match-info.cut-off-time %}
+{% assign cut_off_time = cut_off_time | plus: 0 %}
+
 <article id="Matches">
     <section>
         <div class="section-hdr">
@@ -55,11 +61,14 @@
         {% assign prev_month = "none" %}
 
         {% for row in site.data.matches %}
-        {% if today_date <= row.DateNum %}
+        {% assign row_date = row.DateNum %}
+        {% assign row_date = row_date | plus: 0 %}
+
+        {% if today_date <= row_date %}
             {% assign row_found = true %}
 
-            {% if today_date == row.DateNum %}
-                {% if today_time >= site.data.match-info.cut-off-time %}
+            {% if today_date == row_date %}
+                {% if today_time >= cut_off_time %}
                     {% assign row_found = false %}
                 {% endif %}
             {% endif %}

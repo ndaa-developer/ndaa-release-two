@@ -8,18 +8,27 @@
     {% assign today_time = 'now' | date: '%H%M' %}
 {% endif %}
 
+{% assign today_date = today_date | plus: 0 %}
+{% assign today_time = today_time | plus: 0 %}
+
 {% assign limit = site.data.bookings-info.cover-period %}
+{% assign limit = limit | plus: 0 %}
+
+{% assign cut_off_time = site.data.bookings-info.cut-off-time %}
+{% assign cut_off_time = cut_off_time | plus: 0 %}
 
 {% assign row_found = false %}
 
 {% for row in site.data.bookings %}
+{% assign row_date = row.NumDate %}
+{% assign row_date = row_date | plus: 0 %}
     {% if row_found == false %}
-        {% if today_date == row.NumDate %}
-            {% if today_time < site.data.bookings-info.cut-off-time %}
+        {% if today_date == row_date %}
+            {% if today_time < cut_off_time %}
                 {% assign row_found = true %}
             {% endif %}
         {% else %}
-            {% if today_date < row.NumDate %}
+            {% if today_date < row_date %}
                 {% assign row_found = true %}
             {% endif %}
         {% endif %}
@@ -49,11 +58,13 @@
             {% assign same-day = false %}
             {% assign count = 0 %}
             {% for row in site.data.bookings %}
-            {% if today_date <= row.NumDate %}
+            {% assign row_date = row.NumDate %}
+            {% assign row_date = row_date | plus: 0 %}
+            {% if today_date <= row_date %}
                 {% assign row_found = true %}
 
-                {% if today_date == row.NumDate %}
-                    {% if today_time >= site.data.bookings-info.cut-off-time %}
+                {% if today_date == row_date %}
+                    {% if today_time >= cut_off_time %}
                         {% assign row_found = false %}
                     {% endif %}
                 {% endif %}
