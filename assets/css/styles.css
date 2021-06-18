@@ -1124,11 +1124,16 @@ body {
     -webkit-flex: 0 1 150px;
         -ms-flex: 0 1 150px;
             flex: 0 1 150px; }
+  .Rtable-cell--Match {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 320px;
+        -ms-flex: 0 1 320px;
+            flex: 0 1 320px; }
   .Rtable-cell--Venue {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 210px;
-        -ms-flex: 0 1 210px;
-            flex: 0 1 210px; } }
+    -webkit-flex: 0 1 220px;
+        -ms-flex: 0 1 220px;
+            flex: 0 1 220px; } }
 
 @media (min-width: 1200px) {
   .wrapper {
