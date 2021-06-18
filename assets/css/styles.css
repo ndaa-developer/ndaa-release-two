@@ -945,6 +945,8 @@ body {
       color: #365899; }
   body .fa-info-circle {
     color: #3364a3; }
+  body .match-info ul {
+    margin: .25em; }
 
 .cover {
   background-position: center;
@@ -1112,7 +1114,21 @@ body {
   .wrapper {
     max-width: 960px; }
   .card {
-    max-width: 449.7px; } }
+    max-width: 449.7px; }
+  .Rtable-cell--Date {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 150px;
+        -ms-flex: 0 1 150px;
+            flex: 0 1 150px; }
+  .Rtable-cell--Venue {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 210px;
+        -ms-flex: 0 1 210px;
+            flex: 0 1 210px; } }
 
 @media (min-width: 1200px) {
   .wrapper {

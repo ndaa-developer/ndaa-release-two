@@ -149,6 +149,14 @@
     max-width: 449.7px;
   }
 
+  .Rtable-cell--Date {
+    display: flex;
+    flex: 0 1 150px;
+  }
+  .Rtable-cell--Venue {
+    flex: 0 1 210px; 
+  }
+
 }
 
 @media (min-width: $breakpoint-xl) {
