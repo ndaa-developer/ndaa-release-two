@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  {% include base.html %}
   {% include analytics.html %}
 
     <meta charset="utf-8">
@@ -16,6 +15,8 @@
     <meta name="Keywords" content="{{ page.keywords }}">
     
     <meta name="Description" content="Norwich and District Angler's Association provides great fishing on the Norfolk Broads for all Anglers." />
+
+    {% include base.liquid %}
     
     {% include favicon.html %}
    
@@ -33,25 +34,10 @@
 </head>
 
 <body>
+
   {% include navbar.html %}
-
-  {% if page.name contains 'index' %}
-    {% include cover.html %}
-  {% endif %}
-
-  {% if page.name contains 'booking' %}
-    {% include cover-bookings.html %}
-  {% endif %}
-
-  {% if page.name contains 'match' %}
-    {% include cover-match.html %}
-  {% endif %}
   
-  <main class="wrapper wrapper--padding">
-
-    {{ content }}
-                          
-  </main>
+  {{ content }}
 
   {% include back-to-top.html %}
 

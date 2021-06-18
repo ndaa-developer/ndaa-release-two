@@ -292,9 +292,6 @@ select {
 .fa-info-circle:before {
   content: "\f05a"; }
 
-.fa-instagram:before {
-  content: "\f16d"; }
-
 .fa-mobile-alt:before {
   content: "\f3cd"; }
 
@@ -306,9 +303,6 @@ select {
 
 .fa-square:before {
   content: "\f0c8"; }
-
-.fa-youtube-square:before {
-  content: "\f431"; }
 
 .sr-only {
   border: 0;
@@ -780,6 +774,8 @@ button[disabled] {
   margin-left: auto; }
   .wrapper--padding {
     padding: 0 1.25rem; }
+  .wrapper--min-height {
+    min-height: 7vh; }
 
 .stack > * + * {
   margin-top: 1rem; }
@@ -841,7 +837,7 @@ button[disabled] {
     -webkit-flex: 0 1 100%;
         -ms-flex: 0 1 100%;
             flex: 0 1 100%; }
-  .Rtable-cell--Venue {
+  .Rtable-cell--Venue-Only, .Rtable-cell--Venue {
     -webkit-box-flex: 0;
     -webkit-flex: 0 1 100%;
         -ms-flex: 0 1 100%;
@@ -1002,19 +998,29 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 22%;
-        -ms-flex: 0 1 22%;
-            flex: 0 1 22%; }
+    -webkit-flex: 0 1 90px;
+        -ms-flex: 0 1 90px;
+            flex: 0 1 90px; }
   .Rtable-cell--Match {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 45%;
-        -ms-flex: 0 1 45%;
-            flex: 0 1 45%; }
+    -webkit-flex: 0 1 208px;
+        -ms-flex: 0 1 208px;
+            flex: 0 1 208px; }
   .Rtable-cell--Venue {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 33%;
-        -ms-flex: 0 1 33%;
-            flex: 0 1 33%; }
+    -webkit-flex: 0 1 152px;
+        -ms-flex: 0 1 152px;
+            flex: 0 1 152px; }
+  .Rtable-cell--Venue-Only {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 180px;
+        -ms-flex: 0 1 180px;
+            flex: 0 1 180px; }
+  .Rtable-cell--Link {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 50px;
+        -ms-flex: 0 1 50px;
+            flex: 0 1 50px; }
   .Rtable-cell--Date,
   .Rtable-cell--BkDate {
     font-weight: 400; }
@@ -1065,9 +1071,24 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 22%;
-        -ms-flex: 0 1 22%;
-            flex: 0 1 22%; }
+    -webkit-flex: 0 1 135px;
+        -ms-flex: 0 1 135px;
+            flex: 0 1 135px; }
+  .Rtable-cell--Match {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 280px;
+        -ms-flex: 0 1 280px;
+            flex: 0 1 280px; }
+  .Rtable-cell--Venue {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 190px;
+        -ms-flex: 0 1 190px;
+            flex: 0 1 190px; }
+  .Rtable-cell--Venue-Only {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 210px;
+        -ms-flex: 0 1 210px;
+            flex: 0 1 210px; }
   .Rtable-cell--BkDate {
     display: -webkit-box;
     display: -webkit-flex;

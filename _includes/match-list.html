@@ -63,6 +63,7 @@
         {% for row in site.data.matches %}
         {% assign row_date = row.DateNum %}
         {% assign row_date = row_date | plus: 0 %}
+        {% assign match_page = row_date | append: ".html" %}
 
         {% if today_date <= row_date %}
             {% assign row_found = true %}
@@ -81,9 +82,9 @@
                             {{ row.Month }}
                         </div>
                     </div>
-                    <div class="Rtable-row Rtable-row--MG{{ row.Match-Grp }}">
+                    <div class="Rtable-row Rtable-row--MG{{ row.Match-Grp }} vt-middle">
                 {% else %}
-                    <div class="Rtable-row Rtable-row--MG{{ row.Match-Grp }}  Rtable-row--continue">
+                    <div class="Rtable-row Rtable-row--MG{{ row.Match-Grp }}  Rtable-row--continue vt-middle">
                 {% endif %}
                         <div class="Rtable-cell Rtable-cell--DayNum">
                             {{ row.DayNum }}
@@ -94,9 +95,20 @@
                         <div class="Rtable-cell Rtable-cell--Match">
                             {{ row.Match }}
                         </div>
+                        {% if row.Draw-Venue != nil %}
                         <div class="Rtable-cell Rtable-cell--Venue">
                             {{ row.Venue }}
                         </div>
+                        <div class="Rtable-cell Rtable-cell--Link">
+                            <a href="{{base}}/matches/{{match_page}}" alt="{{ row.Match }} more information">
+                                <i class="fas fa-arrow-circle-right"></i></a>
+                        </div>
+                        {% else %}
+                        <div class="Rtable-cell Rtable-cell--Venue-Only">
+                            {{ row.Venue }}
+                        </div>
+                        {% endif %}
+        
                     </div>
             {% endif %}
         {% endif %}
