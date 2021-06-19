@@ -791,6 +791,9 @@ button[disabled] {
   background-color: #fff; }
   .Rtable-row--continue, .Rtable-row--BkDate, .Rtable-row--new-day {
     border-top: 0.05em solid #6c757d; }
+  .Rtable-row--complete {
+    color: #6c757d;
+    color: #96a1ab; }
   .Rtable-row--same-day, .Rtable-row--new-day {
     background-color: #e4fcea; }
   .Rtable-row--month {

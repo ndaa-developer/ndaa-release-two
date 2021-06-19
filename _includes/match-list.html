@@ -70,9 +70,17 @@
 
             {% if today_date == row_date %}
                 {% if today_time >= cut_off_time %}
-                    {% assign row_found = false %}
+                    {% assign completed_match = true %}
+                {% else %}
+                    {% assign completed_match = false %}           
                 {% endif %}
+            {% else %}
+                {% assign completed_match = false %}
             {% endif %}
+        {% else %}
+            {% assign row_found = true %}
+            {% assign completed_match = true %}
+        {% endif %}
 
             {% if row_found == true %}
                 {% if row.Month != prev_month %}
@@ -82,9 +90,18 @@
                             {{ row.Month }}
                         </div>
                     </div>
-                    <div class="Rtable-row Rtable-row--MG{{ row.Match-Grp }} vt-middle">
+                    {% if completed_match == true %}
+                        <div class="Rtable-row Rtable-row--MG{{ row.Match-Grp }} Rtable-row--complete vt-middle">
+                    {% else %}
+                        <div class="Rtable-row Rtable-row--MG{{ row.Match-Grp }} vt-middle">
+                    {% endif %}
                 {% else %}
-                    <div class="Rtable-row Rtable-row--MG{{ row.Match-Grp }}  Rtable-row--continue vt-middle">
+                    {% if completed_match == true %}
+                        <div class="Rtable-row Rtable-row--MG{{ row.Match-Grp }} Rtable-row--continue Rtable-row--complete vt-middle">
+                    {% else %}
+                        <div class="Rtable-row Rtable-row--MG{{ row.Match-Grp }}  Rtable-row--continue vt-middle">
+                    {% endif %}
+
                 {% endif %}
                         <div class="Rtable-cell Rtable-cell--DayNum">
                             {{ row.DayNum }}
@@ -111,7 +128,6 @@
         
                     </div>
             {% endif %}
-        {% endif %}
         {% endfor %}
         </div>
     </section>

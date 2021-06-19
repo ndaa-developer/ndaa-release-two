@@ -18,6 +18,11 @@ $row-BgColor5: #e4fcee;
         border-top: .05em solid $gray-600;
     }
 
+    &--complete {
+        color: $gray-600;
+        color: darken($gray-500, 8%);
+    }
+
     &--same-day,
     &--new-day {
         background-color: $alert-success-bg-color;
