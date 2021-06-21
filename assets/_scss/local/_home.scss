@@ -39,16 +39,23 @@
 
   .Rtable-cell--DayNum {
     display: flex;
-    flex: 0 1 22%; 
+    flex: 0 1 90px; 
 
   }
 
   .Rtable-cell--Match {
-    flex: 0 1 45%; 
+    flex: 0 1 208px; 
   }
 
   .Rtable-cell--Venue {
-    flex: 0 1 33%;   
+    flex: 0 1 152px;   
+  }
+  .Rtable-cell--Venue-Only {
+    flex: 0 1 180px;   
+  }
+
+  .Rtable-cell--Link {
+    flex: 0 1 50px;   
   }
   
   .Rtable-cell--Date,
@@ -66,7 +73,7 @@
       color: $white;
     }
     &-same-day {
-      color: $alert-success-bg-color;
+      color: $alert-info-bg-color;
     }
 
   }
@@ -106,9 +113,19 @@
 
   .Rtable-cell--Date {
     display: flex;
-    flex: 0 1 22%;
-
+    flex: 0 1 135px;
   }
+
+  .Rtable-cell--Match {
+    flex: 0 1 280px; 
+  }
+  .Rtable-cell--Venue {
+    flex: 0 1 190px; 
+  }
+  .Rtable-cell--Venue-Only {
+    flex: 0 1 210px; 
+  }
+
   .Rtable-cell--BkDate {
     display: flex;
     // flex: 0 1 25%;
@@ -130,6 +147,17 @@
   }
   .card {
     max-width: 449.7px;
+  }
+
+  .Rtable-cell--Date {
+    display: flex;
+    flex: 0 1 150px;
+  }
+  .Rtable-cell--Match {
+    flex: 0 1 320px; 
+  }
+  .Rtable-cell--Venue {
+    flex: 0 1 220px; 
   }
 
 }

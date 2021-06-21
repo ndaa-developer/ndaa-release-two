@@ -1,3 +1,5 @@
+{% include base.liquid %}
+
 {% assign test_ind = site.data.site.test-ind %}
 
 {% if test_ind == true %}
@@ -31,15 +33,17 @@
             {% endif %}
         {% endif %}
         {% if row_found == true %}
+            {% assign match_page = row_date | append: ".html" %}
             {% assign match_date = row.LongDate %}
             {% assign match_name = row.Match %}
             {% assign match_venue = row.Venue %}
             {% assign match_image = row.Image %}
+            {% assign draw_venue = row.Draw-Venue %}
         {% endif %}
     {% endif %}
 {% endfor %}
 
-<div class="wrapper cover" style="background-image: linear-gradient(to bottom, rgb(200, 200, 200, .8), 55%, rgb(200, 200, 200, .2)), url('assets/images/{{ match_image }}')">
+<div class="wrapper cover" style="background-image: linear-gradient(to bottom, rgb(200, 200, 200, .8), 55%, rgb(200, 200, 200, .2)), url('{{ base }}{{ site.data.site.images-folder }}{{ match_image }}')">
 
     <div class="stack">
         <div>
@@ -50,7 +54,7 @@
         </div>
 
         {% if row_found == true %}
-            <div class="alert alert--success alert--flex">
+            <div class="alert alert--info alert--flex vt-middle">
                 <div>
                     <p>{{ match_date }}</p>
                 </div>
@@ -60,8 +64,16 @@
                 <div>
                     <p>{{ match_venue }}</p>
                 </div>
+                {% if draw_venue != nil %}
+                <div>
+                    <p><a href="{{base}}/matches/{{match_page}}" alt="{{ match_name }} more information">
+                        <!-- <span class="v-middle"><i class="fas fa-arrow-circle-right"></i></span></a> -->
+                        <i class="fas fa-arrow-circle-right"></i></a>
+                    </p>
+                </div>
+                {% endif %}
             </div>
-    
+            
         {% else %}
     
             <div class="alert alert--success alert--flex">

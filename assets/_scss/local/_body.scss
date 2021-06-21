@@ -103,6 +103,11 @@ body {
   .fa-info-circle {
     color: $colour-info;
   }
-  
+
+  .match-info {
+    & ul {
+      margin: .25em;
+    }
+  }
 }
   

@@ -58,3 +58,8 @@ exclude:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+collections:
+  matches:
+    output: true
+    permalink: /:collection/:name

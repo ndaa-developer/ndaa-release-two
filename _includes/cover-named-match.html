@@ -1,0 +1,112 @@
+{% include base.liquid %}
+
+{% assign test_ind = site.data.site.test-ind %}
+{% assign row_found = false %}
+{% if test_ind == true %}
+    <p>Page Name: {{ page_match_ref }}</p>
+{% endif %}
+
+{% for row in site.data.matches %}
+{% assign row_date = row.DateNum %}
+    {% if test_ind == true %}
+        <p>Row Date: {{ row_date }}</p>
+    {% endif %}
+
+    {% if page.url contains row_date %}
+        {% assign row_found = true %}
+        {% assign match_date = row.LongDate %}
+        {% assign match_name = row.Match %}
+        {% assign match_venue = row.Venue %}
+        {% assign match_image = row.Image %}
+        {% assign draw_venue = row.Draw-Venue %}
+        {% assign draw_map = row.Draw-Gmap-Ref %}
+        {% assign food_start = row.Food-Start %}
+        {% assign draw_time = row.Draw-Time %}
+        {% assign start_end_times = row.Start-End-Times %}
+        {% assign match_map = row.Match-Gmap-Id %}
+        {% assign match_fees = row.Fees %}
+        {% assign match_sections = row.Sections %}
+        {% assign zone_a = row.Zone-A %}
+        {% assign zone_b = row.Zone-B %}
+        {% assign match_notes = row.Notes %}
+        {% break %}
+    {% endif %}
+{% endfor %}
+
+<div class="wrapper cover" style="background-image: linear-gradient(to bottom, rgb(200, 200, 200, .8), 55%, rgb(200, 200, 200, .2)), url('{{ base }}{{ site.data.site.images-folder }}{{ match_image }}')">
+
+    <div class="stack">
+        <div>
+            <h1>{{ match_name }}</h1>
+            <h2>{{ match_date }}</h2>
+            <h3>{{ match_venue }}</h3>
+            {% if match_sections != nil %}
+            <p>{{ match_sections }}</p>
+            {% else %}
+            <p><strong>Zone A:</strong> {{ zone_a }}</p>
+            <p><strong>Zone B:</strong> {{ zone_b }}</p>
+            {% endif %}
+
+        </div>
+
+        {% if row_found == true %}
+            <div class="alert alert--info alert--flex vt-middle">
+                {% if match_fees != nil %}
+                <div>
+                    <p><strong>Fees:</strong> {{ match_fees }}</p>
+                </div>
+                {% endif %}
+                {% if draw_venue != nil %}
+                <div>
+                    <p><strong>Match HQ:</strong> {{ draw_venue }}{% if draw_map != "" %} <a href="{{ site.data.site.gmap-cid-url }}{{ draw_map }}" alt="{{ match_name }} draw location">
+                        <i class="fas fa-arrow-circle-right"></i></a>{% endif %}</p>
+                </div>
+                {% endif %}
+                {% if food_start != nil %}
+                <div>
+                    <p><strong>Breakfast:</strong> {{food_start }}</p>
+                </div>
+                {% endif %}
+                {% if draw_time != nil %}
+                <div>
+                    <p><strong>Draw:</strong> {{ draw_time }}</p>
+                </div>
+                {% endif %}
+                {% if start_end_times != nil %}
+                <div>
+                    <p><strong>Fish:</strong> {{ start_end_times }}</p>
+                </div>
+                {% endif %}
+                {% if match_notes != nil %}
+                <div>
+                    <p><strong>More Information:</strong> {{ match_notes }} <a href="#Information">
+                        <i class="fas fa-arrow-circle-down"></i></a></p>
+
+                </div>
+                {% endif %}    
+            </div>
+            {% if match_map != nil %}
+            <div>
+                <a class="btn btn--info" href="{{ site.data.site.gmap-url }}{{ match_map }}" role="button"
+                alt="Open map of {{ match_name }} locations">Match Locations <i class="fas fa-arrow-circle-right"></i></a>    
+            </div>
+            {% endif %}
+        {% else %}
+    
+            <div class="alert alert--success alert--flex">
+                <div>
+                    <span class="span-center">
+                        <span class="pull-left">
+                            <i class="fas fa-info-circle"></i>
+                            <p>Oops this match ( {{ page.url }} ) was not found on matches.csv.</p>
+                        </span>
+                    </span>
+                </div>
+            </div>
+        
+    
+        {% endif %}
+    
+    </div>
+
+</div>

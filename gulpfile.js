@@ -90,8 +90,11 @@ gulp.task('copy-fa-fonts', function() {
     [
       "*.md",
       "*.html",
+      "_matches/*.md",
+      "_matches/*.html",
       "_layouts/*.html",
       "_includes/*.html",
+      "_includes/*.liquid",
       "_data/*",
     ],
     gulp.series("jekyll-rebuild")

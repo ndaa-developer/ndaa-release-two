@@ -4,6 +4,10 @@ title: Bookings | NDAA
 keywords: NDAA, norwich & district anglers, norwich and district angling, norwich & district, bookings, bank bookings, water bookings, river bookings
 ---
 
+{% include cover-bookings.html %}
+
+<main class="wrapper wrapper--padding">
+
 <article>
     <section id="Bookings">
         <div class="section-hdr">
@@ -98,13 +102,13 @@ keywords: NDAA, norwich & district anglers, norwich and district angling, norwic
                     {% assign prev_date = row.Date %}
                     {% assign same-day = false %}
                     {% if new_month == true %}
-                    <div class="Rtable-row Rtable-row--BkDate-continue">              
+                    <div class="Rtable-row Rtable-row--booking Rtable-row--BkDate-continue">              
                     {% else %}
-                    <div class="Rtable-row Rtable-row--BkDate">
+                    <div class="Rtable-row Rtable-row--booking Rtable-row--BkDate">
                     {% endif %}
                 {% else %}
                     {% assign same-day = true %}
-                    <div class="Rtable-row Rtable-row--BkDate-continue">
+                    <div class="Rtable-row Rtable-row--booking Rtable-row--BkDate-continue">
                 {% endif %}
                 {% if same-day == true %}
                     <div class="Rtable-cell Rtable-cell--BkDayNum Rtable-cell--BkDayNum-continue">
@@ -142,3 +146,4 @@ keywords: NDAA, norwich & district anglers, norwich and district angling, norwic
 
 
 </article>
+</main>

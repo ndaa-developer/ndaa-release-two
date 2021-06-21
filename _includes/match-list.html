@@ -63,15 +63,24 @@
         {% for row in site.data.matches %}
         {% assign row_date = row.DateNum %}
         {% assign row_date = row_date | plus: 0 %}
+        {% assign match_page = row_date | append: ".html" %}
 
         {% if today_date <= row_date %}
             {% assign row_found = true %}
 
             {% if today_date == row_date %}
                 {% if today_time >= cut_off_time %}
-                    {% assign row_found = false %}
+                    {% assign completed_match = true %}
+                {% else %}
+                    {% assign completed_match = false %}           
                 {% endif %}
+            {% else %}
+                {% assign completed_match = false %}
             {% endif %}
+        {% else %}
+            {% assign row_found = true %}
+            {% assign completed_match = true %}
+        {% endif %}
 
             {% if row_found == true %}
                 {% if row.Month != prev_month %}
@@ -81,9 +90,18 @@
                             {{ row.Month }}
                         </div>
                     </div>
-                    <div class="Rtable-row Rtable-row--MG{{ row.Match-Grp }}">
+                    {% if completed_match == true %}
+                        <div class="Rtable-row Rtable-row--MG{{ row.Match-Grp }} Rtable-row--complete vt-middle">
+                    {% else %}
+                        <div class="Rtable-row Rtable-row--MG{{ row.Match-Grp }} vt-middle">
+                    {% endif %}
                 {% else %}
-                    <div class="Rtable-row Rtable-row--MG{{ row.Match-Grp }}  Rtable-row--continue">
+                    {% if completed_match == true %}
+                        <div class="Rtable-row Rtable-row--MG{{ row.Match-Grp }} Rtable-row--continue Rtable-row--complete vt-middle">
+                    {% else %}
+                        <div class="Rtable-row Rtable-row--MG{{ row.Match-Grp }}  Rtable-row--continue vt-middle">
+                    {% endif %}
+
                 {% endif %}
                         <div class="Rtable-cell Rtable-cell--DayNum">
                             {{ row.DayNum }}
@@ -94,12 +112,22 @@
                         <div class="Rtable-cell Rtable-cell--Match">
                             {{ row.Match }}
                         </div>
+                        {% if row.Draw-Venue != nil %}
                         <div class="Rtable-cell Rtable-cell--Venue">
                             {{ row.Venue }}
                         </div>
+                        <div class="Rtable-cell Rtable-cell--Link">
+                            <a href="{{base}}/matches/{{match_page}}" alt="{{ row.Match }} more information">
+                                <i class="fas fa-arrow-circle-right"></i></a>
+                        </div>
+                        {% else %}
+                        <div class="Rtable-cell Rtable-cell--Venue-Only">
+                            {{ row.Venue }}
+                        </div>
+                        {% endif %}
+        
                     </div>
             {% endif %}
-        {% endif %}
         {% endfor %}
         </div>
     </section>

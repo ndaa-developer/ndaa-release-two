@@ -10,7 +10,6 @@ $row-BgColor5: #e4fcee;
 .Rtable-row {
     display: flex;
     flex-wrap: wrap;
-    background-color: $white;
 
     &--continue,
     &--BkDate,
@@ -18,9 +17,13 @@ $row-BgColor5: #e4fcee;
         border-top: .05em solid $gray-600;
     }
 
-    &--same-day,
-    &--new-day {
-        background-color: $alert-success-bg-color;
+    &--complete {
+        color: $gray-600;
+        color: darken($gray-500, 8%);
+    }
+
+    &--booking {
+        background-color: $white;
     }
 
     &--month {
@@ -103,6 +106,7 @@ $row-BgColor5: #e4fcee;
         flex: 0 1 100%; 
     }
 
+    &--Venue-Only,
     &--Venue {
         flex: 0 1 100%;   
     }
