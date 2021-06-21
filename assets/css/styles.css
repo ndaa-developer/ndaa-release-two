@@ -787,15 +787,14 @@ button[disabled] {
   display: flex;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  background-color: #fff; }
+          flex-wrap: wrap; }
   .Rtable-row--continue, .Rtable-row--BkDate, .Rtable-row--new-day {
     border-top: 0.05em solid #6c757d; }
   .Rtable-row--complete {
     color: #6c757d;
     color: #96a1ab; }
-  .Rtable-row--same-day, .Rtable-row--new-day {
-    background-color: #e4fcea; }
+  .Rtable-row--booking {
+    background-color: #fff; }
   .Rtable-row--month {
     background-color: #ced4da;
     margin-top: 1em;
@@ -1041,7 +1040,7 @@ body {
     .Rtable-cell--BkDate-continue {
       color: #fff; }
     .Rtable-cell--BkDate-same-day {
-      color: #e4fcea; }
+      color: #d9edf7; }
   .Rtable-cell--BkVenueDesc {
     display: none; }
   .Rtable-cell--BkVenue {

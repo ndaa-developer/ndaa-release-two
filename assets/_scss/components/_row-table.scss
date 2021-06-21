@@ -10,7 +10,6 @@ $row-BgColor5: #e4fcee;
 .Rtable-row {
     display: flex;
     flex-wrap: wrap;
-    background-color: $white;
 
     &--continue,
     &--BkDate,
@@ -23,9 +22,8 @@ $row-BgColor5: #e4fcee;
         color: darken($gray-500, 8%);
     }
 
-    &--same-day,
-    &--new-day {
-        background-color: $alert-success-bg-color;
+    &--booking {
+        background-color: $white;
     }
 
     &--month {
