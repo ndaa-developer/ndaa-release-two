@@ -64,7 +64,7 @@
                 {% endif %}
                 {% if food_start != nil %}
                 <div>
-                    <p><strong>Breakfast from:</strong> {{food_start }}</p>
+                    <p><strong>Breakfast:</strong> {{food_start }}</p>
                 </div>
                 {% endif %}
                 {% if draw_time != nil %}
@@ -77,6 +77,13 @@
                     <p><strong>Fish:</strong> {{ start_end_times }}</p>
                 </div>
                 {% endif %}
+                {% if match_notes != nil %}
+                <div>
+                    <p><strong>More Information:</strong> {{ match_notes }} <a href="#Information">
+                        <i class="fas fa-arrow-circle-down"></i></a></p>
+
+                </div>
+                {% endif %}    
             </div>
             {% if match_map != nil %}
             <div>
