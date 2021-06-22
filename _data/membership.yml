@@ -7,8 +7,8 @@ alert-msg-ind: true
 alert-messages:
   - alert-type: warning
     alert-msg: Only Season Membership Cards will be available for 2021-22.
-  - alert-type: info
-    alert-msg: Season Membership Cards will be in shops mid-May.
+  # - alert-type: info
+  #   alert-msg: Season Membership Cards will be in shops mid-May.
 options:
   - option-desc: Season Membership, 16th June to 14th March, **£30**
   - option-desc: ~~5 Day Membership, Mon-Fri, £15~~
