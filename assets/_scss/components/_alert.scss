@@ -26,6 +26,14 @@ $alert-info-brdr-color: #bce8f1 !default;
   border: 1px solid transparent;
   border-radius: .2em;
 
+  &--fit-center{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+
+
   &--success {
     color: $alert-success-color;
     background-color: $alert-success-bg-color;

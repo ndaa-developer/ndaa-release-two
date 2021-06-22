@@ -1,4 +1,5 @@
 $stack-margin-top: 1rem !default;
 .stack > * + * {
   margin-top: $stack-margin-top;
+
 }

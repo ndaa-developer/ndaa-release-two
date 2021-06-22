@@ -698,6 +698,12 @@ button[disabled] {
   padding-left: 1em;
   border: 1px solid transparent;
   border-radius: .2em; }
+  .alert--fit-center {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto; }
   .alert--success {
     color: #0a581d;
     background-color: #e4fcea;
