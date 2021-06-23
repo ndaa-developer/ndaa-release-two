@@ -112,3 +112,19 @@ $row-BgColor5: #e4fcee;
     }
 
 }
+
+.Btable-cell {
+    padding: .3em .7em;
+
+    &--BkVenueDesc {
+        display: block;
+    }
+
+    &--BkDate {
+        font-weight: $weight-bold;
+    }
+    &--BkVenue,
+    &--BkDesc {
+        display: none;
+    }
+}

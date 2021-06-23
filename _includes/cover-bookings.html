@@ -52,8 +52,8 @@
         </div>
 
         {% if row_found == true %}
-        <div class="alert alert--info">
-            <div class="Rtable">
+        <div class="alert alert--info alert--fit-center">
+            <div class="Btable">
             {% assign prev_date = "none" %}
             {% assign same-day = false %}
             {% assign count = 0 %}
@@ -82,18 +82,18 @@
                         {% assign same-day = true %}
                     {% endif %}
                     {% if same-day == true %}
-                        <div class="Rtable-row Rtable-row--same-day">
-                            <div class="Rtable-cell Rtable-cell--BkDate Rtable-cell--BkDate-same-day">
+                        <div class="Btable-row Btable-row--same-day">
+                            <div class="Btable-cell Btable-cell--BkDate Rtable-cell--BkDate-same-day">
 
                     {% else %}
                         {% if count == 1 %}
-                            <div class="Rtable-row Rtable-row--same-day">
+                            <div class="Btable-row Rtable-row--same-day">
                         {% else %}
-                            <div class="Rtable-row Rtable-row--new-day">
+                            <div class="Btable-row Rtable-row--new-day">
                         {% endif %}                    
-                                <div class="Rtable-cell Rtable-cell--BkDate">
-                        <!-- <div class="Rtable-row Rtable-row--new-day">
-                            <div class="Rtable-cell Rtable-cell--BkDate"> -->
+                                <div class="Btable-cell Btable-cell--BkDate">
+                        <!-- <div class="Btable-row Btable-row--new-day">
+                            <div class="Btable-cell Btable-cell--BkDate"> -->
 
                     {% endif %}
                                 {{ row.Date }}
@@ -101,13 +101,13 @@
                             {% capture venue_desc %}
                             {{ row.Venue }} ({{ row.Description }})
                             {% endcapture %}
-                            <div class="Rtable-cell Rtable-cell--BkVenueDesc">
+                            <div class="Btable-cell Btable-cell--BkVenueDesc">
                                 {{ venue_desc }}
                             </div>
-                            <div class="Rtable-cell Rtable-cell--BkVenue">
+                            <div class="Btable-cell Btable-cell--BkVenue">
                                 {{ row.Venue }}
                             </div>
-                            <div class="Rtable-cell Rtable-cell--BkDesc">
+                            <div class="Btable-cell Btable-cell--BkDesc">
                                 {{ row.Description }}
                             </div>
                         </div>

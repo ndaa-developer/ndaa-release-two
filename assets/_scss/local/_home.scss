@@ -94,6 +94,25 @@
     flex: 0 1 191px;
   }
  
+  .Btable-cell {
+    display: inline-block;
+    text-align: left;
+
+    &--BkVenueDesc {
+        display: none;
+    }
+    &--BkDate {
+      font-weight: $weight-regular;
+      min-width: 120px;
+    }
+    &--BkVenue {
+        min-width: 155px;
+    }
+    &--BkDesc {
+        min-width: 130px;
+    }
+  }
+
 }
 
 @media (min-width: $breakpoint-md) {

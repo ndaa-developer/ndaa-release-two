@@ -854,6 +854,15 @@ button[disabled] {
         -ms-flex: 0 1 100%;
             flex: 0 1 100%; }
 
+.Btable-cell {
+  padding: .3em .7em; }
+  .Btable-cell--BkVenueDesc {
+    display: block; }
+  .Btable-cell--BkDate {
+    font-weight: 700; }
+  .Btable-cell--BkVenue, .Btable-cell--BkDesc {
+    display: none; }
+
 body {
   background-color: #eeeeee;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#999), to(#000));
@@ -1069,7 +1078,19 @@ body {
     -webkit-box-flex: 0;
     -webkit-flex: 0 1 191px;
         -ms-flex: 0 1 191px;
-            flex: 0 1 191px; } }
+            flex: 0 1 191px; }
+  .Btable-cell {
+    display: inline-block;
+    text-align: left; }
+    .Btable-cell--BkVenueDesc {
+      display: none; }
+    .Btable-cell--BkDate {
+      font-weight: 400;
+      min-width: 120px; }
+    .Btable-cell--BkVenue {
+      min-width: 155px; }
+    .Btable-cell--BkDesc {
+      min-width: 130px; } }
 
 @media (min-width: 768px) {
   .wrapper {
