@@ -91,11 +91,11 @@
             <div class="match-buttons">
                 {% if linked_match != nil %}
                 <a class="btn btn--info" href="{{base}}/matches/{{ linked_file }}" role="button"
-                alt="Go to {{ linked_match }} page"> {{ linked_match }} <i class="fas fa-arrow-circle-right"></i></a>    
+                alt="Go to {{ linked_match }} page"> {{ linked_match }}</a>    
                 {% endif %}
                 {% if match_map != nil %}
                 <a class="btn btn--info" href="{{ site.data.site.gmap-url }}{{ match_map }}" role="button"
-                alt="Open map of {{ match_name }} locations">Match Locations <i class="fas fa-arrow-circle-right"></i></a>    
+                alt="Open map of {{ match_name }} locations">Locations <i class="fas fa-map-marker-alt"></i></a>    
                 {% endif %}
             </div>
             {% endif %}

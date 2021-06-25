@@ -295,6 +295,9 @@ select {
 .fa-info-circle:before {
   content: "\f05a"; }
 
+.fa-map-marker-alt:before {
+  content: "\f3c5"; }
+
 .fa-mobile-alt:before {
   content: "\f3cd"; }
 
