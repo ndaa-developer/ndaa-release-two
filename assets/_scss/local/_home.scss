@@ -207,5 +207,11 @@
       display: flex;
       flex: 0 1 40%;
     }
-
+    .Btable-cell--BkVenue {
+      min-width: 200px;
+    }
+    .Btable-cell--BkDesc {
+      min-width: 145px;
+    }
+   
 }
