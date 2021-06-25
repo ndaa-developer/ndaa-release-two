@@ -967,6 +967,8 @@ body {
     color: #3364a3; }
   body .match-info ul {
     margin: .25em; }
+  body .match-buttons > * + * {
+    margin-left: 1em; }
 
 .cover {
   background-position: center;
@@ -1165,7 +1167,11 @@ body {
     -webkit-box-flex: 0;
     -webkit-flex: 0 1 220px;
         -ms-flex: 0 1 220px;
-            flex: 0 1 220px; } }
+            flex: 0 1 220px; }
+  .Btable-cell--BkVenue {
+    min-width: 170px; }
+  .Btable-cell--BkDesc {
+    min-width: 135px; } }
 
 @media (min-width: 1200px) {
   .wrapper {

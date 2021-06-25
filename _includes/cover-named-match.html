@@ -29,6 +29,8 @@
         {% assign zone_a = row.Zone-A %}
         {% assign zone_b = row.Zone-B %}
         {% assign match_notes = row.Notes %}
+        {% assign linked_match = row.Linked-Match %}
+        {% assign linked_file = row.Linked-Filename %}
         {% break %}
     {% endif %}
 {% endfor %}
@@ -58,7 +60,7 @@
                 {% endif %}
                 {% if draw_venue != nil %}
                 <div>
-                    <p><strong>Match HQ:</strong> {{ draw_venue }}{% if draw_map != "" %} <a href="{{ site.data.site.gmap-cid-url }}{{ draw_map }}" alt="{{ match_name }} draw location">
+                    <p><strong>Match HQ:</strong> {{ draw_venue }}{% if draw_map != nil %} <a href="{{ site.data.site.gmap-cid-url }}{{ draw_map }}" alt="{{ match_name }} draw location">
                         <i class="fas fa-arrow-circle-right"></i></a>{% endif %}</p>
                 </div>
                 {% endif %}
@@ -85,10 +87,16 @@
                 </div>
                 {% endif %}    
             </div>
-            {% if match_map != nil %}
-            <div>
+            {% if match_map != nil or linked_match != nil %}
+            <div class="match-buttons">
+                {% if linked_match != nil %}
+                <a class="btn btn--info" href="{{base}}/matches/{{ linked_file }}" role="button"
+                alt="Go to {{ linked_match }} page"> {{ linked_match }} <i class="fas fa-arrow-circle-right"></i></a>    
+                {% endif %}
+                {% if match_map != nil %}
                 <a class="btn btn--info" href="{{ site.data.site.gmap-url }}{{ match_map }}" role="button"
                 alt="Open map of {{ match_name }} locations">Match Locations <i class="fas fa-arrow-circle-right"></i></a>    
+                {% endif %}
             </div>
             {% endif %}
         {% else %}

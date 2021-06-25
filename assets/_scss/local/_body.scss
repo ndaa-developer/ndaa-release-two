@@ -109,5 +109,9 @@ body {
       margin: .25em;
     }
   }
+
+  .match-buttons > * + * {
+    margin-left: 1em;
+  }
 }
   
