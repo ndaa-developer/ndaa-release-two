@@ -1145,7 +1145,9 @@ body {
     -webkit-box-flex: 0;
     -webkit-flex: 0 1 177px;
         -ms-flex: 0 1 177px;
-            flex: 0 1 177px; } }
+            flex: 0 1 177px; }
+  .Btable-cell--BkDate {
+    min-width: 125px; } }
 
 @media (min-width: 992px) {
   .wrapper {
@@ -1171,6 +1173,8 @@ body {
     -webkit-flex: 0 1 220px;
         -ms-flex: 0 1 220px;
             flex: 0 1 220px; }
+  .Btable-cell--BkDate {
+    min-width: 140px; }
   .Btable-cell--BkVenue {
     min-width: 170px; }
   .Btable-cell--BkDesc {

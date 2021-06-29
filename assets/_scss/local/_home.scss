@@ -157,6 +157,10 @@
     flex: 0 1 177px;
   }
 
+  .Btable-cell--BkDate {
+    min-width: 125px;
+  }
+
 }
 
 @media (min-width: $breakpoint-lg) {
@@ -177,6 +181,9 @@
   }
   .Rtable-cell--Venue {
     flex: 0 1 220px; 
+  }
+  .Btable-cell--BkDate {
+    min-width: 140px;
   }
   .Btable-cell--BkVenue {
     min-width: 170px;
