@@ -972,12 +972,13 @@ body {
     margin: .25em; }
   body .match-buttons > * + * {
     margin-left: 1em; }
-  body .match-result td,
-  body .match-result th {
+  body .match-result td {
     padding: .1em .5em; }
   body .match-result th {
+    padding: .2em .5em;
     background-color: #ced4da;
-    border-bottom: 0.1em solid #000; }
+    border-bottom: 0.1em solid #000;
+    vertical-align: bottom; }
   body .match-result tr:nth-child(even) {
     background-color: #e9ecef; }
   body .match-result .td--right {
