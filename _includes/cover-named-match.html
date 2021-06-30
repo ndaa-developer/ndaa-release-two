@@ -1,10 +1,12 @@
 {% include base.liquid %}
 
 {% assign test_ind = site.data.site.test-ind %}
-{% assign row_found = false %}
 {% if test_ind == true %}
     <p>Page Name: {{ page_match_ref }}</p>
 {% endif %}
+
+{% assign row_found = false %}
+{% assign match_result = false %}
 
 {% for row in site.data.matches %}
 {% assign row_date = row.DateNum %}
@@ -31,6 +33,16 @@
         {% assign match_notes = row.Notes %}
         {% assign linked_match = row.Linked-Match %}
         {% assign linked_file = row.Linked-Filename %}
+        {% assign result_basis = row.Result-Basis %}
+        {% assign first_place = row.First %}
+        {% assign first_pts = row.First-Pts %}
+        {% assign first_weight = row.First-Weight %}
+        {% assign second_place = row.Second %}
+        {% assign second_pts = row.Second-Pts %}
+        {% assign second_weight = row.Second-Weight %}
+        {% assign third_place = row.Third %}
+        {% assign third_pts = row.Third-Pts %}
+        {% assign third_weight = row.Third-Weight %}
         {% break %}
     {% endif %}
 {% endfor %}
@@ -52,52 +64,94 @@
         </div>
 
         {% if row_found == true %}
-            <div class="alert alert--info alert--flex vt-middle">
-                {% if match_fees != nil %}
-                <div>
-                    <p><strong>Fees:</strong> {{ match_fees }}</p>
+            {% if first_place != nil %}
+                {% assign match_result = true %}
+                <div class="alert alert--info alert--fit-center">
+                    <table class="match-top-three">
+                        <thead>
+                            <tr>
+                                <th>Placing</th>
+                                <th>Pairing</th>
+                                <th{% if result_basis == "weight" %} class="t3-hidden-sm"{% endif %}>Points</th>
+                                <th{% if result_basis == "points" %} class="t3-hidden-sm"{% endif %}>Weight</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-heading="Placing" class="placing">1st</td>
+                                <td data-heading="Pairing">{{ first_place }}</td>
+                                <td {% if result_basis == "weight" %}class="t3-hidden-sm" {% endif %}data-heading="Points">{{ first_pts }}</td>
+                                <td {% if result_basis == "points" %}class="t3-hidden-sm" {% endif %}data-heading="Weight">{{ first_weight }}</td>
+                            </tr>
+                            <tr>
+                                <td data-heading="Placing" class="placing">2nd</td>
+                                <td data-heading="Pairing">{{ second_place }}</td>
+                                <td {% if result_basis == "weight" %}class="t3-hidden-sm" {% endif %}data-heading="Points">{{ second_pts }}</td>
+                                <td {% if result_basis == "points" %}class="t3-hidden-sm" {% endif %}data-heading="Weight">{{ second_weight }}</td>
+                            </tr>
+                            <tr>
+                                <td data-heading="Placing" class="placing">3rd</td>
+                                <td data-heading="Pairing">{{ third_place }}</td>
+                                <td {% if result_basis == "weight" %}class="t3-hidden-sm" {% endif %}data-heading="Points">{{ third_pts }}</td>
+                                <td {% if result_basis == "points" %}class="t3-hidden-sm" {% endif %}data-heading="Weight">{{ third_weight }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                {% endif %}
-                {% if draw_venue != nil %}
-                <div>
-                    <p><strong>Match HQ:</strong> {{ draw_venue }}{% if draw_map != nil %} <a href="{{ site.data.site.gmap-cid-url }}{{ draw_map }}" alt="{{ match_name }} draw location">
-                        <i class="fas fa-arrow-circle-right"></i></a>{% endif %}</p>
+                <div class="match-buttons">
+                    {% if linked_match != nil %}
+                    <a class="btn btn--info" href="{{base}}/matches/{{ linked_file }}" role="button"
+                    alt="Go to {{ linked_match }} page"> {{ linked_match }}</a>    
+                    {% endif %}
                 </div>
-                {% endif %}
-                {% if food_start != nil %}
-                <div>
-                    <p><strong>Breakfast:</strong> {{food_start }}</p>
-                </div>
-                {% endif %}
-                {% if draw_time != nil %}
-                <div>
-                    <p><strong>Draw:</strong> {{ draw_time }}</p>
-                </div>
-                {% endif %}
-                {% if start_end_times != nil %}
-                <div>
-                    <p><strong>Fish:</strong> {{ start_end_times }}</p>
-                </div>
-                {% endif %}
-                {% if match_notes != nil %}
-                <div>
-                    <p><strong>More Information:</strong> {{ match_notes }} <a href="#Information">
-                        <i class="fas fa-arrow-circle-down"></i></a></p>
+            {% else %}
+                <div class="alert alert--info alert--flex vt-middle">
+                    {% if match_fees != nil %}
+                    <div>
+                        <p><strong>Fees:</strong> {{ match_fees }}</p>
+                    </div>
+                    {% endif %}
+                    {% if draw_venue != nil %}
+                    <div>
+                        <p><strong>Match HQ:</strong> {{ draw_venue }}{% if draw_map != nil %} <a href="{{ site.data.site.gmap-cid-url }}{{ draw_map }}" alt="{{ match_name }} draw location">
+                            <i class="fas fa-arrow-circle-right"></i></a>{% endif %}</p>
+                    </div>
+                    {% endif %}
+                    {% if food_start != nil %}
+                    <div>
+                        <p><strong>Breakfast:</strong> {{food_start }}</p>
+                    </div>
+                    {% endif %}
+                    {% if draw_time != nil %}
+                    <div>
+                        <p><strong>Draw:</strong> {{ draw_time }}</p>
+                    </div>
+                    {% endif %}
+                    {% if start_end_times != nil %}
+                    <div>
+                        <p><strong>Fish:</strong> {{ start_end_times }}</p>
+                    </div>
+                    {% endif %}
+                    {% if match_notes != nil %}
+                    <div>
+                        <p><strong>More Information:</strong> {{ match_notes }} <a href="#Information">
+                            <i class="fas fa-arrow-circle-down"></i></a></p>
 
+                    </div>
+                    {% endif %}    
                 </div>
-                {% endif %}    
-            </div>
-            {% if match_map != nil or linked_match != nil %}
-            <div class="match-buttons">
-                {% if linked_match != nil %}
-                <a class="btn btn--info" href="{{base}}/matches/{{ linked_file }}" role="button"
-                alt="Go to {{ linked_match }} page"> {{ linked_match }}</a>    
+                {% if match_map != nil or linked_match != nil %}
+                <div class="match-buttons">
+                    {% if linked_match != nil %}
+                    <a class="btn btn--info" href="{{base}}/matches/{{ linked_file }}" role="button"
+                    alt="Go to {{ linked_match }} page"> {{ linked_match }}</a>    
+                    {% endif %}
+                    {% if match_map != nil %}
+                    <a class="btn btn--info" href="{{ site.data.site.gmap-url }}{{ match_map }}" role="button"
+                    alt="Open map of {{ match_name }} locations">Locations <i class="fas fa-map-marker-alt"></i></a>    
+                    {% endif %}
+                </div>
                 {% endif %}
-                {% if match_map != nil %}
-                <a class="btn btn--info" href="{{ site.data.site.gmap-url }}{{ match_map }}" role="button"
-                alt="Open map of {{ match_name }} locations">Locations <i class="fas fa-map-marker-alt"></i></a>    
-                {% endif %}
-            </div>
             {% endif %}
         {% else %}
     
