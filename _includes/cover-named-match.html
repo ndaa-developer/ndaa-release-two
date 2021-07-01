@@ -33,6 +33,8 @@
         {% assign match_notes = row.Notes %}
         {% assign linked_match = row.Linked-Match %}
         {% assign linked_file = row.Linked-Filename %}
+        {% assign next_match = row.Next-Match %}
+        {% assign next_file = row.Next-Filename %}
         {% assign result_basis = row.Result-Basis %}
         {% assign first_place = row.First %}
         {% assign first_pts = row.First-Pts %}
@@ -98,12 +100,18 @@
                         </tbody>
                     </table>
                 </div>
+                {% if linked_match != nil or next_match != nil %}
                 <div class="match-buttons">
                     {% if linked_match != nil %}
                     <a class="btn btn--info" href="{{base}}/matches/{{ linked_file }}" role="button"
                     alt="Go to {{ linked_match }} page"> {{ linked_match }}</a>    
                     {% endif %}
+                    {% if next_match != nil %}
+                    <a class="btn btn--info" href="{{base}}/matches/{{ next_file }}" role="button"
+                    alt="Go to {{ next_match }} page"> {{ next_match }}</a>    
+                    {% endif %}
                 </div>
+                {% endif %}
             {% else %}
                 <div class="alert alert--info alert--flex vt-middle">
                     {% if match_fees != nil %}
@@ -134,9 +142,8 @@
                     {% endif %}
                     {% if match_notes != nil %}
                     <div>
-                        <p><strong>More Information:</strong> {{ match_notes }} <a href="#Information">
-                            <i class="fas fa-arrow-circle-down"></i></a></p>
-
+                        <p><strong>More Information:</strong> {{ match_notes }} <a href="#Information"><i class="fas fa-arrow-circle-down"></i></a>
+                        </p>
                     </div>
                     {% endif %}    
                 </div>
