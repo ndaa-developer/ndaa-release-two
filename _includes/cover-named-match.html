@@ -29,7 +29,13 @@
         {% assign match_fees = row.Fees %}
         {% assign match_sections = row.Sections %}
         {% assign zone_a = row.Zone-A %}
+        {% assign zone_a_name = row.Z-A-Name %}
         {% assign zone_b = row.Zone-B %}
+        {% assign zone_b_name = row.Z-B-Name %}
+        {% assign zone_c = row.Zone-C %}
+        {% assign zone_c_name = row.Z-C-Name %}
+        {% assign zone_d = row.Zone-D %}
+        {% assign zone_d_name = row.Z-D-Name %}
         {% assign match_notes = row.Notes %}
         {% assign linked_match = row.Linked-Match %}
         {% assign linked_file = row.Linked-Filename %}
@@ -59,8 +65,20 @@
             {% if match_sections != nil %}
             <p>{{ match_sections }}</p>
             {% else %}
-            <p><strong>Zone A:</strong> {{ zone_a }}</p>
-            <p><strong>Zone B:</strong> {{ zone_b }}</p>
+                <div class="alert--flex vt-middle">
+                {% if zone_a_name != nil %}            
+                <div><strong>{{ zone_a_name }}:</strong> {{ zone_a }}</div>
+                {% endif %}
+                {% if zone_b_name != nil %}            
+                <div><strong>{{ zone_b_name }}:</strong> {{ zone_b }}</div>
+                {% endif %}
+                {% if zone_c_name != nil %}            
+                <div><strong>{{ zone_c_name }}:</strong> {{ zone_c }}</div>
+                {% endif %}
+                {% if zone_d_name != nil %}            
+                <div><strong>{{ zone_d_name }}:</strong> {{ zone_d }}</div>
+                {% endif %}
+                </div>
             {% endif %}
 
         </div>

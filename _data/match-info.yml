@@ -22,10 +22,10 @@ options:
   - option-grp: 3
     option-grp-icon: fa-square
     option-name: To4 League
-    option-desc: <strong>Teams of 4 League</strong> - Entry £50/team, Daily Pools £20/angler.
+    option-desc: <strong>Teams of 4 League</strong> - Pools £80/team + £10/angler section pool.
   - option-grp: 4
     option-grp-icon: fa-square
-    option-name: Pete Swan Memorial
+    option-name: Pete Swann Memorial
     option-desc: <strong>Pete Swan Memorial</strong> - Entry £20 (£10 to charity), Pools £10.
   - option-grp: 5
     option-grp-icon: fa-square
