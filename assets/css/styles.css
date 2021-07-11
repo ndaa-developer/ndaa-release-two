@@ -985,6 +985,10 @@ body {
     text-align: right; }
   body .match-result .td--center {
     text-align: center; }
+  body .match-result .td--lowest {
+    color: #a94442;
+    background-color: #f2dede;
+    font-style: italic; }
   body .table-container {
     display: block;
     overflow-x: auto;

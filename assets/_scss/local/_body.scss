@@ -136,6 +136,11 @@ body {
     & .td--center {
       text-align: center;
     }
+    & .td--lowest {
+      color: $alert-danger-color;
+      background-color: $alert-danger-bg-color;
+      font-style: italic;
+    }
   }
 
   .table-container {
