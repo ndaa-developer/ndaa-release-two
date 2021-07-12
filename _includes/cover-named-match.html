@@ -51,6 +51,12 @@
         {% assign third_place = row.Third %}
         {% assign third_pts = row.Third-Pts %}
         {% assign third_weight = row.Third-Weight %}
+        {% assign fourth_place = row.Fourth %}
+        {% assign fourth_pts = row.Fourth-Pts %}
+        {% assign fourth_weight = row.Fourth-Weight %}
+        {% assign fifth_place = row.Fifth %}
+        {% assign fifth_pts = row.Fifth-Pts %}
+        {% assign fifth_weight = row.Fifth-Weight %}
         {% break %}
     {% endif %}
 {% endfor %}
@@ -115,6 +121,22 @@
                                 <td {% if result_basis == "weight" %}class="t3-hidden-sm" {% endif %}data-heading="Points">{{ third_pts }}</td>
                                 <td {% if result_basis == "points" %}class="t3-hidden-sm" {% endif %}data-heading="Weight">{{ third_weight }}</td>
                             </tr>
+                            {% if fourth_place != nil %}
+                            <tr>
+                                <td data-heading="Placing" class="placing">4th</td>
+                                <td data-heading="Pairing">{{ fourth_place }}</td>
+                                <td {% if result_basis == "weight" %}class="t3-hidden-sm" {% endif %}data-heading="Points">{{ fourth_pts }}</td>
+                                <td {% if result_basis == "points" %}class="t3-hidden-sm" {% endif %}data-heading="Weight">{{ fourth_weight }}</td>
+                            </tr>
+                            {% endif %}
+                            {% if fifth_place != nil %}
+                            <tr>
+                                <td data-heading="Placing" class="placing">5th</td>
+                                <td data-heading="Pairing">{{ fifth_place }}</td>
+                                <td {% if result_basis == "weight" %}class="t3-hidden-sm" {% endif %}data-heading="Points">{{ fifth_pts }}</td>
+                                <td {% if result_basis == "points" %}class="t3-hidden-sm" {% endif %}data-heading="Weight">{{ fifth_weight }}</td>
+                            </tr>
+                            {% endif %}
                         </tbody>
                     </table>
                 </div>

@@ -117,6 +117,7 @@ body {
   .match-result {
     & td {
       padding: .1em .5em;
+      border-bottom: .05em solid $black;
     }
 
     & th {
@@ -126,9 +127,9 @@ body {
       vertical-align: bottom;
     }
 
-    & tr:nth-child(even) {
-      background-color: $gray-200;
-    }
+    // & tr:nth-child(even) {
+    //   background-color: $gray-200;
+    // }
 
     & .td--right {
       text-align: right;
