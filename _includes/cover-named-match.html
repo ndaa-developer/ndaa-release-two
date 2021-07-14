@@ -72,17 +72,17 @@
             <p>{{ match_sections }}</p>
             {% else %}
                 <div class="alert--flex vt-middle">
-                {% if zone_a_name != nil %}            
-                <div><strong>{{ zone_a_name }}:</strong> {{ zone_a }}</div>
+                {% if zone_a != nil %}            
+                <div>{% if zone_a_name != nil %}<strong>{{ zone_a_name }}:</strong> {% endif %}{{ zone_a }}</div>
                 {% endif %}
-                {% if zone_b_name != nil %}            
-                <div><strong>{{ zone_b_name }}:</strong> {{ zone_b }}</div>
+                {% if zone_b != nil %}            
+                <div>{% if zone_b_name != nil %}<strong>{{ zone_b_name }}:</strong> {% endif %}{{ zone_b }}</div>
                 {% endif %}
-                {% if zone_c_name != nil %}            
-                <div><strong>{{ zone_c_name }}:</strong> {{ zone_c }}</div>
+                {% if zone_c != nil %}            
+                <div>{% if zone_c_name != nil %}<strong>{{ zone_c_name }}:</strong> {% endif %}{{ zone_c }}</div>
                 {% endif %}
-                {% if zone_d_name != nil %}            
-                <div><strong>{{ zone_d_name }}:</strong> {{ zone_d }}</div>
+                {% if zone_d != nil %}            
+                <div>{% if zone_d_name != nil %}<strong>{{ zone_d_name }}:</strong> {% endif %}{{ zone_d }}</div>
                 {% endif %}
                 </div>
             {% endif %}

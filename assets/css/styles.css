@@ -866,6 +866,9 @@ button[disabled] {
   .Btable-cell--BkVenue, .Btable-cell--BkDesc {
     display: none; }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
   background-color: #eeeeee;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#999), to(#000));
