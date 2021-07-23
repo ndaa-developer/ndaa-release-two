@@ -92,12 +92,19 @@
         {% if row_found == true %}
             {% if first_place != nil %}
                 {% assign match_result = true %}
+                {% if match_name contains "Team" %}
+                    {% assign col_heading_1 = "Team" %}
+                {% elsif match_name contains "Pair" %}
+                    {% assign col_heading_1 = "Pairing" %}
+                {% else %}
+                    {% assign col_heading_1 = "Name" %}
+                {% endif %}
                 <div class="alert alert--info alert--fit-center">
                     <table class="match-top-three">
                         <thead>
                             <tr>
                                 <th>Placing</th>
-                                <th>Pairing</th>
+                                <th>{{ col_heading_1 }}</th>
                                 <th{% if result_basis == "weight" %} class="t3-hidden-sm"{% endif %}>Points</th>
                                 <th{% if result_basis == "points" %} class="t3-hidden-sm"{% endif %}>Weight</th>
                             </tr>
