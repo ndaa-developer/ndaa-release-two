@@ -105,7 +105,9 @@
                             <tr>
                                 <th>Placing</th>
                                 <th>{{ col_heading_1 }}</th>
+                                {% if first_pts != nil %}
                                 <th{% if result_basis == "weight" %} class="t3-hidden-sm"{% endif %}>Points</th>
+                                {% endif %}
                                 <th{% if result_basis == "points" %} class="t3-hidden-sm"{% endif %}>Weight</th>
                             </tr>
                         </thead>
@@ -113,26 +115,35 @@
                             <tr>
                                 <td data-heading="Placing" class="placing">1st</td>
                                 <td data-heading="Pairing">{{ first_place }}</td>
-                                <td {% if result_basis == "weight" %}class="t3-hidden-sm" {% endif %}data-heading="Points">{{ first_pts }}</td>
+                                {% if first_pts != nil %}
+                                <td {% if result_basis == "weight" %}class="t3-hidden-sm" {% endif %}
+                                data-heading="Points">{{ first_pts }}</td>
+                                {% endif %}
                                 <td {% if result_basis == "points" %}class="t3-hidden-sm" {% endif %}data-heading="Weight">{{ first_weight }}</td>
                             </tr>
                             <tr>
                                 <td data-heading="Placing" class="placing">2nd</td>
                                 <td data-heading="Pairing">{{ second_place }}</td>
+                                {% if first_pts != nil %}
                                 <td {% if result_basis == "weight" %}class="t3-hidden-sm" {% endif %}data-heading="Points">{{ second_pts }}</td>
+                                {% endif %}
                                 <td {% if result_basis == "points" %}class="t3-hidden-sm" {% endif %}data-heading="Weight">{{ second_weight }}</td>
                             </tr>
                             <tr>
                                 <td data-heading="Placing" class="placing">3rd</td>
                                 <td data-heading="Pairing">{{ third_place }}</td>
+                                {% if first_pts != nil %}
                                 <td {% if result_basis == "weight" %}class="t3-hidden-sm" {% endif %}data-heading="Points">{{ third_pts }}</td>
+                                {% endif %}
                                 <td {% if result_basis == "points" %}class="t3-hidden-sm" {% endif %}data-heading="Weight">{{ third_weight }}</td>
                             </tr>
                             {% if fourth_place != nil %}
                             <tr>
                                 <td data-heading="Placing" class="placing">4th</td>
                                 <td data-heading="Pairing">{{ fourth_place }}</td>
+                                {% if first_pts != nil %}
                                 <td {% if result_basis == "weight" %}class="t3-hidden-sm" {% endif %}data-heading="Points">{{ fourth_pts }}</td>
+                                {% endif %}
                                 <td {% if result_basis == "points" %}class="t3-hidden-sm" {% endif %}data-heading="Weight">{{ fourth_weight }}</td>
                             </tr>
                             {% endif %}
@@ -140,7 +151,9 @@
                             <tr>
                                 <td data-heading="Placing" class="placing">5th</td>
                                 <td data-heading="Pairing">{{ fifth_place }}</td>
+                                {% if first_pts != nil %}
                                 <td {% if result_basis == "weight" %}class="t3-hidden-sm" {% endif %}data-heading="Points">{{ fifth_pts }}</td>
+                                {% endif %}
                                 <td {% if result_basis == "points" %}class="t3-hidden-sm" {% endif %}data-heading="Weight">{{ fifth_weight }}</td>
                             </tr>
                             {% endif %}

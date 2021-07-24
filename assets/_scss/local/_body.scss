@@ -108,6 +108,8 @@ body {
   }
 
   .match-info {
+    margin: 1em 0;
+
     & ul {
       margin: .25em;
     }
@@ -117,47 +119,5 @@ body {
     margin-left: 1em;
   }
 
-  .match-result {
-    & td {
-      padding: .1em .5em;
-      border-bottom: .05em solid $black;
-    }
-
-    & th {
-      padding: .2em .5em;
-      background-color: $gray-400;
-      border-bottom: .1em solid $black;
-      vertical-align: bottom;
-    }
-
-    // & tr:nth-child(even) {
-    //   background-color: $gray-200;
-    // }
-
-    & .td--right {
-      text-align: right;
-    }
-    & .td--center {
-      text-align: center;
-    }
-    & .td--lowest {
-      color: $alert-danger-color;
-      background-color: $alert-danger-bg-color;
-      font-style: italic;
-    }
-  }
-
-  .table-container {
-    display: block;
-    overflow-x: auto;
-    white-space: nowrap;
-
-    & table {
-      border-collapse: collapse;
-      background-color: $white;
-      margin: 1em 0;
-    }
-
-  }
 }
   

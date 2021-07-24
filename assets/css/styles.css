@@ -866,6 +866,64 @@ button[disabled] {
   .Btable-cell--BkVenue, .Btable-cell--BkDesc {
     display: none; }
 
+.match-result thead th {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1; }
+
+.match-result tbody th {
+  font-weight: inherit;
+  font-style: italic;
+  text-align: left;
+  position: relative; }
+
+.match-result td {
+  padding: .1em .5em;
+  border-bottom: 0.05em solid #000; }
+
+.match-result th {
+  padding: .2em .5em;
+  background-color: #ced4da;
+  border-bottom: 0.1em solid #000;
+  vertical-align: bottom; }
+
+.match-result .td--right {
+  text-align: right; }
+
+.match-result .td--center {
+  text-align: center; }
+
+.match-result .td--lowest {
+  color: #a94442;
+  background-color: #f2dede;
+  font-style: italic; }
+
+.match-result .th--sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  z-index: 2; }
+
+.match-result .td--sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background: #fff;
+  font-style: italic;
+  border-right: 0.05em solid #000;
+  border-bottom: 0.05em solid #000; }
+
+.table-container {
+  white-space: nowrap;
+  max-height: 98vh;
+  overflow: auto; }
+  .table-container table {
+    position: relative;
+    border-collapse: collapse;
+    background-color: #fff; }
+
 html {
   scroll-behavior: smooth; }
 
@@ -971,34 +1029,12 @@ body {
       color: #365899; }
   body .fa-info-circle {
     color: #3364a3; }
-  body .match-info ul {
-    margin: .25em; }
+  body .match-info {
+    margin: 1em 0; }
+    body .match-info ul {
+      margin: .25em; }
   body .match-buttons > * + * {
     margin-left: 1em; }
-  body .match-result td {
-    padding: .1em .5em;
-    border-bottom: 0.05em solid #000; }
-  body .match-result th {
-    padding: .2em .5em;
-    background-color: #ced4da;
-    border-bottom: 0.1em solid #000;
-    vertical-align: bottom; }
-  body .match-result .td--right {
-    text-align: right; }
-  body .match-result .td--center {
-    text-align: center; }
-  body .match-result .td--lowest {
-    color: #a94442;
-    background-color: #f2dede;
-    font-style: italic; }
-  body .table-container {
-    display: block;
-    overflow-x: auto;
-    white-space: nowrap; }
-    body .table-container table {
-      border-collapse: collapse;
-      background-color: #fff;
-      margin: 1em 0; }
 
 .cover {
   background-position: center;
