@@ -872,11 +872,21 @@ button[disabled] {
   top: 0;
   z-index: 1; }
 
+.match-result thead th:first-child {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  z-index: 2; }
+
 .match-result tbody th {
-  font-weight: inherit;
-  font-style: italic;
-  text-align: left;
-  position: relative; }
+  position: relative;
+  border-bottom: 0.05em solid #000; }
+
+.match-result tbody th {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  z-index: 1; }
 
 .match-result td {
   padding: .1em .5em;
@@ -898,22 +908,6 @@ button[disabled] {
   color: #a94442;
   background-color: #f2dede;
   font-style: italic; }
-
-.match-result .th--sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  left: 0;
-  z-index: 2; }
-
-.match-result .td--sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  left: 0;
-  z-index: 1;
-  background: #fff;
-  font-style: italic;
-  border-right: 0.05em solid #000;
-  border-bottom: 0.05em solid #000; }
 
 .table-container {
   white-space: nowrap;
