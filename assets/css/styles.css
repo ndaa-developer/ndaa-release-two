@@ -1026,7 +1026,10 @@ body {
   body .match-info {
     margin: 1em 0; }
     body .match-info ul {
-      margin: .25em; }
+      margin-top: -1em;
+      margin-bottom: 1em; }
+    body .match-info p {
+      margin-bottom: 1em; }
   body .match-buttons > * + * {
     margin-left: 1em; }
 
