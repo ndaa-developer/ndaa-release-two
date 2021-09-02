@@ -904,6 +904,9 @@ button[disabled] {
 .match-result .td--center {
   text-align: center; }
 
+.match-result .td--bg-1 {
+  background-color: #e9ecef; }
+
 .match-result .td--lowest {
   color: #a94442;
   background-color: #f2dede;

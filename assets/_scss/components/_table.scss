@@ -51,6 +51,9 @@
     & .td--center {
       text-align: center;
     }
+    & .td--bg-1 {
+      background-color: $gray-200;
+    }
     & .td--lowest {
       color: $alert-danger-color;
       background-color: $alert-danger-bg-color;
