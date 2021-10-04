@@ -40,11 +40,12 @@
         </div>
         {% endif %}
     </section>
+    
+    {% if site.data.match-info.options-ind == true %}
     <section class="table-key">
         <h4>Calendar Notes</h4>
 
         <div class="md-insert">
-            {% if site.data.match-info.options-ind == true %}
             <div class="alert--flex">
                 {% for opt in site.data.match-info.options %}
                 <div>
@@ -52,10 +53,11 @@
                 </div>
                 {% endfor %}
             </div>
-            {% endif %}
         </div>
 
     </section>
+    {% endif %}
+
     <section>
         <div class="Rtable">
         {% assign prev_month = "none" %}

@@ -7,3 +7,4 @@ images-folder: /assets/images/
 test-ind: false
 test-date: 20210715
 test-time: 1600
+match-cvr-img: cvr-sb-2.jpg

@@ -1,6 +1,7 @@
 {% include base.liquid %}
 
 {% assign test_ind = site.data.site.test-ind %}
+{% assign match_image = site.data.site.match-cvr-img %}
 
 {% if test_ind == true %}
     {% assign today_date = site.data.site.test-date %}
@@ -76,7 +77,7 @@
             
         {% else %}
     
-            <div class="alert alert--success alert--flex alert--fit-center">
+            <div class="alert alert--info alert--flex alert--fit-center">
                 <div>
                     <span class="span-center">
                         <span class="pull-left">
