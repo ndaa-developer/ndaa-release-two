@@ -4,7 +4,7 @@ jsfile: /assets/js/main.min.js
 gmap-url: https://www.google.com/maps/d/viewer?mid=
 gmap-cid-url: https://maps.google.com/?cid=
 images-folder: /assets/images/
-test-ind: true
+test-ind: false
 test-date: 20211115
 test-time: 1600
 match-cvr-img: cvr-sb-2.jpg
