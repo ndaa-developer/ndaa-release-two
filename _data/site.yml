@@ -7,5 +7,5 @@ images-folder: /assets/images/
 test-ind: false
 test-date: 20211115
 test-time: 1600
-match-cvr-img: cvr-sb-2.jpg
-bookings-cvr-img: cvr-ch-1.jpg
+match-cvr-img: cvr-ch-1.jpg
+bookings-cvr-img: cvr-bd-1.jpg

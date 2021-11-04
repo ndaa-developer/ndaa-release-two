@@ -100,7 +100,7 @@ gulp.task('copy-fa-fonts', function() {
     gulp.series("jekyll-rebuild")
   );
 });
-// run "gulp images" to process images from assets/_src_img to /img folder to be used on the site
+// run "gulp compress-images" to process images from assets/_src_img to /img folder to be used on the site
 gulp.task('compress-images', function() {
   return gulp.src('assets/images/_src-images/*.+(png|jpg|jpeg|gif|svg)')
     .pipe(
