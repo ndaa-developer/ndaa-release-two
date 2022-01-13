@@ -10,7 +10,7 @@ alert-messages:
     alert-msg: Only Season Membership Cards will be available for 2021-22.
   - alert-type: info
     alert-msg: Season Membership Cards will be in shops mid-May.
-notes-ind: true
+notes-ind: false
 notes:
   - note-grp: 1
     note-grp-icon: fa-info-circle

@@ -67,7 +67,7 @@ body {
       margin-bottom: calc(#{$v-size-400} + #{$col-layout-gap-c});
     }
   }
-  #Membership > .alert {
+  article .alert {
     margin-top: 1em;
     margin-bottom: 1em;
   }
