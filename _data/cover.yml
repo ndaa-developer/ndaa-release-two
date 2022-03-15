@@ -1,6 +1,6 @@
 cover-msg-ind: true
 cover-messages:
+  - msg-type: warning
+    cvr-msg: All venues **CLOSED** from dusk **Monday 14th March**
   - msg-type: info
-    cvr-msg: Draft 2022 Match Calendar now available
-  # - msg-type: info
-  #   cvr-msg: Venues re-open dawn Wednesday 16th June
+    cvr-msg: Venues re-open dawn Thursday 16th June
