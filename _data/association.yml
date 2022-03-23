@@ -1,0 +1,12 @@
+intro-desc: The Norwich and District Angler's Association has been providing access to fishing in the Norfolk Broads for over 60 years.  The Association started in 1960 with access to the River Bure at St. Benets.  Since then access to other stretches of the Bure have been secured as well as fishing on the River Thurne and Decoy Broad.
+alert-msg-ind: true
+alert-type: info
+alert-messages:
+  - alert-type: info
+    alert-msg: Membership open to all.
+  - alert-type: info
+    alert-msg: Bank fishing on River Bure.
+  - alert-type: info
+    alert-msg: Bank fishing on River Thurne.
+  - alert-type: info
+    alert-msg: Boat fishing on Decoy Broad.

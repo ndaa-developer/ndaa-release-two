@@ -9,6 +9,31 @@ keywords: norwich, norfolk, fishing club, angling club, coarse fishing, river fi
 <main class="wrapper wrapper--padding">
 
 <article>
+    <section id="Association">
+        <div class="section-hdr">
+            <h2>Introduction</h2>
+        </div>
+        <div class="md-insert">
+            {{ site.data.association.intro-desc | markdownify }}
+        </div>
+        {% if site.data.association.alert-msg-ind == true %}
+        <div class="alert {% if site.data.association.alert-type != nil %}alert--{{ site.data.association.alert-type }} {% else %}alert--danger{% endif %} alert--flex">
+            {% for msg in site.data.association.alert-messages %}
+            <div>
+                <span class="vt-middle">
+                    {% case msg.alert-type %}
+                    {% when "warning" %}
+                        <i class="indicator fas fa-exclamation-circle"></i>
+                    {% when "info" %}
+                        <i class="indicator fas fa-info-circle"></i>
+                    {% endcase %}
+                    {{ msg.alert-msg | markdownify }}
+                </span>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </section>
     <section id="Membership">
         <div class="section-hdr">
             <h2>Membership</h2>
