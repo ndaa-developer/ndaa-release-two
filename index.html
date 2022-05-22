@@ -47,8 +47,8 @@ og-img: home-fb-img.png
             {{ site.data.membership.intro-desc | markdownify }}
         </div>
 
-        {% if site.data.membership.alert-msg-ind == true %}
-        <div class="alert alert--danger alert--flex">
+        {% if site.data.membership.alert-msg-type != nil %}
+        <div class="alert alert--{{site.data.membership.alert-msg-type}} alert--flex">
             {% for msg in site.data.membership.alert-messages %}
             <div>
                 <span class="vt-middle">
@@ -65,11 +65,13 @@ og-img: home-fb-img.png
         </div>
         {% endif %}
 
+        {% if site.data.membership.options != nil %}
         <div class="md-insert">
             {% for opt in site.data.membership.options %}
             {{ opt.option-desc | markdownify }}
             {% endfor %}
         </div>
+        {% endif %}
 
     </section>
     <section id="Stockists">
