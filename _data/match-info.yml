@@ -3,43 +3,43 @@ intro-desc: If you want any information about the matches listed below please co
   phone **01603 400973**  email **tony.gibbons@ndaa.org.uk**.
 cut-off-time: 1600
 alert-msg-ind: true
-alert-msg-type: warning
+alert-msg-type: info
 alert-messages:
-  - alert-type: warning
-    alert-msg: 13/1/2022 Draft match dates below. Fees, times, draw locations & venues still to be confirmed.
+  - alert-type: info
+    alert-msg: HQ for all matches King's Arms, Ludham NR29 5QQ.
   # - alert-type: info
   #   alert-msg: Season Membership Cards will be in shops mid-May.
-options-ind: false
+options-ind: true
 options:
   - option-grp: 1
     option-grp-icon: fa-square
     option-name: Pairs Series
-    option-desc: <strong>Pairs Series</strong> - Result on total weight (drop your lowest weight). Entry £60/pair, Daily Pools £50/pair.
+    option-desc: <strong>Pairs Series</strong> - Entry £60/pair & pools £50/pair/day. Result on total weight (drop your lowest weight).
   - option-grp: 2
     option-grp-icon: fa-square
     option-name: Pairs Festival
-    option-desc: <strong>Pairs Festival</strong> - Result on section points. Entry & Pools £100/pair.
+    option-desc: <strong>Pairs Festival</strong> - Entry & pools £100/pair. Result on section points.
   - option-grp: 3
     option-grp-icon: fa-square
     option-name: To4 League
-    option-desc: <strong>Teams of 4 League</strong> - Pools £80/team + £10/angler section pool.
+    option-desc: <strong>Teams of 4 League</strong> - Entry £50/team & pools £20/angler/match.
   - option-grp: 4
     option-grp-icon: fa-square
     option-name: Pete Swann Memorial
-    option-desc: <strong>Pete Swann Memorial</strong> - Entry £20 (£10 to charity), pools £10.
+    option-desc: <strong>Pete Swann Memorial</strong> - Entry £20 (£10 to charity) & optional pool £10.
   - option-grp: 5
     option-grp-icon: fa-square
     option-name: Three Rivers Festival
-    option-desc: <strong>Three Rivers Festival</strong> - Entry £70 & optional daily pools £10.
+    option-desc: <strong>Three Rivers Festival</strong> - Entry £70 & optional pool £10/day.
   - option-grp: 6
     option-grp-icon: fa-square
     option-name: King of the Broads
-    option-desc: <strong>King of the Broads</strong> - Entry & pools £50.
+    option-desc: <strong>King of the Broads</strong> - To be confirmed.
   - option-grp: 7
     option-grp-icon: fa-square
     option-name: Broads Festival
-    option-desc: <strong>Broads Festival</strong> - Entry £40, daily pools £20.
+    option-desc: <strong>Broads Festival</strong> - Entry £50 & optional pool £20/day.
   - option-grp: 8
     option-grp-icon: fa-square
     option-name: Cyril Wigg Memorial Broads Open
-    option-desc: <strong>Cyril Wigg Memorial Broads Open</strong> - Entry £5, pools £25.
+    option-desc: <strong>Cyril Wigg Memorial Broads Open</strong> - Entry £5 & optional pools.
