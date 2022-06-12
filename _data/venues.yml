@@ -1,5 +1,10 @@
 venues:
   - title: River Thurne
+    sub-title: Womack
+    img: ww-1.jpg
+    gmap-id: 1VonWEhUPORQnSZ639q4eXO36TdC7kZc
+    desc: Pegs upstream until mouth of Womack dyke. Final 9 pegs in the ronds, boots & platform required. **No night fishing**.
+  - title: River Thurne
     sub-title: Cold Harbour
     img: ch-2.jpg
     gmap-id: 1GgV06peITJuEaUZtTxMEgQBJziWFjPPr
@@ -8,20 +13,19 @@ venues:
     sub-title: St. Benets
     img: sb-3.jpg
     gmap-id: 1yAFRP862UbEjyeu58j2USIJXqzbIJ8_Q
-    desc: Two sections, each offering 12 pegs, from Abbey downstream. Boat moorings above the Abbey available from 1st Oct.
+    desc: Two sections, each offering 12 pegs, from Abbey downstream. Boat moorings above the Abbey available from 1st Nov.
   - title: River Bure
     sub-title: Woodbastwick Staithe
     img: bw-1.jpg
     gmap-id: 14cJGBDUOolpdc2K1_VQcE2Yendh2QUIo
-    desc: Fishing available from moorings opposite Horning Ferry and downstream on dedicated fishing platforms.
+    desc: Fishing available from moorings opposite Horning Ferry and downstream on dedicated fishing platforms. **No night fishing**.
   - title: River Bure
     sub-title: Woodbastwick Estate
     img: bd-1.jpg
     gmap-id: 1umOfrptZkiFG1p7Mbw0zynUREA9UoUvP
-    desc: Pegs downstream of slipway on river bank to west of Decoy Broad.
+    desc: Pegs downstream of slipway on river bank to west of Decoy Broad. **No night fishing**.
   - title: Decoy Broad
     sub-title: Woodbastwick Estate
     img: db-1.jpg
     gmap-id: 1umOfrptZkiFG1p7Mbw0zynUREA9UoUvP
-    desc: <strong>Boat fishing ONLY</strong> - Boats must be booked beforehand from [stockists](./index.html#Stockists) (£6 per day).
-
+    desc: <strong>Boat fishing ONLY</strong> - Boats must be booked beforehand from [stockists](./index.html#Stockists) (£6 per day). **No night fishing**.
