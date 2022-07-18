@@ -57,6 +57,9 @@
         {% assign fifth_place = row.Fifth %}
         {% assign fifth_pts = row.Fifth-Pts %}
         {% assign fifth_weight = row.Fifth-Weight %}
+        {% assign sixth_place = row.Sixth %}
+        {% assign sixth_pts = row.Sixth-Pts %}
+        {% assign sixth_weight = row.Sixth-Weight %}
         {% break %}
     {% endif %}
 {% endfor %}
@@ -155,6 +158,16 @@
                                 <td {% if result_basis == "weight" %}class="t3-hidden-sm" {% endif %}data-heading="Points">{{ fifth_pts }}</td>
                                 {% endif %}
                                 <td {% if result_basis == "points" %}class="t3-hidden-sm" {% endif %}data-heading="Weight">{{ fifth_weight }}</td>
+                            </tr>
+                            {% endif %}
+                            {% if sixth_place != nil %}
+                            <tr>
+                                <td data-heading="Placing" class="placing">6th</td>
+                                <td data-heading="Pairing">{{ sixth_place }}</td>
+                                {% if first_pts != nil %}
+                                <td {% if result_basis == "weight" %}class="t3-hidden-sm" {% endif %}data-heading="Points">{{ sixth_pts }}</td>
+                                {% endif %}
+                                <td {% if result_basis == "points" %}class="t3-hidden-sm" {% endif %}data-heading="Weight">{{ sixth_weight }}</td>
                             </tr>
                             {% endif %}
                         </tbody>
