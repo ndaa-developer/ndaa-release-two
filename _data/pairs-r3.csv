@@ -1,18 +1,18 @@
-﻿Order,Placing,Name,R1-W-Lowest,R1-W,R2-W-Lowest,R2-W,R3-W-Lowest,R3-W,Weight,Adjusted-W
-1,1st,Mick Hanks & Martin Spence,Y,13-07,,37-01,,33-05,83-13,70-06
-2,2nd,Steve Clark & Paul Abbott,Y,17-13,,30-14,,36-12,85-07,67-10
-3,3rd,Colin Blake & Richard Jacobs,Y,12-02,,31-02,,35-00,78-04,66-02
-4,4th,Gary Abbott & Karl Dowse,Y,11-02,,26-15,,38-15,77-00,65-14
-5,5th,Dave Gooch & Robert Houlding,Y,21-14,,32-00,,31-03,85-01,63-03
-6,6th,Brian Bygrave & Tony Gibbons,Y,18-04,,36-11,,23-12,78-11,60-07
-7,7th,Barry Oliver & Andy Mead,Y,12-13,,37-04,,19-15,70-00,57-03
-8,8th,Billy Hughes & Bob Nudd,Y,24-06,,26-08,,30-06,81-04,56-14
-9,9th,Mark Murdoch & Dave Pike,,25-12,Y,23-14,,29-12,79-06,55-08
-10,10th,Richard Watson & Mick Burch,Y,18-14,,25-06,,29-04,73-08,54-10
-11,11th,Derek Adcock & Dusty Kiddell,Y,20-00,,30-05,,22-13,73-02,53-02
-12,12th,Brian Weavers & Ian Bailey,Y,11-09,,30-04,,18-00,59-13,48-04
-13,13th,Steve Spooner & Steve O'Rourke,Y,16-03,,23-00,,22-02,61-05,45-02
-14,14th,Dave Parlett & Mark Taylor,Y,19-15,Y,19-15,,25-02,65-00,45-01
-15,15th,Ricky Cox & Jimmy Ellis,Y,6-09,,19-12,,16-03,42-08,35-15
-16,16th,Chris Golding & Preston Gilding,,10-09,Y,6-12,,25-01,42-06,35-10
-17,17th,Mark Tricker & Mick Butcher,,7-08,,9-13,Y,0-0,17-05,17-05
+﻿Order,Placing,Name,R1-P,R1-W-Lowest,R1-W,R2-P,R2-W-Lowest,R2-W,R3-P,R3-W-Lowest,R3-W,R4-P,R4-W-Lowest,R4-W,R5-P,R5-W-Lowest,R5-W,R6-P,R6-W-Lowest,R6-W,Weight,Adjusted-W
+1,1st,Steve Clark & Paul Abbott,7,Y,17-13,7,,30-14,4,,36-12,,,,,,,,,,85-07,67-10
+2,2nd,Dave Gooch & Robert Houlding,9,Y,21-14,6,,32-00,7,,31-03,,,,,,,,,,85-01,63-03
+3,3rd,Mick Hanks & Martin Spence,7,Y,13-07,3,,37-01,8,,33-05,,,,,,,,,,83-13,70-06
+4,4th,Billy Hughes & Bob Nudd,4,Y,24-06,6,,26-08,8,,30-06,,,,,,,,,,81-04,56-14
+5,5th,Mark Murdoch & Dave Pike,5,,25-12,11,Y,23-14,5,,29-12,,,,,,,,,,79-06,55-08
+6,6th,Brian Bygrave & Tony Gibbons,9,Y,18-04,7,,36-11,9,,23-12,,,,,,,,,,78-11,60-07
+7,7th,Colin Blake & Richard Jacobs,9,Y,12-02,6,,31-02,7,,35-00,,,,,,,,,,78-04,66-02
+8,8th,Gary Abbott & Karl Dowse,12,Y,11-02,9,,26-15,6,,38-15,,,,,,,,,,77-00,65-14
+9,9th,Richard Watson & Mick Burch,6,Y,18-14,14,,25-06,5,,29-04,,,,,,,,,,73-08,54-10
+10,10th,Derek Adcock & Dusty Kiddell,5,Y,20-00,9,,30-05,12,,22-13,,,,,,,,,,73-02,53-02
+11,11th,Barry Oliver & Andy Mead,9,Y,12-13,6,,37-04,13,,19-15,,,,,,,,,,70-00,57-03
+12,12th,Dave Parlett & Mark Taylor,6,Y,19-15,13,Y,19-15,9,,25-02,,,,,,,,,,65-00,45-01
+13,13th,Steve Spooner & Steve O'Rourke,9,Y,16-03,11,,23-00,9,,22-02,,,,,,,,,,61-05,45-02
+14,14th,Brian Weavers & Ian Bailey,16,Y,11-09,7,,30-04,14,,18-00,,,,,,,,,,59-13,48-04
+15,15th,Ricky Cox & Jimmy Ellis,16,Y,6-09,14,,19-12,14,,16-03,,,,,,,,,,42-08,35-15
+16,16th,Chris Golding & Preston Gilding,14,,10-09,18,Y,6-12,9,,25-01,,,,,,,,,,42-06,35-10
+17,17th,Mark Tricker & Mick Butcher,18,,7-08,18,,9-13,16,Y,0-0,,,,,,,,,,17-05,17-05

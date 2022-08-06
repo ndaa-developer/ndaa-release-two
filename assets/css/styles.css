@@ -866,6 +866,9 @@ button[disabled] {
   .Btable-cell--BkVenue, .Btable-cell--BkDesc {
     display: none; }
 
+.match-result caption {
+  font-size: 1.25rem; }
+
 .match-result thead th {
   position: -webkit-sticky;
   position: sticky;
@@ -891,6 +894,13 @@ button[disabled] {
 .match-result td {
   padding: .1em .5em;
   border-bottom: 0.05em solid #000; }
+
+.match-result .td--yellow {
+  background-color: #fff200; }
+
+.match-result .td--green {
+  color: #fff;
+  background-color: #00a650; }
 
 .match-result th {
   padding: .2em .5em;

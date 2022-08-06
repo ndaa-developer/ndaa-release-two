@@ -1,4 +1,8 @@
 .match-result {
+
+    & caption {
+      font-size: $size-500;
+    }
     
     & thead th {
       position: sticky;
@@ -32,6 +36,13 @@
     & td {
       padding: .1em .5em;
       border-bottom: .05em solid $black;
+    }
+    & .td--yellow {
+      background-color: $yellow-league;       
+    }
+    & .td--green {
+      color: $white;
+      background-color: $green-league;
     }
 
     & th {
@@ -88,5 +99,6 @@
       border-collapse: collapse;
       background-color: $white;
     }
-
+  
   }
+  

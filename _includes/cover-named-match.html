@@ -60,6 +60,8 @@
         {% assign sixth_place = row.Sixth %}
         {% assign sixth_pts = row.Sixth-Pts %}
         {% assign sixth_weight = row.Sixth-Weight %}
+        {% assign league_one = row.League-1 %}
+        {% assign league_two = row.League-2 %}
         {% break %}
     {% endif %}
 {% endfor %}
@@ -105,6 +107,9 @@
                 <div class="alert alert--info alert--fit-center">
                     <table class="match-top-three">
                         <thead>
+                            {% if league_one != nil %}
+                            <tr><th colspan="4">{{league_one}}</th></tr>
+                            {% endif %}
                             <tr>
                                 <th>Placing</th>
                                 <th>{{ col_heading_1 }}</th>
@@ -140,9 +145,26 @@
                                 {% endif %}
                                 <td {% if result_basis == "points" %}class="t3-hidden-sm" {% endif %}data-heading="Weight">{{ third_weight }}</td>
                             </tr>
+                            {% if league_two != nil %}
+                            <thead>
+                                <tr><th colspan="4">{{league_two}}</th></tr>
+                                <tr>
+                                    <th>Placing</th>
+                                    <th>{{ col_heading_1 }}</th>
+                                    {% if first_pts != nil %}
+                                    <th{% if result_basis == "weight" %} class="t3-hidden-sm"{% endif %}>Points</th>
+                                    {% endif %}
+                                    <th{% if result_basis == "points" %} class="t3-hidden-sm"{% endif %}>Weight</th>
+                                </tr>
+                            </thead>
+                            {% endif %}
                             {% if fourth_place != nil %}
                             <tr>
+                                {% if league_two != nil %}
+                                <td data-heading="Placing" class="placing">1st</td>
+                                {% else %}
                                 <td data-heading="Placing" class="placing">4th</td>
+                                {% endif %}
                                 <td data-heading="Pairing">{{ fourth_place }}</td>
                                 {% if first_pts != nil %}
                                 <td {% if result_basis == "weight" %}class="t3-hidden-sm" {% endif %}data-heading="Points">{{ fourth_pts }}</td>
@@ -152,7 +174,11 @@
                             {% endif %}
                             {% if fifth_place != nil %}
                             <tr>
+                                {% if league_two != nil %}
+                                <td data-heading="Placing" class="placing">2nd</td>
+                                {% else %}
                                 <td data-heading="Placing" class="placing">5th</td>
+                                {% endif %}
                                 <td data-heading="Pairing">{{ fifth_place }}</td>
                                 {% if first_pts != nil %}
                                 <td {% if result_basis == "weight" %}class="t3-hidden-sm" {% endif %}data-heading="Points">{{ fifth_pts }}</td>
@@ -162,7 +188,11 @@
                             {% endif %}
                             {% if sixth_place != nil %}
                             <tr>
+                                {% if league_two != nil %}
+                                <td data-heading="Placing" class="placing">3rd</td>
+                                {% else %}
                                 <td data-heading="Placing" class="placing">6th</td>
+                                {% endif %}
                                 <td data-heading="Pairing">{{ sixth_place }}</td>
                                 {% if first_pts != nil %}
                                 <td {% if result_basis == "weight" %}class="t3-hidden-sm" {% endif %}data-heading="Points">{{ sixth_pts }}</td>
