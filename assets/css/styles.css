@@ -911,6 +911,9 @@ button[disabled] {
 .match-result .td--right {
   text-align: right; }
 
+.match-result .td--left {
+  text-align: left; }
+
 .match-result .td--center {
   text-align: center; }
 
