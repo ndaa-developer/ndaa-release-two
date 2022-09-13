@@ -6,7 +6,7 @@ alert-msg-ind: true
 alert-msg-type: info
 alert-messages:
   - alert-type: info
-    alert-msg: HQ for all matches [King's Arms, Ludham NR29 5QQ](https://maps.google.com/?cid=10447569346871224337).
+    alert-msg: HQ for matches on Rivers Thurne & Bure [King's Arms, Ludham NR29 5QQ](https://maps.google.com/?cid=10447569346871224337).
   # - alert-type: info
   #   alert-msg: Breakfast 7am, draw 8.30am & fish 11am - 4pm.
 options-ind: true
@@ -34,7 +34,7 @@ options:
   - option-grp: 6
     option-grp-icon: fa-square
     option-name: King of the Broads
-    option-desc: <strong>King of the Broads</strong> - To be confirmed.
+    option-desc: <strong>King of the Broads</strong> - Entry & pools £50. Result on section points.
   - option-grp: 7
     option-grp-icon: fa-square
     option-name: Broads Festival
