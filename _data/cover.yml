@@ -1,8 +1,10 @@
-cover-msg-ind: false
+cover-msg-ind: true
 cover-messages:
   # - msg-type: warning
   #   cvr-msg: All venues **CLOSED** from dusk **Monday 14th March**
-  - msg-type: info
-    cvr-msg: Venues re-open dawn Thursday 16th June
+  # - msg-type: info
+  #   cvr-msg: Venues re-open dawn Thursday 16th June
   # - msg-type: info
   #   cvr-msg: 2022-23 membership cards now available (see below for stockists)
+  - msg-type: info
+    cvr-msg: Broads Open tickets available [now](http://localhost:3000/matches/20221001.html#Information)

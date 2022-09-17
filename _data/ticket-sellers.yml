@@ -1,0 +1,37 @@
+stockists:
+  - logo: pwa-logo.png
+    name: PW Angling
+    postcode: NR1 2JJ
+    url: http://www.pwangling.co.uk/
+    addr-1: 57 Long John Hill
+    addr-2: Norwich
+    addr-3: null
+    url-type: web
+    addr-4: null
+  - logo: ad-logo.png
+    name: Angling Direct Norwich
+    postcode: NR3 2RE
+    url: https://en-gb.facebook.com/anglingdirectnorwich/
+    addr-1: 279 Aylsham Road
+    addr-2: Norwich
+    addr-3: null
+    url-type: fb
+    addr-4: null
+  - logo: null
+    name: Wensum Valley Angling
+    postcode: NR8 6HT
+    url: https://www.facebook.com/wensumvalleyangling/
+    addr-1: Unit 3
+    addr-2: Taverham Craft Centre
+    addr-3: Fir Covert Road
+    url-type: fb
+    addr-4: Norwich
+  - logo: null
+    name: AJB Angling
+    postcode: NR29 5NX
+    url: https://www.facebook.com/pages/category/Sports---Recreation/AJB-Angling-314550775391900/
+    addr-1: Units 1-4 Ludham Bridge
+    addr-2: Ludham
+    addr-3: Great Yarmouth
+    url-type: fb
+    addr-4: null
