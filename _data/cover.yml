@@ -6,5 +6,7 @@ cover-messages:
   #   cvr-msg: Venues re-open dawn Thursday 16th June
   # - msg-type: info
   #   cvr-msg: 2022-23 membership cards now available (see below for stockists)
+  # - msg-type: info
+  #   cvr-msg: Broads Open tickets available [now](https://ndaa.org.uk/matches/20221001.html#Information)
   - msg-type: info
-    cvr-msg: Broads Open tickets available [now](https://ndaa.org.uk/matches/20221001.html#Information)
+    cvr-msg: 2022-23 membership cards now just £20
