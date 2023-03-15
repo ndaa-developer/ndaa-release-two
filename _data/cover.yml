@@ -1,12 +1,15 @@
 cover-msg-ind: true
+cover-msg-type: info
 cover-messages:
-  # - msg-type: warning
-  #   cvr-msg: All venues **CLOSED** from dusk **Monday 14th March**
-  # - msg-type: info
-  #   cvr-msg: Venues re-open dawn Thursday 16th June
+  - msg-type: warning
+    cvr-msg: All venues **CLOSED** from dusk **Tuesday 14th March**
+  - msg-type: info
+    cvr-msg: Venues re-open dawn Friday 16th June
+  - msg-type: info
+    cvr-msg: AGM, Tuesday 11th April, 8pm, [Canary Social Club](https://goo.gl/maps/eqARTovarquLUgY8A)
   # - msg-type: info
   #   cvr-msg: 2022-23 membership cards now available (see below for stockists)
   # - msg-type: info
   #   cvr-msg: Broads Open tickets available [now](https://ndaa.org.uk/matches/20221001.html#Information)
-  - msg-type: info
-    cvr-msg: 2022-23 membership cards now just £20
+  # - msg-type: info
+  #   cvr-msg: 2022-23 membership cards now just £20
