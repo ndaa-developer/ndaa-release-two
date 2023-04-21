@@ -8,7 +8,7 @@ alert-messages:
   - alert-type: info
     alert-msg: 2023-24 Membership cards in shops May 2023.
 options:
-  # - option-desc: Season Membership, 16th June to 14th March, £30
+  - option-desc: Season Membership, 16th June to 14th March, **£35**
   # - option-desc: Season Membership, 16th June to 14th March, ~~£30~~ **£20**
   # - option-desc: ~~5 Day Membership, Mon-Fri, £15~~
   # - option-desc: ~~Day Membership, £5~~

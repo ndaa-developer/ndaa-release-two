@@ -5,8 +5,8 @@ cover-messages:
     cvr-msg: All venues **CLOSED** from dusk **Tuesday 14th March**
   - msg-type: info
     cvr-msg: Venues re-open dawn Friday 16th June
-  - msg-type: info
-    cvr-msg: AGM, Tuesday 11th April, 8pm, [Canary Social Club](https://goo.gl/maps/eqARTovarquLUgY8A)
+  # - msg-type: info
+  #   cvr-msg: AGM, Tuesday 11th April, 8pm, [Canary Social Club](https://goo.gl/maps/eqARTovarquLUgY8A)
   # - msg-type: info
   #   cvr-msg: 2022-23 membership cards now available (see below for stockists)
   # - msg-type: info
