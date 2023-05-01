@@ -8,15 +8,15 @@ stockists:
     addr-3: null
     url-type: web
     addr-4: null
-  - logo: null
-    name: Tim's Tackle
-    postcode: NR1 4NS
-    url: http://www.timtackle.co.uk/
-    addr-1: 71 Borrowdale Drive
-    addr-2: Norwich
-    addr-3: null
-    url-type: web
-    addr-4: null
+  # - logo: null
+  #   name: Tim's Tackle
+  #   postcode: NR1 4NS
+  #   url: http://www.timtackle.co.uk/
+  #   addr-1: 71 Borrowdale Drive
+  #   addr-2: Norwich
+  #   addr-3: null
+  #   url-type: web
+  #   addr-4: null
   - logo: ad-logo.png
     name: Angling Direct Norwich
     postcode: NR3 2RE
@@ -81,11 +81,20 @@ stockists:
     url-type: web
     addr-4: null
   - logo: null
+    name: Lathams of Potter Heigham
+    postcode: NR29 5JE
+    url: https://www.lathams-potter-heigham.co.uk/fishing.asp
+    addr-1: Bridge Road
+    addr-2: Potter Heigham
+    addr-3: Great Yarmouth
+    url-type: web
+    addr-4: null
+  - logo: null
     name: AJB Angling
     postcode: NR29 5NX
     url: https://www.facebook.com/pages/category/Sports---Recreation/AJB-Angling-314550775391900/
-    addr-1: Units 1-4 Ludham Bridge
-    addr-2: Ludham
+    addr-1: Units 1-4
+    addr-2: Ludham Bridge
     addr-3: Great Yarmouth
     url-type: fb
     addr-4: null
