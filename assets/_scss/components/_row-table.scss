@@ -34,20 +34,20 @@ $row-BgColor5: #e4fcee;
         font-size: 1.2rem;
     }
 
-    &--MG1 {
-        background-color: $row-BgColor1;
+    &--MG2, &--MG6 {
+        background-color: $row-BgColor5;
     }
 
-    &--MG2, &--MG4, &--MG6, &--MG8 {
+    &--MG1, &--MG5, &--MG8 {
         background-color: $row-BgColor2;
     }
 
-    &--MG3 {
+    &--MG3, &--MG7 {
         background-color: $row-BgColor3;
     }
 
-    &--MG5, &--MG7 {
-        background-color: $row-BgColor5;
+    &--MG4, &--MG9 {
+        background-color: $row-BgColor1;
     }
     // & > .Rtable-cell:not(:nth-child(6n+4)):not(:nth-child(6n+5)):not(:nth-child(6n+6))  {
     //     background-color: $gray-200;
@@ -62,20 +62,20 @@ $row-BgColor5: #e4fcee;
     overflow: hidden; // Or flex might break
     // border: solid 0.01em black;
 
-    &--Ic1 {
-        color: $row-BgColor1;
+    &--Ic2, &--Ic6 {
+        color: $row-BgColor5;
     }
     
-    &--Ic2, &--Ic4, &--Ic6, &--Ic8 {
+    &--Ic1, &--Ic5, &--Ic8 {
         color: $row-BgColor2;
     }
     
-    &--Ic3 {
+    &--Ic3, &--Ic7 {
         color: $row-BgColor3;
     }
 
-    &--Ic5, &--Ic7 {
-        color: $row-BgColor5;
+    &--Ic4, &--Ic9 {
+        color: $row-BgColor1;
     }
     
     // &:first-child {

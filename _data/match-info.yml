@@ -14,15 +14,15 @@ options:
   - option-grp: 1
     option-grp-icon: fa-square
     option-name: Pairs Series
-    option-desc: <strong>Pairs Series</strong> - Entry £60/pair & pools £50/pair/day. Result on total weight (drop your lowest weight).
+    option-desc: <strong>Pairs Series</strong> - Entry £60/pair & pools £50/pair/day. Result on points (drop worst score).
   - option-grp: 2
     option-grp-icon: fa-square
     option-name: Pairs Festival
     option-desc: <strong>Pairs Festival</strong> - Entry & pools £100/pair. Result on section points.
   - option-grp: 3
     option-grp-icon: fa-square
-    option-name: To4 League
-    option-desc: <strong>Teams of 4 League</strong> - Pools £30/angler/match.
+    option-name: Pairs Matches
+    option-desc: <strong>Pairs Matches</strong> - Entry & pools £50/pair. Result on weight.
   - option-grp: 4
     option-grp-icon: fa-square
     option-name: Pete Swann Memorial
@@ -33,13 +33,18 @@ options:
     option-desc: <strong>Three Rivers Festival</strong> - Entry £70 & optional pool £10/day.
   - option-grp: 6
     option-grp-icon: fa-square
-    option-name: King of the Broads
-    option-desc: <strong>King of the Broads</strong> - Entry & pools £50. Result on section points.
+    option-name: To4 League
+    option-desc: <strong>Teams of Four</strong> - Pools £30/angler/match.
   - option-grp: 7
+    option-grp-icon: fa-square
+    option-name: King of the Broads
+    # option-desc: <strong>King of the Broads</strong> - Entry & pools £50. Result on section points.
+    option-desc: <strong>King of the Broads</strong> - To be confirmed.
+  - option-grp: 8
     option-grp-icon: fa-square
     option-name: Broads Festival
     option-desc: <strong>Broads Festival</strong> - Entry £40 & optional pool £20/day.
-  - option-grp: 8
+  - option-grp: 9
     option-grp-icon: fa-square
     option-name: Cyril Wigg Memorial Broads Open
     option-desc: <strong>Cyril Wigg Memorial Broads Open</strong> - Entry £5 & optional pools.

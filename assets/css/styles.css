@@ -383,7 +383,6 @@ select {
   border: 1px solid transparent;
   background-color: #3364a3;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   font-family: sans-serif;
@@ -420,7 +419,6 @@ select {
 
 .Navbar__Items {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   font-size: 1rem; }
@@ -445,7 +443,6 @@ select {
   .Navbar {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column; }
   .Navbar__Items {
@@ -456,7 +453,6 @@ select {
     position: absolute;
     top: 50px;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
@@ -467,9 +463,8 @@ select {
     height: 50px;
     line-height: 50px;
     padding: 0 1.25rem;
-    -webkit-align-self: flex-end;
-        -ms-flex-item-align: end;
-            align-self: flex-end;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
     display: initial;
     position: absolute;
     cursor: pointer; } }
@@ -496,12 +491,10 @@ select {
   padding: 1em;
   border: 1px solid #495057;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
   .card__title {
     width: 70%; }
   .card__map {
@@ -725,23 +718,19 @@ button[disabled] {
     border-color: #bce8f1; }
   .alert--flex {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     /* 2 */ }
     .alert--flex > * {
       margin: 0 .5em; }
     .alert--flex div {
       -webkit-box-flex: 1;
-      -webkit-flex: 1 1 auto;
           -ms-flex: 1 1 auto;
               flex: 1 1 auto; }
       .alert--flex div span {
         display: -webkit-box;
-        display: -webkit-flex;
         display: -ms-flexbox;
         display: flex; }
         .alert--flex div span > .fas {
@@ -751,20 +740,17 @@ button[disabled] {
 .col-layout {
   overflow: hidden;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   /* 1 */
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   /* 2 */
   margin: calc(-1 * 0.5em);
   /* 5 (edit me!) */ }
 
 .col-layout > .stockist {
   -webkit-box-flex: 1;
-  -webkit-flex: 1 0 14em;
       -ms-flex: 1 0 14em;
           flex: 1 0 14em;
   /* 3 (edit me!) */
@@ -773,7 +759,6 @@ button[disabled] {
 
 .col-layout > .card {
   -webkit-box-flex: 1;
-  -webkit-flex: 1 0 20em;
       -ms-flex: 1 0 20em;
           flex: 1 0 20em;
   /* 3 (edit me!) */
@@ -794,12 +779,10 @@ button[disabled] {
 
 .Rtable-row {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
   .Rtable-row--continue, .Rtable-row--BkDate, .Rtable-row--new-day {
     border-top: 0.05em solid #6c757d; }
   .Rtable-row--complete {
@@ -813,47 +796,43 @@ button[disabled] {
     border-bottom: 0.1em solid #000;
     font-weight: 900;
     font-size: 1.2rem; }
-  .Rtable-row--MG1 {
-    background-color: #add8ff; }
-  .Rtable-row--MG2, .Rtable-row--MG4, .Rtable-row--MG6, .Rtable-row--MG8 {
-    background-color: white; }
-  .Rtable-row--MG3 {
-    background-color: #ffefaa; }
-  .Rtable-row--MG5, .Rtable-row--MG7 {
+  .Rtable-row--MG2, .Rtable-row--MG6 {
     background-color: #e4fcee; }
+  .Rtable-row--MG1, .Rtable-row--MG5, .Rtable-row--MG8 {
+    background-color: white; }
+  .Rtable-row--MG3, .Rtable-row--MG7 {
+    background-color: #ffefaa; }
+  .Rtable-row--MG4, .Rtable-row--MG9 {
+    background-color: #add8ff; }
 
 .Rtable-cell {
   -webkit-box-flex: 0;
-  -webkit-flex: 0 1 100%;
       -ms-flex: 0 1 100%;
           flex: 0 1 100%;
   padding: 0.3em 0.7em;
   overflow: hidden; }
-  .Rtable-cell--Ic1 {
-    color: #add8ff; }
-  .Rtable-cell--Ic2, .Rtable-cell--Ic4, .Rtable-cell--Ic6, .Rtable-cell--Ic8 {
-    color: white; }
-  .Rtable-cell--Ic3 {
-    color: #ffefaa; }
-  .Rtable-cell--Ic5, .Rtable-cell--Ic7 {
+  .Rtable-cell--Ic2, .Rtable-cell--Ic6 {
     color: #e4fcee; }
+  .Rtable-cell--Ic1, .Rtable-cell--Ic5, .Rtable-cell--Ic8 {
+    color: white; }
+  .Rtable-cell--Ic3, .Rtable-cell--Ic7 {
+    color: #ffefaa; }
+  .Rtable-cell--Ic4, .Rtable-cell--Ic9 {
+    color: #add8ff; }
   .Rtable-cell--DayNum, .Rtable-cell--BkVenue, .Rtable-cell--BkDesc, .Rtable-cell--BkDayNum, .Rtable-cell--BkDayNum-continue, .Rtable-cell--BkDate-continue, .Rtable-cell--BkDate-same-day {
     display: none; }
   .Rtable-cell--Date, .Rtable-cell--BkDate {
     font-weight: 700; }
   .Rtable-cell--Date {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 100%;
         -ms-flex: 0 1 100%;
             flex: 0 1 100%; }
   .Rtable-cell--Match {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 100%;
         -ms-flex: 0 1 100%;
             flex: 0 1 100%; }
   .Rtable-cell--Venue-Only, .Rtable-cell--Venue {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 100%;
         -ms-flex: 0 1 100%;
             flex: 0 1 100%; }
 
@@ -1021,14 +1000,12 @@ body {
     outline: 2px dotted; }
   body .span-center {
     -webkit-box-pack: center;
-    -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center; }
   body .v-middle {
     vertical-align: middle; }
   body .vt-middle {
     -webkit-box-align: center;
-    -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
   body .fas {
@@ -1053,17 +1030,14 @@ body {
   background-position: center;
   background-size: cover;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   min-height: calc(100vh - 90px);
   padding: 1em;
   text-align: center;
@@ -1101,31 +1075,25 @@ body {
     display: none; }
   .Rtable-cell--DayNum {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 90px;
         -ms-flex: 0 1 90px;
             flex: 0 1 90px; }
   .Rtable-cell--Match {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 208px;
         -ms-flex: 0 1 208px;
             flex: 0 1 208px; }
   .Rtable-cell--Venue {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 152px;
         -ms-flex: 0 1 152px;
             flex: 0 1 152px; }
   .Rtable-cell--Venue-Only {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 180px;
         -ms-flex: 0 1 180px;
             flex: 0 1 180px; }
   .Rtable-cell--Link {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 50px;
         -ms-flex: 0 1 50px;
             flex: 0 1 50px; }
   .Rtable-cell--Date,
@@ -1133,11 +1101,9 @@ body {
     font-weight: 400; }
   .Rtable-cell--BkDate {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 120px;
         -ms-flex: 0 1 120px;
             flex: 0 1 120px; }
     .Rtable-cell--BkDate-continue {
@@ -1148,20 +1114,16 @@ body {
     display: none; }
   .Rtable-cell--BkVenue {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 163px;
         -ms-flex: 0 1 163px;
             flex: 0 1 163px; }
   .Rtable-cell--BkDesc {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 191px;
         -ms-flex: 0 1 191px;
             flex: 0 1 191px; }
   .Btable-cell {
@@ -1186,44 +1148,35 @@ body {
     display: none; }
   .Rtable-cell--Date {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 135px;
         -ms-flex: 0 1 135px;
             flex: 0 1 135px; }
   .Rtable-cell--Match {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 280px;
         -ms-flex: 0 1 280px;
             flex: 0 1 280px; }
   .Rtable-cell--Venue {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 190px;
         -ms-flex: 0 1 190px;
             flex: 0 1 190px; }
   .Rtable-cell--Venue-Only {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 210px;
         -ms-flex: 0 1 210px;
             flex: 0 1 210px; }
   .Rtable-cell--BkDate {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 140px;
         -ms-flex: 0 1 140px;
             flex: 0 1 140px; }
   .Rtable-cell--BkVenue {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 177px;
         -ms-flex: 0 1 177px;
             flex: 0 1 177px; }
   .Btable-cell--BkDate {
@@ -1236,21 +1189,17 @@ body {
     max-width: 449.7px; }
   .Rtable-cell--Date {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 150px;
         -ms-flex: 0 1 150px;
             flex: 0 1 150px; }
   .Rtable-cell--Match {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 320px;
         -ms-flex: 0 1 320px;
             flex: 0 1 320px; }
   .Rtable-cell--Venue {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 220px;
         -ms-flex: 0 1 220px;
             flex: 0 1 220px; }
   .Btable-cell--BkDate {
@@ -1267,29 +1216,23 @@ body {
     max-width: 353px; }
   .Rtable-cell--BkDate {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 16%;
         -ms-flex: 0 1 16%;
             flex: 0 1 16%; }
   .Rtable-cell--BkVenue {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 25%;
         -ms-flex: 0 1 25%;
             flex: 0 1 25%; }
   .Rtable-cell--BkDesc {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 40%;
         -ms-flex: 0 1 40%;
             flex: 0 1 40%; }
   .Btable-cell--BkVenue {
