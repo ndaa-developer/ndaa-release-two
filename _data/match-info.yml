@@ -14,7 +14,7 @@ options:
   - option-grp: 1
     option-grp-icon: fa-square
     option-name: Pairs Series
-    option-desc: <strong>Pairs Series</strong> - Entry £60/pair & pools £50/pair/day. Result on points (drop worst score).
+    option-desc: <strong>Pairs Series</strong> - Entry £40/pair & pools £50/pair/day. Result on points (drop worst score).
   - option-grp: 2
     option-grp-icon: fa-square
     option-name: Pairs Festival
