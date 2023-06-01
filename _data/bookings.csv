@@ -2,13 +2,14 @@ Date,Month,DayNum,Venue,Description,NumDate,Image
 Sat 17th Jun,June,Sat 17th,Decoy River,GYFAC,20230617,cvr-bd-1.jpg
 Sun 18th Jun,June,Sun 18th,Cold Harbour A+B,Bush AC,20230618,cvr-ch-1.jpg
 Sun 18th Jun,June,Sun 18th,Cold Harbour C,SC Match,20230618,cvr-ch-1.jpg
+Sun 18th Jun,June,Sun 18th,Decoy Boats,Bakers AC,20230618,cvr-db-1.jpg
 Sun 18th Jun,June,Sun 18th,EA Martham,SC Match,20230618,cvr-hm-1.jpg
 Sun 18th Jun,June,Sun 18th,EA Potter Heigham,SC Match,20230618,cvr-ph-1.jpg
 Sun 18th Jun,June,Sun 18th,St Benets A ,Wymondham AC,20230618,cvr-sb-2.jpg
-Sun 18th Jun,June,Sun 18th,St Benets B,Bakers AC,20230618,cvr-sb-1.jpg
+Sun 18th Jun,June,Sun 18th,St Benets B,SC Match,20230618,cvr-sb-1.jpg
 Sun 18th Jun,June,Sun 18th,Womack All,Dukes AC,20230618,cvr-ww-1.jpg
 Wed 21st Jun,June,Wed 21st,St Benets A ,GYFAC 5pm+,20230621,cvr-sb-2.jpg
-Thu 22nd Jun,June,Thu 22nd,To be confirmed,NDAA,20230622,0
+Thu 22nd Jun,June,Thu 22nd,To be confirmed,NDAA,20230622,cvr-bd-1.jpg
 Sun 25th Jun,June,Sun 25th,Cold Harbour A,Kings Arms,20230625,cvr-ch-1.jpg
 Sun 25th Jun,June,Sun 25th,Horning Ferry,Dukes AC,20230625,cvr-bw-1.jpg
 Sun 25th Jun,June,Sun 25th,St Benets A ,Bakers AC,20230625,cvr-sb-2.jpg
@@ -21,13 +22,13 @@ Wed 28th Jun,June,Wed 28th,Womack All,NDAA,20230628,cvr-ww-1.jpg
 Thu 29th Jun,June,Thu 29th,St Benets All,Essex Police,20230629,cvr-sb-2.jpg
 Sat 1st Jul,July,Sat 1st,Decoy Boats,GYFAC,20230701,cvr-db-1.jpg
 Sun 2nd Jul,July,Sun 2nd,Cold Harbour A+B,Bush AC,20230702,cvr-ch-1.jpg
-Sun 2nd Jul,July,Sun 2nd,Decoy Boats,Bakers AC,20230702,cvr-db-1.jpg
+Sun 2nd Jul,July,Sun 2nd,St Benets A ,Bakers AC,20230702,cvr-sb-2.jpg
 Sun 2nd Jul,July,Sun 2nd,St Benets All,NDAA,20230702,cvr-sb-2.jpg
 Sun 2nd Jul,July,Sun 2nd,Womack All,Dukes AC,20230702,cvr-ww-1.jpg
 Mon 3rd Jul,July,Mon 3rd,St Benets All,SJ Match,20230703,cvr-sb-2.jpg
 Wed 5th Jul,July,Wed 5th,Cold Harbour A+B,SJ Match,20230705,cvr-ch-1.jpg
 Wed 5th Jul,July,Wed 5th,Womack A,SJ Match,20230705,cvr-ww-1.jpg
-Thu 6th Jul,July,Thu 6th,To be confirmed,NDAA,20230706,0
+Thu 6th Jul,July,Thu 6th,To be confirmed,NDAA,20230706,cvr-bd-1.jpg
 Fri 7th Jul,July,Fri 7th,Cold Harbour A+B,SJ Match,20230707,cvr-ch-1.jpg
 Fri 7th Jul,July,Fri 7th,St Benets 1-15,Deeping AC,20230707,cvr-sb-2.jpg
 Fri 7th Jul,July,Fri 7th,Womack All,SJ Match,20230707,cvr-ww-1.jpg
@@ -41,7 +42,7 @@ Sat 15th Jul,July,Sat 15th,Cold Harbour B,Cambs Police,20230715,cvr-ch-1.jpg
 Sun 16th Jul,July,Sun 16th,Cold Harbour A,Wymondham AC,20230716,cvr-ch-1.jpg
 Sun 16th Jul,July,Sun 16th,Decoy River,Bakers AC,20230716,cvr-bd-1.jpg
 Sun 16th Jul,July,Sun 16th,St Benets A ,Dukes AC,20230716,cvr-sb-2.jpg
-Sun 16th Jul,July,Sun 16th,To be confirmed,NDAA,20230716,0
+Sun 16th Jul,July,Sun 16th,To be confirmed,NDAA,20230716,cvr-bd-1.jpg
 Tue 18th Jul,July,Tue 18th,Cold Harbour All,NDAA,20230718,cvr-ch-1.jpg
 Tue 18th Jul,July,Tue 18th,St Benets All,NDAA,20230718,cvr-sb-2.jpg
 Tue 18th Jul,July,Tue 18th,Womack All,NDAA,20230718,cvr-ww-1.jpg
@@ -51,38 +52,38 @@ Wed 19th Jul,July,Wed 19th,St Benets All,NDAA,20230719,cvr-sb-2.jpg
 Wed 19th Jul,July,Wed 19th,Womack All,NDAA,20230719,cvr-ww-1.jpg
 Sun 23rd Jul,July,Sun 23rd,Cold Harbour A,Wymondham AC,20230723,cvr-ch-1.jpg
 Sun 23rd Jul,July,Sun 23rd,Decoy Boats,Bakers AC,20230723,cvr-db-1.jpg
-Sun 23rd Jul,July,Sun 23rd,To be confirmed,NDAA,20230723,0
+Sun 23rd Jul,July,Sun 23rd,To be confirmed,NDAA,20230723,cvr-bd-1.jpg
 Wed 26th Jul,July,Wed 26th,Decoy River,GYFAC 5pm+,20230726,cvr-bd-1.jpg
-Thu 27th Jul,July,Thu 27th,To be confirmed,NDAA,20230727,0
+Thu 27th Jul,July,Thu 27th,To be confirmed,NDAA,20230727,cvr-bd-1.jpg
 Sat 29th Jul,July,Sat 29th,St Benets A ,GYFAC,20230729,cvr-sb-2.jpg
 Sun 30th Jul,July,Sun 30th,Decoy River,Bakers AC,20230730,cvr-bd-1.jpg
 Sun 30th Jul,July,Sun 30th,EA Martham,Dukes AC,20230730,cvr-hm-1.jpg
 Sun 30th Jul,July,Sun 30th,St Benets A ,Wymondham AC,20230730,cvr-sb-2.jpg
-Sun 30th Jul,July,Sun 30th,To be confirmed,NDAA,20230730,0
+Sun 30th Jul,July,Sun 30th,To be confirmed,NDAA,20230730,cvr-bd-1.jpg
 Wed 2nd Aug,August,Wed 2nd,St Benets A ,GYFAC 5pm+,20230802,cvr-sb-2.jpg
-Thu 3rd Aug,August,Thu 3rd,To be confirmed,NDAA,20230803,0
+Thu 3rd Aug,August,Thu 3rd,To be confirmed,NDAA,20230803,cvr-bd-1.jpg
 Sun 6th Aug,August,Sun 6th,Cold Harbour A,Bakers AC,20230806,cvr-ch-1.jpg
 Sun 6th Aug,August,Sun 6th,Horning Ferry,Dukes AC,20230806,cvr-bw-1.jpg
 Wed 9th Aug,August,Wed 9th,St Benets A ,GYFAC 5pm+,20230809,cvr-sb-2.jpg
-Thu 10th Aug,August,Thu 10th,To be confirmed,NDAA,20230810,0
+Thu 10th Aug,August,Thu 10th,To be confirmed,NDAA,20230810,cvr-bd-1.jpg
 Sat 12th Aug,August,Sat 12th,Decoy Boats,GYFAC,20230812,cvr-db-1.jpg
 Sun 13th Aug,August,Sun 13th,Decoy Boats,Bakers AC,20230813,cvr-db-1.jpg
 Sun 13th Aug,August,Sun 13th,St Benets B,Dukes AC,20230813,cvr-sb-1.jpg
-Sun 13th Aug,August,Sun 13th,To be confirmed,NDAA,20230813,0
+Sun 13th Aug,August,Sun 13th,To be confirmed,NDAA,20230813,cvr-bd-1.jpg
 Sun 20th Aug,August,Sun 20th,St Benets A ,Bakers AC,20230820,cvr-sb-2.jpg
-Sun 20th Aug,August,Sun 20th,To be confirmed,NDAA,20230820,0
+Sun 20th Aug,August,Sun 20th,To be confirmed,NDAA,20230820,cvr-bd-1.jpg
 Tue 22nd Aug,August,Tue 22nd,Cold Harbour 1-20,Essex Police,20230822,cvr-ch-1.jpg
 Sat 26th Aug,August,Sat 26th,St Benets A ,GYFAC,20230826,cvr-sb-2.jpg
 Sun 27th Aug,August,Sun 27th,Decoy Boats,Bakers AC,20230827,cvr-db-1.jpg
-Sun 27th Aug,August,Sun 27th,To be confirmed,NDAA,20230827,0
-Thu 31st Aug,August,Thu 31st,To be confirmed,NDAA,20230831,0
+Sun 27th Aug,August,Sun 27th,To be confirmed,NDAA,20230827,cvr-bd-1.jpg
+Thu 31st Aug,August,Thu 31st,To be confirmed,NDAA,20230831,cvr-bd-1.jpg
 Sun 3rd Sep,September,Sun 3rd,Cold Harbour A,Kings Arms,20230903,cvr-ch-1.jpg
 Sun 3rd Sep,September,Sun 3rd,Horning Ferry,Bakers AC,20230903,cvr-bw-1.jpg
 Sun 3rd Sep,September,Sun 3rd,St Benets A ,Wymondham AC,20230903,cvr-sb-2.jpg
-Sun 3rd Sep,September,Sun 3rd,To be confirmed,NDAA,20230903,0
-Mon 4th Sep,September,Mon 4th,To be confirmed,York AC,20230904,0
-Tue 5th Sep,September,Tue 5th,To be confirmed,York AC,20230905,0
-Wed 6th Sep,September,Wed 6th,To be confirmed,York AC,20230906,0
+Sun 3rd Sep,September,Sun 3rd,To be confirmed,NDAA,20230903,cvr-bd-1.jpg
+Mon 4th Sep,September,Mon 4th,To be confirmed,York AC,20230904,cvr-bd-1.jpg
+Tue 5th Sep,September,Tue 5th,To be confirmed,York AC,20230905,cvr-bd-1.jpg
+Wed 6th Sep,September,Wed 6th,To be confirmed,York AC,20230906,cvr-bd-1.jpg
 Thu 7th Sep,September,Thu 7th,Cold Harbour A+B,York AC,20230907,cvr-ch-1.jpg
 Fri 8th Sep,September,Fri 8th,St Benets All,York AC,20230908,cvr-sb-2.jpg
 Sat 9th Sep,September,Sat 9th,Cold Harbour All,NDAA,20230909,cvr-ch-1.jpg
@@ -104,7 +105,7 @@ Sat 23rd Sep,September,Sat 23rd,St Benets A ,GYFAC,20230923,cvr-sb-2.jpg
 Sun 24th Sep,September,Sun 24th,Cold Harbour A+B,Bush AC,20230924,cvr-ch-1.jpg
 Sun 24th Sep,September,Sun 24th,Decoy River,Bakers AC,20230924,cvr-bd-1.jpg
 Sun 24th Sep,September,Sun 24th,EA Potter Heigham,Dukes AC,20230924,cvr-ph-1.jpg
-Sun 24th Sep,September,Sun 24th,To be confirmed,NDAA,20230924,0
+Sun 24th Sep,September,Sun 24th,To be confirmed,NDAA,20230924,cvr-bd-1.jpg
 Tue 26th Sep,September,Tue 26th,Cold Harbour All,NDAA,20230926,cvr-ch-1.jpg
 Tue 26th Sep,September,Tue 26th,St Benets All,NDAA,20230926,cvr-sb-2.jpg
 Tue 26th Sep,September,Tue 26th,Womack All,NDAA,20230926,cvr-ww-1.jpg
@@ -122,7 +123,7 @@ Tue 3rd Oct,October,Tue 3rd,Cold Harbour All,W Mids Police,20231003,cvr-ch-1.jpg
 Wed 4th Oct,October,Wed 4th,EA Martham,W Mids Police,20231004,cvr-hm-1.jpg
 Sat 7th Oct,October,Sat 7th,St Benets A ,GYFAC,20231007,cvr-sb-2.jpg
 Sun 8th Oct,October,Sun 8th,EA Martham,Wymondham AC,20231008,cvr-hm-1.jpg
-Sun 8th Oct,October,Sun 8th,To be confirmed,NDAA,20231008,0
+Sun 8th Oct,October,Sun 8th,To be confirmed,NDAA,20231008,cvr-bd-1.jpg
 Sun 15th Oct,October,Sun 15th,Horning Ferry,Dukes AC,20231015,cvr-bw-1.jpg
 Sun 15th Oct,October,Sun 15th,St Benets A ,Kings Arms,20231015,cvr-sb-2.jpg
 Sun 22nd Oct,October,Sun 22nd,EA Potter Heigham,Dukes AC,20231022,cvr-ph-1.jpg
