@@ -13,7 +13,7 @@
                     <h3>{{ venue.sub-title }}</h3>  
                 </div>
                 <div class="card__map">
-                    <a class="btn btn--info" href="{{ site.data.site.gmap-url }}{{ venue.gmap-id }}" role="button">Map</a>
+                    <a class="btn btn--info" href="{{ site.data.site.gmap-url }}{{ venue.gmap-id }}" role="button">Map<i class="fas fa-arrow-circle-right"></i></a>
                 </div>
                 <div class="card__desc">
                     {{ venue.desc | markdownify }}

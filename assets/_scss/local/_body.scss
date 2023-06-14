@@ -120,9 +120,16 @@ body {
     }
   }
 
-  .match-buttons > * + * {
-    margin-left: 1em;
+  .match-buttons {
+    & > * + * {
+      margin-left: 1em;
+    }
+
+    & .fas {
+      margin-left: .5em;
+    }
   }
+ 
 
 }
   

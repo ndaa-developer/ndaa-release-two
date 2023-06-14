@@ -496,9 +496,9 @@ select {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   .card__title {
-    width: 70%; }
+    width: 65%; }
   .card__map {
-    width: 30%;
+    width: 35%;
     text-align: right;
     line-height: inherit;
     margin-top: .5em; }
@@ -508,6 +508,8 @@ select {
     margin-top: 7em;
     background-color: #f8f9fa;
     opacity: .75; }
+  .card .fas {
+    margin-left: .5em; }
 
 .card-user {
   position: absolute;
@@ -686,6 +688,8 @@ button[disabled] {
     font-weight: 700; }
   .stockist > * + * {
     margin-top: .3em; }
+  .stockist .fas {
+    margin-left: .5em; }
 
 .alert {
   padding-top: 1em;
@@ -1017,6 +1021,8 @@ body {
       margin-bottom: 1em; }
   body .match-buttons > * + * {
     margin-left: 1em; }
+  body .match-buttons .fas {
+    margin-left: .5em; }
 
 .cover {
   background-position: center;

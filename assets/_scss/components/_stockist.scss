@@ -27,5 +27,9 @@ $stockist-name-fnt-sz: 1em !default;
   & > * + * {
     margin-top: .3em;
   }
+
+  & .fas {
+    margin-left: .5em;
+  }
  
 }
