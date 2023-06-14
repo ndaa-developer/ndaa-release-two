@@ -7,17 +7,23 @@ $col-layout-gap-p: calc(-1 * #{$col-layout-gap-c}) !default;
   flex-wrap: wrap; /* 2 */
   margin: $col-layout-gap-p; /* 5 (edit me!) */
 
+  & > .stockist {
+    flex: 1 0 14em;   /* 3 (edit me!) */
+    margin: $col-layout-gap-c; /* 4 (edit me!) */
+  
+  }
+  
+  & > .card {
+    flex: 1 0 20em;   /* 3 (edit me!) */
+    margin: $col-layout-gap-c; /* 4 (edit me!) */
+  
+  }
+  
+  &--col-gap-fix {
+    margin-bottom: calc(#{$v-size-400} + #{$col-layout-gap-c});
+  }
+
 }
 
-.col-layout > .stockist {
-  flex: 1 0 14em;   /* 3 (edit me!) */
-  margin: $col-layout-gap-c; /* 4 (edit me!) */
-
-}
 
 
-.col-layout > .card {
-  flex: 1 0 20em;   /* 3 (edit me!) */
-  margin: $col-layout-gap-c; /* 4 (edit me!) */
-
-}

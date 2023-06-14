@@ -43,14 +43,24 @@ body {
   }
   
   /* Natural flow and rhythm in articles by default */
-  article > * + * {
-    margin-top: 2em;
-   
+  section {
+    & > * + * {
+      margin-top: 1em;
+    }
+    
   }
 
-  article:last-child {
-    padding-bottom: 1em;
+  article {
+    & > * + * {
+      margin-top: 2em;
+    }
+
+    &:last-child {
+      padding-bottom: 1em;
+    }
+  
   }
+  
 
   main {
       background-color: $main-bg-colour; //#333745;
@@ -60,17 +70,7 @@ body {
     }
 
   }
-  .section-hdr {
-    margin-bottom: $v-size-400;
 
-    &--col-gap-fix {
-      margin-bottom: calc(#{$v-size-400} + #{$col-layout-gap-c});
-    }
-  }
-  article .alert {
-    margin-top: 1em;
-    margin-bottom: 1em;
-  }
   .table-key {
     background-color: $gray-200;
 

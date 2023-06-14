@@ -1,8 +1,8 @@
 cover-msg-ind: true
 cover-msg-type: info
 cover-messages:
-  - msg-type: warning
-    cvr-msg: All venues **CLOSED** from dusk **Tuesday 14th March**
+  # - msg-type: warning
+  #   cvr-msg: All venues **CLOSED** from dusk **Tuesday 14th March**
   - msg-type: info
     cvr-msg: Venues re-open dawn Friday 16th June
   # - msg-type: info

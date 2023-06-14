@@ -1,5 +1,5 @@
 intro-desc: Membership is open to all anglers and entitles the holder to fish all NDAA waters and participate in all NDAA organised matches. If the card holder is 18 years or above they may also take a junior (16 years or under at time of fishing) to fish on NDAA waters at no extra charge. Junior anglers must be accompanied by an adult at all times.
-alert-msg-type: info
+# alert-msg-type: info
 alert-messages:
   # - alert-type: warning
   #   alert-msg: Only Season Membership Cards will be available for 2021-22.

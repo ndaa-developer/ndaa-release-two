@@ -748,22 +748,22 @@ button[disabled] {
   /* 2 */
   margin: calc(-1 * 0.5em);
   /* 5 (edit me!) */ }
-
-.col-layout > .stockist {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 14em;
-          flex: 1 0 14em;
-  /* 3 (edit me!) */
-  margin: 0.5em;
-  /* 4 (edit me!) */ }
-
-.col-layout > .card {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 20em;
-          flex: 1 0 20em;
-  /* 3 (edit me!) */
-  margin: 0.5em;
-  /* 4 (edit me!) */ }
+  .col-layout > .stockist {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 14em;
+            flex: 1 0 14em;
+    /* 3 (edit me!) */
+    margin: 0.5em;
+    /* 4 (edit me!) */ }
+  .col-layout > .card {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 20em;
+            flex: 1 0 20em;
+    /* 3 (edit me!) */
+    margin: 0.5em;
+    /* 4 (edit me!) */ }
+  .col-layout--col-gap-fix {
+    margin-bottom: calc(1em + 0.5em); }
 
 .wrapper {
   width: 100%;
@@ -849,13 +849,11 @@ button[disabled] {
   font-size: 1.25rem; }
 
 .match-result thead th {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 1; }
 
 .match-result thead th:first-child {
-  position: -webkit-sticky;
   position: sticky;
   left: 0;
   z-index: 2; }
@@ -865,7 +863,6 @@ button[disabled] {
   border-bottom: 0.05em solid #000; }
 
 .match-result tbody th {
-  position: -webkit-sticky;
   position: sticky;
   left: 0;
   z-index: 1; }
@@ -974,6 +971,8 @@ body {
       left: 0;
       width: 100%;
       height: 100%; }
+  body section > * + * {
+    margin-top: 1em; }
   body article > * + * {
     margin-top: 2em; }
   body article:last-child {
@@ -983,13 +982,6 @@ body {
     /* Natural flow and rhythm in articles by default */ }
     body main > * + * {
       padding-top: 3em; }
-  body .section-hdr {
-    margin-bottom: 1em; }
-    body .section-hdr--col-gap-fix {
-      margin-bottom: calc(1em + 0.5em); }
-  body article .alert {
-    margin-top: 1em;
-    margin-bottom: 1em; }
   body .table-key {
     background-color: #e9ecef; }
     body .table-key h4 {
