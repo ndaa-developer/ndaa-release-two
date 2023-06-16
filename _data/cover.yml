@@ -1,4 +1,4 @@
-cover-msg-ind: true
+cover-msg-ind: false
 cover-msg-type: info
 cover-messages:
   # - msg-type: warning
