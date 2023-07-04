@@ -1,6 +1,10 @@
 .match-result {
 
     & caption {
+      padding: .5em .5em;
+      background-color: $gray-400;
+      text-align: left;
+      font-weight: 500;
       font-size: $size-500;
     }
     

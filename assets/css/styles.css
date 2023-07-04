@@ -850,6 +850,10 @@ button[disabled] {
     display: none; }
 
 .match-result caption {
+  padding: .5em .5em;
+  background-color: #ced4da;
+  text-align: left;
+  font-weight: 500;
   font-size: 1.25rem; }
 
 .match-result thead th {
