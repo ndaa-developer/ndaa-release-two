@@ -1,18 +1,17 @@
-﻿Order,Placing,Name,R1-W-Lowest,R1-W,R2-W-Lowest,R2-W,Weight,Adjusted-W
-1,1st,Brian Bygrave & Tony Gibbons,Y,18-04,,36-11,54-15,36-11
-2,2nd,Dave Gooch & Robert Houlding,Y,21-14,,32-00,53-14,32-00
-3,3rd,Billy Hughes & Bob Nudd,Y,24-06,,26-08,50-14,26-08
-4,4th,Mick Hanks & Martin Spence,Y,13-07,,37-01,50-08,37-01
-5,5th,Derek Adcock & Dusty Kiddell,Y,20-00,,30-05,50-05,30-05
-6,6th,Barry Oliver & Andy Mead,Y,12-13,,37-04,50-01,37-04
-7,7th,Mark Murdoch & Dave Pike,,25-12,Y,23-14,49-10,25-12
-8,8th,Steve Clark & Paul Abbott,Y,17-13,,30-14,48-11,30-14
-9,9th,Richard Watson & Mick Burch,Y,18-14,,25-06,44-04,25-06
-10,10th,Colin Blake & Richard Jacobs,Y,12-02,,31-02,43-04,31-02
-11,11th,Brian Weavers & Ian Bailey,Y,11-09,,30-04,41-13,30-04
-12,12th,Dave Parlett & Mark Taylor,Y,19-15,Y,19-15,39-14,19-15
-13,13th,Steve Spooner & Steve O'Rourke,Y,16-03,,23-00,39-03,23-00
-14,14th,Gary Abbott & Karl Dowse,Y,11-02,,26-15,38-01,26-15
-15,15th,Ricky Cox & Jimmy Ellis,Y,6-09,,19-12,26-05,19-12
-16,16th,Chris Golding & Preston Gilding,,10-09,Y,6-12,17-05,10-09
-17,16th,Mark Tricker & Mick Butcher,Y,7-08,,9-13,17-05,9-13
+﻿Order,Placing,Name,R1-P,R1-W-Lowest,R1-W,R2-P,R2-W-Lowest,R2-W,R3-P,R3-W-Lowest,R3-W,R4-P,R4-W-Lowest,R4-W,R5-P,R5-W,R5-W-Lowest,R6-P,R6-W,R6-W-Lowest,Weight,Adjusted-W
+1,1st,Dave Gooch & Robert Houlding,3,,43-07,2,Y,29-10,0,,0-0,0,,0-0,0,0-0,,0,0-0,,73-01,43-07
+2,2nd,Colin Blake & Richard Jacobs,7,,31-06,4,Y,30-04,0,,0-0,0,,0-0,0,0-0,,0,0-0,,61-10,31-06
+3,3rd,Graham Coles & Adrian Parrott,4,,36-00,8,Y,19-08,0,,0-0,0,,0-0,0,0-0,,0,0-0,,55-08,36-00
+4,4th,Brian Weavers & Mick Mirgaux,6,Y,22-13,4,,29-01,0,,0-0,0,,0-0,0,0-0,,0,0-0,,51-14,29-01
+5,5th,Derek Adcock & Dusty Kiddell,5,,29-12,6,Y,19-08,0,,0-0,0,,0-0,0,0-0,,0,0-0,,49-04,29-12
+6,6th,Billy Hughes & Steve O'Rourke,13,Y,15-10,5,,28-14,0,,0-0,0,,0-0,0,0-0,,0,0-0,,44-08,28-14
+7,7th,Mark Murdoch & Dave Pike,12,Y,14-03,3,,26-07,0,,0-0,0,,0-0,0,0-0,,0,0-0,,40-10,26-07
+8,8th,Brian Bygrave & Tony Gibbons,11,,21-07,2,Y,19-01,0,,0-0,0,,0-0,0,0-0,,0,0-0,,40-08,21-07
+9,9th,Bob Nudd & John Taylor,8,,23-08,4,Y,16-00,0,,0-0,0,,0-0,0,0-0,,0,0-0,,39-08,23-08
+10,10th,Gary Abbott & Karl Dowse,4,,24-13,7,Y,13-09,0,,0-0,0,,0-0,0,0-0,,0,0-0,,38-06,24-13
+11,11th,Paul Abbott & Steve Clark,11,Y,12-12,4,,24-00,0,,0-0,0,,0-0,0,0-0,,0,0-0,,36-12,24-00
+12,12th,Simon Bradley & Alan Dorrian,13,Y,12-12,6,,21-15,0,,0-0,0,,0-0,0,0-0,,0,0-0,,34-11,21-15
+13,13th,Dave Parlett & Mark Taylor,11,Y,15-00,7,,17-03,0,,0-0,0,,0-0,0,0-0,,0,0-0,,32-03,17-03
+14,14th,Mick Hanks & Martin Spence,15,Y,7-11,5,,23-00,0,,0-0,0,,0-0,0,0-0,,0,0-0,,30-11,23-00
+15,15th,Mick Burch & Richard Watson,10,,18-10,8,Y,7-03,0,,0-0,0,,0-0,0,0-0,,0,0-0,,25-13,18-10
+16,16th,Preston Gilding & Martin Johnson,14,,13-11,10,Y,5-02,0,,0-0,0,,0-0,0,0-0,,0,0-0,,18-13,13-11
