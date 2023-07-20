@@ -10,13 +10,17 @@ alert-messages:
     alert-msg: Only Season Membership Cards will be available for 2021-22.
   - alert-type: info
     alert-msg: Season Membership Cards will be in shops mid-May.
-notes-ind: false
+notes-ind: true
 notes:
   - note-grp: 1
     note-grp-icon: fa-info-circle
+    note-name: Venues
+    note-desc: NDAA [venues and maps](https://ndaa.org.uk/waters.html)
+  - note-grp: 2
+    note-grp-icon: fa-info-circle
     note-name: Decoy River
     note-desc: Decoy River equates to River Bure, Woodbastwick Estate.
-  - note-grp: 2
+  - note-grp: 3
     note-grp-icon: fa-info-circle
     note-name: Horning Ferry
     note-desc: Horning Ferry equates to River Bure, Woodbastwick Staithe.

@@ -27,14 +27,14 @@ options:
   #   option-grp-icon: fa-square
   #   option-name: Pete Swan Memorial
   #   option-desc: <strong>Pete Swan Memorial</strong> - Entry £20 (£10 to charity) & optional pool £10.
-  - option-grp: 5
-    option-grp-icon: fa-square
-    option-name: Three Rivers Festival
-    option-desc: <strong>Three Rivers Festival</strong> - Entry £70 & optional pool £10/day.
+  # - option-grp: 5
+  #   option-grp-icon: fa-square
+  #   option-name: Three Rivers Festival
+  #   option-desc: <strong>Three Rivers Festival</strong> - Entry £70 & optional pool £10/day.
   - option-grp: 6
     option-grp-icon: fa-square
     option-name: To4 League
-    option-desc: <strong>Teams of Four</strong> - Pools £30/angler/match.
+    option-desc: <strong>Teams of Four</strong> - £40 entry/team Pools £30/angler/match.
   - option-grp: 7
     option-grp-icon: fa-square
     option-name: King of the Broads
