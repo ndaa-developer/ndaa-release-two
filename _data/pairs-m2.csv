@@ -1,0 +1,31 @@
+﻿Order,Zone,Section,RiverBank,River,Count,Ref,League,Peg,Angler,Pairing,Weight,SectionPoints,SectionPayout,ZonePoints,ZonePayout,MatchPosition
+1,A,1,Potter Heigham Stagings,Thurne,1,1.1,white,10,Mick Hanks,Gary Abbott & Mick Hanks,21-08,1,1st,1,1st,2nd
+2,A,1,Potter Heigham Stagings,Thurne,2,1.2,white,9,Tony Gibbons,Brian Bygrave & Tony Gibbons,19-11,2,2nd,2,2nd,4th
+3,A,1,Potter Heigham Stagings,Thurne,3,1.3,white,8,Dusty Kiddell,Dusty Kiddell & James Parnell,16-01,3,,3,3rd,5th
+4,A,1,Potter Heigham Stagings,Thurne,4,1.4,white,7,Billy Hughes,Billy Hughes & Steve O'Rourke,8-13,7,,11,,
+5,A,1,Potter Heigham Stagings,Thurne,5,1.5,white,6,Steve Kindleysides,Wayne Anderson & Steve Kindleysides,15-09,4,,4,,
+6,A,1,Potter Heigham Stagings,Thurne,6,1.6,white,5,Paul Chambers,Paul Chambers & Robert Houlding,10-13,6,,9,,
+7,A,1,Potter Heigham Stagings,Thurne,7,1.7,white,4,Dave Pike,Mark Murdoch & Dave Pike,14-09,5,,5,,
+8,A,2,Womack Bank B,Thurne,1,2.1,white,1,Steve Clark,Steve Clark & Paul Abbott,12-00,2,2nd,7,,
+9,A,2,Womack Bank B,Thurne,2,2.2,white,2,Lee Lawrence,Steve Day & Lee Lawrence,8-08,7,,14,,
+10,A,2,Womack Bank B,Thurne,3,2.3,white,3,Robert Hubbard,Glenn Hubbard & Robert Hubbard,13-13,1,1st,6,,
+11,A,2,Womack Bank B,Thurne,4,2.4,white,4,Ray King,Ray King & Simon Smith,9-06,4,,10,,
+12,A,2,Womack Bank B,Thurne,5,2.5,white,5,Kevin Knights,Kevin Knights & Neil Smith,8-09,6,,13,,
+13,A,2,Womack Bank B,Thurne,6,2.6,white,6,Chris High,Robin Austrin & Chris High,4-13,7,,15,,
+14,A,2,Womack Bank B,Thurne,7,2.7,white,7,Karl Dowse,Karl Dowse & Eddie Hall,8-10,5,,12,,
+15,A,2,Womack Bank B,Thurne,8,2.8,white,8,Brian Weavers,Kevin Paynter & Brian Weavers,11-10,3,,8,,
+16,B,1,Cold Harbour Bank B,Thurne,1,3.1,white,8,Kevin Paynter,Kevin Paynter & Brian Weavers,10-15,5,,8,,
+17,B,1,Cold Harbour Bank B,Thurne,2,3.2,white,9,Eddie Hall,Karl Dowse & Eddie Hall,11-08,4,,7,,
+18,B,1,Cold Harbour Bank B,Thurne,3,3.3,white,10,Paul Abbott,Steve Clark & Paul Abbott,15-08,1,1st,3,3rd,
+19,B,1,Cold Harbour Bank B,Thurne,4,3.4,white,11,Simon Smith,Ray King & Simon Smith,11-10,3,,6,,
+20,B,1,Cold Harbour Bank B,Thurne,5,3.5,white,12,James Parnell,Dusty Kiddell & James Parnell,6-01,7,,14,,
+21,B,1,Cold Harbour Bank B,Thurne,6,3.6,white,13,Gary Abbott,Gary Abbott & Mick Hanks,7-01,6,,12,,
+22,B,1,Cold Harbour Bank B,Thurne,7,3.7,white,14,Wayne Anderson,Wayne Anderson & Steve Kindleysides,12-11,2,2nd,4,,
+23,B,2,Cold Harbour Bank C,Thurne,1,4.1,white,17,Steve Day,Steve Day & Lee Lawrence,3-04,7,,15,,
+24,B,2,Cold Harbour Bank C,Thurne,2,4.2,white,19,Robert Houlding,Paul Chambers & Robert Houlding,10-08,4,,9,,
+25,B,2,Cold Harbour Bank C,Thurne,3,4.3,white,20,Neil Smith,Kevin Knights & Neil Smith,7-07,6,,11,,
+26,B,2,Cold Harbour Bank C,Thurne,4,4.4,white,21,Brian Bygrave,Brian Bygrave & Tony Gibbons,9-12,5,,10,,
+27,B,2,Cold Harbour Bank C,Thurne,5,4.5,white,22,Robin Austrin,Robin Austrin & Chris High,6-09,7,,13,,
+28,B,2,Cold Harbour Bank C,Thurne,6,4.6,white,23,Steve O'Rourke,Billy Hughes & Steve O'Rourke,12-09,3,,5,,
+29,B,2,Cold Harbour Bank C,Thurne,7,4.7,white,24,Mark Murdoch,Mark Murdoch & Dave Pike,21-15,1,1st,1,1st,1st
+30,B,2,Cold Harbour Bank C,Thurne,8,4.8,white,25,Glenn Hubbard,Glenn Hubbard & Robert Hubbard,21-05,2,2nd,2,2nd,3rd

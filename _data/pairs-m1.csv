@@ -1,53 +1,27 @@
 ﻿Order,Zone,Section,RiverBank,River,Count,Ref,League,Peg,Angler,Pairing,Weight,SectionPoints,SectionPayout,ZonePoints,ZonePayout,MatchPosition
-1,A,1,"Martham 
-Ronds",Thurne,1,1.1,white,18,Robin Austrin,Robin Austrin & Andy Ison,15-10,4,,8,,
-2,A,1,"Martham 
-Ronds",Thurne,2,1.2,white,19,Marty Jermyn,Marty Jermyn & Ray King,34-05,2,,2,2nd,2nd
-3,A,1,"Martham 
-Ronds",Thurne,3,1.3,white,20,Thomas Moretti,Colin Dance & Thomas Moretti,22-11,3,,4,,
-4,A,1,"Martham 
-Ronds",Thurne,4,1.4,white,22,Glenn Hubbard,Glenn Hubbard & Robert Hubbard,37-01,1,1st,1,1st,1st
-5,A,2,"Martham 
-Ronds",Thurne,1,2.1,white,23,James Parnell,Dusty Kiddell & James Parnell,23-08,1,1st,3,3rd,5th
-6,A,2,"Martham 
-Ronds",Thurne,2,2.2,white,24,Billy Hughes,Billy Hughes & Steve O'Rourke,13-05,5,,10,,
-7,A,2,"Martham 
-Ronds",Thurne,3,2.3,white,25,Steve Clark,Steve Clark & Paul Abbott,21-02,2,,5,,
-8,A,2,"Martham 
-Ronds",Thurne,4,2.4,white,26,Eddie Hall,Eddie Hall & Neil Smith,17-06,3,,7,,
-9,A,2,"Martham 
-Ronds",Thurne,5,2.5,white,27,Steve Kindleysides,Wayne Anderson & Steve Kindleysides,14-13,4,,9,,
-10,A,3,"Martham 
-High's Mill",Thurne,1,3.1,white,28,Les King,Les King & Bob Wallis,7-08,4,,13,,
-11,A,3,"Martham 
-High's Mill",Thurne,2,3.2,white,29,Jed White,John Brice & Jed White,9-12,2,,11,,
-12,A,3,"Martham 
-High's Mill",Thurne,3,3.3,white,30,Tony Gibbons,Brian Bygrave & Tony Gibbons,8-10,3,,12,,
-13,A,3,"Martham 
-High's Mill",Thurne,4,3.4,white,31,Dave Edwards,Dave Edwards & Brian Weavers,17-13,1,1st,6,,
-14,B,1,"Martham 
-High's Mill",Thurne,1,4.1,white,32,Paul Abbott,Steve Clark & Paul Abbott,10-04,3,,8,,
-15,B,1,"Martham 
-High's Mill",Thurne,2,4.2,white,33,Steve O'Rourke,Billy Hughes & Steve O'Rourke,7-07,4,,12,,
-16,B,1,"Martham 
-High's Mill",Thurne,3,4.3,white,34,John Brice,John Brice & Jed White,18-00,2,,4,,
-17,B,1,"Martham 
-High's Mill",Thurne,4,4.4,white,35,Brian Bygrave,Brian Bygrave & Tony Gibbons,18-03,1,1st,3,3rd,
-18,B,2,"Potter Heigham 
-Ronds",Bure,1,5.1,white,15,Brian Weavers,Dave Edwards & Brian Weavers,25-04,2,,2,2nd,4th
-19,B,2,"Potter Heigham 
-Ronds",Bure,2,5.2,white,14,Ray King,Marty Jermyn & Ray King,31-03,1,1st,1,1st,3rd
-20,B,2,"Potter Heigham 
-Ronds",Bure,3,5.3,white,13,Dusty Kiddell,Dusty Kiddell & James Parnell,3-09,4,,13,,
-21,B,2,"Potter Heigham 
-Ronds",Bure,4,5.4,white,12,Robert Hubbard,Glenn Hubbard & Robert Hubbard,9-10,3,,10,,
-22,B,3,"Potter Heigham 
-Stagings",Bure,1,6.1,white,10,Andy Ison,Robin Austrin & Andy Ison,12-06,2,,6,,
-23,B,3,"Potter Heigham 
-Stagings",Bure,2,6.2,white,9,Colin Dance,Colin Dance & Thomas Moretti,10-04,4,,8,,
-24,B,3,"Potter Heigham 
-Stagings",Bure,3,6.3,white,8,Wayne Anderson,Wayne Anderson & Steve Kindleysides,11-03,3,,7,,
-25,B,3,"Potter Heigham 
-Stagings",Bure,4,6.4,white,6,Neil Smith,Eddie Hall & Neil Smith,12-12,1,1st,5,,
-26,B,3,"Potter Heigham 
-Stagings",Bure,5,6.5,white,5,Bob Wallis,Les King & Bob Wallis,8-14,5,,11,,
+1,A,1,Martham Ronds,Thurne,1,1.1,white,18,Robin Austrin,Robin Austrin & Andy Ison,15-10,4,,8,,
+2,A,1,Martham Ronds,Thurne,2,1.2,white,19,Marty Jermyn,Marty Jermyn & Ray King,34-05,2,,2,2nd,2nd
+3,A,1,Martham Ronds,Thurne,3,1.3,white,20,Thomas Moretti,Colin Dance & Thomas Moretti,22-11,3,,4,,
+4,A,1,Martham Ronds,Thurne,4,1.4,white,22,Glenn Hubbard,Glenn Hubbard & Robert Hubbard,37-01,1,1st,1,1st,1st
+5,A,2,Martham Ronds,Thurne,1,2.1,white,23,James Parnell,Dusty Kiddell & James Parnell,23-08,1,1st,3,3rd,5th
+6,A,2,Martham Ronds,Thurne,2,2.2,white,24,Billy Hughes,Billy Hughes & Steve O'Rourke,13-05,5,,10,,
+7,A,2,Martham Ronds,Thurne,3,2.3,white,25,Steve Clark,Steve Clark & Paul Abbott,21-02,2,,5,,
+8,A,2,Martham Ronds,Thurne,4,2.4,white,26,Eddie Hall,Eddie Hall & Neil Smith,17-06,3,,7,,
+9,A,2,Martham Ronds,Thurne,5,2.5,white,27,Steve Kindleysides,Wayne Anderson & Steve Kindleysides,14-13,4,,9,,
+10,A,3,Martham High's Mill,Thurne,1,3.1,white,28,Les King,Les King & Bob Wallis,7-08,4,,13,,
+11,A,3,Martham High's Mill,Thurne,2,3.2,white,29,Jed White,John Brice & Jed White,9-12,2,,11,,
+12,A,3,Martham High's Mill,Thurne,3,3.3,white,30,Tony Gibbons,Brian Bygrave & Tony Gibbons,8-10,3,,12,,
+13,A,3,Martham High's Mill,Thurne,4,3.4,white,31,Dave Edwards,Dave Edwards & Brian Weavers,17-13,1,1st,6,,
+14,B,1,Martham High's Mill,Thurne,1,4.1,white,32,Paul Abbott,Steve Clark & Paul Abbott,10-04,3,,8,,
+15,B,1,Martham High's Mill,Thurne,2,4.2,white,33,Steve O'Rourke,Billy Hughes & Steve O'Rourke,7-07,4,,12,,
+16,B,1,Martham High's Mill,Thurne,3,4.3,white,34,John Brice,John Brice & Jed White,18-00,2,,4,,
+17,B,1,Martham High's Mill,Thurne,4,4.4,white,35,Brian Bygrave,Brian Bygrave & Tony Gibbons,18-03,1,1st,3,3rd,
+18,B,2,Potter Heigham Ronds,Thurne,1,5.1,white,15,Brian Weavers,Dave Edwards & Brian Weavers,25-04,2,,2,2nd,4th
+19,B,2,Potter Heigham Ronds,Thurne,2,5.2,white,14,Ray King,Marty Jermyn & Ray King,31-03,1,1st,1,1st,3rd
+20,B,2,Potter Heigham Ronds,Thurne,3,5.3,white,13,Dusty Kiddell,Dusty Kiddell & James Parnell,3-09,4,,13,,
+21,B,2,Potter Heigham Ronds,Thurne,4,5.4,white,12,Robert Hubbard,Glenn Hubbard & Robert Hubbard,9-10,3,,10,,
+22,B,3,Potter Heigham Stagings,Thurne,1,6.1,white,10,Andy Ison,Robin Austrin & Andy Ison,12-06,2,,6,,
+23,B,3,Potter Heigham Stagings,Thurne,2,6.2,white,9,Colin Dance,Colin Dance & Thomas Moretti,10-04,4,,8,,
+24,B,3,Potter Heigham Stagings,Thurne,3,6.3,white,8,Wayne Anderson,Wayne Anderson & Steve Kindleysides,11-03,3,,7,,
+25,B,3,Potter Heigham Stagings,Thurne,4,6.4,white,6,Neil Smith,Eddie Hall & Neil Smith,12-12,1,1st,5,,
+26,B,3,Potter Heigham Stagings,Thurne,5,6.5,white,5,Bob Wallis,Les King & Bob Wallis,8-14,5,,11,,
