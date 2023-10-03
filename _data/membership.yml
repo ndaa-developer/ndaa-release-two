@@ -1,14 +1,14 @@
 intro-desc: Membership is open to all anglers and entitles the holder to fish all NDAA waters and participate in all NDAA organised matches. If the card holder is 18 years or above they may also take a junior (16 years or under at time of fishing) to fish on NDAA waters at no extra charge. Junior anglers must be accompanied by an adult at all times.
-# alert-msg-type: info
+alert-msg-type: info
 alert-messages:
-  # - alert-type: warning
-  #   alert-msg: Only Season Membership Cards will be available for 2021-22.
+  - alert-type: info
+    alert-msg: 1st October 2023 - Season Membership cards now reduced to £20.
   # - alert-type: info
   #   alert-msg: Season Membership, 16th June to 14th March, ~~£30~~ **£20**.
-  - alert-type: info
-    alert-msg: 2023-24 Membership cards in shops May 2023.
+  # - alert-type: info
+  #   alert-msg: 2023-24 Membership cards in shops May 2023.
 options:
-  - option-desc: Season Membership, 16th June to 14th March, ~~£35~~ **£20**
+  - option-desc: Season Membership, 16th June to 14th March, ~~£35~~ **£20**.
   # - option-desc: Season Membership, 16th June to 14th March, ~~£30~~ **£20**
   # - option-desc: ~~5 Day Membership, Mon-Fri, £15~~
   # - option-desc: ~~Day Membership, £5~~
