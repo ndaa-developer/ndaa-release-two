@@ -11,7 +11,7 @@ cover-messages:
   #   cvr-msg: 2022-23 membership cards now available (see below for stockists)
   # - msg-type: info
   #   cvr-msg: Broads Open tickets available [now](https://ndaa.org.uk/matches/20230930.html#Information)
-  # - msg-type: info
-  #   cvr-msg: 2022-23 membership cards now just £20
   - msg-type: info
-    cvr-msg: Match on Sunday 8th postponed until Sunday 15th October
+    cvr-msg: 2023-24 membership cards now just £20
+  # - msg-type: info
+  #   cvr-msg: Match on Sunday 8th postponed until Sunday 15th October
