@@ -47,7 +47,7 @@ og-img: home-fb-img.png
             {{ site.data.membership.intro-desc | markdownify }}
         </div>
 
-        {% if site.data.membership.alert-msg-type != nil %}
+        {% if site.data.membership.alert-messages != nil %}
         <div class="alert alert--{{site.data.membership.alert-msg-type}} alert--flex">
             {% for msg in site.data.membership.alert-messages %}
             <div>

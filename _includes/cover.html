@@ -11,7 +11,7 @@
             <span class="v-middle"><i class="fab fa-facebook fa-2x"></i></span></a></p>
       </div>
 
-      {% if site.data.cover.cover-msg-ind == true %}
+      {% if site.data.cover.cover-messages != nil %}
       <div class="alert alert--{{site.data.cover.cover-msg-type}} alert--flex">
         {% for msg in site.data.cover.cover-messages %}
         <div>
