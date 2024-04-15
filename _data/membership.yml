@@ -5,10 +5,10 @@ alert-messages:
   #   alert-msg: 1st October 2023 - Season Membership cards now reduced to £20.
   # - alert-type: info
   #   alert-msg: Season Membership, 16th June to 14th March, ~~£30~~ **£20**.
-  # - alert-type: info
-  #   alert-msg: 2023-24 Membership cards in shops May 2023.
+  - alert-type: info
+    alert-msg: 2024-25 Membership cards in shops mid-May.
 options:
-  - option-desc: Season Membership, 16th June to 14th March, **price to be confirmed after the AGM**.
+  - option-desc: Season Membership, 16th June to 14th March, **£35**.
   # - option-desc: Season Membership, 16th June to 14th March, ~~£35~~ **£20**.
   # - option-desc: Season Membership, 16th June to 14th March, ~~£30~~ **£20**
   # - option-desc: ~~5 Day Membership, Mon-Fri, £15~~

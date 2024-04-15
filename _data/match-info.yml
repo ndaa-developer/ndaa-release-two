@@ -1,15 +1,16 @@
 intro-desc-ind: true
-intro-desc: If you want any information about the matches listed below please contact **Tony Gibbons**
-  phone **01603 400973**  email **tony.gibbons@ndaa.org.uk**.
+intro-desc: Please see [Facebook](https://www.facebook.com/ndaanorwich/posts/pfbid02Pvs2hR1KT2jwbvLPwua7N6AJsuaDd4JnMa1PhrMXkwGVm3JTCDvMac6YkirX8AkZl) for 2024/25 match dates.
+#  If you want any information about the matches listed below please contact **Tony Gibbons**
+#   phone **01603 400973**  email **tony.gibbons@ndaa.org.uk**.
 cut-off-time: 1600
-alert-msg-ind: true
+alert-msg-ind: false
 alert-msg-type: info
 alert-messages:
   - alert-type: info
     alert-msg: HQ for matches on Rivers Thurne & Bure [King's Arms, Ludham NR29 5QQ](https://maps.google.com/?cid=10447569346871224337).
   # - alert-type: info
   #   alert-msg: Breakfast 7am, draw 8.30am & fish 11am - 4pm.
-options-ind: true
+options-ind: false
 options:
   # - option-grp: 1
   #   option-grp-icon: fa-square
@@ -19,10 +20,10 @@ options:
   #   option-grp-icon: fa-square
   #   option-name: Pairs Festival
   #   option-desc: <strong>Pairs Festival</strong> - Entry & pools £100/pair. Result on section points.
-  - option-grp: 3
-    option-grp-icon: fa-square
-    option-name: Pairs Matches
-    option-desc: <strong>Pairs Matches</strong> - Entry & pools £50/pair. Result on weight.
+  # - option-grp: 3
+  #   option-grp-icon: fa-square
+  #   option-name: Pairs Matches
+  #   option-desc: <strong>Pairs Matches</strong> - Entry & pools £50/pair. Result on weight.
   # - option-grp: 4
   #   option-grp-icon: fa-square
   #   option-name: Pete Swan Memorial
