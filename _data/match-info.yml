@@ -1,51 +1,55 @@
 intro-desc-ind: true
-intro-desc: Please see [Facebook](https://www.facebook.com/ndaanorwich/posts/pfbid02Pvs2hR1KT2jwbvLPwua7N6AJsuaDd4JnMa1PhrMXkwGVm3JTCDvMac6YkirX8AkZl) for 2024/25 match dates.
-#  If you want any information about the matches listed below please contact **Tony Gibbons**
-#   phone **01603 400973**  email **tony.gibbons@ndaa.org.uk**.
+intro-desc: 
+# Please see [Facebook](https://www.facebook.com/ndaanorwich/posts/pfbid02Pvs2hR1KT2jwbvLPwua7N6AJsuaDd4JnMa1PhrMXkwGVm3JTCDvMac6YkirX8AkZl) for 2024/25 match dates.
+ If you want any information about the matches listed below please contact **Tony Gibbons**  phone **01603 400973**  email **tony.gibbons@ndaa.org.uk**.
 cut-off-time: 1600
-alert-msg-ind: false
+alert-msg-ind: true
 alert-msg-type: info
 alert-messages:
   - alert-type: info
     alert-msg: HQ for matches on Rivers Thurne & Bure [King's Arms, Ludham NR29 5QQ](https://maps.google.com/?cid=10447569346871224337).
   # - alert-type: info
   #   alert-msg: Breakfast 7am, draw 8.30am & fish 11am - 4pm.
-options-ind: false
+options-ind: true
 options:
-  # - option-grp: 1
-  #   option-grp-icon: fa-square
-  #   option-name: Pairs Series
-  #   option-desc: <strong>Pairs Series</strong> - Entry £40/pair & pools £50/pair/day. Result on points (drop worst score).
-  # - option-grp: 2
-  #   option-grp-icon: fa-square
-  #   option-name: Pairs Festival
-  #   option-desc: <strong>Pairs Festival</strong> - Entry & pools £100/pair. Result on section points.
-  # - option-grp: 3
-  #   option-grp-icon: fa-square
-  #   option-name: Pairs Matches
-  #   option-desc: <strong>Pairs Matches</strong> - Entry & pools £50/pair. Result on weight.
-  # - option-grp: 4
-  #   option-grp-icon: fa-square
-  #   option-name: Pete Swan Memorial
-  #   option-desc: <strong>Pete Swan Memorial</strong> - Entry £20 (£10 to charity) & optional pool £10.
-  # - option-grp: 5
-  #   option-grp-icon: fa-square
-  #   option-name: Three Rivers Festival
-  #   option-desc: <strong>Three Rivers Festival</strong> - Entry £70 & optional pool £10/day.
+  - option-grp: 1
+    option-grp-icon: fa-square
+    option-name: Pairs Series
+    option-desc: <strong>Pairs Series</strong> - Entry £40/pair & pools £50/pair/day. Result on points (drop worst score).
+  - option-grp: 2
+    option-grp-icon: fa-square
+    option-name: Pairs Festival
+    option-desc: <strong>Pairs Festival</strong> - Entry & pools £100/pair. Result on section points.
+  - option-grp: 3
+    option-grp-icon: fa-square
+    option-name: Pairs Opens
+    option-desc: <strong>Pairs Opens</strong> - Entry & pools £60/pair. Result on weight.
+  - option-grp: 4
+    option-grp-icon: fa-square
+    option-name: Pete Swan Memorial
+    option-desc: <strong>Pete Swan Memorial</strong> - Entry £20 (£10 to charity) & optional pool £10.
+  - option-grp: 5
+    option-grp-icon: fa-square
+    option-name: Three Rivers Festival
+    option-desc: <strong>Three Rivers Festival</strong> - Entry £70 & optional pool £10/day.
   - option-grp: 6
     option-grp-icon: fa-square
     option-name: To4 League
     option-desc: <strong>Teams of Four</strong> - £40 entry/team Pools £30/angler/match.
   - option-grp: 7
     option-grp-icon: fa-square
-    option-name: King of the Broads
-    option-desc: <strong>King of the Broads</strong> - Entry & pools £50. Result on section points.
-    # option-desc: <strong>King of the Broads</strong> - To be confirmed.
+    option-name: Individual Championship
+    option-desc: <strong>Individual Champs Open</strong> - Entry £10 & optional pools.
   - option-grp: 8
     option-grp-icon: fa-square
-    option-name: Broads Festival
-    option-desc: <strong>Broads Festival</strong> - Entry £40 & optional pool £20/day.
+    option-name: King of the Broads
+    # option-desc: <strong>King of the Broads</strong> - Entry & pools £50. Result on section points.
+    option-desc: <strong>King of the Broads</strong> - To be confirmed.
   - option-grp: 9
+    option-grp-icon: fa-square
+    option-name: Broads Festival
+    option-desc: <strong>Broads Festival</strong> - Entry £50 & optional pool £20/day.
+  - option-grp: 1
     option-grp-icon: fa-square
     option-name: Cyril Wigg Memorial Broads Open
     option-desc: <strong>Cyril Wigg Memorial Broads Open</strong> - Entry £5 & optional pools.

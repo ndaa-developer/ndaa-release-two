@@ -1,10 +1,14 @@
 cover-msg-ind: true
 cover-msg-type: info
 cover-messages:
-  - msg-type: warning
-    cvr-msg: All venues **CLOSED** from dusk **Thursday 14th March**
+  # - msg-type: warning
+  #   cvr-msg: All venues **CLOSED** from dusk **Friday 14th March**
+  # - msg-type: info
+  #   cvr-msg: Venues re-open dawn Sunday 16th June
   - msg-type: info
-    cvr-msg: Venues re-open dawn Sunday 16th June
+    cvr-msg: All venues **CLOSED** until dawn Sunday 16th June
+  - msg-type: info
+    cvr-msg: 2024/25 match calendar now [available](./matches.html)
   # - msg-type: info
   #   cvr-msg: AGM, Tuesday 9th April, 8pm, [Canary Social Club](https://goo.gl/maps/eqARTovarquLUgY8A)
   # - msg-type: info
