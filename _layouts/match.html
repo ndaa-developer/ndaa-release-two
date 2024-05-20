@@ -1,0 +1,72 @@
+---
+layout: default
+---
+{% include cover-named-match.html %}
+
+<main class="wrapper wrapper--padding wrapper--min-height">
+    <article id="Information">
+        {% if page.sections != nil %} 
+        {% for section in page.sections %}
+        <section>
+            {% if section.title != nil %}
+            <div class="section-hdr"{% if section.hash != nil %} id="{{section.hash}}"{% endif %}>
+                <h2>{{section.title}}</h2>
+            </div>
+            {% endif %}
+
+            {% if section.paragraphs != nil %}
+            <div {% if section.css-class == nil %}class="match-info"{% else %}class="{{section.css-class}}"{% endif %}>
+            {% for para in section.paragraphs %}
+                {% if para.hdr != nil %}
+                {% if para.hdr-lvl != nil %}
+                <h4>{{para.hdr}}</h4>
+                {% else%}
+                <h3>{{para.hdr}}</h3>
+                {% endif %}
+                {% endif %}
+
+                {% for sentence in para.sentences %}
+                {% if sentence.txt != nil %}
+                {{sentence.txt | markdownify}}
+                {% endif %}
+                    {% if sentence.ulist-items != nil %}
+                    <ul>
+                    {% for list in sentence.ulist-items %}
+                        <li>{{list.item | markdownify}}</li>
+                    {% endfor %}
+                    </ul>
+                    {% endif %}
+                {% endfor %}
+
+                {% if para.result-file != nil %}
+                {% assign result_file = para.result-file %}
+                <table class="match-result">
+                    <thead>
+                        <tr>
+                            <th class="th--sticky">Placing</th>
+                            <th>Pairing</th>
+                            <th>Weight</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for row in site.data[result_file] %}
+                        <tr>
+                            <th class="td--sticky td--center" data-heading="Placing">{{ row.Placing }}</th>
+                            <td data-heading="Pairing">{{ row.Name }}</td>
+                            <td class="td--right" data-heading="Weight">{{ row.Weight }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                {% endif %}
+
+            {% endfor %}
+            </div>
+            {% endif %}
+    
+    
+        </section>
+        {% endfor %}
+        {% endif %}
+    </article>
+</main>        
