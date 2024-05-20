@@ -113,6 +113,9 @@ body {
     & ul {
       margin-top: -1em;
       margin-bottom: 1em;
+      & p {
+        margin-bottom: 0;
+      }
     }
 
     & p {
