@@ -4,6 +4,7 @@ $stockist-pad-b: 1em !default;
 $stockist-pad-l: 1em !default;
 $stockist-fnt-sz: 1em !default;
 $stockist-name-fnt-sz: 1em !default;
+$stockist-note-fnt-sz: 0.7em !default;
 
 .stockist {
   padding-top: $stockist-pad-t;
@@ -18,6 +19,10 @@ $stockist-name-fnt-sz: 1em !default;
   &__name {
     font-size: $stockist-name-fnt-sz;
     font-weight: 700;
+  }
+
+  &__note {
+    font-size: $stockist-note-fnt-sz;
   }
 
   // &--col-gap {

@@ -686,6 +686,8 @@ button[disabled] {
   .stockist__name {
     font-size: 1em;
     font-weight: 700; }
+  .stockist__note {
+    font-size: 0.7em; }
   .stockist > * + * {
     margin-top: .3em; }
   .stockist .fas {

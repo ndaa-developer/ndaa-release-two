@@ -100,9 +100,12 @@ og-img: home-fb-img.png
                         {% if stockist.addr-3 == null %}
                         <br><span>&nbsp;</span>
                         {% endif %}
-                        {% if stockist.addr-4 == null %}
+                        {% if stockist.addr-4 == null and stockist.note == null %}
                         <br><span>&nbsp;</span>
                         {% endif %}</p>
+                        {% if stockist.note != null and stockist.url-type == null %}
+                        <div class="stockist__note"><br><span>{{ stockist.note }}</span></div>
+                        {% endif %}
                 </div>
                 <div class="stockist__url">
                     {% case stockist.url-type %}
