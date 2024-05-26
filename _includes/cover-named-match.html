@@ -76,7 +76,7 @@
             {% if match_sections != nil %}
             <p>{{ match_sections }}</p>
             {% else %}
-                <div class="alert--flex vt-middle">
+                <div class="alert--flex">
                 {% if zone_a != nil %}            
                 <div>{% if zone_a_name != nil %}<strong>{{ zone_a_name }}:</strong> {% endif %}{{ zone_a }}</div>
                 {% endif %}
@@ -216,7 +216,7 @@
                 </div>
                 {% endif %}
             {% else %}
-                <div class="alert alert--info alert--flex vt-middle">
+                <div class="alert alert--info alert--flex">
                     {% if match_fees != nil %}
                     <div>
                         <p><strong>Fees:</strong> {{ match_fees }}</p>

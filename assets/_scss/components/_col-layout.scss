@@ -8,7 +8,7 @@ $col-layout-gap-p: calc(-1 * #{$col-layout-gap-c}) !default;
   margin: $col-layout-gap-p; /* 5 (edit me!) */
 
   & > .stockist {
-    flex: 1 0 14em;   /* 3 (edit me!) */
+    flex: 0 1 30ch;   /* 3 (edit me!) */
     margin: $col-layout-gap-c; /* 4 (edit me!) */
   
   }

@@ -26,7 +26,7 @@
         <div class="alert alert--flex alert--{{ site.data.match-info.alert-msg-type }}">
             {% for msg in site.data.match-info.alert-messages %}
             <div>
-                <span class="vt-middle">
+                <span>
                     {% case msg.alert-type %}
                     {% when "warning" %}
                         <i class="indicator fas fa-exclamation-circle"></i>

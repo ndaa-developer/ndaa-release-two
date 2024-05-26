@@ -25,7 +25,7 @@ og-img: home-fb-img.png
         <div class="alert {% if site.data.association.alert-type != nil %}alert--{{ site.data.association.alert-type }} {% else %}alert--danger{% endif %} alert--flex">
             {% for msg in site.data.association.alert-messages %}
             <div>
-                <span class="vt-middle">
+                <span>
                     {% case msg.alert-type %}
                     {% when "warning" %}
                         <i class="indicator fas fa-exclamation-circle"></i>
@@ -51,7 +51,7 @@ og-img: home-fb-img.png
         <div class="alert alert--{{site.data.membership.alert-msg-type}} alert--flex">
             {% for msg in site.data.membership.alert-messages %}
             <div>
-                <span class="vt-middle">
+                <span>
                     {% case msg.alert-type %}
                     {% when "warning" %}
                         <i class="indicator fas fa-exclamation-circle"></i>
