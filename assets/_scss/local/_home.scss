@@ -21,7 +21,13 @@
     border: 1px solid $black;
     color: $black;
   }
+  
+  .Rtable-row--month {
+    position: sticky;
+    top: 0px;
+  }
 
+  .Rtable-cell--BkLink,
   .Rtable-cell--Date,
   .Rtable-cell--BkDate,
   .Rtable-cell--BkVenueDesc {
@@ -42,16 +48,6 @@
       color: $white;
     }
   }
-
-  // .Rtable-cell--Venue {
-  //   flex: 0 1 152px;   
-  // }
-  // .Rtable-cell--Venue-Only {
-  //   flex: 0 1 180px;   
-  // }
-  // .Rtable-cell--Link {
-  //   flex: 0 1 50px;   
-  // }
 
   .Rtable-cell--BkDate {
     flex-grow: 0;
@@ -74,12 +70,15 @@
 
   .Rtable-cell--BkDesc {
     display: flex;
+    flex-grow: 0;
     flex-basis: content;
   }
  
+  .Btable {
+    text-align: left;
+  }
   .Btable-cell {
     display: inline-block;
-    text-align: left;
     padding: .3em .3em;
 
     &--BkVenueDesc {
@@ -87,13 +86,13 @@
     }
     &--BkDate {
       font-weight: $weight-regular;
-      min-width: 14ch;
+      width: 14ch;
     }
     &--BkVenue {
-      min-width: 155px;
+      min-width: 20ch;
     }
     &--BkDesc {
-      min-width: 155px;
+      min-width: fit-content;
     }
   }
 

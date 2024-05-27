@@ -139,9 +139,28 @@ og-img: home-fb-img.png
                     <div class="Rtable-cell Rtable-cell--BkVenue">
                         {{ row.Venue }}
                     </div>
+                {% assign match_page_exists = null %}
+                {% for item in site.matches %}
+                {% if item.url contains row.NumDate %}
+                    {% assign match_page_exists = item.url | append: ".html" %}
+                    {% assign match_title = item.title %}
+                {% endif %}
+                {% endfor %}            
+                {% if match_page_exists != nil %}
+                    <div class="Rtable-cell Rtable-cell--BkDesc">
+                        <a href="{{base}}{{ match_page_exists }}" alt="{{ match_title }} more information">{{ row.Description }}</a>
+                    </div>
+                    <div class="Rtable-cell Rtable-cell--BkLink">
+                        <a href="{{base}}{{ match_page_exists }}" alt="{{ match_title }} more information">
+                            <i class="fas fa-arrow-circle-right"></i></a>
+                    </div>
+
+                {% else %}
                     <div class="Rtable-cell Rtable-cell--BkDesc">
                         {{ row.Description }}
                     </div>
+                {% endif %}
+
                 </div>
             {% endif %}
         {% endif %}

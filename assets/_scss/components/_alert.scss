@@ -33,12 +33,15 @@ $alert-info-brdr-color: #bce8f1 !default;
   
   }
 
+  &--txt-left {
+    text-align: left;
+  }
 
   &--success {
     color: $alert-success-color;
     background-color: $alert-success-bg-color;
     border-color: $alert-success-brdr-color;
-}
+  }
 
   &--danger {
       color: $alert-danger-color;
@@ -50,25 +53,27 @@ $alert-info-brdr-color: #bce8f1 !default;
     color: $alert-warning-color;
     background-color: $alert-warning-bg-color;
     border-color: $alert-warning-brdr-color;
-}
+  }
 
-&--info {
-  color: $alert-info-color;
-  background-color: $alert-info-bg-color;
-  border-color: $alert-info-brdr-color;
-}
+  &--info {
+    color: $alert-info-color;
+    background-color: $alert-info-bg-color;
+    border-color: $alert-info-brdr-color;
+  }
 
   &--flex{
     display: flex;
-    flex-wrap: wrap; /* 2 */
+    flex-wrap: wrap;
  
-    & > * {
-      margin: 0 .5em;
-    }
+    // & > * {
+    //   margin: 0 .5em;
+    // }
 
     & div {
       flex: 1 1 auto;
-  
+      padding: 0 0.5em;
+      flex-basis: content;
+
       & span {
         display: flex;
         
@@ -81,5 +86,5 @@ $alert-info-brdr-color: #bce8f1 !default;
 
     }
   }
-  
+
 }

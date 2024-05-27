@@ -34,6 +34,7 @@
             {% endif %}
         {% endif %}
         {% if row_found == true %}
+            {% assign match_DateNum = row.DateNum %}
             {% assign match_page = row_date | append: ".html" %}
             {% assign match_date = row.LongDate %}
             {% assign match_name = row.Match %}
@@ -55,22 +56,26 @@
         </div>
 
         {% if row_found == true %}
-            <div class="alert alert--info alert--flex alert--fit-center">
-                <div>
+            <div class="alert alert--info alert--flex alert--txt-left">
+                <div class="alert--cvm-date">
                     <p>{{ match_date }}</p>
                 </div>
-                <div>
+                <div class="alert--cvm-match">
                     <p>{{ match_name }}</p>
                 </div>
-                <div>
+                <div class="alert--cvm-venue">
                     <p>{{ match_venue }}</p>
                 </div>
-                {% if draw_venue != nil %}
-                <div>
-                    <p><a href="{{base}}/matches/{{match_page}}" alt="{{ match_name }} more information">
-                        <!-- <span class="v-middle"><i class="fas fa-arrow-circle-right"></i></span></a> -->
+                {% assign match_page_exists = null %}
+                {% for item in site.matches %}
+                {% if item.url contains match_DateNum %}
+                    {% assign match_page_exists = item.url | append: ".html" %}
+                {% endif %}
+                {% endfor %}
+                {% if match_page_exists != nil %}
+                <div class="alert--cvm-link-icon">
+                    <a href="{{base}}{{ match_page_exists }}" alt="{{ match_name }} more information">
                         <i class="fas fa-arrow-circle-right"></i></a>
-                    </p>
                 </div>
                 {% endif %}
             </div>

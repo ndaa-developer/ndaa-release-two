@@ -706,6 +706,8 @@ button[disabled] {
     width: fit-content;
     margin-left: auto;
     margin-right: auto; }
+  .alert--txt-left {
+    text-align: left; }
   .alert--success {
     color: #0a581d;
     background-color: #e4fcea;
@@ -727,14 +729,14 @@ button[disabled] {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    /* 2 */ }
-    .alert--flex > * {
-      margin: 0 .5em; }
+        flex-wrap: wrap; }
     .alert--flex div {
       -webkit-box-flex: 1;
           -ms-flex: 1 1 auto;
-              flex: 1 1 auto; }
+              flex: 1 1 auto;
+      padding: 0 0.5em;
+      -ms-flex-preferred-size: content;
+          flex-basis: content; }
       .alert--flex div span {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -841,12 +843,15 @@ button[disabled] {
             flex-grow: 0;
     -ms-flex-preferred-size: 243px;
         flex-basis: 243px; }
-  .Rtable-cell--Venue-Only, .Rtable-cell--Venue {
+  .Rtable-cell--BkVenueDesc, .Rtable-cell--Venue-Only, .Rtable-cell--Venue {
     -webkit-box-flex: 0;
         -ms-flex-positive: 0;
             flex-grow: 0;
-    -ms-flex-preferred-size: 25ch;
-        flex-basis: 25ch; }
+    -ms-flex-preferred-size: content;
+        flex-basis: content; }
+  .Rtable-cell--BkLink, .Rtable-cell--Link {
+    -ms-flex-preferred-size: 2ch;
+        flex-basis: 2ch; }
 
 .Btable-cell {
   padding: .3em .7em; }
@@ -1081,6 +1086,10 @@ body {
     background-color: #f2f2f2;
     border: 1px solid #000;
     color: #000; }
+  .Rtable-row--month {
+    position: sticky;
+    top: 0px; }
+  .Rtable-cell--BkLink,
   .Rtable-cell--Date,
   .Rtable-cell--BkDate,
   .Rtable-cell--BkVenueDesc {
@@ -1121,21 +1130,27 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
     -ms-flex-preferred-size: content;
         flex-basis: content; }
+  .Btable {
+    text-align: left; }
   .Btable-cell {
     display: inline-block;
-    text-align: left;
     padding: .3em .3em; }
     .Btable-cell--BkVenueDesc {
       display: none; }
     .Btable-cell--BkDate {
       font-weight: 400;
-      min-width: 14ch; }
+      width: 14ch; }
     .Btable-cell--BkVenue {
-      min-width: 155px; }
+      min-width: 20ch; }
     .Btable-cell--BkDesc {
-      min-width: 155px; } }
+      min-width: -webkit-fit-content;
+      min-width: -moz-fit-content;
+      min-width: fit-content; } }
 
 @media (min-width: 768px) {
   .card {

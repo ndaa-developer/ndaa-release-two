@@ -34,6 +34,7 @@
             {% endif %}
         {% endif %}
         {% if row_found == true %}
+            {% assign booking_numdate = row.NumDate %}
             {% assign booking_date = row.Date %}
             {% assign booking_desc = row.Description %}
             {% assign booking_venue = row.Venue %}
@@ -93,9 +94,6 @@
                             <div class="Btable-row Rtable-row--new-day">
                         {% endif %}                    
                                 <div class="Btable-cell Btable-cell--BkDate">
-                        <!-- <div class="Btable-row Btable-row--new-day">
-                            <div class="Btable-cell Btable-cell--BkDate"> -->
-
                     {% endif %}
                                 {{ row.Date }}
                             </div>
@@ -108,9 +106,21 @@
                             <div class="Btable-cell Btable-cell--BkVenue">
                                 {{ row.Venue }}
                             </div>
+                            {% assign match_page_exists = null %}
+                            {% for item in site.matches %}
+                            {% if item.url contains row.NumDate %}
+                                {% assign match_page_exists = item.url | append: ".html" %}
+                            {% endif %}
+                            {% endfor %}
+                            {% if match_page_exists != nil %}
+                            <div class="Btable-cell Btable-cell--BkDesc">
+                                <a href="{{base}}{{ match_page_exists }}" alt="{{ match_name }} more information">{{ row.Description }}</a>
+                            </div>
+                            {% else %}
                             <div class="Btable-cell Btable-cell--BkDesc">
                                 {{ row.Description }}
                             </div>
+                            {% endif %}
                         </div>
                 {% endif %}
             {% endif %}

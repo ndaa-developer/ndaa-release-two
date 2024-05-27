@@ -108,11 +108,18 @@ $row-BgColor5: #e4fcee;
         flex-basis: 243px;
     }
 
+    &--BkVenueDesc,
     &--Venue-Only,
     &--Venue {
         flex-grow: 0;
-        flex-basis: 25ch;
+        flex-basis: content;
     }
+    
+    &--BkLink,
+    &--Link {
+        flex-basis: 2ch;   
+      }
+    
 
 }
 
