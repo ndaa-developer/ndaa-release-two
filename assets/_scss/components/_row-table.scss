@@ -7,6 +7,7 @@ $row-BgColor6: black !default;
 $row-BgColor1: #add8ff;
 $row-BgColor3: #ffefaa;
 $row-BgColor5: #e4fcee;
+
 .Rtable-row {
     display: flex;
     flex-wrap: wrap;
@@ -34,7 +35,7 @@ $row-BgColor5: #e4fcee;
         font-size: 1.2rem;
     }
 
-    &--MG2, &--MG6 {
+    &--MG2, &--MG6, &--MG10 {
         background-color: $row-BgColor5;
     }
 
@@ -56,13 +57,13 @@ $row-BgColor5: #e4fcee;
 }
 
 .Rtable-cell {
-    flex: 0 1 100%;
+    flex: 1 1 100%;
     // min-width: 17em;
     padding: 0.3em 0.7em;
     overflow: hidden; // Or flex might break
     // border: solid 0.01em black;
 
-    &--Ic2, &--Ic6 {
+    &--Ic2, &--Ic6, &--Ic10 {
         color: $row-BgColor5;
     }
     
@@ -98,17 +99,19 @@ $row-BgColor5: #e4fcee;
     }
 
     &--Date {
-        flex: 0 1 100%;
-   
+        min-width: fit-content;
+        flex-grow: 0;
     }
 
     &--Match {
-        flex: 0 1 100%; 
+        flex-grow: 0;
+        flex-basis: 243px;
     }
 
     &--Venue-Only,
     &--Venue {
-        flex: 0 1 100%;   
+        flex-grow: 0;
+        flex-basis: 25ch;
     }
 
 }

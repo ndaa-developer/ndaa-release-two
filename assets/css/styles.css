@@ -772,9 +772,8 @@ button[disabled] {
     margin-bottom: calc(1em + 0.5em); }
 
 .wrapper {
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto; }
+  max-width: 960px;
+  margin-inline: auto; }
   .wrapper--padding {
     padding: 0 1.25rem; }
   .wrapper--min-height {
@@ -802,7 +801,7 @@ button[disabled] {
     border-bottom: 0.1em solid #000;
     font-weight: 900;
     font-size: 1.2rem; }
-  .Rtable-row--MG2, .Rtable-row--MG6 {
+  .Rtable-row--MG2, .Rtable-row--MG6, .Rtable-row--MG10 {
     background-color: #e4fcee; }
   .Rtable-row--MG1, .Rtable-row--MG5, .Rtable-row--MG8 {
     background-color: white; }
@@ -812,12 +811,12 @@ button[disabled] {
     background-color: #add8ff; }
 
 .Rtable-cell {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 100%;
-          flex: 0 1 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
   padding: 0.3em 0.7em;
   overflow: hidden; }
-  .Rtable-cell--Ic2, .Rtable-cell--Ic6 {
+  .Rtable-cell--Ic2, .Rtable-cell--Ic6, .Rtable-cell--Ic10 {
     color: #e4fcee; }
   .Rtable-cell--Ic1, .Rtable-cell--Ic5, .Rtable-cell--Ic8 {
     color: white; }
@@ -830,17 +829,24 @@ button[disabled] {
   .Rtable-cell--Date, .Rtable-cell--BkDate {
     font-weight: 700; }
   .Rtable-cell--Date {
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 100%;
-            flex: 0 1 100%; }
+        -ms-flex-positive: 0;
+            flex-grow: 0; }
   .Rtable-cell--Match {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 100%;
-            flex: 0 1 100%; }
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -ms-flex-preferred-size: 243px;
+        flex-basis: 243px; }
   .Rtable-cell--Venue-Only, .Rtable-cell--Venue {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 100%;
-            flex: 0 1 100%; }
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -ms-flex-preferred-size: 25ch;
+        flex-basis: 25ch; }
 
 .Btable-cell {
   padding: .3em .7em; }
@@ -1064,8 +1070,6 @@ body {
     display: none; } }
 
 @media (min-width: 576px) {
-  .wrapper {
-    max-width: 540px; }
   .btn--bak2top {
     font-size: 1.1rem;
     border-radius: .25rem;
@@ -1077,171 +1081,62 @@ body {
     background-color: #f2f2f2;
     border: 1px solid #000;
     color: #000; }
-  .Rtable-cell--Date {
-    display: none; }
-  .Rtable-cell--DayNum {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 90px;
-            flex: 0 1 90px; }
-  .Rtable-cell--Match {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 208px;
-            flex: 0 1 208px; }
-  .Rtable-cell--Venue {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 152px;
-            flex: 0 1 152px; }
-  .Rtable-cell--Venue-Only {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 180px;
-            flex: 0 1 180px; }
-  .Rtable-cell--Link {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 50px;
-            flex: 0 1 50px; }
   .Rtable-cell--Date,
-  .Rtable-cell--BkDate {
-    font-weight: 400; }
-  .Rtable-cell--BkDate {
+  .Rtable-cell--BkDate,
+  .Rtable-cell--BkVenueDesc {
+    display: none; }
+  .Rtable-cell--DayNum,
+  .Rtable-cell--BkDayNum,
+  .Rtable-cell--BkDayNum-continue {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 120px;
-            flex: 0 1 120px; }
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -ms-flex-preferred-size: 11ch;
+        flex-basis: 11ch; }
+  .Rtable-cell--BkDayNum-continue {
+    color: #fff; }
+  .Rtable-cell--BkDate {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -ms-flex-preferred-size: 14ch;
+        flex-basis: 14ch; }
     .Rtable-cell--BkDate-continue {
       color: #fff; }
     .Rtable-cell--BkDate-same-day {
       color: #d9edf7; }
-  .Rtable-cell--BkVenueDesc {
-    display: none; }
   .Rtable-cell--BkVenue {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 163px;
-            flex: 0 1 163px; }
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -ms-flex-preferred-size: 20ch;
+        flex-basis: 20ch; }
   .Rtable-cell--BkDesc {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 40ch;
-            flex: 0 1 40ch; }
+    -ms-flex-preferred-size: content;
+        flex-basis: content; }
   .Btable-cell {
     display: inline-block;
-    text-align: left; }
+    text-align: left;
+    padding: .3em .3em; }
     .Btable-cell--BkVenueDesc {
       display: none; }
     .Btable-cell--BkDate {
       font-weight: 400;
-      min-width: 120px; }
+      min-width: 14ch; }
     .Btable-cell--BkVenue {
       min-width: 155px; }
     .Btable-cell--BkDesc {
       min-width: 155px; } }
 
 @media (min-width: 768px) {
-  .wrapper {
-    max-width: 720px; }
   .card {
-    max-width: 330px; }
-  .Rtable-cell--DayNum {
-    display: none; }
-  .Rtable-cell--Date {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 135px;
-            flex: 0 1 135px; }
-  .Rtable-cell--Match {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 280px;
-            flex: 0 1 280px; }
-  .Rtable-cell--Venue {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 190px;
-            flex: 0 1 190px; }
-  .Rtable-cell--Venue-Only {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 210px;
-            flex: 0 1 210px; }
-  .Rtable-cell--BkDate {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 140px;
-            flex: 0 1 140px; }
-  .Rtable-cell--BkVenue {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 177px;
-            flex: 0 1 177px; }
-  .Btable-cell--BkDate {
-    min-width: 125px; } }
-
-@media (min-width: 992px) {
-  .wrapper {
-    max-width: 960px; }
-  .card {
-    max-width: 449.7px; }
-  .Rtable-cell--Date {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 150px;
-            flex: 0 1 150px; }
-  .Rtable-cell--Match {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 320px;
-            flex: 0 1 320px; }
-  .Rtable-cell--Venue {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 220px;
-            flex: 0 1 220px; }
-  .Btable-cell--BkDate {
-    min-width: 140px; }
-  .Btable-cell--BkVenue {
-    min-width: 170px; }
-  .Btable-cell--BkDesc {
-    min-width: 170px; } }
-
-@media (min-width: 1200px) {
-  .wrapper {
-    max-width: 1140px; }
-  .card {
-    max-width: 353px; }
-  .Rtable-cell--BkDate {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 16%;
-            flex: 0 1 16%; }
-  .Rtable-cell--BkVenue {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 25%;
-            flex: 0 1 25%; }
-  .Rtable-cell--BkDesc {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 40%;
-            flex: 0 1 40%; }
-  .Btable-cell--BkVenue {
-    min-width: 200px; }
-  .Btable-cell--BkDesc {
-    min-width: 180px; } }
+    min-width: 330px; } }

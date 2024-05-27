@@ -1,43 +1,11 @@
-// @media (max-width: $breakpoint-sm) and (max-height: $breakpoint-xs) {
-
-//   .cover {
-//     font-size: $size-300;
-
-//     h1 {
-//       font-size: $size-550;
-
-//     }
-//   }
-  
-// }
 @media (max-width: $breakpoint-sm) {
   .t3-hidden-sm {
     display: none;
   }
 
-  // .match-result {
-  //   & thead {
-  //     display: none;
-  //   }
-  //   & td {
-  //     display: block;
-  //   }
-  //   & .td-weight {
-  //     text-align: left;
-  //   }
-
-  //   & td::before {
-  //     content: attr(data-heading) ": ";
-  //     font-weight: $weight-bold;
-  //   }
-  // }
 }
 
 @media (min-width: $breakpoint-sm) {
-
-  .wrapper {
-    max-width: $container-width-sm;
-  }
 
   .btn--bak2top {
     font-size: 1.1rem;
@@ -54,42 +22,40 @@
     color: $black;
   }
 
-  .Rtable-cell--Date {
-    display: none;
-
-  }
-
-  .Rtable-cell--DayNum {
-    display: flex;
-    flex: 0 1 90px; 
-
-  }
-
-  .Rtable-cell--Match {
-    flex: 0 1 208px; 
-  }
-
-  .Rtable-cell--Venue {
-    flex: 0 1 152px;   
-  }
-  .Rtable-cell--Venue-Only {
-    flex: 0 1 180px;   
-  }
-
-  .Rtable-cell--Link {
-    flex: 0 1 50px;   
-  }
-  
   .Rtable-cell--Date,
-  .Rtable-cell--BkDate {
-      font-weight: $weight-regular;
+  .Rtable-cell--BkDate,
+  .Rtable-cell--BkVenueDesc {
+    display: none;
   }
 
+  .Rtable-cell--DayNum,
+  .Rtable-cell--BkDayNum,
+  .Rtable-cell--BkDayNum-continue {
+    display: flex;
+    flex-grow: 0;
+    flex-basis: 11ch;
+  }
+
+  .Rtable-cell--BkDayNum {
+
+    &-continue {
+      color: $white;
+    }
+  }
+
+  // .Rtable-cell--Venue {
+  //   flex: 0 1 152px;   
+  // }
+  // .Rtable-cell--Venue-Only {
+  //   flex: 0 1 180px;   
+  // }
+  // .Rtable-cell--Link {
+  //   flex: 0 1 50px;   
+  // }
 
   .Rtable-cell--BkDate {
-    display: flex;
-    // flex: 0 1 25%;
-    flex: 0 1 120px;
+    flex-grow: 0;
+    flex-basis: 14ch;
 
     &-continue {
       color: $white;
@@ -100,38 +66,34 @@
 
   }
 
-  .Rtable-cell--BkVenueDesc {
-    display: none;
-  }
-
   .Rtable-cell--BkVenue {
     display: flex;
-    // flex: 0 1 34%;
-    flex: 0 1 163px;
+    flex-grow: 0;
+    flex-basis: 20ch;
   }
 
   .Rtable-cell--BkDesc {
     display: flex;
-    // flex: 0 1 40%;
-    flex: 0 1 40ch;
+    flex-basis: content;
   }
  
   .Btable-cell {
     display: inline-block;
     text-align: left;
+    padding: .3em .3em;
 
     &--BkVenueDesc {
-        display: none;
+      display: none;
     }
     &--BkDate {
       font-weight: $weight-regular;
-      min-width: 120px;
+      min-width: 14ch;
     }
     &--BkVenue {
-        min-width: 155px;
+      min-width: 155px;
     }
     &--BkDesc {
-        min-width: 155px;
+      min-width: 155px;
     }
   }
 
@@ -139,108 +101,8 @@
 
 @media (min-width: $breakpoint-md) {
 
-  .wrapper {
-    max-width: $container-width-md;
-  }
-
   .card {
-    max-width: 330px;
+    min-width: 330px;
   }
 
-  .Rtable-cell--DayNum {
-    display: none;
-
-  }
-
-  .Rtable-cell--Date {
-    display: flex;
-    flex: 0 1 135px;
-  }
-
-  .Rtable-cell--Match {
-    flex: 0 1 280px; 
-  }
-  .Rtable-cell--Venue {
-    flex: 0 1 190px; 
-  }
-  .Rtable-cell--Venue-Only {
-    flex: 0 1 210px; 
-  }
-
-  .Rtable-cell--BkDate {
-    display: flex;
-    // flex: 0 1 25%;
-    flex: 0 1 140px;
-  }
-
-  .Rtable-cell--BkVenue {
-    display: flex;
-    // flex: 0 1 34%;
-    flex: 0 1 177px;
-  }
-
-  .Btable-cell--BkDate {
-    min-width: 125px;
-  }
-
-}
-
-@media (min-width: $breakpoint-lg) {
-
-  .wrapper {
-    max-width: $container-width-lg;
-  }
-  .card {
-    max-width: 449.7px;
-  }
-
-  .Rtable-cell--Date {
-    display: flex;
-    flex: 0 1 150px;
-  }
-  .Rtable-cell--Match {
-    flex: 0 1 320px; 
-  }
-  .Rtable-cell--Venue {
-    flex: 0 1 220px; 
-  }
-  .Btable-cell--BkDate {
-    min-width: 140px;
-  }
-  .Btable-cell--BkVenue {
-    min-width: 170px;
-  }
-  .Btable-cell--BkDesc {
-    min-width: 170px;
-  }
-}
-
-@media (min-width: $breakpoint-xl) {
-
-    .wrapper {
-      max-width: $container-width-xl;
-    }
-    .card {
-      max-width: 353px;
-    }
-    .Rtable-cell--BkDate {
-      display: flex;
-      flex: 0 1 16%;
-    }
-  
-    .Rtable-cell--BkVenue {
-      display: flex;
-      flex: 0 1 25%;
-    }
-    .Rtable-cell--BkDesc {
-      display: flex;
-      flex: 0 1 40%;
-    }
-    .Btable-cell--BkVenue {
-      min-width: 200px;
-    }
-    .Btable-cell--BkDesc {
-      min-width: 180px;
-    }
-   
 }
