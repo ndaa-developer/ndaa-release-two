@@ -103,5 +103,9 @@
   .card {
     min-width: 330px;
   }
+  .Rtable-cell--Match {
+    flex-grow: 0;
+    flex-basis: 280px;
+  }
 
 }

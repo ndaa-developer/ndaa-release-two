@@ -1154,4 +1154,10 @@ body {
 
 @media (min-width: 768px) {
   .card {
-    min-width: 330px; } }
+    min-width: 330px; }
+  .Rtable-cell--Match {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -ms-flex-preferred-size: 280px;
+        flex-basis: 280px; } }
