@@ -6,7 +6,7 @@ alert-messages:
   # - alert-type: info
   #   alert-msg: Season Membership, 16th June to 14th March, ~~£30~~ **£20**.
   - alert-type: info
-    alert-msg: 2024/25 Membership cards in shops mid-May.
+    alert-msg: 2024/25 Membership cards in shops now.
 options:
   - option-desc: Season Membership, 16th June to 14th March, **£35**.
   # - option-desc: Season Membership, 16th June to 14th March, ~~£35~~ **£20**.
