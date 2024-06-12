@@ -7,6 +7,11 @@ cover-messages:
   #   cvr-msg: Venues re-open dawn Sunday 16th June
   - msg-type: info
     cvr-msg: All venues **CLOSED** until dawn Sunday 16th June
+    end-date: 20240615
+  - msg-type: info
+    cvr-msg: Venues re-open dawn Sunday 16th June
+    start-date: 20240616
+    end-date: 20240616
   - msg-type: info
     cvr-msg: 2024/25 match calendar now [available](./matches.html)
   # - msg-type: info

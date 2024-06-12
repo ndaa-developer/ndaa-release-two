@@ -1,4 +1,14 @@
-  <div class="wrapper cover cover--home">
+{% assign test_ind = site.data.site.test-ind %}
+{% if test_ind == true %}
+    {% assign today_date = site.data.site.test-date %}
+    {% assign today_time = site.data.site.test-time %}
+{% else %}
+    {% assign today_date = 'now' | date: '%Y%m%d' %}
+    {% assign today_time = 'now' | date: '%H%M' %}
+{% endif %}
+{% assign today_date = today_date | plus: 0 %}
+{% assign today_time = today_time | plus: 0 %}
+<div class="wrapper cover cover--home">
 
 
     <div class="stack">
@@ -13,8 +23,27 @@
 
       {% if site.data.cover.cover-messages != nil %}
       <div class="alert alert--{{site.data.cover.cover-msg-type}} alert--flex">
+        {% if test_ind == true %}
+        <div><span class="span-center pull-left">Test Date: {{ today_date }} Test Time: {{ today_time }}</span></div>
+        {% endif %}
         {% for msg in site.data.cover.cover-messages %}
         <div>
+          {% assign output_msg = true %}
+          {% if msg.start-date != nil %}
+            {% assign msg_start_date = msg.start-date %}
+            {% assign msg_start_date = msg_start_date | plus: 0 %}
+            {% if today_date < msg_start_date %}       
+              {% assign output_msg = false %}
+            {% endif %} 
+          {% endif %} 
+          {% if msg.end-date != nil %}
+            {% assign msg_end_date = msg.end-date %}
+            {% assign msg_end_date = msg_end_date | plus: 0 %}
+            {% if msg_end_date < today_date %}
+              {% assign output_msg = false %}
+            {% endif %} 
+          {% endif %} 
+          {% if output_msg %}
           <span class="span-center pull-left">
               {% case msg.msg-type %}
                 {% when "warning" %}
@@ -22,8 +51,20 @@
                 {% when "info" %}
                 <i class="fas fa-info-circle"></i>
               {% endcase %}
+              {% if test_ind == true %}
+                {% if msg.start-date != nil %}
+                {% capture cvrmsg_enddate %}
+                {{ msg.cvr-msg }} ({{ msg.start-date }})
+                {% endcapture %}
+                {{ cvrmsg_enddate }}    
+                {% else %}
+                {{ msg.cvr-msg | markdownify }}
+                {% endif %}
+              {% else %}
               {{ msg.cvr-msg | markdownify }}
+              {% endif %}
           </span>
+          {% endif %} 
         </div>
         {% endfor %} 
       </div>
