@@ -59,8 +59,8 @@ og-img: home-fb-img.png
     <section>
         <div class="Rtable">
         {% assign test_ind = site.data.site.test-ind %}
-        {% assign cut_off_time = site.data.bookings-info.cut-off-time %}
-        {% assign cut_off_time = cut_off_time | plus: 0 %}
+        {% assign default_cut_off_time = site.data.bookings-info.cut-off-time %}
+        {% assign default_cut_off_time = default_cut_off_time | plus: 0 %}
 
         {% if test_ind == true %}
             {% assign today_date = site.data.site.test-date %}
@@ -78,6 +78,13 @@ og-img: home-fb-img.png
         {% assign new_month = false %}
         {% assign same-day = false %}
         {% for row in site.data.bookings %}
+        {% if row.CutOffTime != nil %}
+            {% assign cut_off_time = row.CutOffTime %}
+            {% assign cut_off_time = cut_off_time | plus: 0 %}
+        {% else %}
+            {% assign cut_off_time = default_cut_off_time %}
+            {% assign cut_off_time = cut_off_time | plus: 0 %}
+        {% endif %} 
         {% assign row_date = row.NumDate %}
         {% assign row_date = row_date | plus: 0 %}
 

@@ -5,7 +5,7 @@ gmap-url: https://www.google.com/maps/d/viewer?mid=
 gmap-cid-url: https://maps.google.com/?cid=
 images-folder: /assets/images/
 test-ind: false
-test-date: 20211115
-test-time: 1600
+test-date: 20240703
+test-time: 2000
 match-cvr-img: cvr-ch-1.jpg
 bookings-cvr-img: cvr-bd-1.jpg
