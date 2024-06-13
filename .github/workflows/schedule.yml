@@ -1,8 +1,8 @@
 name: Trigger Netlify Build
 on:
   schedule:
-    # Run at 00:31 & 16:31 daily (UTC -1 = GMT)
-    - cron: '31 0,16 * * *'
+    # Run at 00:01 & 16:01 daily (UTC -1 = GMT)
+    - cron: '01 0,16 * * *'
     # Run at 15:45 on Day 1 of each month (UTC -1 = GMT)
     # - cron: '45 15 1 * *'
 jobs:
