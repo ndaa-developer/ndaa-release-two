@@ -153,7 +153,7 @@ og-img: home-fb-img.png
                     {% assign match_title = item.title %}
                 {% endif %}
                 {% endfor %}            
-                {% if match_page_exists != nil %}
+                {% if match_page_exists != nil and row.LinkPage != nil %}
                     <div class="Rtable-cell Rtable-cell--BkDesc">
                         <a href="{{base}}{{ match_page_exists }}" alt="{{ match_title }} more information">{{ row.Description }}</a>
                     </div>
