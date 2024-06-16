@@ -27,24 +27,24 @@
         <div><span class="span-center pull-left">Test Date: {{ today_date }} Test Time: {{ today_time }}</span></div>
         {% endif %}
         {% for msg in site.data.cover.cover-messages %}
-        <div>
-          {% assign output_msg = true %}
+          {% assign display_msg = true %}
           {% if msg.start-date != nil %}
             {% assign msg_start_date = msg.start-date %}
             {% assign msg_start_date = msg_start_date | plus: 0 %}
             {% if today_date < msg_start_date %}       
-              {% assign output_msg = false %}
+              {% assign display_msg = false %}
             {% endif %} 
           {% endif %} 
           {% if msg.end-date != nil %}
             {% assign msg_end_date = msg.end-date %}
             {% assign msg_end_date = msg_end_date | plus: 0 %}
             {% if msg_end_date < today_date %}
-              {% assign output_msg = false %}
+              {% assign display_msg = false %}
             {% endif %} 
           {% endif %} 
-          {% if output_msg %}
-          <span class="span-center pull-left">
+          {% if display_msg %}
+          <div>
+            <span class="span-center">
               {% case msg.msg-type %}
                 {% when "warning" %}
                 <i class="fas fa-exclamation-circle"></i>
@@ -64,8 +64,8 @@
               {{ msg.cvr-msg | markdownify }}
               {% endif %}
           </span>
-          {% endif %} 
         </div>
+        {% endif %} 
         {% endfor %} 
       </div>
       {% endif %}
