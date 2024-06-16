@@ -10,11 +10,11 @@ cover-messages:
     start-date: 20250315
     end-date: 20250615
   - msg-type: info
-    cvr-msg: Venues re-open today, Sunday 16th June, at dawn
+    cvr-msg: Venues re-open at **dawn today**, Sunday 16th June
     start-date: 20240616
     end-date: 20240616
   - msg-type: info
-    cvr-msg: Venues re-open today, Monday 16th June, at dawn
+    cvr-msg: Venues re-open at **dawn today**, Monday 16th June
     start-date: 20250616
     end-date: 20250616
   - msg-type: info
