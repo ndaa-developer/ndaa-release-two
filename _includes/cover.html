@@ -21,52 +21,54 @@
             <span class="v-middle"><i class="fab fa-facebook fa-2x"></i></span></a></p>
       </div>
 
-      {% if site.data.cover.cover-messages != nil %}
-      <div class="alert alert--{{site.data.cover.cover-msg-type}} alert--flex">
-        {% if test_ind == true %}
-        <div><span class="span-center pull-left">Test Date: {{ today_date }} Test Time: {{ today_time }}</span></div>
-        {% endif %}
-        {% for msg in site.data.cover.cover-messages %}
-          {% assign display_msg = true %}
-          {% if msg.start-date != nil %}
-            {% assign msg_start_date = msg.start-date %}
-            {% assign msg_start_date = msg_start_date | plus: 0 %}
-            {% if today_date < msg_start_date %}       
-              {% assign display_msg = false %}
-            {% endif %} 
+      {% assign msg_count = 0 %}
+      {% for msg in site.data.cover.cover-messages %}
+        {% assign display_msg = true %}
+        {% if msg.start-date != nil %}
+          {% assign msg_start_date = msg.start-date %}
+          {% assign msg_start_date = msg_start_date | plus: 0 %}
+          {% if today_date < msg_start_date %}       
+            {% assign display_msg = false %}
           {% endif %} 
-          {% if msg.end-date != nil %}
-            {% assign msg_end_date = msg.end-date %}
-            {% assign msg_end_date = msg_end_date | plus: 0 %}
-            {% if msg_end_date < today_date %}
-              {% assign display_msg = false %}
-            {% endif %} 
-          {% endif %} 
-          {% if display_msg %}
-          <div>
-            <span class="span-center">
-              {% case msg.msg-type %}
-                {% when "warning" %}
-                <i class="fas fa-exclamation-circle"></i>
-                {% when "info" %}
-                <i class="fas fa-info-circle"></i>
-              {% endcase %}
-              {% if test_ind == true %}
-                {% if msg.start-date != nil %}
-                {% capture cvrmsg_enddate %}
-                {{ msg.cvr-msg }} ({{ msg.start-date }})
-                {% endcapture %}
-                {{ cvrmsg_enddate }}    
-                {% else %}
-                {{ msg.cvr-msg | markdownify }}
-                {% endif %}
-              {% else %}
-              {{ msg.cvr-msg | markdownify }}
-              {% endif %}
-          </span>
-        </div>
         {% endif %} 
-        {% endfor %} 
+        {% if msg.end-date != nil %}
+          {% assign msg_end_date = msg.end-date %}
+          {% assign msg_end_date = msg_end_date | plus: 0 %}
+          {% if msg_end_date < today_date %}
+            {% assign display_msg = false %}
+          {% endif %} 
+        {% endif %} 
+        {% if display_msg %}
+          {% assign msg_count = msg_count | plus: 1 %}
+          {% if msg_count == 1 %}       
+      <div class="alert alert--{{site.data.cover.cover-msg-type}} alert--flex">
+            {% if test_ind == true %}
+        <div><span class="span-center pull-left">Test Date: {{ today_date }} Test Time: {{ today_time }}</span></div>
+            {% endif %}
+          {% endif %} 
+        <div><span class="span-center">
+          {% case msg.msg-type %}
+            {% when "warning" %}
+            <i class="fas fa-exclamation-circle"></i>
+            {% when "info" %}
+            <i class="fas fa-info-circle"></i>
+          {% endcase %}
+          {% if test_ind == true %}
+            {% if msg.start-date != nil %}
+              {% capture cvrmsg_enddate %}
+              {{ msg.cvr-msg }} ({{ msg.start-date }})
+              {% endcapture %}
+              {{ cvrmsg_enddate }}    
+            {% else %}
+              {{ msg.cvr-msg | markdownify }}
+            {% endif %}
+          {% else %}
+            {{ msg.cvr-msg | markdownify }}
+          {% endif %}
+        </span></div>
+      {% endif %} 
+      {% endfor %} 
+      {% if msg_count > 0 %}       
       </div>
       {% endif %}
 
