@@ -40,24 +40,146 @@ layout: default
 
                 {% if para.result-file != nil %}
                 {% assign result_file = para.result-file %}
+                {% case page.match-period %}
+                {% when "rounds" %}
+                    {% assign match_period = "Rnd" %}
+                {% when "days" %}
+                    {% assign match_period = "Day" %}
+                {% else %}
+                    {% assign match_period = "???" %}
+                {% endcase %}
+                {% case page.match-type %}
+                {% when "pairs" %}
+                    {% assign match_type = "Pairing" %}
+                {% when "team" %}
+                    {% assign match_type = "Team" %}
+                {% else %}
+                    {% assign match_type = "Name" %}
+                {% endcase %}
+                {% assign row_count = 0 %}
+                {% for row in site.data[result_file] %}
+                {% assign row_count = row_count | plus: 1 %}
+                    {% if row_count == 1 %}
                 <table class="match-result">
                     <thead>
                         <tr>
-                            <th class="th--sticky">Placing</th>
-                            <th>Pairing</th>
-                            <th>Weight</th>
+                            <th>Placing</th>
+                            <th class="th--sticky">{{ match_type }}</th>
+                            {% if row.Adj-W != nil %}
+                            <th>Adjusted<br>Weight</th>
+                            {% endif %}
+                            {% if row.R1-P != nil %}
+                            <th>{{ match_period }} 1<br>Points</th>
+                            {% endif %}
+                            {% if row.R1-W != nil %}
+                            <th>{{ match_period }} 1<br>Weight</th>
+                            {% endif %}
+                            {% if row.R2-P != nil %}
+                            <th>{{ match_period }} 2<br>Points</th>
+                            {% endif %}
+                            {% if row.R2-W != nil %}
+                            <th>{{ match_period }} 2<br>Weight</th>
+                            {% endif %}
+                            {% if row.R3-P != nil %}
+                            <th>{{ match_period }} 3<br>Points</th>
+                            {% endif %}
+                            {% if row.R3-W != nil %}
+                            <th>{{ match_period }} 3<br>Weight</th>
+                            {% endif %}
+                            {% if row.R4-P != nil %}
+                            <th>{{ match_period }} 4<br>Points</th>
+                            {% endif %}
+                            {% if row.R4-W != nil %}
+                            <th>{{ match_period }} 4<br>Weight</th>
+                            {% endif %}
+                            {% if row.R5-P != nil %}
+                            <th>{{ match_period }} 5<br>Points</th>
+                            {% endif %}
+                            {% if row.R5-W != nil %}
+                            <th>{{ match_period }} 5<br>Weight</th>
+                            {% endif %}
+                            {% if row.R6-P != nil %}
+                            <th>{{ match_period }} 6<br>Points</th>
+                            {% endif %}
+                            {% if row.R6-W != nil %}
+                            <th>{{ match_period }} 6<br>Weight</th>
+                            {% endif %}
+                            {% if row.R7-P != nil %}
+                            <th>{{ match_period }} 7<br>Points</th>
+                            {% endif %}
+                            {% if row.R7-W != nil %}
+                            <th>{{ match_period }} 7<br>Weight</th>
+                            {% endif %}
+                            {% if row.Points != nil %}
+                            <th>Total<br>Points</th>
+                            {% endif %}
+                            {% if row.Weight != nil %}
+                            <th>Total<br>Weight</th>
+                            {% endif %}
                         </tr>
                     </thead>
+                    {% endif %}
                     <tbody>
-                        {% for row in site.data[result_file] %}
                         <tr>
-                            <th class="td--sticky td--center" data-heading="Placing">{{ row.Placing }}</th>
-                            <td data-heading="Pairing">{{ row.Name }}</td>
+                            <th class="td--center" data-heading="Placing">{{ row.Placing }}</th>
+                            <td class="td--sticky" data-heading="Name">{{ row.Name }}</td>
+                            {% if row.Adj-W != nil %}
+                            <td class="td--right" data-heading="Adjusted Weight">{{ row.Adj-W }}</td>
+                            {% endif %}
+                            {% if row.R1-P != nil %}
+                            <td class="td--center" data-heading="R1 Points">{{ row.R1-P }}</td>
+                            {% endif %}
+                            {% if row.R1-W != nil %}
+                            <td class="td--right{% if row.R1-W-Low == "Y" %} td--lowest{% endif %}" data-heading="R1 Weight">{{ row.R1-W }}</td>
+                            {% endif %}
+                            {% if row.R2-P != nil %}
+                            <td class="td--center" data-heading="R2 Points">{{ row.R2-P }}</td>
+                            {% endif %}
+                            {% if row.R2-W != nil %}
+                            <td class="td--right{% if row.R2-W-Low == "Y" %} td--lowest{% endif %}" data-heading="R2 Weight">{{ row.R2-W }}</td>
+                            {% endif %}
+                            {% if row.R3-P != nil %}
+                            <td class="td--center" data-heading="R3 Points">{{ row.R3-P }}</td>
+                            {% endif %}
+                            {% if row.R3-W != nil %}
+                            <td class="td--right{% if row.R3-W-Low == "Y" %} td--lowest{% endif %}" data-heading="R3 Weight">{{ row.R3-W }}</td>
+                            {% endif %}
+                            {% if row.R4-P != nil %}
+                            <td class="td--center" data-heading="R4 Points">{{ row.R4-P }}</td>
+                            {% endif %}
+                            {% if row.R4-W != nil %}
+                            <td class="td--right{% if row.R4-W-Low == "Y" %} td--lowest{% endif %}" data-heading="R4 Weight">{{ row.R4-W }}</td>
+                            {% endif %}
+                            {% if row.R5-P != nil %}
+                            <td class="td--center" data-heading="R5 Points">{{ row.R5-P }}</td>
+                            {% endif %}
+                            {% if row.R5-W != nil %}
+                            <td class="td--right{% if row.R5-W-Low == "Y" %} td--lowest{% endif %}" data-heading="R5 Weight">{{ row.R5-W }}</td>
+                            {% endif %}
+                            {% if row.R6-P != nil %}
+                            <td class="td--center" data-heading="R6 Points">{{ row.R6-P }}</td>
+                            {% endif %}
+                            {% if row.R6-W != nil %}
+                            <td class="td--right{% if row.R6-W-Low == "Y" %} td--lowest{% endif %}" data-heading="R6 Weight">{{ row.R6-W }}</td>
+                            {% endif %}
+                            {% if row.R7-P != nil %}
+                            <td class="td--center" data-heading="R7 Points">{{ row.R7-P }}</td>
+                            {% endif %}
+                            {% if row.R7-W != nil %}
+                            <td class="td--right{% if row.R7-W-Low == "Y" %} td--lowest{% endif %}" data-heading="R7 Weight">{{ row.R7-W }}</td>
+                            {% endif %}
+                            {% if row.Points != nil %}
+                            <td class="td--center" data-heading="Total Points">{{ row.Points }}</td>
+                            {% endif %}
+                            {% if row.Weight != nil %}
                             <td class="td--right" data-heading="Weight">{{ row.Weight }}</td>
+                            {% endif %}
                         </tr>
-                        {% endfor %}
                     </tbody>
+                {% endfor %}
+                    {% if row_count > 0 %}
                 </table>
+                    {% endif %}
                 {% endif %}
 
             {% endfor %}
