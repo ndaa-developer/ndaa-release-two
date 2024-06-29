@@ -126,7 +126,7 @@
                                 {% assign match_page_exists = item.url | append: ".html" %}
                             {% endif %}
                             {% endfor %}
-                            {% if match_page_exists != nil %}
+                            {% if match_page_exists != nil and row.LinkPage != nil%}
                             <div class="Btable-cell Btable-cell--BkDesc">
                                 <a href="{{base}}{{ match_page_exists }}" alt="{{ match_name }} more information">{{ row.Description }}</a>
                             </div>
