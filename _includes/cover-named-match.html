@@ -26,6 +26,7 @@
         {% assign draw_time = row.Draw-Time %}
         {% assign start_end_times = row.Start-End-Times %}
         {% assign match_map = row.Match-Gmap-Id %}
+        {% assign match_organiser = row.Organiser %}
         {% assign match_fees = row.Fees %}
         {% assign match_sections = row.Sections %}
         {% assign zone_a = row.Zone-A %}
@@ -216,7 +217,13 @@
                 </div>
                 {% endif %}
             {% else %}
+                {% if match_organiser != nil or match_fees != nil or draw_venue != nil %}
                 <div class="alert alert--info alert--flex">
+                    {% if match_organiser != nil %}
+                    <div>
+                        <p><strong>Organiser:</strong> {{ match_organiser }}</p>
+                    </div>
+                    {% endif %}
                     {% if match_fees != nil %}
                     <div>
                         <p><strong>Fees:</strong> {{ match_fees }}</p>
@@ -250,6 +257,7 @@
                     </div>
                     {% endif %}    
                 </div>
+                {% endif %}    
                 {% if match_map != nil or linked_match != nil %}
                 <div class="match-buttons">
                     {% if linked_match != nil %}
