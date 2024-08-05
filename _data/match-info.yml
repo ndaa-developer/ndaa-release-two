@@ -41,8 +41,8 @@ options:
     option-desc: <strong>Teams of Four</strong> - £40 entry/team Pools £30/angler/match.
   - option-grp: 7
     option-grp-icon: fa-square
-    option-name: Individual Championship
-    option-desc: <strong>Individual Champs Open</strong> - Entry £10 & optional pools.
+    option-name: Individual Open
+    option-desc: <strong>Individual Open</strong> - Entry £10 & optional pools.
   - option-grp: 8
     option-grp-icon: fa-square
     option-name: King of the Broads
