@@ -65,9 +65,6 @@ layout: default
                         <tr>
                             <th>Placing</th>
                             <th class="th--sticky">{{ match_type }}</th>
-                            {% if row.Adj-W != nil %}
-                            <th>Adjusted<br>Weight</th>
-                            {% endif %}
                             {% if row.R1-P != nil %}
                             <th>{{ match_period }} 1<br>Points</th>
                             {% endif %}
@@ -116,6 +113,12 @@ layout: default
                             {% if row.Weight != nil %}
                             <th>Total<br>Weight</th>
                             {% endif %}
+                            {% if row.Weight-Pos != nil %}
+                            <th>Total<br>Weight<br>Pos</th>
+                            {% endif %}
+                            {% if row.Adj-W != nil %}
+                            <th>Adjusted<br>Weight</th>
+                            {% endif %}
                         </tr>
                     </thead>
                     {% endif %}
@@ -123,9 +126,6 @@ layout: default
                         <tr>
                             <th class="td--center" data-heading="Placing">{{ row.Placing }}</th>
                             <td class="td--sticky" data-heading="Name">{{ row.Name }}</td>
-                            {% if row.Adj-W != nil %}
-                            <td class="td--right" data-heading="Adjusted Weight">{{ row.Adj-W }}</td>
-                            {% endif %}
                             {% if row.R1-P != nil %}
                             <td class="td--center" data-heading="R1 Points">{{ row.R1-P }}</td>
                             {% endif %}
@@ -173,6 +173,12 @@ layout: default
                             {% endif %}
                             {% if row.Weight != nil %}
                             <td class="td--right" data-heading="Weight">{{ row.Weight }}</td>
+                            {% endif %}
+                            {% if row.Weight-Pos != nil %}
+                            <td class="td--right" data-heading="Weight">{{ row.Weight-Pos }}</td>
+                            {% endif %}
+                            {% if row.Adj-W != nil %}
+                            <td class="td--right" data-heading="Adjusted Weight">{{ row.Adj-W }}</td>
                             {% endif %}
                         </tr>
                     </tbody>
