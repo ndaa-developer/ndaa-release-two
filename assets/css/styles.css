@@ -874,7 +874,7 @@ button[disabled] {
   top: 0;
   z-index: 1; }
 
-.match-result thead th:first-child {
+.match-result thead th:nth-child(1) {
   position: sticky;
   left: 0;
   z-index: 2; }
@@ -883,7 +883,7 @@ button[disabled] {
   position: relative;
   border-bottom: 0.05em solid #000; }
 
-.match-result tbody th {
+.match-result tbody td:nth-child(1) {
   position: sticky;
   left: 0;
   z-index: 1; }
@@ -904,6 +904,9 @@ button[disabled] {
   background-color: #ced4da;
   border-bottom: 0.1em solid #000;
   vertical-align: bottom; }
+
+.match-result td:nth-child(1) {
+  background-color: #ced4da; }
 
 .match-result .td--right {
   text-align: right; }

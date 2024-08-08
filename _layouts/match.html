@@ -63,7 +63,7 @@ layout: default
                 <table class="match-result">
                     <thead>
                         <tr>
-                            <th>Placing</th>
+                            <th>Pos</th>
                             <th class="th--sticky">{{ match_type }}</th>
                             {% if row.R1-P != nil %}
                             <th>{{ match_period }} 1<br>Points</th>
@@ -124,8 +124,8 @@ layout: default
                     {% endif %}
                     <tbody>
                         <tr>
-                            <th class="td--center" data-heading="Placing">{{ row.Placing }}</th>
-                            <td class="td--sticky" data-heading="Name">{{ row.Name }}</td>
+                            <td class="td--center" data-heading="Pos">{{ row.Placing }}</td>
+                            <td class="td--left" data-heading="Name">{{ row.Name }}</td>
                             {% if row.R1-P != nil %}
                             <td class="td--center" data-heading="R1 Points">{{ row.R1-P }}</td>
                             {% endif %}

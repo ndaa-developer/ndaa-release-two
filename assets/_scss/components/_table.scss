@@ -16,7 +16,7 @@
     }
 
     // & thead th:nth-child(2) {
-    & thead th:first-child {
+    & thead th:nth-child(1) {
       position: sticky;
       left: 0;
       z-index: 2;
@@ -31,7 +31,7 @@
       // background: $white;
     }
 
-    & tbody th {
+    & tbody td:nth-child(1) {
       position: sticky;
       left: 0;
       z-index: 1;
@@ -56,8 +56,13 @@
       vertical-align: bottom;
     }
 
-    // & tr:nth-child(even) {
-    //   background-color: $gray-200;
+    & td:nth-child(1) {
+      background-color: $gray-400;
+    }
+
+    // & td:nth-child(2) {
+    //   width: 9.2em;
+    //   background-color: $gray-400;
     // }
 
     & .td--right {
