@@ -43,21 +43,27 @@
         {% assign next_match = row.Next-Match %}
         {% assign next_file = row.Next-Filename %}
         {% assign result_basis = row.Result-Basis %}
+        {% assign pos_one = row.Pos-1 %}
         {% assign first_place = row.First %}
         {% assign first_pts = row.First-Pts %}
         {% assign first_weight = row.First-Weight %}
+        {% assign pos_two = row.Pos-2 %}
         {% assign second_place = row.Second %}
         {% assign second_pts = row.Second-Pts %}
         {% assign second_weight = row.Second-Weight %}
+        {% assign pos_three = row.Pos-3 %}
         {% assign third_place = row.Third %}
         {% assign third_pts = row.Third-Pts %}
         {% assign third_weight = row.Third-Weight %}
+        {% assign pos_four = row.Pos-4 %}
         {% assign fourth_place = row.Fourth %}
         {% assign fourth_pts = row.Fourth-Pts %}
         {% assign fourth_weight = row.Fourth-Weight %}
+        {% assign pos_five = row.Pos-5 %}
         {% assign fifth_place = row.Fifth %}
         {% assign fifth_pts = row.Fifth-Pts %}
         {% assign fifth_weight = row.Fifth-Weight %}
+        {% assign pos_six = row.Pos-6 %}
         {% assign sixth_place = row.Sixth %}
         {% assign sixth_pts = row.Sixth-Pts %}
         {% assign sixth_weight = row.Sixth-Weight %}
@@ -122,7 +128,11 @@
                         </thead>
                         <tbody>
                             <tr>
+                                {% if pos_one != nil %}
+                                <td data-heading="Placing" class="placing">{{ pos_one }}</td>
+                                {% else %}
                                 <td data-heading="Placing" class="placing">1st</td>
+                                {% endif %}
                                 <td data-heading="Pairing">{{ first_place }}</td>
                                 {% if first_pts != nil %}
                                 <td {% if result_basis == "weight" %}class="t3-hidden-sm" {% endif %}
@@ -131,7 +141,11 @@
                                 <td {% if result_basis == "points" %}class="t3-hidden-sm" {% endif %}data-heading="Weight">{{ first_weight }}</td>
                             </tr>
                             <tr>
+                                {% if pos_two != nil %}
+                                <td data-heading="Placing" class="placing">{{ pos_two }}</td>
+                                {% else %}
                                 <td data-heading="Placing" class="placing">2nd</td>
+                                {% endif %}
                                 <td data-heading="Pairing">{{ second_place }}</td>
                                 {% if first_pts != nil %}
                                 <td {% if result_basis == "weight" %}class="t3-hidden-sm" {% endif %}data-heading="Points">{{ second_pts }}</td>
@@ -139,7 +153,11 @@
                                 <td {% if result_basis == "points" %}class="t3-hidden-sm" {% endif %}data-heading="Weight">{{ second_weight }}</td>
                             </tr>
                             <tr>
+                                {% if pos_three != nil %}
+                                <td data-heading="Placing" class="placing">{{ pos_three }}</td>
+                                {% else %}
                                 <td data-heading="Placing" class="placing">3rd</td>
+                                {% endif %}
                                 <td data-heading="Pairing">{{ third_place }}</td>
                                 {% if first_pts != nil %}
                                 <td {% if result_basis == "weight" %}class="t3-hidden-sm" {% endif %}data-heading="Points">{{ third_pts }}</td>
@@ -162,9 +180,17 @@
                             {% if fourth_place != nil %}
                             <tr>
                                 {% if league_two != nil %}
+                                {% if pos_one != nil %}
+                                <td data-heading="Placing" class="placing">{{ pos_one }}</td>
+                                {% else %}
                                 <td data-heading="Placing" class="placing">1st</td>
+                                {% endif %}
+                                {% else %}
+                                {% if pos_four != nil %}
+                                <td data-heading="Placing" class="placing">{{ pos_four }}</td>
                                 {% else %}
                                 <td data-heading="Placing" class="placing">4th</td>
+                                {% endif %}
                                 {% endif %}
                                 <td data-heading="Pairing">{{ fourth_place }}</td>
                                 {% if first_pts != nil %}
@@ -176,9 +202,17 @@
                             {% if fifth_place != nil %}
                             <tr>
                                 {% if league_two != nil %}
+                                {% if pos_two != nil %}
+                                <td data-heading="Placing" class="placing">{{ pos_two }}</td>
+                                {% else %}
                                 <td data-heading="Placing" class="placing">2nd</td>
+                                {% endif %}
+                                {% else %}
+                                {% if pos_five != nil %}
+                                <td data-heading="Placing" class="placing">{{ pos_five }}</td>
                                 {% else %}
                                 <td data-heading="Placing" class="placing">5th</td>
+                                {% endif %}
                                 {% endif %}
                                 <td data-heading="Pairing">{{ fifth_place }}</td>
                                 {% if first_pts != nil %}
@@ -190,9 +224,17 @@
                             {% if sixth_place != nil %}
                             <tr>
                                 {% if league_two != nil %}
+                                {% if pos_three != nil %}
+                                <td data-heading="Placing" class="placing">{{ pos_three }}</td>
+                                {% else %}
                                 <td data-heading="Placing" class="placing">3rd</td>
+                                {% endif %}
+                                {% else %}
+                                {% if pos_six != nil %}
+                                <td data-heading="Placing" class="placing">{{ pos_six }}</td>
                                 {% else %}
                                 <td data-heading="Placing" class="placing">6th</td>
+                                {% endif %}
                                 {% endif %}
                                 <td data-heading="Pairing">{{ sixth_place }}</td>
                                 {% if first_pts != nil %}
