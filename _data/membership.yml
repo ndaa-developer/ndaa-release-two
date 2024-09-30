@@ -2,7 +2,7 @@ intro-desc: Membership is open to all anglers and entitles the holder to fish al
 alert-msg-type: info
 alert-messages:
   - alert-type: info
-    alert-msg: 30th September 2023 - Season Membership cards now reduced to £20.
+    alert-msg: 30th September - Season Membership cards now reduced to £20.
   # - alert-type: info
   #   alert-msg: Season Membership, 16th June to 14th March, ~~£30~~ **£20**.
   # - alert-type: info
