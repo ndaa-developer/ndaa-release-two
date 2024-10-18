@@ -31,5 +31,5 @@ cover-messages:
   #   cvr-msg: 2022-23 membership cards now available (see below for stockists)
   # - msg-type: info
   #   cvr-msg: 2023-24 membership cards now just £20
-  # - msg-type: info
-  #   cvr-msg: Match on Sunday 8th postponed until Sunday 15th October
+  - msg-type: warning
+    cvr-msg: Decoy Broad closed until further notice
