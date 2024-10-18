@@ -1,5 +1,5 @@
 cover-msg-ind: true
-cover-msg-type: info
+cover-msg-type: danger
 cover-messages:
   - msg-type: warning
     cvr-msg: All venues will **CLOSE** dusk **Friday 14th March**
