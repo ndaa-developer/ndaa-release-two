@@ -33,3 +33,4 @@ cover-messages:
   #   cvr-msg: 2023-24 membership cards now just £20
   - msg-type: warning
     cvr-msg: Decoy Broad closed until further notice
+    end-date: 20250314
