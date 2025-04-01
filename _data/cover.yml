@@ -23,8 +23,12 @@ cover-messages:
   # - msg-type: info
   #   cvr-msg: Broads Open tickets available [now](https://ndaa.org.uk/matches/20240928.html#Information)
   #   end-date: 20240928
+  # - msg-type: info
+  #   cvr-msg: AGM, Tuesday 8th April, 8pm, [Canary Social Club](https://goo.gl/maps/eqARTovarquLUgY8A)
+  #   start-date: 20250309
+  #   end-date: 20250408
   - msg-type: info
-    cvr-msg: AGM, Tuesday 8th April, 8pm, [Canary Social Club](https://goo.gl/maps/eqARTovarquLUgY8A)
+    cvr-msg: AGM, Tuesday 8th April **cancelled**, alternative date & time to be confirmed
     start-date: 20250309
     end-date: 20250408
   # - msg-type: info
