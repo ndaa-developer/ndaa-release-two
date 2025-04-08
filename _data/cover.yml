@@ -27,10 +27,13 @@ cover-messages:
   #   cvr-msg: AGM, Tuesday 8th April, 8pm, [Canary Social Club](https://goo.gl/maps/eqARTovarquLUgY8A)
   #   start-date: 20250309
   #   end-date: 20250408
+  # - msg-type: info
+  #   cvr-msg: AGM, Tuesday 8th April **cancelled**, alternative date & time to be confirmed
+  #   start-date: 20250309
+  #   end-date: 20250408
   - msg-type: info
-    cvr-msg: AGM, Tuesday 8th April **cancelled**, alternative date & time to be confirmed
-    start-date: 20250309
-    end-date: 20250408
+    cvr-msg: AGM, Tuesday 29th April, 8pm, [King's Arms, Ludham](https://maps.google.com/?cid=10447569346871224337)
+    end-date: 20250429
   # - msg-type: info
   #   cvr-msg: 2022-23 membership cards now available (see below for stockists)
   # - msg-type: info
