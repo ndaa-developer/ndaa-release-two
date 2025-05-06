@@ -72,6 +72,13 @@ stockists:
     url-type: fb
     addr-4: Norwich
   - logo: null
+    name: JDT Fishing Tackle
+    postcode: NR12 9AZ
+    url: https://www.facebook.com/JDTfishing/
+    addr-1: 116 High Street
+    addr-2: Stalham
+    url-type: fb
+  - logo: null
     name: Lathams of Potter Heigham
     postcode: NR29 5JE
     url: https://www.lathams-potter-heigham.co.uk/fishing.asp
