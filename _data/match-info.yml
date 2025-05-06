@@ -2,7 +2,7 @@ intro-desc-ind: true
 intro-desc: 
 # Please see [Facebook](https://www.facebook.com/ndaanorwich/posts/pfbid02Pvs2hR1KT2jwbvLPwua7N6AJsuaDd4JnMa1PhrMXkwGVm3JTCDvMac6YkirX8AkZl) for 2024/25 match dates.
 #  If you want any information about the matches listed below please contact **Tony Gibbons**  phone **01603 400973**  email **tony.gibbons@ndaa.org.uk**.
- <strong>New for 2025/26 season, matches for members only</strong> (except Pete Swan Memorial Open & Cyril Wigg Memorial Broads Open).
+ <strong>New for 2025/26 season, matches for members only</strong> (except Pete Swan Memorial Open & Cyril Wigg Memorial Broads Open).<br>
  If you want any information about the matches listed below please email **bookings@ndaa.org.uk**.
 cut-off-time: 1600
 alert-msg-ind: true
@@ -29,7 +29,7 @@ options:
   - option-grp: 3
     option-grp-icon: fa-square
     option-name: Pete Swan Memorial
-    option-desc: <strong>Pete Swan Memorial</strong> - Entry £20 (£10 to charity) & optional pool £10.
+    option-desc: <strong>Pete Swan Memorial Open</strong> - Entry £20 (£10 to charity) & optional pool £10.
   - option-grp: 4
     option-grp-icon: fa-square
     option-name: Three Rivers Festival
