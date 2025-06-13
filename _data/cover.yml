@@ -2,6 +2,10 @@ cover-msg-ind: true
 cover-msg-type: danger
 cover-messages:
   - msg-type: info
+    cvr-msg: All venues **CLOSED** until dawn Monday 16th June
+    start-date: 20250315
+    end-date: 20250615
+  - msg-type: info
     cvr-msg: Venues **re-open dawn today**, Monday 16th June
     start-date: 20250616
     end-date: 20250616
@@ -14,7 +18,7 @@ cover-messages:
     start-date: 20260307
     end-date: 20260407
   - msg-type: info
-    cvr-msg: All venues **CLOSED** until dawn Monday 16th June
+    cvr-msg: All venues **CLOSED** until dawn Tuesday 16th June
     start-date: 20260315
     end-date: 20260615
   - msg-type: info
