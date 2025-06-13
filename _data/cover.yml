@@ -1,25 +1,29 @@
 cover-msg-ind: true
 cover-msg-type: danger
 cover-messages:
-  - msg-type: warning
-    cvr-msg: All venues will **CLOSE** dusk **Friday 14th March**
-    start-date: 20250215
-    end-date: 20250314
-  - msg-type: info
-    cvr-msg: All venues **CLOSED** until dawn Monday 16th June
-    start-date: 20250315
-    end-date: 20250615
-  - msg-type: info
-    cvr-msg: Venues **re-open dawn today**, Sunday 16th June
-    start-date: 20240616
-    end-date: 20240616
   - msg-type: info
     cvr-msg: Venues **re-open dawn today**, Monday 16th June
     start-date: 20250616
     end-date: 20250616
+  - msg-type: warning
+    cvr-msg: All venues will **CLOSE** dusk **Saturday 14th March**
+    start-date: 20260215
+    end-date: 20260314
   - msg-type: info
-    cvr-msg: 2024/25 match calendar now [available](./matches.html)
-    end-date: 20240615
+    cvr-msg: AGM, Tuesday 7th April, 8pm, [King's Arms, Ludham](https://maps.google.com/?cid=10447569346871224337)
+    start-date: 20260307
+    end-date: 20260407
+  - msg-type: info
+    cvr-msg: All venues **CLOSED** until dawn Monday 16th June
+    start-date: 20260315
+    end-date: 20260615
+  - msg-type: info
+    cvr-msg: Venues **re-open dawn today**, Tuesday 16th June
+    start-date: 20260616
+    end-date: 20260616
+  # - msg-type: info
+  #   cvr-msg: 2024/25 match calendar now [available](./matches.html)
+  #   end-date: 20240615
   # - msg-type: info
   #   cvr-msg: Broads Open tickets available [now](https://ndaa.org.uk/matches/20240928.html#Information)
   #   end-date: 20240928
@@ -31,9 +35,6 @@ cover-messages:
   #   cvr-msg: AGM, Tuesday 8th April **cancelled**, alternative date & time to be confirmed
   #   start-date: 20250309
   #   end-date: 20250408
-  - msg-type: info
-    cvr-msg: AGM, Tuesday 29th April, 8pm, [King's Arms, Ludham](https://maps.google.com/?cid=10447569346871224337)
-    end-date: 20250429
   # - msg-type: info
   #   cvr-msg: 2022-23 membership cards now available (see below for stockists)
   # - msg-type: info
