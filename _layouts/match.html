@@ -116,6 +116,9 @@ layout: default
                             {% if row.Weight-Pos != nil %}
                             <th>Total<br>Weight<br>Pos</th>
                             {% endif %}
+                            {% if row.Adj-P != nil %}
+                            <th>Adjusted<br>Points</th>
+                            {% endif %}
                             {% if row.Adj-W != nil %}
                             <th>Adjusted<br>Weight</th>
                             {% endif %}
@@ -127,43 +130,43 @@ layout: default
                             <td class="td--center" data-heading="Pos">{{ row.Placing }}</td>
                             <td class="td--left" data-heading="Name">{{ row.Name }}</td>
                             {% if row.R1-P != nil %}
-                            <td class="td--center" data-heading="R1 Points">{{ row.R1-P }}</td>
+                            <td class="td--center{% if row.R1-W-Low == "Y" %} td--lowest{% endif %}" data-heading="R1 Points">{{ row.R1-P }}</td>
                             {% endif %}
                             {% if row.R1-W != nil %}
                             <td class="td--right{% if row.R1-W-Low == "Y" %} td--lowest{% endif %}" data-heading="R1 Weight">{{ row.R1-W }}</td>
                             {% endif %}
                             {% if row.R2-P != nil %}
-                            <td class="td--center" data-heading="R2 Points">{{ row.R2-P }}</td>
+                            <td class="td--center{% if row.R2-W-Low == "Y" %} td--lowest{% endif %}" data-heading="R2 Points">{{ row.R2-P }}</td>
                             {% endif %}
                             {% if row.R2-W != nil %}
                             <td class="td--right{% if row.R2-W-Low == "Y" %} td--lowest{% endif %}" data-heading="R2 Weight">{{ row.R2-W }}</td>
                             {% endif %}
                             {% if row.R3-P != nil %}
-                            <td class="td--center" data-heading="R3 Points">{{ row.R3-P }}</td>
+                            <td class="td--center{% if row.R3-W-Low == "Y" %} td--lowest{% endif %}" data-heading="R3 Points">{{ row.R3-P }}</td>
                             {% endif %}
                             {% if row.R3-W != nil %}
                             <td class="td--right{% if row.R3-W-Low == "Y" %} td--lowest{% endif %}" data-heading="R3 Weight">{{ row.R3-W }}</td>
                             {% endif %}
                             {% if row.R4-P != nil %}
-                            <td class="td--center" data-heading="R4 Points">{{ row.R4-P }}</td>
+                            <td class="td--center{% if row.R4-W-Low == "Y" %} td--lowest{% endif %}" data-heading="R4 Points">{{ row.R4-P }}</td>
                             {% endif %}
                             {% if row.R4-W != nil %}
                             <td class="td--right{% if row.R4-W-Low == "Y" %} td--lowest{% endif %}" data-heading="R4 Weight">{{ row.R4-W }}</td>
                             {% endif %}
                             {% if row.R5-P != nil %}
-                            <td class="td--center" data-heading="R5 Points">{{ row.R5-P }}</td>
+                            <td class="td--center{% if row.R5-W-Low == "Y" %} td--lowest{% endif %}" data-heading="R5 Points">{{ row.R5-P }}</td>
                             {% endif %}
                             {% if row.R5-W != nil %}
                             <td class="td--right{% if row.R5-W-Low == "Y" %} td--lowest{% endif %}" data-heading="R5 Weight">{{ row.R5-W }}</td>
                             {% endif %}
                             {% if row.R6-P != nil %}
-                            <td class="td--center" data-heading="R6 Points">{{ row.R6-P }}</td>
+                            <td class="td--center{% if row.R6-W-Low == "Y" %} td--lowest{% endif %}" data-heading="R6 Points">{{ row.R6-P }}</td>
                             {% endif %}
                             {% if row.R6-W != nil %}
                             <td class="td--right{% if row.R6-W-Low == "Y" %} td--lowest{% endif %}" data-heading="R6 Weight">{{ row.R6-W }}</td>
                             {% endif %}
                             {% if row.R7-P != nil %}
-                            <td class="td--center" data-heading="R7 Points">{{ row.R7-P }}</td>
+                            <td class="td--center{% if row.R7-W-Low == "Y" %} td--lowest{% endif %}" data-heading="R7 Points">{{ row.R7-P }}</td>
                             {% endif %}
                             {% if row.R7-W != nil %}
                             <td class="td--right{% if row.R7-W-Low == "Y" %} td--lowest{% endif %}" data-heading="R7 Weight">{{ row.R7-W }}</td>
@@ -176,6 +179,9 @@ layout: default
                             {% endif %}
                             {% if row.Weight-Pos != nil %}
                             <td class="td--right" data-heading="Weight">{{ row.Weight-Pos }}</td>
+                            {% endif %}
+                            {% if row.Adj-P != nil %}
+                            <td class="td--center" data-heading="Adjusted Points">{{ row.Adj-P }}</td>
                             {% endif %}
                             {% if row.Adj-W != nil %}
                             <td class="td--right" data-heading="Adjusted Weight">{{ row.Adj-W }}</td>
