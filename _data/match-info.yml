@@ -46,8 +46,8 @@ options:
   - option-grp: 7
     option-grp-icon: fa-square
     option-name: King of the Broads
-    # option-desc: <strong>King of the Broads</strong> - Entry & pools £50. Result on section points.
-    option-desc: <strong>King of the Broads</strong> - To be confirmed.
+    option-desc: <strong>King of the Broads</strong> - Entry & pools £50. Result on section points.
+    # option-desc: <strong>King of the Broads</strong> - To be confirmed.
   - option-grp: 8
     option-grp-icon: fa-square
     option-name: Broads Festival
