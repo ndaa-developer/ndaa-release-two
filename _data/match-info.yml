@@ -2,21 +2,22 @@ intro-desc-ind: true
 intro-desc: 
 # Please see [Facebook](https://www.facebook.com/ndaanorwich/posts/pfbid02Pvs2hR1KT2jwbvLPwua7N6AJsuaDd4JnMa1PhrMXkwGVm3JTCDvMac6YkirX8AkZl) for 2024/25 match dates.
 #  If you want any information about the matches listed below please contact **Tony Gibbons**  phone **01603 400973**  email **tony.gibbons@ndaa.org.uk**.
- <strong>New for 2025/26 season, matches for members only</strong> (except Pete Swan Memorial Open & Cyril Wigg Memorial Broads Open).<br>
- If you want any information about the matches listed below please email **bookings@ndaa.org.uk**.
+ <strong>Matches for members only</strong> (except Pete Swan Memorial Open & Cyril Wigg Memorial Broads Open).<br>
+ New 2026/27 match calendar will be published during the close season; please email **bookings@ndaa.org.uk**
+#  If you want any information about the matches listed below please email **bookings@ndaa.org.uk**.
 cut-off-time: 1600
 alert-msg-ind: true
 alert-msg-type: info
 alert-messages:
   # - alert-type: info
-  #   alert-msg: <strong>New for 2025/26 season, matches for members only</strong> (except Pete Swan Memorial Open & Cyril Wigg Memorial Broads Open).
+  #   alert-msg: <strong>Matches for members only</strong> (except Pete Swan Memorial Open & Cyril Wigg Memorial Broads Open).
   - alert-type: info
     alert-msg: HQ for matches on Rivers Thurne & Bure [King's Arms, Ludham, NR29 5QQ](https://maps.google.com/?cid=10447569346871224337).
   - alert-type: info
     alert-msg: Print version of match calendar available [here](../assets/docs/NDAA-Match-List-2025.pdf).
   # - alert-type: info
   #   alert-msg: Breakfast 7am, draw 8.30am & fish 11am - 4pm.
-options-ind: true
+options-ind: false
 options:
   - option-grp: 1
     option-grp-icon: fa-square
