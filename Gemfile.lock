@@ -63,6 +63,9 @@ GEM
     unicode-display_width (1.7.0)
     wdm (0.1.1)
 
+RUBY VERSION
+  ruby file: ".ruby-version"
+
 PLATFORMS
   x64-mingw32
 

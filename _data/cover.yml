@@ -1,6 +1,9 @@
 cover-msg-ind: true
 cover-msg-type: danger
 cover-messages:
+  - msg-type: warning
+    cvr-msg: Decoy Broad and River Bure, Woodbastwick Estate both closed until further notice
+    end-date: 20260315
   - msg-type: info
     cvr-msg: All venues **CLOSED** until dawn Monday 16th June
     start-date: 20250315
@@ -43,6 +46,3 @@ cover-messages:
   #   cvr-msg: 2022-23 membership cards now available (see below for stockists)
   # - msg-type: info
   #   cvr-msg: 2023-24 membership cards now just £20
-  - msg-type: warning
-    cvr-msg: Decoy Broad and River Bure, Woodbastwick Estate both closed until further notice
-    # end-date: 20250314
