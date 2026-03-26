@@ -13,8 +13,8 @@ alert-messages:
   #   alert-msg: <strong>Matches for members only</strong> (except Pete Swan Memorial Open & Cyril Wigg Memorial Broads Open).
   - alert-type: info
     alert-msg: HQ for matches on Rivers Thurne & Bure [King's Arms, Ludham, NR29 5QQ](https://maps.google.com/?cid=10447569346871224337).
-  - alert-type: info
-    alert-msg: Print version of match calendar available [here](../assets/docs/NDAA-Match-List-2025.pdf).
+  # - alert-type: info
+  #   alert-msg: Print version of match calendar available [here](../assets/docs/NDAA-Match-List-2025.pdf).
   # - alert-type: info
   #   alert-msg: Breakfast 7am, draw 8.30am & fish 11am - 4pm.
 options-ind: false
