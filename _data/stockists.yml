@@ -106,12 +106,12 @@ stockists:
     addr-3: Great Yarmouth
     url-type: web
     addr-4: null
-  - logo: ad-logo.png
-    name: Angling Direct Beccles
-    postcode: NR34 9QB
-    url: https://www.facebook.com/Angling-Direct-Beccles-773861542741813/
-    addr-1: Unit 4c Taylor Square
-    addr-2: Newgate
-    addr-3: Beccles
-    url-type: fb
-    addr-4: Suffolk
+  # - logo: ad-logo.png
+  #   name: Angling Direct Beccles
+  #   postcode: NR34 9QB
+  #   url: https://www.facebook.com/Angling-Direct-Beccles-773861542741813/
+  #   addr-1: Unit 4c Taylor Square
+  #   addr-2: Newgate
+  #   addr-3: Beccles
+  #   url-type: fb
+  #   addr-4: Suffolk
