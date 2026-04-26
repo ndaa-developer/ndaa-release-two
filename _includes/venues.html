@@ -4,6 +4,27 @@
             <h2>Venues</h2>
         </div>
 
+        {% if site.data.venue-info.alert-msg-ind == true %}
+        <div class="alert alert--flex alert--{{ site.data.venue-info.alert-msg-type }}">
+            {% for msg in site.data.venue-info.alert-messages %}
+            <div>
+                <span>
+                    {% case msg.alert-type %}
+                    {% when "warning" %}
+                        <i class="indicator fas fa-exclamation-circle"></i>
+                    {% when "info" %}
+                        <i class="indicator fas fa-info-circle"></i>
+                    {% endcase %}
+                    {{ msg.alert-msg | markdownify }}
+                </span>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </section>
+
+    <section>
+
         <div class="col-layout">
             {% for venue in site.data.venues.venues %}
 

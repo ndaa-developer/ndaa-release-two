@@ -8,5 +8,5 @@ alert-messages:
     alert-msg: Bank fishing on River Bure.
   - alert-type: info
     alert-msg: Bank fishing on River Thurne.
-  - alert-type: info
-    alert-msg: Boat fishing on Decoy Broad.
+  # - alert-type: info
+  #   alert-msg: Boat fishing on Decoy Broad.

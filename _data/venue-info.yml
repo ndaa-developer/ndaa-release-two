@@ -1,0 +1,11 @@
+alert-msg-ind: true
+alert-msg-type: danger
+alert-messages:
+  # - alert-type: info
+  #   alert-msg: <strong>Matches for members only</strong> (except Pete Swan Memorial Open & Cyril Wigg Memorial Broads Open).
+  - alert-type: warning
+    alert-msg: <strong>2026/27 season</strong> the Association has **NO FISHING** on the River Bure and Decoy Broad, Woodbastwick Estate
+  # - alert-type: info
+  #   alert-msg: Print version of match calendar available [here](../assets/docs/NDAA-Match-List-2025.pdf).
+  # - alert-type: info
+  #   alert-msg: Breakfast 7am, draw 8.30am & fish 11am - 4pm.
