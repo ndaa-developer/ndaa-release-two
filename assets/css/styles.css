@@ -1106,8 +1106,8 @@ body {
     -webkit-box-flex: 0;
         -ms-flex-positive: 0;
             flex-grow: 0;
-    -ms-flex-preferred-size: 11ch;
-        flex-basis: 11ch; }
+    -ms-flex-preferred-size: 12ch;
+        flex-basis: 12ch; }
   .Rtable-cell--BkDayNum-continue {
     color: #fff; }
   .Rtable-cell--BkDate {
@@ -1127,8 +1127,8 @@ body {
     -webkit-box-flex: 0;
         -ms-flex-positive: 0;
             flex-grow: 0;
-    -ms-flex-preferred-size: 20ch;
-        flex-basis: 20ch; }
+    -ms-flex-preferred-size: 24ch;
+        flex-basis: 24ch; }
   .Rtable-cell--BkDesc {
     display: -webkit-box;
     display: -ms-flexbox;
