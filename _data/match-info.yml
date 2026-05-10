@@ -1,59 +1,61 @@
 intro-desc-ind: true
 intro-desc: 
 # Please see [Facebook](https://www.facebook.com/ndaanorwich/posts/pfbid02Pvs2hR1KT2jwbvLPwua7N6AJsuaDd4JnMa1PhrMXkwGVm3JTCDvMac6YkirX8AkZl) for 2024/25 match dates.
-#  If you want any information about the matches listed below please contact **Tony Gibbons**  phone **01603 400973**  email **tony.gibbons@ndaa.org.uk**.
-  New 2026/27 match calendar will be published during the close season; please email **bookings@ndaa.org.uk**
+ Match Secretary **Steve Clark** phone **07968 179693**, if no answer please leave a message. 
+ <br>Assistant Match Secretary **Mick Hanks** phone **07980 396608**. 
+ <br>Email **matches@ndaa.org.uk**.
+  # New 2026/27 match calendar will be published during the close season; please email **bookings@ndaa.org.uk**
 #  If you want any information about the matches listed below please email **matches@ndaa.org.uk**.
 cut-off-time: 1600
-alert-msg-ind: false
+alert-msg-ind: true
 alert-msg-type: info
 alert-messages:
-  # - alert-type: info
-  #   alert-msg: <strong>Matches for members only</strong> (except Pete Swan Memorial Open & Cyril Wigg Memorial Broads Open).
-  #   alert-msg: Pairs League and Teams of Four League <strong>MEMBERS ONLY</strong>. Non-Members must pay a Peg Fee when fishing Open Matches.<br>
+  - alert-type: info
+    alert-msg: Pairs and Teams of Four Leagues both <strong>MEMBERS ONLY</strong>.
+  - alert-type: info
+    alert-msg: Non-Members, when permitted to enter, must pay a Peg Fee when fishing Association Matches.
   - alert-type: info
     alert-msg: HQ for matches on Rivers Thurne & Bure [King's Arms, Ludham, NR29 5QQ](https://maps.google.com/?cid=10447569346871224337).
   - alert-type: info
     alert-msg: Print version of match calendar available [here](../assets/docs/NDAA-Match-List-2026.pdf).
   # - alert-type: info
   #   alert-msg: Breakfast 7am, draw 8.30am & fish 11am - 4pm.
-options-ind: false
+options-ind: true
 options:
   - option-grp: 1
     option-grp-icon: fa-square
     option-name: Pairs League
-    option-desc: <strong>Pairs League</strong> - Entry £40/pair & pools £50/pair/day. Result on points (drop worst score).
-  - option-grp: 2
+    option-desc: <strong>Pairs League</strong> - Entry £60/pair & pools £50/pair/day. Result on points (drop worst score).
+  - option-grp: 3
     option-grp-icon: fa-square
     option-name: Pairs Festival
     option-desc: <strong>Pairs Festival</strong> - Entry & pools £120/pair. Result on section points.
-  - option-grp: 3
-    option-grp-icon: fa-square
-    option-name: Pete Swan Memorial
-    option-desc: <strong>Pete Swan Memorial Open</strong> - Entry £20 (£10 to charity) & optional pool £10.
   - option-grp: 4
+    option-grp-icon: fa-square
+    option-name: To4 League
+    option-desc: <strong>Teams of Four</strong> - £40 entry/team Pools £30/angler/match.
+  - option-grp: 3
     option-grp-icon: fa-square
     option-name: Three Rivers Festival
     option-desc: <strong>Three Rivers Festival</strong> - Entry £70 & optional pool £10/day.
+  - option-grp: 2
+    option-grp-icon: fa-square
+    option-name: Pete Swan Memorial
+    option-desc: <strong>Pete Swan Memorial</strong> - Entry £20 (£10 to charity) & optional pool £10.
   - option-grp: 3
     option-grp-icon: fa-square
-    option-name: To4 League
-    option-desc: <strong>Teams of Four</strong> - £40 entry/team Pools £32.50/angler/match.
-  - option-grp: 6
-    option-grp-icon: fa-square
-    option-name: Individual Match
-    # option-desc: <strong>Individual Match</strong> - Entry £10 & optional pools.
-    option-desc: <strong>Individual Match</strong> - Entry, pools & parking £30.
-  - option-grp: 7
+    option-name: Broads Feeder Festival
+    option-desc: <strong>Broads Feeder Festival</strong> - To be confirmed.
+  - option-grp: 2
     option-grp-icon: fa-square
     option-name: King of the Broads
-    option-desc: <strong>King of the Broads</strong> - Entry & pools £50. Result on section points.
-    # option-desc: <strong>King of the Broads</strong> - To be confirmed.
-  - option-grp: 8
+    # option-desc: <strong>King of the Broads</strong> - Entry & pools £60. Result on section points.
+    option-desc: <strong>King of the Broads</strong> - To be confirmed.
+  - option-grp: 4
     option-grp-icon: fa-square
     option-name: Broads Festival
-    option-desc: <strong>Broads Festival</strong> - Entry £50 & optional pool £20/day.
-  - option-grp: 9
+    option-desc: <strong>Broads Festival</strong> - Entry £60 & optional pool £20/day.
+  - option-grp: 1
     option-grp-icon: fa-square
     option-name: Cyril Wigg Memorial Broads Open
     option-desc: <strong>Cyril Wigg Memorial Broads Open</strong> - Entry £5 (incl. donation to charity) & optional pools.
