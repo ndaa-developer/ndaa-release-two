@@ -1,0 +1,11 @@
+.md-img {
+    width: 60%;
+    &--right {
+        float: right;
+        margin: 3px 0px 3px 12px;
+    }
+    &--left {
+        float: left;
+        margin: 3px 12px 3px 0px;
+    }
+  }

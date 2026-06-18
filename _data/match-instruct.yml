@@ -1,0 +1,40 @@
+intro: <strong>Headquarters for matches on Rivers Thurne & Bure is the King's Arms</strong>, High Street, Ludham NR29 5QQ <strong>[see Google map for directions  to the King's Arms](https://maps.google.com/?cid=10447569346871224337).</strong><br>Headquarters for matches on River Yare is the White Horse, 5 Norwich Road, Chedgrave NR14 6ND [see Google map for directions](https://maps.google.com/?cid=1727300139668818080).
+sections:
+  - sctn-title: Martham
+    sctn-hash: 
+    paragraphs:
+      - col-pos:
+        col:
+        hdr: Martham
+        img: martham-parking.jpg
+        img-pos: left
+        img-alt: Parking at Martham Boats
+        sentences:
+          - txt: Access to sections at Martham via Martham Boats, Cess Road, Martham NR29 4RF [see Google map for directions](https://maps.app.goo.gl/zP8fbzYko9TtsC98A). **Please do not park in the car park**; at the end of Cess Road, as you turn sharp left to access Martham Boats site, park in the field immediately on your left. **Remember to pay for parking using the Pay & Display machine**.
+  - sctn-title: Potter Heigham
+    sctn-hash: 
+    paragraphs:
+      - col-pos:
+        col:
+        hdr: Potter Heigham
+        sentences:
+          - txt: Access to sections at Potter Heigham from Old Bridge Hotel Car Park, Bridge Road, Potter Heigham NR29 5JQ [see Google map for directions](https://www.google.com/maps/d/view?mid=1dpx0jPtUnrDMjzaBP3HHmy-jUv6ktjs&usp=sharing). **Online payment only** using [Local Carpark Management Company website](https://payments.lcpm.ltd/great-yarmouth-former-bridge-hotel).
+  - sctn-title: Womack & Cold Harbour
+    sctn-hash: 
+    paragraphs:
+      - col-pos:
+        col:
+        hdr: Womack & Cold Harbour
+        sentences:
+          - txt: Access to sections for Womack and Cold Harbour via Cold Harbour Road, Ludham NR29 5NT [see Google map for directions](https://www.google.com/maps/d/view?mid=176o88xvJc92eNIWWMZDVkJgLdNxBIPU). Use near end of car park for Womack Bank and far end of car park for Cold Harbour Bank.
+  - sctn-title: St. Benets
+    sctn-hash: 
+    paragraphs:
+      - col-pos:
+        col:
+        hdr: St. Benets
+        img: st-benets-parking.jpg
+        img-pos: left
+        img-alt: Parking at St Benets
+        sentences:
+          - txt: Access to St. Benets via St. Benets Road, Ludham NR29 5NU [see Google map for directions](https://www.google.com/maps/d/view?mid=1RY0jWCfEchoqAOcEzGUhuiN8oa56MiU&usp=sharing). The Association has shared access to the visitor car park which is restricted to a **maximum of EIGHT vehicles**. Please use the overflow car park, located at the end of the concrete track; **parking is restricted to the areas indicated in the diagram** so as not to restrict access for farm vehicles.

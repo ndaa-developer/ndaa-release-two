@@ -1,25 +1,25 @@
 cover-msg-ind: true
 cover-msg-type: danger
 cover-messages:
+  # - msg-type: warning
+  #   cvr-msg: Decoy Broad and River Bure, Woodbastwick Estate both closed until further notice
+  #   end-date: 20260315
   - msg-type: warning
-    cvr-msg: Decoy Broad and River Bure, Woodbastwick Estate both closed until further notice
-    end-date: 20260315
-  - msg-type: warning
-    cvr-msg: All venues will **CLOSE** dusk **Saturday 14th March**
-    start-date: 20260215
-    end-date: 20260314
+    cvr-msg: All venues will **CLOSE** dusk **Sunday 14th March**
+    start-date: 20270215
+    end-date: 20270314
   - msg-type: info
-    cvr-msg: AGM, Tuesday 14th April, 8pm, [King's Arms, Ludham](https://maps.google.com/?cid=10447569346871224337)
-    start-date: 20260307
-    end-date: 20260414
+    cvr-msg: AGM, Tuesday 13th April, 8pm, [King's Arms, Ludham](https://maps.google.com/?cid=10447569346871224337)
+    start-date: 20270307
+    end-date: 20270414
   - msg-type: info
-    cvr-msg: All venues **CLOSED** until dawn Tuesday 16th June
-    start-date: 20260315
-    end-date: 20260615
+    cvr-msg: All venues **CLOSED** until dawn Wednesday 16th June
+    start-date: 20270315
+    end-date: 20270615
   - msg-type: info
-    cvr-msg: Venues **re-open dawn today**, Tuesday 16th June
-    start-date: 20260616
-    end-date: 20260616
+    cvr-msg: Venues **re-open dawn today**, Wednesday 16th June
+    start-date: 20270616
+    end-date: 20270616
   # - msg-type: info
   #   cvr-msg: 2024/25 match calendar now [available](./matches.html)
   #   end-date: 20240615

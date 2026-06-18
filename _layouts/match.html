@@ -13,6 +13,10 @@ layout: default
                 <h2>{{section.title}}</h2>
             </div>
             {% endif %}
+            
+            {% if para.img != nil %}
+            <img class="md-img md-img--{{para.img-pos}}" src="{{ base }}{{ site.data.site.images-folder }}{{para.img}}" alt="{{para.img-alt}}">
+            {% endif %}
 
             {% if section.paragraphs != nil %}
             <div {% if section.css-class == nil %}class="match-info"{% else %}class="{{section.css-class}}"{% endif %}>

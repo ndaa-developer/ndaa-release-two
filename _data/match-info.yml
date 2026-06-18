@@ -15,8 +15,8 @@ alert-messages:
     alert-msg: Pairs and Teams of Four Leagues both <strong>MEMBERS ONLY</strong>.
   - alert-type: info
     alert-msg: Non-Members, when permitted to enter, must pay a Peg Fee when fishing Association Matches.
-  - alert-type: info
-    alert-msg: HQ for matches on Rivers Thurne & Bure [King's Arms, Ludham, NR29 5QQ](https://maps.google.com/?cid=10447569346871224337).
+  # - alert-type: info
+  #   alert-msg: HQ for matches on Rivers Thurne & Bure [King's Arms, Ludham, NR29 5QQ](https://maps.google.com/?cid=10447569346871224337).
   - alert-type: info
     alert-msg: Print version of match calendar available [here](../assets/docs/NDAA-Match-List-2026.pdf).
   # - alert-type: info

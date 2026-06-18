@@ -108,6 +108,7 @@ body {
   }
 
   .match-info {
+    overflow: hidden;
     margin: 1em 0;
 
     & ul {
@@ -132,7 +133,6 @@ body {
       margin-left: .5em;
     }
   }
- 
 
 }
   

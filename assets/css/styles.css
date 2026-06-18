@@ -934,6 +934,15 @@ button[disabled] {
     border-collapse: collapse;
     background-color: #fff; }
 
+.md-img {
+  width: 60%; }
+  .md-img--right {
+    float: right;
+    margin: 3px 0px 3px 12px; }
+  .md-img--left {
+    float: left;
+    margin: 3px 12px 3px 0px; }
+
 html {
   scroll-behavior: smooth; }
 
@@ -1033,6 +1042,7 @@ body {
   body .fa-info-circle {
     color: #3364a3; }
   body .match-info {
+    overflow: hidden;
     margin: 1em 0; }
     body .match-info ul {
       margin-top: -1em;
@@ -1164,3 +1174,8 @@ body {
             flex-grow: 0;
     -ms-flex-preferred-size: 280px;
         flex-basis: 280px; } }
+
+@media (max-width: 768px) {
+  .md-img {
+    width: 100%;
+    margin: 0 0 10px 0; } }
