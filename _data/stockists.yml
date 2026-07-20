@@ -44,15 +44,15 @@ stockists:
     addr-3: null
     url-type: fb
     addr-4: null
-  - logo: null
-    name: Wensum Valley Angling
-    postcode: NR8 6HT
-    url: https://www.facebook.com/wensumvalleyangling/
-    addr-1: Unit 3
-    addr-2: Taverham Craft Centre
-    addr-3: Fir Covert Road
-    url-type: fb
-    addr-4: Norwich
+  # - logo: null
+  #   name: Wensum Valley Angling
+  #   postcode: NR8 6HT
+  #   url: https://www.facebook.com/wensumvalleyangling/
+  #   addr-1: Unit 3
+  #   addr-2: Taverham Craft Centre
+  #   addr-3: Fir Covert Road
+  #   url-type: fb
+  #   addr-4: Norwich
   - logo: null
     name: Budgies Angling
     postcode: NR12 8PX
