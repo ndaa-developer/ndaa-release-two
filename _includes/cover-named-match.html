@@ -67,6 +67,10 @@
         {% assign sixth_place = row.Sixth %}
         {% assign sixth_pts = row.Sixth-Pts %}
         {% assign sixth_weight = row.Sixth-Weight %}
+        {% assign pos_seven = row.Pos-7 %}
+        {% assign seventh_place = row.Seventh %}
+        {% assign seventh_pts = row.Seventh-Pts %}
+        {% assign seventh_weight = row.Seventh-Weight %}
         {% assign league_one = row.League-1 %}
         {% assign league_two = row.League-2 %}
         {% break %}
@@ -111,7 +115,7 @@
                 {% else %}
                     {% assign col_heading_1 = "Name" %}
                 {% endif %}
-                <div class="alert alert--info alert--fit-center">
+                <div class="alert alert--{% if league_one != nil %}{{league_one}}{% else %}"info"{% endif %} alert--fit-center">
                     <table class="match-top-three">
                         <thead>
                             {% if league_one != nil %}
@@ -164,7 +168,95 @@
                                 {% endif %}
                                 <td {% if result_basis == "points" %}class="t3-hidden-sm" {% endif %}data-heading="Weight">{{ third_weight }}</td>
                             </tr>
-                            {% if league_two != nil %}
+                            {% if league_two == nil %}
+                            {% if fourth_place != nil %}
+                            <tr>
+                                {% if league_two != nil %}
+                                {% if pos_one != nil %}
+                                <td data-heading="Placing" class="placing">{{ pos_one }}</td>
+                                {% else %}
+                                <td data-heading="Placing" class="placing">1st</td>
+                                {% endif %}
+                                {% else %}
+                                {% if pos_four != nil %}
+                                <td data-heading="Placing" class="placing">{{ pos_four }}</td>
+                                {% else %}
+                                <td data-heading="Placing" class="placing">4th</td>
+                                {% endif %}
+                                {% endif %}
+                                <td data-heading="Pairing">{{ fourth_place }}</td>
+                                {% if first_pts != nil %}
+                                <td {% if result_basis == "weight" %}class="t3-hidden-sm" {% endif %}data-heading="Points">{{ fourth_pts }}</td>
+                                {% endif %}
+                                <td {% if result_basis == "points" %}class="t3-hidden-sm" {% endif %}data-heading="Weight">{{ fourth_weight }}</td>
+                            </tr>
+                            {% endif %}
+                            {% if fifth_place != nil %}
+                            <tr>
+                                {% if league_two != nil %}
+                                {% if pos_two != nil %}
+                                <td data-heading="Placing" class="placing">{{ pos_two }}</td>
+                                {% else %}
+                                <td data-heading="Placing" class="placing">2nd</td>
+                                {% endif %}
+                                {% else %}
+                                {% if pos_five != nil %}
+                                <td data-heading="Placing" class="placing">{{ pos_five }}</td>
+                                {% else %}
+                                <td data-heading="Placing" class="placing">5th</td>
+                                {% endif %}
+                                {% endif %}
+                                <td data-heading="Pairing">{{ fifth_place }}</td>
+                                {% if first_pts != nil %}
+                                <td {% if result_basis == "weight" %}class="t3-hidden-sm" {% endif %}data-heading="Points">{{ fifth_pts }}</td>
+                                {% endif %}
+                                <td {% if result_basis == "points" %}class="t3-hidden-sm" {% endif %}data-heading="Weight">{{ fifth_weight }}</td>
+                            </tr>
+                            {% endif %}
+                            {% if sixth_place != nil %}
+                            <tr>
+                                {% if league_two != nil %}
+                                {% if pos_three != nil %}
+                                <td data-heading="Placing" class="placing">{{ pos_three }}</td>
+                                {% else %}
+                                <td data-heading="Placing" class="placing">3rd</td>
+                                {% endif %}
+                                {% else %}
+                                {% if pos_six != nil %}
+                                <td data-heading="Placing" class="placing">{{ pos_six }}</td>
+                                {% else %}
+                                <td data-heading="Placing" class="placing">6th</td>
+                                {% endif %}
+                                {% endif %}
+                                <td data-heading="Pairing">{{ sixth_place }}</td>
+                                {% if first_pts != nil %}
+                                <td {% if result_basis == "weight" %}class="t3-hidden-sm" {% endif %}data-heading="Points">{{ sixth_pts }}</td>
+                                {% endif %}
+                                <td {% if result_basis == "points" %}class="t3-hidden-sm" {% endif %}data-heading="Weight">{{ sixth_weight }}</td>
+                            </tr>
+                            {% if seventh_place != nil %}
+                            <tr>
+                                {% if pos_seven != nil %}
+                                <td data-heading="Placing" class="placing">{{ pos_seven }}</td>
+                                {% else %}
+                                <td data-heading="Placing" class="placing">7th</td>
+                                {% endif %}
+                                <td data-heading="Pairing">{{ seventh_place }}</td>
+                                {% if first_pts != nil %}
+                                <td {% if result_basis == "weight" %}class="t3-hidden-sm" {% endif %}data-heading="Points">{{ seventh_pts }}</td>
+                                {% endif %}
+                                <td {% if result_basis == "points" %}class="t3-hidden-sm" {% endif %}data-heading="Weight">{{ seventh_weight }}</td>
+                                {% endif %}
+                                </tr>
+                            {% endif %}
+                            {% endif %}
+
+                        </tbody>
+                    </table>
+                </div>
+                {% if league_two != nil %}
+                <div class="alert alert--{% if league_two != nil %}{{league_two}}{% else %}"info"{% endif %} alert--fit-center">
+                    <table class="match-top-three">
                             <thead>
                                 <tr><th colspan="4">{{league_two}}</th></tr>
                                 <tr>
@@ -176,7 +268,6 @@
                                     <th{% if result_basis == "points" %} class="t3-hidden-sm"{% endif %}>Weight</th>
                                 </tr>
                             </thead>
-                            {% endif %}
                             {% if fourth_place != nil %}
                             <tr>
                                 {% if league_two != nil %}
@@ -246,6 +337,8 @@
                         </tbody>
                     </table>
                 </div>
+                {% endif %}
+
                 {% if linked_match != nil or next_match != nil %}
                 <div class="match-buttons">
                     {% if linked_match != nil %}
@@ -311,8 +404,13 @@
                     alt="Go to {{ next_match }} page"> {{ next_match }}</a>    
                     {% endif %}
                     {% if match_map != nil %}
-                    <a class="btn btn--info" href="{{ site.data.site.gmap-url }}{{ match_map }}" role="button"
+                        {% if match_map contains "html" %}
+                    <a class="btn btn--info" href="{{base}}/matches/{{ match_map }}" role="button"
+                    alt="Go to match locations page"> Locations</a>
+                        {% else %}
+                        <a class="btn btn--info" href="{{ site.data.site.gmap-url }}{{ match_map }}" role="button"
                     alt="Open map of {{ match_name }} locations">Locations<i class="fas fa-map-marker-alt"></i></a>    
+                        {% endif %}
                     {% endif %}
                 </div>
                 {% endif %}

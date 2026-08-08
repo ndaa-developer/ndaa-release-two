@@ -724,6 +724,14 @@ button[disabled] {
     color: #31708f;
     background-color: #d9edf7;
     border-color: #bce8f1; }
+  .alert--Yellow {
+    color: #2E2B00;
+    background-color: #FFF200;
+    border-color: #BEB400; }
+  .alert--Blue {
+    color: #E7EEF9;
+    background-color: #0057B7;
+    border-color: #003E87; }
   .alert--flex {
     display: -webkit-box;
     display: -ms-flexbox;
