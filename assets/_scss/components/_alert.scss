@@ -62,16 +62,16 @@ $alert-info-brdr-color: #bce8f1 !default;
   }
 
   &--Yellow {
-    color: #2E2B00;
-    background-color: #FFF200;
-    border-color: #BEB400;
+    color: $yellow-league-text;
+    background-color: $yellow-league;
+    border-color: $yellow-league//#BEB400;
   }
 
 
   &--Blue {
-    color: #E7EEF9;
-    background-color: #0057B7;
-    border-color: #003E87;
+    color: $blue-league-text;
+    background-color: $blue-league;
+    border-color: $blue-league//#003E87;
   }
 
   &--flex{

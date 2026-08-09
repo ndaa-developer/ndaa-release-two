@@ -115,7 +115,7 @@
                 {% else %}
                     {% assign col_heading_1 = "Name" %}
                 {% endif %}
-                <div class="alert alert--{% if league_one != nil %}{{league_one}}{% else %}"info"{% endif %} alert--fit-center">
+                <div class="alert alert--{% if league_one != nil %}{{league_one}}{% else %}info{% endif %} alert--fit-center">
                     <table class="match-top-three">
                         <thead>
                             {% if league_one != nil %}
@@ -255,7 +255,7 @@
                     </table>
                 </div>
                 {% if league_two != nil %}
-                <div class="alert alert--{% if league_two != nil %}{{league_two}}{% else %}"info"{% endif %} alert--fit-center">
+                <div class="alert alert--{% if league_two != nil %}{{league_two}}{% else %}info{% endif %} alert--fit-center">
                     <table class="match-top-three">
                             <thead>
                                 <tr><th colspan="4">{{league_two}}</th></tr>

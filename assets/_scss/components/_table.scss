@@ -16,7 +16,7 @@
     }
 
     // & thead th:nth-child(2) {
-    & thead th:nth-child(1) {
+    & thead th:nth-child(2) {
       position: sticky;
       left: 0;
       z-index: 2;
@@ -28,10 +28,9 @@
       // text-align: left;
       position: relative;
       border-bottom: .05em solid $black;
-      // background: $white;
     }
 
-    & tbody td:nth-child(1) {
+    & tbody td:nth-child(2) {
       position: sticky;
       left: 0;
       z-index: 1;
@@ -40,10 +39,20 @@
     & td {
       padding: .1em .5em;
       border-bottom: .05em solid $black;
+      background: $white;
     }
     & .td--yellow {
+      color: $yellow-league-text;
       background-color: $yellow-league;       
     }
+    & .td--blue {
+      color: $blue-league-text;
+      background-color: $blue-league;
+    }
+    // & .td--red {
+    //   color: $white;
+    //   background-color: $red-league;
+    // }
     & .td--green {
       color: $white;
       background-color: $green-league;

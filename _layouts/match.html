@@ -8,10 +8,20 @@ layout: default
         {% if page.sections != nil %} 
         {% for section in page.sections %}
         <section>
+            {% assign league_colour = nil %}
             {% if section.title != nil %}
             <div class="section-hdr"{% if section.hash != nil %} id="{{section.hash}}"{% endif %}>
                 <h2>{{section.title}}</h2>
             </div>
+                {% if section.title contains "Yellow" %}
+                    {% assign league_colour = "yellow" %}
+                {% endif %}
+                {% if section.title contains "Blue" %}
+                    {% assign league_colour = "blue" %}
+                {% endif %}
+                {% if section.title contains "Green" %}
+                    {% assign league_colour = "green" %}
+                {% endif %}
             {% endif %}
             
             {% if para.img != nil %}
@@ -22,13 +32,21 @@ layout: default
             <div {% if section.css-class == nil %}class="match-info"{% else %}class="{{section.css-class}}"{% endif %}>
             {% for para in section.paragraphs %}
                 {% if para.hdr != nil %}
-                {% if para.hdr-lvl != nil %}
-                <h4>{{para.hdr}}</h4>
-                {% else%}
-                <h3>{{para.hdr}}</h3>
+                    {% if para.hdr contains "Yellow" %}
+                        {% assign league_colour = "yellow" %}
+                    {% endif %}
+                    {% if para.hdr contains "Blue" %}
+                        {% assign league_colour = "blue" %}
+                    {% endif %}
+                    {% if para.hdr contains "Green" %}
+                        {% assign league_colour = "green" %}
+                    {% endif %}
+                    {% if para.hdr-lvl != nil %}
+                    <h4>{{para.hdr}}</h4>
+                    {% else %}
+                    <h3>{{para.hdr}}</h3>
+                    {% endif %}
                 {% endif %}
-                {% endif %}
-
                 {% for sentence in para.sentences %}
                 {% if sentence.txt != nil %}
                 {{sentence.txt | markdownify}}
@@ -132,63 +150,63 @@ layout: default
                     <tbody>
                         <tr>
                             <td class="td--center" data-heading="Pos">{{ row.Placing }}</td>
-                            <td class="td--left" data-heading="Name">{{ row.Name }}</td>
+                            <td class="td--left{% if league_colour != nil %} td--{{ league_colour}}{% endif %}" data-heading="Name">{{ row.Name }}</td>
                             {% if row.R1-P != nil %}
-                            <td class="td--center{% if row.R1-W-Low == "Y" %} td--lowest{% endif %}" data-heading="R1 Points">{{ row.R1-P }}</td>
+                            <td class="td--center{% if league_colour != nil %} td--{{ league_colour}}{% endif %}{% if row.R1-W-Low == "Y" %} td--lowest{% endif %}" data-heading="R1 Points">{{ row.R1-P }}</td>
                             {% endif %}
                             {% if row.R1-W != nil %}
-                            <td class="td--right{% if row.R1-W-Low == "Y" %} td--lowest{% endif %}" data-heading="R1 Weight">{{ row.R1-W }}</td>
+                            <td class="td--right{% if league_colour != nil %} td--{{ league_colour}}{% endif %}{% if row.R1-W-Low == "Y" %} td--lowest{% endif %}" data-heading="R1 Weight">{{ row.R1-W }}</td>
                             {% endif %}
                             {% if row.R2-P != nil %}
-                            <td class="td--center{% if row.R2-W-Low == "Y" %} td--lowest{% endif %}" data-heading="R2 Points">{{ row.R2-P }}</td>
+                            <td class="td--center{% if league_colour != nil %} td--{{ league_colour}}{% endif %}{% if row.R2-W-Low == "Y" %} td--lowest{% endif %}" data-heading="R2 Points">{{ row.R2-P }}</td>
                             {% endif %}
                             {% if row.R2-W != nil %}
-                            <td class="td--right{% if row.R2-W-Low == "Y" %} td--lowest{% endif %}" data-heading="R2 Weight">{{ row.R2-W }}</td>
+                            <td class="td--right{% if league_colour != nil %} td--{{ league_colour}}{% endif %}{% if row.R2-W-Low == "Y" %} td--lowest{% endif %}" data-heading="R2 Weight">{{ row.R2-W }}</td>
                             {% endif %}
                             {% if row.R3-P != nil %}
-                            <td class="td--center{% if row.R3-W-Low == "Y" %} td--lowest{% endif %}" data-heading="R3 Points">{{ row.R3-P }}</td>
+                            <td class="td--center{% if league_colour != nil %} td--{{ league_colour}}{% endif %}{% if row.R3-W-Low == "Y" %} td--lowest{% endif %}" data-heading="R3 Points">{{ row.R3-P }}</td>
                             {% endif %}
                             {% if row.R3-W != nil %}
-                            <td class="td--right{% if row.R3-W-Low == "Y" %} td--lowest{% endif %}" data-heading="R3 Weight">{{ row.R3-W }}</td>
+                            <td class="td--right{% if league_colour != nil %} td--{{ league_colour}}{% endif %}{% if row.R3-W-Low == "Y" %} td--lowest{% endif %}" data-heading="R3 Weight">{{ row.R3-W }}</td>
                             {% endif %}
                             {% if row.R4-P != nil %}
-                            <td class="td--center{% if row.R4-W-Low == "Y" %} td--lowest{% endif %}" data-heading="R4 Points">{{ row.R4-P }}</td>
+                            <td class="td--center{% if league_colour != nil %} td--{{ league_colour}}{% endif %}{% if row.R4-W-Low == "Y" %} td--lowest{% endif %}" data-heading="R4 Points">{{ row.R4-P }}</td>
                             {% endif %}
                             {% if row.R4-W != nil %}
-                            <td class="td--right{% if row.R4-W-Low == "Y" %} td--lowest{% endif %}" data-heading="R4 Weight">{{ row.R4-W }}</td>
+                            <td class="td--right{% if league_colour != nil %} td--{{ league_colour}}{% endif %}{% if row.R4-W-Low == "Y" %} td--lowest{% endif %}" data-heading="R4 Weight">{{ row.R4-W }}</td>
                             {% endif %}
                             {% if row.R5-P != nil %}
-                            <td class="td--center{% if row.R5-W-Low == "Y" %} td--lowest{% endif %}" data-heading="R5 Points">{{ row.R5-P }}</td>
+                            <td class="td--center{% if league_colour != nil %} td--{{ league_colour}}{% endif %}{% if row.R5-W-Low == "Y" %} td--lowest{% endif %}" data-heading="R5 Points">{{ row.R5-P }}</td>
                             {% endif %}
                             {% if row.R5-W != nil %}
-                            <td class="td--right{% if row.R5-W-Low == "Y" %} td--lowest{% endif %}" data-heading="R5 Weight">{{ row.R5-W }}</td>
+                            <td class="td--right{% if league_colour != nil %} td--{{ league_colour}}{% endif %}{% if row.R5-W-Low == "Y" %} td--lowest{% endif %}" data-heading="R5 Weight">{{ row.R5-W }}</td>
                             {% endif %}
                             {% if row.R6-P != nil %}
-                            <td class="td--center{% if row.R6-W-Low == "Y" %} td--lowest{% endif %}" data-heading="R6 Points">{{ row.R6-P }}</td>
+                            <td class="td--center{% if league_colour != nil %} td--{{ league_colour}}{% endif %}{% if row.R6-W-Low == "Y" %} td--lowest{% endif %}" data-heading="R6 Points">{{ row.R6-P }}</td>
                             {% endif %}
                             {% if row.R6-W != nil %}
-                            <td class="td--right{% if row.R6-W-Low == "Y" %} td--lowest{% endif %}" data-heading="R6 Weight">{{ row.R6-W }}</td>
+                            <td class="td--right{% if league_colour != nil %} td--{{ league_colour}}{% endif %}{% if row.R6-W-Low == "Y" %} td--lowest{% endif %}" data-heading="R6 Weight">{{ row.R6-W }}</td>
                             {% endif %}
                             {% if row.R7-P != nil %}
-                            <td class="td--center{% if row.R7-W-Low == "Y" %} td--lowest{% endif %}" data-heading="R7 Points">{{ row.R7-P }}</td>
+                            <td class="td--center{% if league_colour != nil %} td--{{ league_colour}}{% endif %}{% if row.R7-W-Low == "Y" %} td--lowest{% endif %}" data-heading="R7 Points">{{ row.R7-P }}</td>
                             {% endif %}
                             {% if row.R7-W != nil %}
-                            <td class="td--right{% if row.R7-W-Low == "Y" %} td--lowest{% endif %}" data-heading="R7 Weight">{{ row.R7-W }}</td>
+                            <td class="td--right{% if league_colour != nil %} td--{{ league_colour}}{% endif %}{% if row.R7-W-Low == "Y" %} td--lowest{% endif %}" data-heading="R7 Weight">{{ row.R7-W }}</td>
                             {% endif %}
                             {% if row.Points != nil %}
-                            <td class="td--center" data-heading="Total Points">{{ row.Points }}</td>
+                            <td class="td--center{% if league_colour != nil %} td--{{ league_colour}}{% endif %}" data-heading="Total Points">{{ row.Points }}</td>
                             {% endif %}
                             {% if row.Weight != nil %}
-                            <td class="td--right" data-heading="Weight">{{ row.Weight }}</td>
+                            <td class="td--right{% if league_colour != nil %} td--{{ league_colour}}{% endif %}" data-heading="Weight">{{ row.Weight }}</td>
                             {% endif %}
                             {% if row.Weight-Pos != nil %}
-                            <td class="td--right" data-heading="Weight">{{ row.Weight-Pos }}</td>
+                            <td class="td--right{% if league_colour != nil %} td--{{ league_colour}}{% endif %}" data-heading="Weight">{{ row.Weight-Pos }}</td>
                             {% endif %}
                             {% if row.Adj-P != nil %}
-                            <td class="td--center" data-heading="Adjusted Points">{{ row.Adj-P }}</td>
+                            <td class="td--center{% if league_colour != nil %} td--{{ league_colour}}{% endif %}" data-heading="Adjusted Points">{{ row.Adj-P }}</td>
                             {% endif %}
                             {% if row.Adj-W != nil %}
-                            <td class="td--right" data-heading="Adjusted Weight">{{ row.Adj-W }}</td>
+                            <td class="td--right{% if league_colour != nil %} td--{{ league_colour}}{% endif %}" data-heading="Adjusted Weight">{{ row.Adj-W }}</td>
                             {% endif %}
                         </tr>
                     </tbody>
