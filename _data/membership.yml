@@ -3,14 +3,14 @@ alert-msg-type: info
 alert-messages:
   # - alert-type: info
   #   alert-msg: AGM 14 April 2026 - Confirmed no change to membership fee for 2026/27 season
-  # - alert-type: info
-  #   alert-msg: 1st October - Season Membership cards now reduced to £20.
+  - alert-type: info
+    alert-msg: 1st October - Season Membership cards now reduced to £20.
   # - alert-type: info
   #   alert-msg: Season Membership, 16th June 2026 to 14th March 2027, ~~£30~~ **£20**.
-  # - alert-type: info
+  # # - alert-type: info
   #   alert-msg: 2024/25 Membership cards in shops now.
 options:
-  - option-desc: Season Membership, 16th June 2026 to 14th March 2027, **£35**.
+  - option-desc: Season Membership, 16th June 2026 to 14th March 2027, ~~£35~~ **£20**.
   # - option-desc: Season Membership, 16th June 2026 to 14th March 2027, ~~£35~~ **£20**.
   # - option-desc: Season Membership, 16th June 2027 to 14th March 2028, **fee to be confirmed at the AGM**.
   # - option-desc: Season Membership, 16th June to 14th March, ~~£30~~ **£20**

@@ -8,7 +8,7 @@ intro-desc:
   # New 2026/27 match calendar will be published during the close season; please email **bookings@ndaa.org.uk**
 #  If you want any information about the matches listed below please email **matches@ndaa.org.uk**.
 cut-off-time: 1600
-alert-msg-ind: true
+alert-msg-ind: false
 alert-msg-type: info
 alert-messages:
   - alert-type: info
