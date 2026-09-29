@@ -8,13 +8,13 @@ intro-desc:
   # New 2026/27 match calendar will be published during the close season; please email **bookings@ndaa.org.uk**
 #  If you want any information about the matches listed below please email **matches@ndaa.org.uk**.
 cut-off-time: 1600
-alert-msg-ind: false
+alert-msg-ind: true
 alert-msg-type: info
 alert-messages:
-  - alert-type: info
-    alert-msg: Pairs and Teams of Four Leagues both <strong>MEMBERS ONLY</strong>.
-  - alert-type: info
-    alert-msg: Non-Members, when permitted to enter, must pay a Peg Fee when fishing Association Matches.
+  # - alert-type: info
+  #   alert-msg: Pairs and Teams of Four Leagues both <strong>MEMBERS ONLY</strong>.
+  # - alert-type: info
+  #   alert-msg: Non-Members, when permitted to enter, must pay a Peg Fee when fishing Association Matches.
   # - alert-type: info
   #   alert-msg: HQ for matches on Rivers Thurne & Bure [King's Arms, Ludham, NR29 5QQ](https://maps.google.com/?cid=10447569346871224337).
   - alert-type: info
